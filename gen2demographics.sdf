@@ -1,0 +1,9 @@
+
+
+Reference
+Number     Year  Variable Description                                         Question Name  
+-----------------------------------------------------------------------------------------------
+C00001.00  XRND  ID CODE OF CHILD                                             CPUBID         
+C00002.00  XRND  ID CODE OF MOTHER OF CHILD                                   MPUBID         
+C00053.00  XRND  RACE OF CHILD (MOTHER'S RACIAL/ETHNIC COHORT FROM SCREENER)  CRACE          
+C00054.00  XRND  SEX OF CHILD                                                 CSEX           

@@ -1,0 +1,16 @@
+Mason -- we may want to replicate this descriptive result from Harden & Mendel (see below).  I think our result may be quite similar -- maybe even amazingly similar -- which would add some concurrent validity to the results.  It also will help make the patterns easier to interpret.  I don't like that they only did the median split, though -- after we replicate, we may want to present quantitative results as well that complement the median-split results.  Joe
+
+Analyses
+
+Means comparisons
+As an initial descriptive analysis, we used IQ scores, dichotomized into “higher” and “lower” at the mean (100), to classify adolescents into four groups:
+
+(1)
+Adolescents with lower IQ (<100) whose co-twins also had lower IQ,
+(2)
+Adolescents with lower IQ whose co-twins had higher IQ (>100),
+(3)
+Adolescents with higher IQ whose co-twins had lower IQ,
+(4)
+Adolescents with higher IQ whose co-twins also had higher IQ.
+A comparison between Group 1 (twins concordant for lower IQ) and Group 4 (twins concordant for higher IQ) is analogous to a traditional between-families analysis: Do adolescents with higher IQ show later ages at first sex compared to unrelated adolescents with lower IQ? In contrast, a comparison between Group 2 and Group 3 is a within-families analysis: Among twins discordant for high versus lower IQ, do the twins with higher IQ (Group 3) have later ages at first sex than their co-twins with lower IQ (Group 2)? The degree to which the between-family effect (Groups 1 vs. 4) is reduced in the within-family comparisons (Groups 2 vs. 3) indicates that unmeasured differences between families confound the association between intelligence and age at first sex.

@@ -1,0 +1,42 @@
+Anecdotal evidence from the popular media, such as MTV's reality television franchise, \textit{16 and Pregnant}\nocite{mtv}, suggests that teenage promiscuity is on the rise. \cm{in fact, it looks like shows such as this one reduce rates of teen pregnancy...\citep{Kearney2014}} Academic evidence confirms such anecdotes; age at first intercourse (AFI) is indeed declining and has so for some time \citep{bozon2003,finer2007trends}. Early age at first intercourse is associated with a plethora of negative downstream consequences, including lower education attainment \citep{Wellings2001,Harden2012}, failure to meet education and career goals \citep{halpern2000smart}, increased risk of teenage pregnancy \citep{Leitenberg2000,Wellings2001}, and increased rates of sexually transmitted infections \citep{kaestle2005young}. Moreover, beyond the obvious benefit of avoiding the aforementioned negative outcomes, delaying AFI is associated with greater relationship satisfaction, perception of increased attractiveness, and higher household income \citep{Harden2012}. Because the aforementioned consequences are severe and long-reaching, psychology has begun to explore potential causal mechanisms of early AFI. Indeed, the field has found a consistent correlate in the literature -- intelligence.
+
+Higher levels of intelligence are positively associated with delaying first intercourse \citep{Woodward2001,Paul2000,halpern2000smart,mott1983early}. Specifically, it seems that intelligent individuals delay intercourse to ``safeguard'' their futures \citep{kirby2002effective, manlove1998influence, raffaelli2003sexual}. They perceive the risks associated with early intercourse, (e.g., pregnancy, STIs) to have career--shattering outcomes \citep{halpern2000smart,harden2011don}. Although this correlate holds promise -- much of the field has treated this finding as causal and non-spurious. Yet, there is a fundamental confound in the existing literature that makes it impossible to infer causality.
+
+Practically, all of the AFI-intelligence literature has used between family analyses. In all such analyses, gene and environmental influences, such as education and maternal intelligence are hopelessly confounded (See \citealp{harden2014genetic}). By ignoring such confounds, results are uninterpretable and risk misattributions of causality \citep{Rowe1997,Rutter2007}. Indeed, both intelligence and AFI are highly heritable and have sizeable shared environmental variances \citep{harden2011don,harden2014genetic,plomin2004intelligence}. Thus, we need to critically evaluate whether intelligence is a cause of AFI or merely a theoretically attractive confound.
+
+\section{Literature}
+\subsection{Cause or Confound?}
+There are numerous theories on the motivations behind adolescents initiation of first intercourse (See \citealp{Rodgers1996} for a review). **MORE ON MOTIVES OF AFI. USE SOCIAL INFLUENCES/CONSEQUEWNCES AS TRANSITION TO INTELLIGENCE AS A CAUSAL MECHANISN**
+\subsubsection{Cause}
+We've previously mentioned that the short-term risks of early AFI are overwhelming negative, whereas the rewards for delay are equally positive. These consequences extend into adulthood -- early AFI is associated with adult delinquency \citep{harden2008rethinking}, anti-social behaviour, and substance abuse \citep{boislard2011individual}, while those who delayed had higher household incomes in adulthood\citep{ Harden2012}. It is intuitively appealing to believe that intelligent individuals are more likely to observe this high risk, low reward tradeoff, and act upon such observations by delaying intercourse. Accordingly, intelligent individuals perceive the consequences of early AFI to have career--shattering outcomes \citep{halpern2000smart,harden2011don}.
+
+Indeed, the literature is consistent with this theory. Those with higher educational goals delay their first intercourse \citep{boislard2011individual,schvaneveldt2001academic}, while those who had previously reported higher goals, but engaged in early sexual intercourse reduced their goals \citep{schvaneveldt2001academic}. Beyond academic goals, those with a greater affinity for risk and those who perceive benefits from teen-pregnancy are more likely to engage in risky sexual activities \citep{raffaelli2003sexual}. A greater understanding of the risks associated with sexual intercourse, such as HIV transmission, is associated with delayed AFI \citep{mathews2009predictors}.
+
+Smarter adolescents are more likely to report delayed intercourse \citep{Woodward2001,Paul2000,halpern2000smart,mott1983early}. Beyond intercourse, smarter individuals appear to postpone all sexual/romantic activity \cite{halpern2000smart}. Such blanket delays may be a proactive attempt to avoid first intercourse precursors.
+
+\subsubsection{Confound}\\
+However, there is a methodological artefact underlying all of the results discussed in the previous section. 
+
+is litany of alternative explanations to the AFI-intelligence relationship -- all of which fall under the umbrella of between-family confounds.
+
+substantive confounds\\
+
+statistical confounds\\, use to transition to explaining between and within family findings. IF a result is truely causal, then findings from between family analyses will be replicated by within family results. IF said replication fails, then the characteristic cannot be a direct cause of the effect. That isn't to say intelligence isn't a distal cause -- any many of the AFI-intelligence theories suggest that risk perception is an essential element . However, being intelligent in and of itself does not cause changes in AFI
+
+\subsection{Between vs. Within Family Analyses}
+
+Therefore, in order to determine whether the link between intelligence and AFI is causal, we need to find a way to untangle the between family influences from the within family (ie causal) influences. 
+One of the fundamental challenges in psychological research is evaluating causal hypotheses that are either situation driven or person driven. Randomized experiments are particularly effective at determining causality for situational hypotheses because random assignment controls for genetic and environmental confounds across repeated trials. However, some situation driven explanations, such as maternal influence, cannot be ethically evaluated via randomized experiment. Moreover, evaluating person-driven hypotheses are comparably problematic, as random assignment of person characteristics (e.g., personality) isn't feasible (see \citealp{west2009alternatives}). Traditional alternatives to evaluating such hypotheses tend to focus upon between-family longitudinal studies, where potential confounds are included as covariates.
+
+However, the between-family covariate approach cannot control for systematically confounded genetic characteristics and environmental influences. The approach can result in misattributions of causality, as the misattributed cause might sufficiently covary with the true cause. Indeed, poverty and individual differences covary with genes and environment, to such a degree that between family analyses are fundamentally biased \citep{Rowe1997}. Yet, the covariate approach has been the primary method used to evaluate the causal mechanism behind the AFI-intelligence relationship.
+
+
+
+**CLEANING** Pillaged from NSF GRFP
+
+
+Instead, quasi-experimental designs can be used; such designs support causal inference without random assignment. Sibling-based quasi-experimental models are particularly effective at incorporating genetic and environmental design elements. However, such models are underused in psychology (Rodgers \textit{et al}, 2001), tend to focus on environmental confounds and do not naturally incorporate varying levels of relatedness. 
+
+Traditional sibling comparison models often rely on rare events (i.e., twins) or advanced methodology (e.g., propensity score matching, multilevel modeling). As an alternative, we have adapted Kenny's reciprocal standard dyad model\citep{kenny2001social,kenny2006dyadic}. Our adaptation controls for gene and shared environmental influences within a simple regression framework, by taking the difference between the two siblings
+\subsection{Prior Within Family Analyses}
+

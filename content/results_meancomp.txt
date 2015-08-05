@@ -1,0 +1,8 @@
+
+
+We replicated the descriptive mean comparison analysis described in Harden and Mendel (YEAR) to illustrate the difference between within and between family analyses. We rescaled our general ability estimates into the standard IQ metric (mean $=$ 100, sd $=$ 15). Then we dichotomized both generations of sibling pairs into ``higher'' and ``lower'' at the mean, thus classifying them into four groups:\begin{itemize}
+\item Siblings with IQs at or above average ($\geq$100), whose sibling was also at or above average (HighHigh),
+\item Siblings with IQs at or above average ($\geq$100), whose sibling's score was below average (HighLow),
+\item Siblings with IQs below average ($<$100), whose sibling's score was at or above average (LowHigh), and
+\item Siblings with IQs below average ($<$100), whose sibling's score was also below average (LowLow).\end{itemize}
+

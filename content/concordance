@@ -1,0 +1,67 @@
+
+Gen2AFIConcor$IQcat_G2[Gen2AFIConcor$zIntel_G2 > 100] <- "High"
+Gen2AFIConcor$IQcat_G2[Gen2AFIConcor$zIntel_G2 < 100] <- "Low"
+Gen2AFIConcor$IQcat_G2[Gen2AFIConcor$zIntel_G2 == 100] <- "High"
+#Gen2AFIConcor$IQcat_G2[Gen2AFIConcor$zIntel_G2 == 100] <- "Low"
+dsOutcomes <- Gen1AFIConcor
+dsOutcomes$SubjectTag <- dsOutcomes$MCASEID*100
+dsLinks <- Links79Pair
+dsLinks <- dsLinks[dsLinks$RelationshipPath=='Gen1Housemates', ] #Only Gen1 Sibs (ie, NLSY79)
+Gen1AFI_Linked2xEntered <- CreatePairLinksDoubleEntered(outcomeDataset=dsOutcomes, linksPairDataset=dsLinks, outcomeNames=c("zIntel_G1","AFI_G1","IQcat_G1"))
+Gen1AFI_Linked1xEntered <- CreatePairLinksSingleEntered(outcomeDataset=dsOutcomes, linksPairDataset=dsLinks, outcomeNames=c("zIntel_G1","AFI_G1","IQcat_G1"))
+Gen1AFI_Linked2xEntered$Concord_G1<-Gen1AFI_Linked2xEntered$ExtendedID*0
+Gen1AFI_Linked2xEntered$Concord_G1<-NA
+Gen1AFI_Linked2xEntered$Concord_G1[Gen1AFI_Linked2xEntered$IQcat_G1_S1 == "High" & Gen1AFI_Linked2xEntered$IQcat_G1_S2 == "High" ]<- "HighHigh"
+Gen1AFI_Linked2xEntered$Concord_G1[Gen1AFI_Linked2xEntered$IQcat_G1_S1 == "High" & Gen1AFI_Linked2xEntered$IQcat_G1_S2 == "Low" ]<- "HighLow"
+Gen1AFI_Linked2xEntered$Concord_G1[Gen1AFI_Linked2xEntered$IQcat_G1_S1 == "Low" & Gen1AFI_Linked2xEntered$IQcat_G1_S2 == "High" ]<- "LowHigh"
+Gen1AFI_Linked2xEntered$Concord_G1[Gen1AFI_Linked2xEntered$IQcat_G1_S1 == "Low" & Gen1AFI_Linked2xEntered$IQcat_G1_S2 == "Low" ]<- "LowLow"
+
+Gen1AFI_Linked2xEntered$Concord_G1<-as.factor(Gen1AFI_Linked2xEntered$Concord_G1)
+
+Gen1AFI_Linked2xEntered_Between <- subset(Gen1AFI_Linked2xEntered, Concord_G1 == "HighHigh" | Concord_G1 == "LowLow")
+Gen1AFI_Linked2xEntered_Within <- subset(Gen1AFI_Linked2xEntered, Concord_G1 == "HighLow" | Concord_G1 == "LowHigh")
+dsOutcomes <- Gen2AFIConcor
+dsOutcomes$SubjectTag <- dsOutcomes$CASEID
+dsLinks <- Links79Pair
+dsLinks <- dsLinks[dsLinks$RelationshipPath=='Gen2Siblings', ] #Only Gen2 Sibs (ie, NLSY79)
+Gen2AFI_Linked2xEntered <- CreatePairLinksDoubleEntered(outcomeDataset=dsOutcomes, linksPairDataset=dsLinks,
+                                     outcomeNames=c("zIntel_G2","AFI_G2","IQcat_G2"))
+
+Gen2AFI_Linked1xEntered <- CreatePairLinksSingleEntered(outcomeDataset=dsOutcomes, linksPairDataset=dsLinks,
+                                     outcomeNames=c("zIntel_G2","AFI_G2","IQcat_G2"))
+Gen2AFI_Linked2xEntered$Concord_G2<-Gen2AFI_Linked2xEntered$ExtendedID*0
+Gen2AFI_Linked2xEntered$Concord_G2<-NA
+Gen2AFI_Linked2xEntered$Concord_G2[Gen2AFI_Linked2xEntered$IQcat_G2_S1 == "High" & Gen2AFI_Linked2xEntered$IQcat_G2_S2 == "High" ]<- "HighHigh"
+Gen2AFI_Linked2xEntered$Concord_G2[Gen2AFI_Linked2xEntered$IQcat_G2_S1 == "High" & Gen2AFI_Linked2xEntered$IQcat_G2_S2 == "Low" ]<- "HighLow"
+Gen2AFI_Linked2xEntered$Concord_G2[Gen2AFI_Linked2xEntered$IQcat_G2_S1 == "Low" & Gen2AFI_Linked2xEntered$IQcat_G2_S2 == "High" ]<- "LowHigh"
+Gen2AFI_Linked2xEntered$Concord_G2[Gen2AFI_Linked2xEntered$IQcat_G2_S1 == "Low" & Gen2AFI_Linked2xEntered$IQcat_G2_S2 == "Low" ]<- "LowLow"
+
+Gen2AFI_Linked2xEntered$Concord_G2<-as.factor(Gen2AFI_Linked2xEntered$Concord_G2)
+
+Gen2AFI_Linked2xEntered_Between <- subset(Gen2AFI_Linked2xEntered, Concord_G2 == "HighHigh" | Concord_G2 == "LowLow")
+Gen2AFI_Linked2xEntered_Within <- subset(Gen2AFI_Linked2xEntered, Concord_G2 == "HighLow" | Concord_G2 == "LowHigh")
+
+
+%\cm{NOTE These mean comparisons do not account for multiple siblings. I haven't figured out how to have one pair per household. Don't worry, though, I figured that out for all the continous analyses}
+
+<<include=FALSE>>=
+
+#Gen 1
+#ddply(Gen1AFI_Linked2xEntered, .(Concord_G1), summarize,  AFI_G1=mean(AFI_G1_S1,na.rm=TRUE),AFI_G1sd=sqrt(var(AFI_G1_S1,na.rm=TRUE)),
+ #     zIntel_G1=mean(zIntel_G1_S1,na.rm=TRUE),zIntel_G1sd=sqrt(var(zIntel_G1_S1,na.rm=TRUE)),N=length(AFI_G1_S1))
+#Gen 2
+#ddply(Gen2AFI_Linked2xEntered, .(Concord_G2), summarize,  AFI_G2=mean(AFI_G2_S1,na.rm=TRUE),AFI_G2sd=sqrt(var(AFI_G2_S1,na.rm=TRUE)),
+#      zIntel_G2=mean(zIntel_G2_S1,na.rm=TRUE),zIntel_G2sd=sqrt(var(zIntel_G2_S1,na.rm=TRUE)),N=length(AFI_G2_S1))
+
+##Between
+t.test(AFI_G1_S1 ~ Concord_G1, data=Gen1AFI_Linked2xEntered_Between) 
+t.test(AFI_G2_S1 ~ Concord_G2, data=Gen2AFI_Linked2xEntered_Between) 
+
+### Within
+t.test(AFI_G1_S1 ~ Concord_G1, data=Gen1AFI_Linked2xEntered_Within) 
+t.test(AFI_G2_S1 ~ Concord_G2, data=Gen2AFI_Linked2xEntered_Within) 
+@
+<<include=FALSE>>=
+t.test(AFI_G2_S1 ~ Concord_G2, data=Gen2AFI_Linked2xEntered_Between) 
+t.test(AFI_G2_S1 ~ Concord_G2, data=Gen2AFI_Linked2xEntered_Within) 
+@

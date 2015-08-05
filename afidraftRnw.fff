@@ -1,0 +1,9 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[H]
+  \caption{Wright Map of Gen1 Cognitive Ability}\label{G1wrightMap}
+  \centering
+    \includegraphics[width=0.8\textwidth]{G1wrightMap}
+\end{figure*}
+\efloatseparator
+ 

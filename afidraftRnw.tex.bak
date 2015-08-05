@@ -1,0 +1,296 @@
+\documentclass[a4paper,man,natbib,12pt,apacite]{apa6}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\usepackage{changepage}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[longnamesfirst]{natbib}
+\usepackage[natbibapa]{apacite}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{lineno}
+\usetikzlibrary{calc,arrows,positioning}
+\usepackage[yyyymmdd,hhmmss]{datetime}
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{\itemsep}
+\addtolength{\wideitemsep}{-10pt}
+\let\olditem\item
+\renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}
+\usepackage{verbatim}
+\makeatletter
+%\def\makeLineNumberLeft{%
+%  \linenumberfont\llap{\hb@xt@\linenumberwidth{\LineNumber\hss}\hskip\linenumbersep}% left line number
+%  \hskip\columnwidth% skip over column of text
+%  \rlap{\hskip\linenumbersep\hb@xt@\linenumberwidth{\hss\LineNumber}}\hss}% right line number
+%\leftlinenumbers% Re-issue [left] option
+\makeatother
+\newcommand{\cil}[1]{\todo[inline, color=green!40]{#1}}
+\newcommand{\cm}[1]{\todo[color=green!40]{\begin{adjustwidth*}{4mm}{}#1\end{adjustwidth*}}}
+\newcommand{\cmb}[1]{\todo[color=blue!40]{\begin{adjustwidth*}{4mm}{}#1\end{adjustwidth*}}}
+\title{Intelligence and Age at First Intercourse: Cause or Confound?}
+\shorttitle{Intelligence and AFI}
+\author{S. Mason Garrison and Joseph Lee Rodgers}
+\affiliation{Vanderbilt University}
+\addtolength{\marginparwidth}{6cm}
+\addtolength{\paperwidth}{\marginparwidth-1cm}
+%\addtolength{\marginparsep}{2mm}
+\abstract{Your abstract here.\\\today\ at \currenttime}
+\authornote{This material is based upon work that is supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. (DGE-1445197).}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+\maketitle
+\linenumbers%\section{Introduction}
+\cmb{content/introduction.txt}\input{content/introduction.txt}
+
+
+\section{Literature}
+\cmb{content/lit.txt}\input{content/lit.txt}
+
+\section{Present Study}
+\begin{itemize}
+\item We wanted to know whether the Harden \& Mendle (2011) results would hold using a different design and data set.\smallskip
+\item We examined the relationship between AFI and Intelligence using siblings and their children from a multigenerational nationally representative sample.\smallskip
+\item Specifically, we addressed the following questions:\smallskip
+\begin{itemize}\item Does intelligence (mother or child) predict child AFI, after controlling for gene and environmental confounds?\smallskip
+\item Is this relationship consistent between-- and within--families?
+\end{itemize}\end{itemize}
+
+\section{Methods}\cmb{content/methods.txt}
+\input{content/methods.txt}
+
+
+
+
+\cmb{content/Gen1measure.txt}\input{content/Gen1measure.txt}
+
+% Table created by stargazer v.5.1 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Fri, May 29, 2015 - 1:02:27 PM
+
+\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+Observations & 2 & 11,172.000 & 0.000 & 11,172 & 11,172 \\ 
+Parameters & 2 & 208.000 & 0.000 & 208 & 208 \\ 
+ChiSqM\_Value & 1 & 61,590.900 &  & 61,590.900 & 61,590.900 \\ 
+ChiSqM\_DF & 1 & 5,252.000 &  & 5,252 & 5,252 \\ 
+ChiSqM\_PValue & 1 & 0.000 &  & 0 & 0 \\ 
+ChiSqBaseline\_Value & 1 & 775,331.800 &  & 775,331.800 & 775,331.800 \\ 
+ChiSqBaseline\_DF & 1 & 5,356.000 &  & 5,356 & 5,356 \\ 
+ChiSqBaseline\_PValue & 1 & 0.000 &  & 0 & 0 \\ 
+LL & 1 & $-$569,246.100 &  & $-$569,246.100 & $-$569,246.100 \\ 
+LLCorrectionFactor & 1 & 1.088 &  & 1.088 & 1.088 \\ 
+CFI & 1 & 0.927 &  & 0.927 & 0.927 \\ 
+TLI & 1 & 0.925 &  & 0.925 & 0.925 \\ 
+AIC & 1 & 1,138,908.000 &  & 1,138,908.000 & 1,138,908.000 \\ 
+BIC & 1 & 1,140,431.000 &  & 1,140,431.000 & 1,140,431.000 \\ 
+aBIC & 1 & 1,139,770.000 &  & 1,139,770.000 & 1,139,770.000 \\ 
+RMSEA\_Estimate & 1 & 0.031 &  & 0.031 & 0.031 \\ 
+RMSEA\_90CI\_LB & 1 & 0.031 &  & 0.031 & 0.031 \\ 
+RMSEA\_90CI\_UB & 1 & 0.031 &  & 0.031 & 0.031 \\ 
+RMSEA\_pLT05 & 1 & 1.000 &  & 1 & 1 \\ 
+WRMR & 1 & 3.483 &  & 3.483 & 3.483 \\ 
+AICC & 1 & 1,138,916.000 &  & 1,138,916.000 & 1,138,916.000 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+
+
+\cmb{content/Gen2measure.txt}\input{content/Gen2measure.txt}
+
+\section{Results}
+\subsection{Traditional Approach}\subsubsection{Mean Mother Intelligence $\rightarrow$ Mean Child AFI}
+
+\begingroup 
+\small 
+\begin{tabular}{@{\extracolsep{1pt}}lccc} 
+\\[-1.8ex]\hline \\[-1.8ex] 
+\\[-1.8ex] & \multicolumn{3}{c}{Mean AFI} \\ 
+ & Mixed & Daughers & Sons \\ 
+\hline \\[-1.8ex] 
+ Mom Intel & 0.272$^{***}$ & 0.287$^{***}$ & 0.290$^{***}$ \\ 
+  & (0.179, 0.366) & (0.177, 0.396) & (0.182, 0.399) \\ 
+  Constant & 0.070 & 0.079 & 0.072 \\ 
+  & ($-$0.016, 0.155) & ($-$0.021, 0.179) & ($-$0.024, 0.167) \\ 
+ \textit{N} & 336 & 261 & 278 \\ 
+R$^{2}$ & 0.089 & 0.093 & 0.091 \\ 
+Adjusted R$^{2}$ & 0.086 & 0.089 & 0.087 \\ 
+Residual Std. Error & 0.701 (df = 334) & 0.707 (df = 259) & 0.694 (df = 276) \\ 
+F Statistic & 32.632$^{***}$ (df = 1; 334) & 26.495$^{***}$ (df = 1; 259) & 27.561$^{***}$ (df = 1; 276) \\ 
+\hline \\[-1.8ex] 
+\multicolumn{4}{l}{$^{*}$p $<$ .05; $^{**}$p $<$ .01; $^{***}$p $<$ .001} \\ 
+\end{tabular} 
+\endgroup 
+
+
+\subsubsection{Mean Child Intelligence $\rightarrow$ Mean Child AFI}
+
+
+\begingroup 
+\small 
+\begin{tabular}{@{\extracolsep{1pt}}lccc} 
+\\[-1.8ex]\hline \\[-1.8ex] 
+\\[-1.8ex] & \multicolumn{3}{c}{Mean AFI} \\ 
+ & Mixed & Daughers & Sons \\ 
+\hline \\[-1.8ex] 
+ Child Intel & 0.075$^{*}$ (0.033) & 0.086$^{*}$ (0.038) & 0.063 (0.035) \\ 
+  Constant & $-$0.025 (0.040) & $-$0.025 (0.046) & $-$0.043 (0.044) \\ 
+ \textit{N} & 343 & 268 & 283 \\ 
+Adjusted R$^{2}$ & 0.013 & 0.015 & 0.008 \\ 
+F Statistic & 5.380$^{*}$ (df = 1; 341) & 5.179$^{*}$ (df = 1; 266) & 3.165 (df = 1; 281) \\ 
+\hline \\[-1.8ex] 
+\multicolumn{4}{l}{$^{*}$p<0.5} \\ 
+\end{tabular} 
+\endgroup 
+
+\subsubsection{Mean Joint Intelligence $\rightarrow$ Mean Child AFI}
+
+\begingroup 
+\small 
+\begin{tabular}{@{\extracolsep{1pt}}lccc} 
+\\[-1.8ex]\hline \\[-1.8ex] 
+\\[-1.8ex] & \multicolumn{3}{c}{Mean AFI} \\ 
+ & Mixed & Daughers & Sons \\ 
+\hline \\[-1.8ex] 
+ Mom Intel & 0.276$^{*}$ (0.053) & 0.290$^{*}$ (0.061) & 0.292$^{*}$ (0.062) \\ 
+  Child Intel & $-$0.004 (0.035) & $-$0.00003 (0.040) & $-$0.002 (0.038) \\ 
+  Constant & 0.068 (0.045) & 0.077 (0.052) & 0.066 (0.050) \\ 
+ \textit{N} & 331 & 257 & 274 \\ 
+Adjusted R$^{2}$ & 0.085 & 0.088 & 0.085 \\ 
+F Statistic & 16.330$^{*}$ (df = 2; 328) & 13.376$^{*}$ (df = 2; 254) & 13.695$^{*}$ (df = 2; 271) \\ 
+\hline \\[-1.8ex] 
+\multicolumn{4}{l}{$^{*}$p<0.5} \\ 
+\end{tabular} 
+\endgroup 
+
+
+\subsection{Discordant Approach}\subsubsection{Dif Mom Intelligence $\rightarrow$ Dif Child AFI}
+
+\begingroup 
+\small 
+\begin{tabular}{@{\extracolsep{1pt}}lccc} 
+\\[-1.8ex]\hline \\[-1.8ex] 
+\\[-1.8ex] & \multicolumn{3}{c}{Child AFI Differences} \\ 
+ & Mixed & Daughers & Sons \\ 
+\hline \\[-1.8ex] 
+ Child AFI & 0.304$^{*}$ (0.060) & 0.328$^{*}$ (0.070) & 0.357$^{*}$ (0.065) \\ 
+  Mom Intel & $-$0.039 (0.054) & $-$0.043 (0.065) & $-$0.146$^{*}$ (0.063) \\ 
+  Dif Mom Intel & 0.092 (0.054) & 0.084 (0.066) & 0.065 (0.059) \\ 
+  Constant & 1.041$^{*}$ (0.048) & 1.064$^{*}$ (0.058) & 0.997$^{*}$ (0.053) \\ 
+ \textit{N} & 325 & 251 & 269 \\ 
+Adjusted R$^{2}$ & 0.074 & 0.079 & 0.098 \\ 
+F Statistic & 9.680$^{*}$ (df = 3; 321) & 8.136$^{*}$ (df = 3; 247) & 10.690$^{*}$ (df = 3; 265) \\ 
+\hline \\[-1.8ex] 
+\multicolumn{4}{l}{$^{*}$p<0.5} \\ 
+\end{tabular} 
+\endgroup 
+
+
+\subsubsection{Dif Child Intelligence $\rightarrow$ Dif Child AFI}
+
+\begingroup 
+\small 
+\begin{tabular}{@{\extracolsep{1pt}}lccc} 
+\\[-1.8ex]\hline \\[-1.8ex] 
+\\[-1.8ex] & \multicolumn{3}{c}{Child AFI Differences} \\ 
+ & Mixed & Daughers & Sons \\ 
+\hline \\[-1.8ex] 
+ Child AFI & 0.360$^{*}$ (0.059) & 0.397$^{*}$ (0.068) & 0.379$^{*}$ (0.066) \\ 
+  Child Intel & $-$0.068 (0.040) & $-$0.077 (0.046) & $-$0.107$^{*}$ (0.044) \\ 
+  Dif Child Intel & 0.045 (0.024) & 0.055$^{*}$ (0.027) & 0.024 (0.026) \\ 
+  Constant & 1.070$^{*}$ (0.045) & 1.098$^{*}$ (0.053) & 1.076$^{*}$ (0.050) \\ 
+ \textit{N} & 290 & 224 & 238 \\ 
+Adjusted R$^{2}$ & 0.111 & 0.134 & 0.121 \\ 
+F Statistic & 13.077$^{*}$ (df = 3; 286) & 12.515$^{*}$ (df = 3; 220) & 11.894$^{*}$ (df = 3; 234) \\ 
+\hline \\[-1.8ex] 
+\multicolumn{4}{l}{$^{*}$p<0.5} \\ 
+\end{tabular} 
+\endgroup 
+
+
+
+\subsubsection{Joint Dif Joint Intelligence $\rightarrow$ Dif Children AFI}
+
+\begingroup 
+\small 
+\begin{tabular}{@{\extracolsep{1pt}}lccc} 
+\\[-1.8ex]\hline \\[-1.8ex] 
+\\[-1.8ex] & \multicolumn{3}{c}{Child AFI Differences} \\ 
+ & Mixed & Daughers & Sons \\ 
+\hline \\[-1.8ex] 
+ Child AFI & 0.350$^{*}$ (0.064) & 0.388$^{*}$ (0.074) & 0.415$^{*}$ (0.070) \\ 
+  Child Intel & $-$0.079 (0.046) & $-$0.082 (0.053) & $-$0.081 (0.050) \\ 
+  Mom Intel & 0.032 (0.068) & 0.029 (0.081) & $-$0.094 (0.077) \\ 
+  Dif Child Intel & 0.036 (0.025) & 0.048 (0.029) & 0.016 (0.026) \\ 
+  Dif Mom Intel & 0.075 (0.064) & 0.031 (0.078) & 0.066 (0.069) \\ 
+  Constant & 1.082$^{*}$ (0.055) & 1.118$^{*}$ (0.065) & 1.044$^{*}$ (0.061) \\ 
+ \textit{N} & 274 & 210 & 226 \\ 
+Adjusted R$^{2}$ & 0.103 & 0.119 & 0.127 \\ 
+F Statistic & 7.292$^{*}$ (df = 5; 268) & 6.637$^{*}$ (df = 5; 204) & 7.566$^{*}$ (df = 5; 220) \\ 
+\hline \\[-1.8ex] 
+\multicolumn{4}{l}{$^{*}$p<0.5} \\ 
+\end{tabular} 
+\endgroup 
+
+\section{Discussion}
+
+\bibliography{AFI}
+\appendix
+\section{Tables}
+\end{document}
+
+%
+% Please see the package documentation for more information
+% on the APA6 document class:
+%
+% http://www.ctan.org/pkg/apa6
+%

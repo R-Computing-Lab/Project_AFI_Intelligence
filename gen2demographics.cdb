@@ -1,0 +1,99 @@
+C00001.00    [CPUBID]                                       Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             ID CODE OF CHILD
+ 
+PUBLIC IDENTIFICATION CODE OF CHILD
+ 
+UNIVERSE: All children, regardless of age.
+The following child cases have been deleted from the Child db as of the current 
+survey round:
+1226902 - Determined to be a nonbio child; Mother Supplement reports in 2006 & 
+2008; child not assessed.
+864903 - Spurious duplicate child case; no assessment data.
+265404 - Determined to be a nonbio child; 2000-2006 assessment history deleted 
+from record.
+591304 - Determined to be a nonbio child; never assessed.
+ 
+   11512           1 TO 9999999: See Min & Max values below for range as of this
+                          release
+  -------
+   11512
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   11512      MISSING(-7)       0
+ 
+Min:            201        Max:        1267501        Mean:           601097.39
+ 
+Lead In: None.
+Default Next Question: C00002.00
+--------------------------------------------------------------------------------
+C00002.00    [MPUBID]                                       Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             ID CODE OF MOTHER OF CHILD
+ 
+PUBLIC IDENTIFICATION CODE OF MOTHER OF CHILD
+ 
+UNIVERSE: All children, regardless of age.
+SEE YOUTH REFERENCE NUMBER R(    1.)
+ 
+   11512           1 TO 12686: NLSY79 Public ID
+  -------
+   11512
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   11512      MISSING(-7)       0
+ 
+Min:              2        Max:          12675        Mean:             6010.95
+ 
+Lead In: C00001.00[Default]
+Default Next Question: C00003.00
+--------------------------------------------------------------------------------
+C00053.00    [CRACE]                                        Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             RACE OF CHILD (MOTHER'S RACIAL/ETHNIC COHORT FROM SCREENER)
+ 
+RACE OF CHILD (MOTHER'S RACIAL/ETHNIC COHORT FROM SCREENER)
+Child race/ethnicity is based on the report of the mother. See NLSY79 main Youth
+Reference Number R( 2147.)
+ 
+    2215       1 HISPANIC
+    3191       2 BLACK
+    6106       3 NON-BLACK, NON-HISPANIC
+  -------
+   11512
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   11512      MISSING(-7)       0
+ 
+Lead In: C00052.00[Default]
+Default Next Question: C00054.00
+--------------------------------------------------------------------------------
+C00054.00    [CSEX]                                         Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             SEX OF CHILD
+ 
+SEX OF CHILD
+ 
+    5876       1 MALE
+    5635       2 FEMALE
+  -------
+   11511
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       1
+TOTAL =========>   11512      MISSING(-7)       0
+ 
+Lead In: C00053.00[Default]
+Default Next Question: C00055.00

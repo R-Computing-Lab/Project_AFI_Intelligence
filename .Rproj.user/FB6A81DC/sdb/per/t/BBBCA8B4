@@ -1,0 +1,16 @@
+{
+    "contents" : "\\begin{tabular}{lllcc}\n\\hline\n& & & \\multicolumn{2}{c}{AFI} \\\\ \n &  &  & Mean & \\multicolumn{1}{c}{Sd} \\\\ \n\\hline\n &  &   & $16.2$ & $\\phantom{0}2.1$ \\\\\n &  & \\nopagebreak MALE  & $15.9$ & $\\phantom{0}2.2$ \\\\\n &  & \\nopagebreak FEMALE  & $16.5$ & $\\phantom{0}2.0$ \\\\\n &  & \\nopagebreak HISPANIC  & $16.2$ & $\\phantom{0}2.1$ \\\\\n &  & \\nopagebreak BLACK  & $15.7$ & $\\phantom{0}2.0$ \\\\\n &  & \\nopagebreak NON-BLACK, NON-HISPANIC  & $16.6$ & $\\phantom{0}2.1$ \\\\\n\\nopagebreak MALE & RACE & \\nopagebreak HISPANIC  & $15.9$ & $\\phantom{0}2.2$ \\\\\n &  & \\nopagebreak BLACK  & $15.0$ & $\\phantom{0}2.0$ \\\\\n &  & \\nopagebreak NON-BLACK, NON-HISPANIC  & $16.5$ & $\\phantom{0}2.1$ \\\\\n\\nopagebreak FEMALE &  & \\nopagebreak HISPANIC  & $16.6$ & $\\phantom{0}2.1$ \\\\\n &  & \\nopagebreak BLACK  & $16.3$ & $\\phantom{0}1.9$ \\\\\n &  & \\nopagebreak NON-BLACK, NON-HISPANIC  & $16.6$ & $\\phantom{0}2.0$ \\\\\n\\hline \n\\end{tabular}\n",
+    "created" : 1433859041011.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2266894406",
+    "id" : "BBBCA8B4",
+    "lastKnownWriteTime" : 1434641890,
+    "path" : "E:/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_summary_stats_AFIRACEGENDER.tex",
+    "project_path" : "table_summary_stats_AFIRACEGENDER.tex",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "tex"
+}

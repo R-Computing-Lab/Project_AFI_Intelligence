@@ -1,0 +1,9 @@
+
+\begin{comment}\begin{longtable}{@{\extracolsep{5pt}}ccc} 
+\caption{Gen1 Measurement Model Fit by Estimator.}\label{table_gen1measurement}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & WLSMV & MLR \\ 
+\hline \\[-1.8ex] 
+\partialinput{13}{34}{table_gen1measurement.tex}
+\end{longtable}\pagebreak\end{comment}
