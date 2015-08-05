@@ -1,0 +1,21 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: afidraftRnw.aux
+The style file: apacite.bst
+Database file #1: AFI.bib
+Repeated entry---line 542 of file AFI.bib
+ : @book{nlsy79datauser
+ :                     ,
+I'm skipping whatever remains of this entry
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No institution in asvabtech4
+Warning--No address in asvabtech4
+Warning--No address in kass1982
+Warning--No journal in Kearney2014
+ptr=1, stack=
+
+---the literal stack isn't empty for entry Kearney2014
+while executing---line 5079 of file apacite.bst
+Warning--No address in mayberry1992computing
+Warning--No address in mcgrevy1974relationships
+Warning--No address in palmer1988armed
+Warning--No address in UnitedStatesCoastGuard2004
+(There were 2 error messages)

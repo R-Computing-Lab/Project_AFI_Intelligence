@@ -4,20 +4,22 @@ Higher levels of intelligence are positively associated with delaying first inte
 
 Practically, all of the AFI-intelligence literature has used between family analyses. In all such analyses, gene and environmental influences, such as education and maternal intelligence are hopelessly confounded (See \citealp{harden2014genetic}). By ignoring such confounds, results are uninterpretable and risk misattributions of causality \citep{Rowe1997,Rutter2007}. Indeed, both intelligence and AFI are highly heritable and have sizeable shared environmental variances \citep{harden2011don,harden2014genetic,plomin2004intelligence}. Thus, we need to critically evaluate whether intelligence is a cause of AFI or merely a theoretically attractive confound.
 
-\section{Literature}
-\subsection{Cause or Confound?}
-There are numerous theories on the motivations behind adolescents initiation of first intercourse (See \citealp{Rodgers1996} for a review). **MORE ON MOTIVES OF AFI. USE SOCIAL INFLUENCES/CONSEQUEWNCES AS TRANSITION TO INTELLIGENCE AS A CAUSAL MECHANISN**
-\subsubsection{Cause}
+\section{Cause or Confound?}
+There are numerous theories on the motivations behind adolescents initiation of first intercourse (See \citealp{Rodgers1996} for a review). 
+
+**MORE ON MOTIVES OF AFI. USE SOCIAL INFLUENCES/CONSEQUEWNCES AS TRANSITION TO INTELLIGENCE AS A CAUSAL MECHANISN**
+\subsection{Intelligence as the Cause}
 We've previously mentioned that the short-term risks of early AFI are overwhelming negative, whereas the rewards for delay are equally positive. These consequences extend into adulthood -- early AFI is associated with adult delinquency \citep{harden2008rethinking}, anti-social behaviour, and substance abuse \citep{boislard2011individual}, while those who delayed had higher household incomes in adulthood\citep{ Harden2012}. It is intuitively appealing to believe that intelligent individuals are more likely to observe this high risk, low reward tradeoff, and act upon such observations by delaying intercourse. Accordingly, intelligent individuals perceive the consequences of early AFI to have career--shattering outcomes \citep{halpern2000smart,harden2011don}.
 
-Indeed, the literature is consistent with this theory. Those with higher educational goals delay their first intercourse \citep{boislard2011individual,schvaneveldt2001academic}, while those who had previously reported higher goals, but engaged in early sexual intercourse reduced their goals \citep{schvaneveldt2001academic}. Beyond academic goals, those with a greater affinity for risk and those who perceive benefits from teen-pregnancy are more likely to engage in risky sexual activities \citep{raffaelli2003sexual}. A greater understanding of the risks associated with sexual intercourse, such as HIV transmission, is associated with delayed AFI \citep{mathews2009predictors}.
+Indeed, the literature is consistent with this theory. Those with higher educational goals delay their first intercourse \citep{boislard2011individual,schvaneveldt2001academic}, while those who had previously reported higher goals, but engaged in early sexual intercourse reduced their goals \citep{schvaneveldt2001academic}. Beyond academic goals, those with a greater affinity for risk and those who perceive benefits from teen-pregnancy are more likely to engage in risky sexual activities \citep{raffaelli2003sexual}. A greater understanding of the risks associated with sexual intercourse, such as HIV transmission, is also associated with delayed AFI \citep{mathews2009predictors}.
 
 Smarter adolescents are more likely to report delayed intercourse \citep{Woodward2001,Paul2000,halpern2000smart,mott1983early}. Beyond intercourse, smarter individuals appear to postpone all sexual/romantic activity \cite{halpern2000smart}. Such blanket delays may be a proactive attempt to avoid first intercourse precursors.
 
-\subsubsection{Confound}\\
-However, there is a methodological artefact underlying all of the results discussed in the previous section. 
+\subsection{Intelligence as a Confound}\\
+However, there is an equally valid family of explanations in which intelligence is not the driver of the AFI-intelligence relationship. It could be that family-level influences such as SES, maternal intelligence drive the relationship. Indeed many such findings that link intelligence with various outcomes are the product of misattributing between family confounds to individual level predictors. The relationship between birth order and intelligence is a classic example of this misattribution. INSERT THREE SENTENCE SUMMARY(See \citealp{Rodgers2000}). 
 
-is litany of alternative explanations to the AFI-intelligence relationship -- all of which fall under the umbrella of between-family confounds.
+Indeed, 
+
 
 substantive confounds\\
 

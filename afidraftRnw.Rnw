@@ -101,9 +101,7 @@ file_drive= "C:"
 #Libraries
 
 library(devtools);dev_mode(on=T)
-#install_github("LiveOak/NlsyLinks")
-#install_github("ggplot2")#dev_mode(on=F) 
-#install_github("harrelfe/Hmisc")
+library(WrightMap)
 library(knitr)
 library(ggplot2)
 library(effects)
@@ -113,7 +111,9 @@ library(plyr)
 library(tables)
 library(Hmisc)
 library(MplusAutomation)
-library(WrightMap)
+#install_github("LiveOak/NlsyLinks")
+#install_github("ggplot2")#dev_mode(on=F) 
+#install_github("harrelfe/Hmisc")
 #Functions
 ####### FUNCTIONS #######
 source("https://raw.githubusercontent.com/smasongarrison/Functions/master/Mason_Functions.R")
@@ -125,10 +125,10 @@ options(width=60)
 opts_chunk$set(fig.path='figure/beamer-',fig.align='center',fig.show='hold',size='footnotesize')
 
 #Data_9
-LinkedMDAN_discord_AFI_z_9 <- read.csv(paste(file_drive,"/Dropbox/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_910811.csv",sep=""))
+LinkedMDAN_discord_AFI_z_9 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_910811.csv",sep=""))
 LinkedMDAN_discord_AFI_z_9$Gendermean<-as.factor(LinkedMDAN_discord_AFI_z_9$Gendermean)
-LinkedMDAN_discord_AFI_g_9 <- read.csv(paste(file_drive,"/Dropbox/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_girls_910811.csv",sep=""))
-LinkedMDAN_discord_AFI_b_9 <- read.csv(paste(file_drive,"/Dropbox/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_boys_910811.csv",sep=""))
+LinkedMDAN_discord_AFI_g_9 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_girls_910811.csv",sep=""))
+LinkedMDAN_discord_AFI_b_9 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_boys_910811.csv",sep=""))
 
 #Models_9
 data=LinkedMDAN_discord_AFI_z_9
@@ -161,10 +161,10 @@ model.diffkids.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = da
 model.diffmoms.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
 #Data_10
-LinkedMDAN_discord_AFI_z_10 <- read.csv(paste(file_drive,"/Dropbox/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_1011912.csv",sep=""))
+LinkedMDAN_discord_AFI_z_10 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_1011912.csv",sep=""))
 LinkedMDAN_discord_AFI_z_10$Gendermean<-as.factor(LinkedMDAN_discord_AFI_z_10$Gendermean)
-LinkedMDAN_discord_AFI_g_10 <- read.csv(paste(file_drive,"/Dropbox/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_girls_1011912.csv",sep=""))
-LinkedMDAN_discord_AFI_b_10 <- read.csv(paste(file_drive,"/Dropbox/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_boys_1011912.csv",sep=""))
+LinkedMDAN_discord_AFI_g_10 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_girls_1011912.csv",sep=""))
+LinkedMDAN_discord_AFI_b_10 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_boys_1011912.csv",sep=""))
 
 #Models_10
 data=LinkedMDAN_discord_AFI_z_10
@@ -197,10 +197,10 @@ model.diffkids.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = d
 model.diffmoms.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
 #Data_11
-LinkedMDAN_discord_AFI_z_11 <- read.csv(paste(file_drive,"/Dropbox/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_11121013.csv",sep=""))
+LinkedMDAN_discord_AFI_z_11 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_11121013.csv",sep=""))
 LinkedMDAN_discord_AFI_z_11$Gendermean<-as.factor(LinkedMDAN_discord_AFI_z_11$Gendermean)
-LinkedMDAN_discord_AFI_g_11 <- read.csv(paste(file_drive,"/Dropbox/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_girls_11121013.csv",sep=""))
-LinkedMDAN_discord_AFI_b_11 <- read.csv(paste(file_drive,"/Dropbox/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_boys_11121013.csv",sep=""))
+LinkedMDAN_discord_AFI_g_11 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_girls_11121013.csv",sep=""))
+LinkedMDAN_discord_AFI_b_11 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_boys_11121013.csv",sep=""))
 data=LinkedMDAN_discord_AFI_z_11
 
 #Models_11
@@ -233,7 +233,7 @@ model.diffkids.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = d
 model.diffmoms.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
 #summarystats
-birthweight <- read.table(paste(file_drive,"/Dropbox/SAS/MyFolders/79/SASGen1Kids/birthweight.dat",sep=""), quote="\"", stringsAsFactors=FALSE)
+birthweight <- read.table(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/79/SASGen1Kids/birthweight.dat",sep=""), quote="\"", stringsAsFactors=FALSE)
 names(birthweight)<-c('CASEID','MCASEID','RACE','SEX_G2','YRB','WGT')
 birthweight$WGT[birthweight$WGT < 0] <- NA
 birthweight$firstborn<-0
@@ -275,17 +275,17 @@ qnames = function(data) {
 
 categories_g2 <- qnames(vallabels(new_data))
 
-momintel <- read.csv(paste(file_drive,"/Dropbox/SAS/MyFolders/79/SASGen1/momintel.csv",sep=""), header=FALSE)
+momintel <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/79/SASGen1/momintel.csv",sep=""), header=FALSE)
 names(momintel)<-c("MCASEID","Intel_G1","Intel_G1_SE","HID")
 #momintel$zIntel_G1<-scale(momintel$Intel_G1, center = TRUE, scale = TRUE)*15+100
 
-kidintel<-read.csv(paste(file_drive,"/Dropbox/SAS/MyFolders/79/kidsintl/cleaned_CFA_G_around_910811.csv",sep=""), header=FALSE)
+kidintel<-read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/79/kidsintl/cleaned_CFA_G_around_910811.csv",sep=""), header=FALSE)
 names(kidintel)<-c("CASEID","ASEID","Intel_G2","Intel_G2_SE","MCASEID")
 #kidintel$zIntel_G2<-scale(kidintel$Intel_G2, center = TRUE, scale = TRUE)*15+100
-Gen1AFI_exportconcor <- read.csv(paste(file_drive,"/Dropbox/SAS/MyFolders/NLSYSAS/CTT/Gen1AFI_exportconcor_910811.csv",sep=""))
+Gen1AFI_exportconcor <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/Gen1AFI_exportconcor_910811.csv",sep=""))
 Gen1AFI_exportconcor <- Gen1AFI_exportconcor[2:length(Gen1AFI_exportconcor[,1]),]
 names(Gen1AFI_exportconcor)<-c("MCASEID","AFI_G1")
-Gen2AFI_exportconcor <- read.csv(paste(file_drive,"/Dropbox/SAS/MyFolders/NLSYSAS/Gen2AFI_exportconcor_910811.csv",sep=""))
+Gen2AFI_exportconcor <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/Gen2AFI_exportconcor_910811.csv",sep=""))
 names(Gen2AFI_exportconcor)<-c("CASEID","AFI_G2")
 
 Gen1AFIConcor <- merge(momintel,Gen1AFI_exportconcor,by="MCASEID",all=T)

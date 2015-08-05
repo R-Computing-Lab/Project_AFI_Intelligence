@@ -1,4 +1,53 @@
-\documentclass[a4paper,man,natbib,12pt,apacite]{apa6}
+\documentclass[a4paper,man,natbib,12pt,apacite]{apa6}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
 \usepackage{changepage}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
@@ -80,6 +129,7 @@
 %\addtolength{\marginparsep}{2mm}
 \abstract{Your abstract here.\\\today\ at \currenttime}
 \authornote{This material is based upon work that has been supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. (DGE-1445197) and various means of institutional support from the following universities: University of British Columbia \& Vanderbilt University.}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 \maketitle
 %\linenumbers%\section{Introduction}\section{ }\vspace{-.8cm}
@@ -97,8 +147,200 @@
 \section{Methods}\cmb{content/methods.txt}\input{content/methods.txt}
 
 
+\cmb{content/Gen1measure.txt}\input{content/Gen1measure.txt}
+
+\cmb{content/Gen2measure.txt}\input{content/Gen2measure.txt}
+
+\section{Results}\cmb{content/results.txt}\input{content/results.txt}
+%\subsection{Between vs. Within Illustration}
+%\cmb{content/results_meancomp.txt}\input{content/results_meancomp.txt}
+
+\subsection{Between Family Anlayses}\cmb{content/results_between.txt}\input{content/results_between.txt}
+
+\subsection{Within Family Analyses}
+\cmb{content/results_between.txt}\input{content/results_within.txt}
+
+
+\section{Discussion}
 
 
 
+\newpage\section{Tables}\label{appen_tables}
+
+\subsection{Descriptive Statistics}
+\begin{longtable}{@{\extracolsep{5pt}}lcccccc}
+\caption{Gen1 Summary Statistics by Sibling Status.}\label{table_summary_stats_sibinsampleg1}
+\partialinput{2}{10}{table_summary_stats_sibinsampleg1.tex}
+\end{longtable}\linebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lcccccc}
+\caption{Gen2 Summary Statistics by Sibling Status.}\label{table_summary_stats_sibinsampleg2}
+\partialinput{2}{10}{table_summary_stats_sibinsampleg2.tex}
+\end{longtable}\pagebreak
+\npnoround
+\begin{longtable}{@{\extracolsep{5pt}}lllcc}
+\caption{Gen2 AFI by Gender, Race, and GenderxRace.}\label{table_afi_race_gender}
+\partialinput{2}{18}{table_summary_stats_AFIRACEGENDER.tex}
+\end{longtable}\pagebreak
 
 
+\begin{longtable}{@{\extracolsep{5pt}}cc} 
+\caption{Gen2 Measurement Model.}\label{table_gen2measurement_9}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & g at Age 9.5 \\ 
+\hline \\[-1.8ex] 
+\partialinput{12}{34}{table_g2_9measurement.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}cccccc} 
+\caption{Gen2 Factor Loadings.}\label{table_g2loading_9}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & Test & Estimate & S.E. & Est./.S.E. & P.Value \\  
+\hline \\[-1.8ex] 
+\partialinput{12}{17}{table_g2loading_9.tex}
+\end{longtable}\pagebreak
+
+\subsection{Between Family Analyses}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Gen1 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_9}
+\partialinput{5}{24}{table_Mean_Mom_Intelligence_Mean_Child_AFI_9.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Gen2 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_9}
+\partialinput{5}{24}{table_Mean_Child_Intelligence_Mean_Child_AFI_9.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Joint Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_9}
+\partialinput{5}{26}{table_Mean_Joint_Intelligence_Mean_Child_AFI_9.tex}
+\end{longtable}\pagebreak
+\subsection{Within Family Analyses}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Gen1 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_9}
+\partialinput{5}{28}{table_Dif_Mom_Intelligence_Dif_Child_AFI_9.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Gen2 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_9}
+\partialinput{5}{28}{table_Dif_Child_Intelligence_Dif_Child_AFI_9.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Joint Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_9}
+\partialinput{5}{32}{table_Dif_Joint_Intelligence_Dif_Child_AFI_9.tex}
+\end{longtable}
+
+\begin{comment}\section{Figures}\label{figures}
+
+\begin{figure}
+  \centering
+    \includegraphics[height=.85\textwidth,angle=270]{G1wrightMap}
+     \caption{Wright Map of Gen1 Cognitive Ability}\label{G1wrightMap}
+\end{figure}\end{comment}
+\appendix\label{appen}
+\section{Age 10.5 Replication}\label{appen10}
+\begin{longtable}{@{\extracolsep{5pt}}cc} 
+\caption{Gen2 Measurement Model.}\label{table_gen2measurement_10}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & g at Age 10.5 \\ 
+\hline \\[-1.8ex] 
+\partialinput{12}{34}{table_g2_10measurement.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}cccccc} 
+\caption{Gen2 Factor Loadings.}\label{table_g2loading_10}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & Test & Estimate & S.E. & Est./.S.E. & P Value \\  
+\hline \\[-1.8ex] 
+\partialinput{12}{17}{table_g2loading_10.tex}
+\end{longtable}\pagebreak
+\subsection{Between Family Analyses}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Gen1 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_10}
+\partialinput{5}{24}{table_Mean_Mom_Intelligence_Mean_Child_AFI_10.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Gen2 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_10}
+\partialinput{5}{24}{table_Mean_Child_Intelligence_Mean_Child_AFI_10.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Joint Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_10}
+\partialinput{5}{26}{table_Mean_Joint_Intelligence_Mean_Child_AFI_10.tex}
+\end{longtable}\pagebreak
+\subsection{Within Family Analyses}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Gen1 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_10}
+\partialinput{5}{28}{table_Dif_Mom_Intelligence_Dif_Child_AFI_10.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Gen2 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_10}
+\partialinput{5}{28}{table_Dif_Child_Intelligence_Dif_Child_AFI_10.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Joint Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_10}
+\partialinput{5}{32}{table_Dif_Joint_Intelligence_Dif_Child_AFI_10.tex}
+\end{longtable}
+
+
+\section{Age 11.5 Replication}\label{appen11}
+
+\begin{longtable}{@{\extracolsep{5pt}}cc} 
+\caption{Gen2 Measurement Model.}\label{table_gen2measurement_11}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & g at Age 11.5 \\ 
+\hline \\[-1.8ex] 
+\partialinput{12}{34}{table_g2_11measurement.tex}
+\end{longtable}\pagebreak
+\begin{longtable}{@{\extracolsep{5pt}}cccccc} 
+\caption{Gen2 Factor Loadings.}\label{table_g2loading_11}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & Test & Estimate & S.E. & Est./.S.E. & P.Value \\  
+\hline \\[-1.8ex] 
+\partialinput{12}{17}{table_g2loading_11.tex}
+\end{longtable}\pagebreak
+\subsection{Between Family Analyses}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Gen1 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_11}
+\partialinput{5}{24}{table_Mean_Mom_Intelligence_Mean_Child_AFI_11.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Gen2 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_11}
+\partialinput{5}{24}{table_Mean_Child_Intelligence_Mean_Child_AFI_11.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Joint Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_11}
+\partialinput{5}{26}{table_Mean_Joint_Intelligence_Mean_Child_AFI_11.tex}
+\end{longtable}\pagebreak
+\subsection{Within Family Analyses}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Gen1 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_11}
+\partialinput{5}{28}{table_Dif_Mom_Intelligence_Dif_Child_AFI_11.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Gen2 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_11}
+\partialinput{5}{28}{table_Dif_Child_Intelligence_Dif_Child_AFI_11.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Joint Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_11}
+\partialinput{5}{32}{table_Dif_Joint_Intelligence_Dif_Child_AFI_11.tex}
+\end{longtable}
+%\section{Notes}
+%\input{content/NOTES.txt}
+
+\bibliography{AFI}
+\end{document}

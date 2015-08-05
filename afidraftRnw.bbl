@@ -118,7 +118,7 @@ Bozon, M.%
 }{%
 {Center for Human Resources Research}%
 }{%
-{\protect \APACyear {2006}}%
+{\protect \APACyear {2009}}%
 }]{%
 nlsy79datauser}
 \APACinsertmetastar {%
@@ -128,10 +128,18 @@ nlsy79datauser}%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2006}.
+\APACrefYear{2009}.
 \newblock
-\APACrefbtitle {{NLSY79 Child and Young Adult Data Users Guide}} {{NLSY79 Child
-  and Young Adult Data Users Guide}}.
+\APACrefbtitle {{NLSY79 CHILD & YOUNG ADULT DATA USERS GUIDE: A Guide to the
+  1986 - 2006 Child Data 1994 - 2006 Young Adult Data}} {{NLSY79 CHILD & YOUNG
+  ADULT DATA USERS GUIDE: A Guide to the 1986 - 2006 Child Data 1994 - 2006
+  Young Adult Data}}.
+\newblock
+\APACaddressPublisher{}{Bureau of Labor Statistics, U.S. Department of Labor}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.nlsinfo.org/pub/usersvc/Child-Young-Adult/2006ChildYA-DataUsersGuide.pdf}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1073,6 +1081,42 @@ Rodgers, J\BPBI L.%
   to Conduct Genetically-Informed and Family-Oriented Research.}} {{The
   NLSYKinship Links: Using the NLSY79 and NLSY-Children Data to Conduct
   Genetically-Informed and Family-Oriented Research.}}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodgers%
+, Cleveland%
+, van~den Oord%
+\BCBL {}\ \BBA {} Rowe%
+}{%
+Rodgers%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2000}}%
+}]{%
+Rodgers2000}
+\APACinsertmetastar {%
+Rodgers2000}%
+\begin{APACrefauthors}%
+Rodgers, J\BPBI L.%
+, Cleveland, H\BPBI H.%
+, van~den Oord, E.%
+\BCBL {}\ \BBA {} Rowe, D\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Resolving the debate over birth order, family size, and
+  intelligence.}} {{Resolving the debate over birth order, family size, and
+  intelligence.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Psychologist}{55}{6}{599--612}.
+\newblock
+\begin{APACrefURL}
+  \url{http://doi.apa.org/getdoi.cfm?doi=10.1037/0003-066X.55.6.599}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1037//0003-066X.55.6.599} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
