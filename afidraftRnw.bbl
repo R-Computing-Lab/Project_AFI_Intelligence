@@ -89,36 +89,11 @@ Boislard, P\BPBI M\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Bozon%
-}{%
-Bozon%
-}{%
-{\protect \APACyear {2003}}%
-}]{%
-bozon2003}
-\APACinsertmetastar {%
-bozon2003}%
-\begin{APACrefauthors}%
-Bozon, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2003}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{At what age do women and men have their first sexual
-  intercourse? World comparisons and recent trends.}} {{At what age do women
-  and men have their first sexual intercourse? World comparisons and recent
-  trends.}}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Population and Societies}{}{391}{}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 {Center for Human Resources Research}%
 }{%
 {Center for Human Resources Research}%
 }{%
-{\protect \APACyear {2009}}%
+{\protect \APACyear {2006}}%
 }]{%
 nlsy79datauser}
 \APACinsertmetastar {%
@@ -128,18 +103,10 @@ nlsy79datauser}%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2009}.
+\APACrefYear{2006}.
 \newblock
-\APACrefbtitle {{NLSY79 CHILD & YOUNG ADULT DATA USERS GUIDE: A Guide to the
-  1986 - 2006 Child Data 1994 - 2006 Young Adult Data}} {{NLSY79 CHILD & YOUNG
-  ADULT DATA USERS GUIDE: A Guide to the 1986 - 2006 Child Data 1994 - 2006
-  Young Adult Data}}.
-\newblock
-\APACaddressPublisher{}{Bureau of Labor Statistics, U.S. Department of Labor}.
-\newblock
-\begin{APACrefURL}
-  \url{https://www.nlsinfo.org/pub/usersvc/Child-Young-Adult/2006ChildYA-DataUsersGuide.pdf}
-  \end{APACrefURL}
+\APACrefbtitle {{NLSY79 Child and Young Adult Data Users Guide}} {{NLSY79 Child
+  and Young Adult Data Users Guide}}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1382,38 +1349,6 @@ Wechsler, D.%
   revised}}.
 \newblock
 \APACaddressPublisher{}{Psychological Corporation}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Wellings%
-\ \protect \BOthers {.}}{%
-Wellings%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2001}}%
-}]{%
-Wellings2001}
-\APACinsertmetastar {%
-Wellings2001}%
-\begin{APACrefauthors}%
-Wellings, K.%
-, Nanchahal, K.%
-, Macdowall, W.%
-, McManus, S.%
-, Erens, B.%
-, Mercer, C\BPBI H.%
-\BDBL {}Field, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2001}{{\APACmonth{12}}}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Sexual behaviour in Britain: early heterosexual
-  experience.}} {{Sexual behaviour in Britain: early heterosexual
-  experience.}}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Lancet}{358}{9296}{1843--50}.
-\newblock
-\begin{APACrefDOI} \doi{10.1016/S0140-6736(01)06885-4} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

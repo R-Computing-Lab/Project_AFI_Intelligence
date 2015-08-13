@@ -524,14 +524,27 @@ capture.output(latex(
 \caption{Dif Joint Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_9}
 \partialinput{5}{32}{table_Dif_Joint_Intelligence_Dif_Child_AFI_9.tex}
 \end{longtable}
-
-\begin{comment}\section{Figures}\label{figures}
-
+\pagebreak
+\section{Figures}\label{figures}
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=\textwidth]{plots/betweenewithin.png}
+	\caption{Comparable Between Family and Within Family Effects}
+    \label{betweenewithin}
+\end{figure}
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=\textwidth]{plots/betweennewithin.png}
+	\caption{Unequal Between Family and Within Family Effects}
+    \label{betweennewithin}
+\end{figure}
+\begin{comment}
 \begin{figure}
   \centering
     \includegraphics[height=.85\textwidth,angle=270]{G1wrightMap}
      \caption{Wright Map of Gen1 Cognitive Ability}\label{G1wrightMap}
 \end{figure}\end{comment}
+
 \appendix\label{appen}
 \section{Age 10.5 Replication}\label{appen10}
 \begin{longtable}{@{\extracolsep{5pt}}cc} 

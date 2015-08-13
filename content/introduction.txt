@@ -16,9 +16,14 @@ Indeed, the literature is consistent with this theory. Those with higher educati
 Smarter adolescents are more likely to report delayed intercourse \citep{Woodward2001,Paul2000,halpern2000smart,mott1983early}. Beyond intercourse, smarter individuals appear to postpone all sexual/romantic activity \cite{halpern2000smart}. Such blanket delays may be a proactive attempt to avoid first intercourse precursors.
 
 \subsection{Intelligence as a Confound}\\
-However, there is an equally valid family of explanations in which intelligence is not the driver of the AFI-intelligence relationship. It could be that family-level influences such as SES, maternal intelligence drive the relationship. Indeed many such findings that link intelligence with various outcomes are the product of misattributing between family confounds to individual level predictors. The relationship between birth order and intelligence is a classic example of this misattribution. INSERT THREE SENTENCE SUMMARY(See \citealp{Rodgers2000}). 
+However, there is an equally valid family of explanations in which intelligence is not the driver of the AFI-intelligence relationship. It could be that family-level influences such as SES, maternal intelligence drive the relationship. Indeed many such findings that link intelligence with various outcomes are the product of misattributing between family confounds to individual level predictors. The relationship between birth order and intelligence is a classic example of this misattribution. INSERT THREE SENTENCE SUMMARY(See \citealp{Rodgers2000}). The link between intelligence and AFI could also be the product of individual level confounds that are highly correlated with both intelligence and AFI. 
+\begin{comment}Moreover, many of the consequences associated with early AFI, such as teenage pregnancy, are in part a function of family level factors \citep{fergusson1999maternal}.
+\end{comment}
 
-Indeed, 
+\begin{itemize}
+\item family level factors (ses, mother education, use mother intelligence as a transition)
+\item alternative individual level factors (genes, education, persality)
+\end{itemize}
 
 
 substantive confounds\\

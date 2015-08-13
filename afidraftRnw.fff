@@ -1,9 +1,20 @@
 \begin{figure*}[hbt]
 \ifnextchar[{\eatarg}{}
-[H]
-  \caption{Wright Map of Gen1 Cognitive Ability}\label{G1wrightMap}
-  \centering
-    \includegraphics[width=0.8\textwidth]{G1wrightMap}
+[p]
+    \centering
+    \includegraphics[width=\textwidth]{plots/betweenewithin.png}
+\caption{Comparable Between Family and Within Family Effects}
+    \label{betweenewithin}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[p]
+    \centering
+    \includegraphics[width=\textwidth]{plots/betweennewithin.png}
+\caption{Unequal Between Family and Within Family Effects}
+    \label{betweennewithin}
 \end{figure*}
 \efloatseparator
  
