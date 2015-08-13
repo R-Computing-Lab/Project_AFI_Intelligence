@@ -1,20 +1,12 @@
 \begin{figure*}[hbt]
 \ifnextchar[{\eatarg}{}
-[p]
+[!ht]
     \centering
-    \includegraphics[width=\textwidth]{plots/betweenewithin.png}
-\caption{Comparable Between Family and Within Family Effects}
-    \label{betweenewithin}
-\end{figure*}
-\efloatseparator
- 
-\begin{figure*}[hbt]
-\ifnextchar[{\eatarg}{}
-[p]
-    \centering
-    \includegraphics[width=\textwidth]{plots/betweennewithin.png}
-\caption{Unequal Between Family and Within Family Effects}
-    \label{betweennewithin}
+    \includegraphics[width=.9\textwidth]{plots/betweenewithin.png}
+\caption{Comparable Between Family and Within Family Effects}\label{betweenewithin}
+
+    \includegraphics[width=.9\textwidth]{plots/betweennewithin.png}
+\caption{Unequal Between Family and Within Family Effects}\label{betweennewithin}
 \end{figure*}
 \efloatseparator
  

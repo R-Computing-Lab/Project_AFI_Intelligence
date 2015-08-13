@@ -22,6 +22,11 @@ However, there is an equally valid family of explanations in which intelligence 
 
 \begin{itemize}
 \item family level factors (ses, mother education, use mother intelligence as a transition)
+\begin{itemize} \item Disadvantaged Backgrounds are assoicated with both lower levels of intelligence and eariler AFI. 
+\begin{itemize} \item poverty\item larger family \item lower SES \item being on welfare \end{itemize}
+\item Parental Characteristics \begin{itemize} \item parental education 
+\item parental intelligence
+\end{itemize}\end{itemize}
 \item alternative individual level factors (genes, education, persality)
 \end{itemize}
 
