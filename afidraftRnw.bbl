@@ -118,7 +118,7 @@ Bozon, M.%
 }{%
 {Center for Human Resources Research}%
 }{%
-{\protect \APACyear {2006}}%
+{\protect \APACyear {2009}}%
 }]{%
 nlsy79datauser}
 \APACinsertmetastar {%
@@ -128,10 +128,18 @@ nlsy79datauser}%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2006}.
+\APACrefYear{2009}.
 \newblock
-\APACrefbtitle {{NLSY79 Child and Young Adult Data Users Guide}} {{NLSY79 Child
-  and Young Adult Data Users Guide}}.
+\APACrefbtitle {{NLSY79 CHILD & YOUNG ADULT DATA USERS GUIDE: A Guide to the
+  1986 - 2006 Child Data 1994 - 2006 Young Adult Data}} {{NLSY79 CHILD & YOUNG
+  ADULT DATA USERS GUIDE: A Guide to the 1986 - 2006 Child Data 1994 - 2006
+  Young Adult Data}}.
+\newblock
+\APACaddressPublisher{}{Bureau of Labor Statistics, U.S. Department of Labor}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.nlsinfo.org/pub/usersvc/Child-Young-Adult/2006ChildYA-DataUsersGuide.pdf}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

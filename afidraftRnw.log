@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  13 AUG 2015 16:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  16 AUG 2015 21:20
 entering extended mode
 **afidraftRnw.tex
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\afidraftRnw.tex
@@ -2806,9 +2806,21 @@ Overfull \hbox (38.12146pt too wide) in alignment at lines 20--369
 
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\afidraftRnw.bbl [45]
 ! Misplaced alignment tab character &.
+<argument> {NLSY79 CHILD &
+                           YOUNG ADULT DATA USERS GUIDE: A Guide to the 1986...
+l.136   Young Adult Data}}
+                          .
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
 <argument> {ASVAB Technical Bulletin No. 4 P&
                                              P-ASVAB Forms 23-27}
-l.155 ...al Bulletin No. 4 P&P-ASVAB Forms 23-27}}
+l.163 ...al Bulletin No. 4 P&P-ASVAB Forms 23-27}}
                                                   \ \APACbVolEdTR{}{\BTR{}\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2862,9 +2874,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on afidraftRnw.pdf (50 pages, 415827 bytes).
+Output written on afidraftRnw.pdf (50 pages, 417624 bytes).
 PDF statistics:
- 727 PDF objects out of 1000 (max. 8388607)
+ 729 PDF objects out of 1000 (max. 8388607)
  179 named destinations out of 1000 (max. 500000)
  319 words of extra memory for PDF output out of 10000 (max. 10000000)
 
