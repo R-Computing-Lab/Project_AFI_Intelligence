@@ -5,7 +5,7 @@ Higher levels of intelligence are positively associated with delaying first inte
 Practically, all of the AFI-intelligence literature has used between family analyses. In all such analyses, gene and environmental influences, such as education and maternal intelligence are hopelessly confounded (See \citealp{harden2014genetic}). By ignoring such confounds, results are uninterpretable and risk misattributions of causality \citep{Rowe1997,Rutter2007}. Indeed, both intelligence and AFI are highly heritable and have sizeable shared environmental variances \citep{harden2011don,harden2014genetic,plomin2004intelligence}. Thus, we need to critically evaluate whether intelligence is a cause of AFI or merely a theoretically attractive confound.
 
 \section{Cause or Confound?}
-There are numerous theories on the motivations behind adolescents initiation of first intercourse (See \citealp{Rodgers1996} for a review). 
+There are numerous theories on the motivations behind adolescents initiation of first intercourse (See \citealp{Rodgers1996} or \citep{Buhi2007} for a review), and even more specific antecedents \citep{Buhi2007,kirby2002antecedents,miller1997timing,santelli1992risk}. 
 
 **MORE ON MOTIVES OF AFI. USE SOCIAL INFLUENCES/CONSEQUEWNCES AS TRANSITION TO INTELLIGENCE AS A CAUSAL MECHANISN**
 \subsection{Intelligence as the Cause}
@@ -16,7 +16,11 @@ Indeed, the literature is consistent with this theory. Those with higher educati
 Smarter adolescents are more likely to report delayed intercourse \citep{Woodward2001,Paul2000,halpern2000smart,mott1983early}. Beyond intercourse, smarter individuals appear to postpone all sexual/romantic activity \cite{halpern2000smart}. Such blanket delays may be a proactive attempt to avoid first intercourse precursors.
 
 \subsection{Intelligence as a Confound}\\
-However, there is an equally valid family of explanations in which intelligence is not the driver of the AFI-intelligence relationship. It could be that family-level influences such as SES, maternal intelligence drive the relationship. Indeed many such findings that link intelligence with various outcomes are the product of misattributing between family confounds to individual level predictors. The relationship between birth order and intelligence is a classic example of this misattribution. INSERT THREE SENTENCE SUMMARY(See \citealp{Rodgers2000}). The link between intelligence and AFI could also be the product of individual level confounds that are highly correlated with both intelligence and AFI. 
+However, there is an equally valid family of explanations in which intelligence is not the driver of the AFI-intelligence relationship. Instead, various confounds including family level selection effects, or third variables at the individual level could be causing the relationship. Indeed many such findings that link intelligence with various outcomes are the product of misattributing between family confounds to individual level predictors. The relationship between birth order and intelligence is a classic example of this misattribution. INSERT THREE SENTENCE SUMMARY(See \citealp{Rodgers2000}). 
+
+At the family level, influences such as SES and maternal intelligence could drive the relationship, as these variables are associated with the onset of first intercourse \citep{Lammers2000} and correlated with intelligence \citep{devlin1997heritability,murray1998income,Neisser1996,Strenze2007}. 
+
+The link between intelligence and AFI could also be the product of individual level confounds that are highly correlated with both intelligence and AFI.
 \begin{comment}Moreover, many of the consequences associated with early AFI, such as teenage pregnancy, are in part a function of family level factors \citep{fergusson1999maternal}.
 \end{comment}
 
@@ -24,10 +28,11 @@ However, there is an equally valid family of explanations in which intelligence 
 \item family level factors (ses, mother education, use mother intelligence as a transition)
 \begin{itemize} \item Disadvantaged Backgrounds are assoicated with both lower levels of intelligence and eariler AFI. 
 \begin{itemize} \item poverty\item larger family \item lower SES \item being on welfare \end{itemize}
-\item Parental Characteristics \begin{itemize} \item parental education 
+\item Parental Characteristics \begin{itemize} \item parental education  \item marital status
 \item parental intelligence
 \end{itemize}\end{itemize}
 \item alternative individual level factors (genes, education, persality)
+school performance, deliquency
 \end{itemize}
 
 

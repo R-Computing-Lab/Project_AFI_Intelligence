@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  16 AUG 2015 21:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  19 AUG 2015 14:21
 entering extended mode
 **afidraftRnw.tex
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\afidraftRnw.tex
@@ -649,6 +649,10 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\varioref.sty"
+Package: varioref 2011/10/02 v1.4z package for extended references (FMi)
+\c@vrcnt=\count179
+)
 
 ! LaTeX Error: Option clash for package inputenc.
 
@@ -675,7 +679,7 @@ File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
 \pin@file=\read2
-\c@pinlineno=\count179
+\c@pinlineno=\count180
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\todonotes\todonotes.st
 y
@@ -753,10 +757,10 @@ sfiltered.code.tex
 \pgf@yc=\dimen171
 \w@pgf@writea=\write5
 \r@pgf@reada=\read3
-\c@pgf@counta=\count180
-\c@pgf@countb=\count181
-\c@pgf@countc=\count182
-\c@pgf@countd=\count183
+\c@pgf@counta=\count181
+\c@pgf@countb=\count182
+\c@pgf@countc=\count183
+\c@pgf@countd=\count184
 \t@pgf@toka=\toks40
 \t@pgf@tokb=\toks41
 \t@pgf@tokc=\toks42
@@ -778,8 +782,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfs
 yssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count184
-\pgfsyssoftpath@bigbuffer@items=\count185
+\pgfsyssoftpath@smallbuffer@items=\count185
+\pgfsyssoftpath@bigbuffer@items=\count186
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfs
 ysprotocol.code.tex
@@ -798,7 +802,7 @@ e.tex
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathpars
 er.code.tex
 \pgfmath@dimen=\dimen172
-\pgfmath@count=\count186
+\pgfmath@count=\count187
 \pgfmath@box=\box40
 \pgfmath@toks=\toks43
 \pgfmath@stack@operand=\toks44
@@ -824,7 +828,7 @@ tions.misc.code.tex)
 tions.integerarithmetics.code.tex)))
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloa
 t.code.tex
-\c@pgfmathroundto@lastzeros=\count187
+\c@pgfmathroundto@lastzeros=\count188
 ))
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
 repoints.code.tex
@@ -862,7 +866,7 @@ File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 \pgfpic=\box41
 \pgf@hbox=\box42
 \pgf@layerbox@main=\box43
-\pgf@picture@serial@count=\count188
+\pgf@picture@serial@count=\count189
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
 regraphicstate.code.tex
@@ -897,7 +901,7 @@ File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
 reshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen196
-\pgf@sys@shading@range@num=\count189
+\pgf@sys@shading@range@num=\count190
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
 reimage.code.tex
@@ -966,7 +970,7 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflib
 raryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count190
+\pgf@plot@mark@count=\count191
 \pgfplotmarksize=\dimen201
 )
 \tikz@lastx=\dimen202
@@ -979,19 +983,19 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
 \tikz@figbox@bg=\box47
 \tikz@tempbox=\box48
 \tikz@tempbox@bg=\box49
-\tikztreelevel=\count191
-\tikznumberofchildren=\count192
-\tikznumberofcurrentchild=\count193
-\tikz@fig@count=\count194
+\tikztreelevel=\count192
+\tikznumberofchildren=\count193
+\tikznumberofcurrentchild=\count194
+\tikz@fig@count=\count195
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodul
 ematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count195
-\pgfmatrixcurrentcolumn=\count196
-\pgf@matrix@numberofcolumns=\count197
+\pgfmatrixcurrentrow=\count196
+\pgfmatrixcurrentcolumn=\count197
+\pgf@matrix@numberofcolumns=\count198
 )
-\tikz@expandcount=\count198
+\tikz@expandcount=\count199
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\ti
 kz\libraries\tikzlibrarytopaths.code.tex
@@ -1003,20 +1007,20 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count199
-\calc@Bcount=\count200
+\calc@Acount=\count200
+\calc@Bcount=\count201
 \calc@Adimen=\dimen208
 \calc@Bdimen=\dimen209
 \calc@Askip=\skip82
 \calc@Bskip=\skip83
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count201
+\calc@Ccount=\count202
 \calc@Cskip=\skip84
 )
-\c@@todonotes@numberoftodonotes=\count202
+\c@@todonotes@numberoftodonotes=\count203
 )
-\c@myhypothesis=\count203
+\c@myhypothesis=\count204
 \wideitemsep=\skip85
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\upquote\upquote.sty
@@ -1132,7 +1136,7 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 154.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\c@maskedRefs=\count204
+\c@maskedRefs=\count205
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\apacite\english.apc
 File: english.apc 2013/07/21 v6.03 apacite language file
@@ -1175,16 +1179,16 @@ LaTeX Info: Redefining \BHBI on input line 130.
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count205
+\scratchcounter=\count206
 \scratchdimen=\dimen210
 \scratchbox=\box50
-\nofMPsegments=\count206
-\nofMParguments=\count207
+\nofMPsegments=\count207
+\nofMParguments=\count208
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count208
+\MPscratchCnt=\count209
 \MPscratchDim=\dimen211
-\MPnumerator=\count209
-\makeMPintoPDFobject=\count210
+\MPnumerator=\count210
+\makeMPintoPDFobject=\count211
 \everyMPtoPDFconversion=\toks49
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\apa6\config\APAamerica
@@ -1212,7 +1216,8 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count211
+\c@section@level=\count212
+LaTeX Info: Redefining \Ref on input line 513.
 )
 LaTeX Info: Redefining \ref on input line 154.
 LaTeX Info: Redefining \pageref on input line 154.
@@ -1221,7 +1226,8 @@ LaTeX Info: Redefining \nameref on input line 154.
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\afidraftRnw.out)
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\afidraftRnw.out)
 \@outlinefile=\write6
-\c@lstlisting=\count212
+LaTeX Info: Redefining \Ref on input line 154.
+\c@lstlisting=\count213
 
 ABD: EveryShipout initializing macros
 Class apa6 Info: Keywords not defined on input line 157.
@@ -1295,7 +1301,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 24.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 28.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [5] [6])
@@ -1388,84 +1394,7 @@ deleted material, e.g., by typing `I$}'.
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 14.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [9]
-! Undefined control sequence.
-l.18 ...nder prior to tetrad creation. Table \vref
-                                                  {table_afi_race_gender} re...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.18 ...ior to tetrad creation. Table \vref{table_
-                                                  afi_race_gender} reports d...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.18 ...eation. Table \vref{table_afi_race_gender}
-                                                   reports descriptive stati...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.19 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (256.35634pt too wide) in paragraph at lines 18--19
-\T1/lmr/m/n/12 table$[]\OML/lmm/m/it/12 fi[]ace[]enderreportsdescriptivestatist
-icsforallvariablesusedthroughoutthispaperbywhethertherespondenthasasiblinginthe
-sample:$  
- []
-
-[10]
-! Undefined control sequence.
-l.24 ...d the lowest AFI (15 yrs). See Table \vref
-                                                  {table_afi_race_gender} fo...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.24 ...owest AFI (15 yrs). See Table \vref{table_
-                                                  afi_race_gender} for a com...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.24 ...s). See Table \vref{table_afi_race_gender}
-                                                   for a complete breakdown.
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-)
-! Missing $ inserted.
-<inserted text> 
-                $
-l.163 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
+) [9] [10])
 ! Argument of \reserved@a has an extra }.
 <inserted text> 
                 \par 
@@ -1489,7 +1418,11 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/Gen1measure.txt [11])
+(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/Gen1measure.txt [11]
+
+LaTeX Warning: Marginpar on page 12 moved.
+
+[12])
 ! Argument of \reserved@a has an extra }.
 <inserted text> 
                 \par 
@@ -1513,62 +1446,11 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[12] (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/Gen2measure.txt
+(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/Gen2measure.txt
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-[13]
-! Undefined control sequence.
-l.14 ...$; TLI $= .946$, SRMR = .027). Table \vref
-                                                  {table_gen2measurement_9} ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.14 ...$= .946$, SRMR = .027). Table \vref{table_
-                                                  gen2measurement_9} contain...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.14 ...027). Table \vref{table_gen2measurement_9}
-                                                   contains a full summary o...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Undefined control sequence.
-l.14 ... the model fit statistics, and Table \vref
-                                                  {table_g2loading_9} contai...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-)
-! Missing $ inserted.
-<inserted text> 
-                $
-l.168 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (194.11707pt too wide) in paragraph at lines 14--168
-\T1/lmr/m/n/12 table$[]\OML/lmm/m/it/12 en\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 mea
-surement[]containsafullsummaryofthemodelfitstatistics; andTable[]containsthefac
-torloadings:$  
- []
-
+[13]) [14]
 ! Argument of \reserved@a has an extra }.
 <inserted text> 
                 \par 
@@ -1592,7 +1474,7 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/results.txt) [14]
+(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/results.txt)
 ! Argument of \reserved@a has an extra }.
 <inserted text> 
                 \par 
@@ -1629,55 +1511,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
 
-! Undefined control sequence.
-l.3 ...ges of gender standardized AFI. Table \vref
-                                                  {table_Mean_Mom_Intelligen...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.3 ...gender standardized AFI. Table \vref{table_
-                                                  Mean_Mom_Intelligence_Mean...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.3 ...ble_Mean_Mom_Intelligence_Mean_Child_AFI_9}
-                                                   displays the results by G...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.3 ...f the childrens' mothers predicted $\approx
-                                                   .013$ increase in average...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (306.52255pt too wide) in paragraph at lines 3--4
-\T1/lmr/m/n/12 table$[]\OML/lmm/m/it/12 ean[]om[]ntelligence[]ean[]hild[]FI[]di
-splaystheresultsbyGen\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 linking:TheMixedmodelrep
-ortstheaveragesofthefirstbornsofeachsister\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 n$\
-T1/lmr/m/n/12 = 
- []
-
-
-Overfull \hbox (238.68152pt too wide) in paragraph at lines 3--4
-\T1/lmr/m/n/12 282$\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 :Allthreemodelsrevealsimil
-arresults:Aoneunitincreaseintheaveragestandardizedintelligenceofthechildrens[]m
-otherspredicted$$\OMS/lmsy/m/n/12 $ 
- []
-
+[15]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 5.
@@ -1689,55 +1523,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 5.
-
-! Undefined control sequence.
-l.5 ...ges of gender standardized AFI. Table \vref
-                                                  {table_Mean_Child_Intellig...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.5 ...gender standardized AFI. Table \vref{table_
-                                                  Mean_Child_Intelligence_Me...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.5 ...e_Mean_Child_Intelligence_Mean_Child_AFI_9}
-                                                   displays the results by G...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.5 ...lligence of the children predicted $\approx
-                                                   .075$ increase in average...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (308.846pt too wide) in paragraph at lines 5--6
-\T1/lmr/m/n/12 table$[]\OML/lmm/m/it/12 ean[]hild[]ntelligence[]ean[]hild[]FI[]
-displaystheresultsbyGen\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 linking:TheMixedmodelr
-eportstheaveragesofthefirstbornsofeachsister\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 n
-$\T1/lmr/m/n/12 = 
- []
-
-
-Overfull \hbox (186.8063pt too wide) in paragraph at lines 5--6
-\T1/lmr/m/n/12 283$\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 :Allthreemodelsrevealsimil
-arresults:Aoneunitincreaseintheaveragestandardizedintelligenceofthechildrenpred
-icted$$\OMS/lmsy/m/n/12 $ 
- []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1751,64 +1536,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 7.
 
-! Undefined control sequence.
-l.7 ...andardized AFI are displayed in Table \vref
-                                                  {table_Mean_Joint_Intellig...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.7 ...zed AFI are displayed in Table \vref{table_
-                                                  Mean_Joint_Intelligence_Me...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.7 ...e_Mean_Joint_Intelligence_Mean_Child_AFI_9}
-                                                  . Again, three models base...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.7 ...f the childrens' mothers predicted $\approx
-                                                   .014$ increase in average...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 )
-Overfull \hbox (56.24828pt too wide) in paragraph at lines 7--174
-\T1/lmr/m/n/12 table$[]\OML/lmm/m/it/12 ean[]oint[]ntelligence[]ean[]hild[]FI[]
-:Again; threemodelsbasedonGen\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 linkingaredispla
-yed \OT1/lmr/m/n/12 :$ 
- []
-
-
-Overfull \hbox (93.58911pt too wide) in paragraph at lines 7--174
-\T1/lmr/m/n/12 278$\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 :Allthreemodelsrevealsimil
-arresults:Gen\OT1/lmr/m/n/12 1\OML/lmm/m/it/12 intelligencewassignificantlyasso
-ciatedwithGen\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 AFI\OT1/lmr/m/n/12 (\OML/lmm/m/i
-t/12 p$\T1/lmr/m/n/12 < 
- []
-
-
-Overfull \hbox (403.10683pt too wide) in paragraph at lines 7--174
-\T1/lmr/m/n/12 .01$\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 ; whileGen\OT1/lmr/m/n/12 
-2\OML/lmm/m/it/12 intelligencewasnotsignificantlyassociatedwithGen\OT1/lmr/m/n/
-12 2\OML/lmm/m/it/12 AFI:Aoneunitincreaseintheaveragestandardizedintelligenceof
-thechildrens[]motherspredicted$$\OMS/lmsy/m/n/12 $ 
- []
-
-[15]
 ! Argument of \reserved@a has an extra }.
 <inserted text> 
                 \par 
@@ -1833,6 +1561,7 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/results_within.txt
+[16]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4.
@@ -1845,64 +1574,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4.
 
-! Undefined control sequence.
-l.4 ...ges of gender standardized AFI. Table \vref
-                                                  {table_Dif_Mom_Intelligenc...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.4 ...gender standardized AFI. Table \vref{table_
-                                                  Dif_Mom_Intelligence_Dif_C...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.4 ...table_Dif_Mom_Intelligence_Dif_Child_AFI_9}
-                                                   displays the results by G...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.4 ... gender standardized AFI predicted $\approx
-                                                   0.34$ increase in average...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (368.36688pt too wide) in paragraph at lines 4--5
-\T1/lmr/m/n/12 table$[]\OML/lmm/m/it/12 if[]om[]ntelligence[]if[]hild[]FI[]disp
-laystheresultsbyGen\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 linking:TheMixedmodelrepor
-tstheaveragesanddifferencesofthefirstbornsofeachsister\OT1/lmr/m/n/12 (\OML/lmm
-/m/it/12 n$\T1/lmr/m/n/12 = 
- []
-
-
-Overfull \hbox (382.15799pt too wide) in paragraph at lines 4--5
-\T1/lmr/m/n/12 278$\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 :Allthreemodelsrevealsimil
-arresults:Gen\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 averagesofgenderstandardizedAFIw
-eresignificantpredictorsofGen\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 differencesingen
-derstandardizedAFI\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 p$\T1/lmr/m/n/12 < 
- []
-
-
-Overfull \hbox (79.6133pt too wide) in paragraph at lines 4--5
-\T1/lmr/m/n/12 .01$\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 ; acrossallthreelinkingmet
-hods:AoneunitincreaseintheaveragegenderstandardizedAFIpredicted$$\OMS/lmsy/m/n/
-12 $ 
- []
-
-[16]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 10.
@@ -1915,63 +1586,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 10.
 
-! Undefined control sequence.
-l.10 ...s and gender standardized AFI. Table \vref
-                                                  {table_Dif_Kid_Intelligenc...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.10 ...ender standardized AFI. Table \vref{table_
-                                                  Dif_Kid_Intelligence_Dif_C...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.10 ...able_Dif_Kid_Intelligence_Dif_Child_AFI_9}
-                                                   displays the results by G...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.10 ...gender standardized AFI predicted $\approx
-                                                   0.38$ increase in average...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+LaTeX Warning: Hyper reference `table_Dif_Kid_Intelligence_Dif_Child_AFI_9' on 
+page 17 undefined on input line 10.
 
 
-Overfull \hbox (361.27264pt too wide) in paragraph at lines 10--11
-\T1/lmr/m/n/12 table$[]\OML/lmm/m/it/12 if[]id[]ntelligence[]if[]hild[]FI[]disp
-laystheresultsbyGen\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 linking:TheMixedmodelrepor
-tstheaveragesanddifferencesofthefirstbornsofeachsister\OT1/lmr/m/n/12 (\OML/lmm
-/m/it/12 n$\T1/lmr/m/n/12 = 
- []
+LaTeX Warning: Reference `table_Dif_Kid_Intelligence_Dif_Child_AFI_9' on page 1
+7 undefined on input line 10.
 
-
-Overfull \hbox (382.15799pt too wide) in paragraph at lines 10--11
-\T1/lmr/m/n/12 238$\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 :Allthreemodelsrevealsimil
-arresults:Gen\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 averagesofgenderstandardizedAFIw
-eresignificantpredictorsofGen\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 differencesingen
-derstandardizedAFI\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 p$\T1/lmr/m/n/12 < 
- []
-
-
-Overfull \hbox (79.6133pt too wide) in paragraph at lines 10--11
-\T1/lmr/m/n/12 .01$\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 ; acrossallthreelinkingmet
-hods:AoneunitincreaseintheaveragegenderstandardizedAFIpredicted$$\OMS/lmsy/m/n/
-12 $ 
- []
-
+[17]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 15.
@@ -1984,64 +1607,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 15.
 
-! Undefined control sequence.
-l.15 ...es of gender standardized AFI. Table \vref
-                                                  {table_Dif_Joint_Intellige...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.15 ...ender standardized AFI. Table \vref{table_
-                                                  Dif_Joint_Intelligence_Dif...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.15 ...le_Dif_Joint_Intelligence_Dif_Child_AFI_9}
-                                                   displays the results by G...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.15 ...gender standardized AFI predicted $\approx
-                                                   0.38$ increase in average...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (369.73357pt too wide) in paragraph at lines 15--16
-\T1/lmr/m/n/12 table$[]\OML/lmm/m/it/12 if[]oint[]ntelligence[]if[]hild[]FI[]di
-splaystheresultsbyGen\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 linking:TheMixedmodelrep
-ortstheaveragesanddifferencesofthefirstbornsofeachsister\OT1/lmr/m/n/12 (\OML/l
-mm/m/it/12 n$\T1/lmr/m/n/12 = 
- []
-
-
-Overfull \hbox (382.15799pt too wide) in paragraph at lines 15--16
-\T1/lmr/m/n/12 235$\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 :Allthreemodelsrevealsimil
-arresults:Gen\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 averagesofgenderstandardizedAFIw
-eresignificantpredictorsofGen\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 differencesingen
-derstandardizedAFI\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 p$\T1/lmr/m/n/12 < 
- []
-
-
-Overfull \hbox (79.6133pt too wide) in paragraph at lines 15--16
-\T1/lmr/m/n/12 .01$\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 ; acrossallthreelinkingmet
-hods:AoneunitincreaseintheaveragegenderstandardizedAFIpredicted$$\OMS/lmsy/m/n/
-12 $ 
- []
-
-[17]) [18]
+) [18]
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
@@ -2598,7 +2164,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 254.
 See the caption package documentation for explanation.
 
-<plots/betweenewithin.png, id=544, 699.61375pt x 356.83313pt>
+<plots/betweenewithin.png, id=584, 699.61375pt x 356.83313pt>
 File: plots/betweenewithin.png Graphic file (type png)
 
 <use plots/betweenewithin.png>
@@ -2610,7 +2176,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 257.
 See the caption package documentation for explanation.
 
-<plots/betweennewithin.png, id=546, 722.19812pt x 351.81438pt>
+<plots/betweennewithin.png, id=586, 722.19812pt x 351.81438pt>
 File: plots/betweennewithin.png Graphic file (type png)
 
 <use plots/betweennewithin.png>
@@ -2808,7 +2374,7 @@ Overfull \hbox (38.12146pt too wide) in alignment at lines 20--369
 ! Misplaced alignment tab character &.
 <argument> {NLSY79 CHILD &
                            YOUNG ADULT DATA USERS GUIDE: A Guide to the 1986...
-l.136   Young Adult Data}}
+l.165   Young Adult Data}}
                           .
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2820,7 +2386,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced alignment tab character &.
 <argument> {ASVAB Technical Bulletin No. 4 P&
                                              P-ASVAB Forms 23-27}
-l.163 ...al Bulletin No. 4 P&P-ASVAB Forms 23-27}}
+l.192 ...al Bulletin No. 4 P&P-ASVAB Forms 23-27}}
                                                   \ \APACbVolEdTR{}{\BTR{}\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2831,52 +2397,44 @@ might try typing `S' now just to see what is salvageable.
 
 [46
 
-] [47] [48] [49]) AED endfloat: Processing end Figures and Tables [50]
+] [47] [48] [49] [50]) AED endfloat: Processing end Figures and Tables
+[51]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 374.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 374.
-
-(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\afidraftRnw.aux)
+ (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\afidraftRnw.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 374.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 374.
 Package rerunfilecheck Info: File `afidraftRnw.out' has not changed.
 (rerunfilecheck)             Checksum: 38A5309CCA4C1DB8C499E169548B3601;2493.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 374.
- )
-(\end occurred inside a group at level 9)
 
-### simple group (level 9) entered at line 15 ({)
-### simple group (level 8) entered at line 10 ({)
-### simple group (level 7) entered at line 4 ({)
-### simple group (level 6) entered at line 7 ({)
-### simple group (level 5) entered at line 5 ({)
-### simple group (level 4) entered at line 3 ({)
-### simple group (level 3) entered at line 14 ({)
-### simple group (level 2) entered at line 24 ({)
-### simple group (level 1) entered at line 18 ({)
-### bottom level 
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 374.
+ ) 
 Here is how much of TeX's memory you used:
- 24591 strings out of 493921
- 435653 string characters out of 3147269
- 536942 words of memory out of 3000000
- 27158 multiletter control sequences out of 15000+200000
+ 24716 strings out of 493921
+ 437539 string characters out of 3147269
+ 537777 words of memory out of 3000000
+ 27270 multiletter control sequences out of 15000+200000
  46451 words of font info for 43 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 62i,12n,76p,1853b,2431s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{
-C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKT
-eX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/
-dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
-r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on afidraftRnw.pdf (50 pages, 417624 bytes).
+ 62i,12n,76p,1853b,1773s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
+es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
+.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
+m/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
+Output written on afidraftRnw.pdf (51 pages, 418089 bytes).
 PDF statistics:
- 729 PDF objects out of 1000 (max. 8388607)
- 179 named destinations out of 1000 (max. 500000)
+ 776 PDF objects out of 1000 (max. 8388607)
+ 189 named destinations out of 1000 (max. 500000)
  319 words of extra memory for PDF output out of 10000 (max. 10000000)
 

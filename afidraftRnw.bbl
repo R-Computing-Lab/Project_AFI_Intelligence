@@ -114,6 +114,35 @@ Bozon, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Buhi%
+\ \BBA {} Goodson%
+}{%
+Buhi%
+\ \BBA {} Goodson%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+Buhi2007}
+\APACinsertmetastar {%
+Buhi2007}%
+\begin{APACrefauthors}%
+Buhi, E\BPBI R.%
+\BCBT {}\ \BBA {} Goodson, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Predictors of Adolescent Sexual Behavior and Intention:
+  A Theory-Guided Systematic Review}} {{Predictors of Adolescent Sexual
+  Behavior and Intention: A Theory-Guided Systematic Review}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Adolescent Health}{40}{1}{4--21}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jadohealth.2006.09.027} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Center for Human Resources Research}%
 }{%
 {Center for Human Resources Research}%
@@ -194,6 +223,33 @@ Der, G.%
 \APACjournalVolNumPages{Intelligence}{37}{6}{573--580}.
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.intell.2008.12.002} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Devlin%
+, Daniels%
+\BCBL {}\ \BBA {} Roeder%
+}{%
+Devlin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1997}}%
+}]{%
+devlin1997heritability}
+\APACinsertmetastar {%
+devlin1997heritability}%
+\begin{APACrefauthors}%
+Devlin, B.%
+, Daniels, M.%
+\BCBL {}\ \BBA {} Roeder, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The heritability of IQ}} {{The heritability of
+  IQ}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature}{388}{6641}{468--471}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -621,7 +677,31 @@ Kirby%
 Kirby%
 }{%
 {\protect \APACyear {2002}}%
-}]{%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+kirby2002antecedents}
+\APACinsertmetastar {%
+kirby2002antecedents}%
+\begin{APACrefauthors}%
+Kirby, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002{\protect \BCnt {1}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Antecedents of adolescent initiation of sex,
+  contraceptive use, and pregnancy}} {{Antecedents of adolescent initiation of
+  sex, contraceptive use, and pregnancy}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American journal of health behavior}{26}{6}{473--485}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kirby%
+}{%
+Kirby%
+}{%
+{\protect \APACyear {2002}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
 kirby2002effective}
 \APACinsertmetastar {%
 kirby2002effective}%
@@ -630,13 +710,47 @@ Kirby, D.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2002}{}{}.
+\APACrefYearMonthDay{2002{\protect \BCnt {2}}}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Effective approaches to reducing adolescent unprotected
   sex, pregnancy, and childbearing}} {{Effective approaches to reducing
   adolescent unprotected sex, pregnancy, and childbearing}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of sex research}{39}{1}{51--57}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lammers%
+, Ireland%
+, Resnick%
+\BCBL {}\ \BBA {} Blum%
+}{%
+Lammers%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2000}}%
+}]{%
+Lammers2000}
+\APACinsertmetastar {%
+Lammers2000}%
+\begin{APACrefauthors}%
+Lammers, C.%
+, Ireland, M.%
+, Resnick, M.%
+\BCBL {}\ \BBA {} Blum, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Influences on adolescents' decision to postpone onset
+  of sexual intercourse: A survival analysis of virginity among youths aged 13
+  to 18 years}} {{Influences on adolescents' decision to postpone onset of
+  sexual intercourse: A survival analysis of virginity among youths aged 13 to
+  18 years}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Adolescent Health}{26}{1}{42--48}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/S1054-139X(99)00041-5} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -833,6 +947,35 @@ McGrevy, D\BPBI F.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Miller%
+\ \protect \BOthers {.}}{%
+Miller%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1997}}%
+}]{%
+miller1997timing}
+\APACinsertmetastar {%
+miller1997timing}%
+\begin{APACrefauthors}%
+Miller, B\BPBI C.%
+, Norton, M\BPBI C.%
+, Curtis, T.%
+, Hill, E\BPBI J.%
+, Schvaneveldt, P.%
+\BCBL {}\ \BBA {} Young, M\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The timing of sexual intercourse among adolescents
+  family, peer, and other antecedents}} {{The timing of sexual intercourse
+  among adolescents family, peer, and other antecedents}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Youth \& Society}{29}{1}{54--83}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Mott%
 }{%
 Mott%
@@ -886,6 +1029,28 @@ Mott, F\BPBI L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Murray%
+}{%
+Murray%
+}{%
+{\protect \APACyear {1998}}%
+}]{%
+murray1998income}
+\APACinsertmetastar {%
+murray1998income}%
+\begin{APACrefauthors}%
+Murray, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1998}.
+\newblock
+\APACrefbtitle {{Income inequality and IQ.}} {{Income inequality and IQ.}}
+\newblock
+\APACaddressPublisher{}{American Enterprise Inst. for Public Policy Research}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Muth\'{e}n%
 \ \BBA {} Muth\'{e}n%
 }{%
@@ -894,9 +1059,9 @@ Muth\'{e}n%
 }{%
 {\protect \APACyear {2014}}%
 }]{%
-muthen2014mplus}
+mplus}
 \APACinsertmetastar {%
-muthen2014mplus}%
+mplus}%
 \begin{APACrefauthors}%
 Muth\'{e}n, L\BPBI K.%
 \BCBT {}\ \BBA {} Muth\'{e}n, B\BPBI O.%
@@ -906,6 +1071,35 @@ Muth\'{e}n, L\BPBI K.%
 \APACrefYearMonthDay{2014}{}{}.
 \newblock
 \APACrefbtitle {{Mplus}.} {{Mplus}.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Neisser%
+\ \protect \BOthers {.}}{%
+Neisser%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1996}}%
+}]{%
+Neisser1996}
+\APACinsertmetastar {%
+Neisser1996}%
+\begin{APACrefauthors}%
+Neisser, U.%
+, Boodoo, G.%
+, {Bouchard, Thomas J.}, J.%
+, Boykin, A\BPBI W.%
+, Brody, N.%
+, Ceci, S\BPBI J.%
+\BDBL {}Urbina, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+\APACrefbtitle {{Intelligence: Knowns and unknowns.}} {{Intelligence: Knowns
+  and unknowns.}}\ (\BVOL~51)\ (\BNUM~2).
+\newblock
+\begin{APACrefDOI} \doi{10.1037/0003-066X.51.2.77} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1203,6 +1397,33 @@ Rutter, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Santelli%
+\ \BBA {} Beilenson%
+}{%
+Santelli%
+\ \BBA {} Beilenson%
+}{%
+{\protect \APACyear {1992}}%
+}]{%
+santelli1992risk}
+\APACinsertmetastar {%
+santelli1992risk}%
+\begin{APACrefauthors}%
+Santelli, J\BPBI S.%
+\BCBT {}\ \BBA {} Beilenson, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1992}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Risk factors for adolescent sexual behavior, fertility,
+  and sexually transmitted diseases}} {{Risk factors for adolescent sexual
+  behavior, fertility, and sexually transmitted diseases}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of School Health}{62}{7}{271--279}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Savage%
 \ \BBA {} Freeman%
 }{%
@@ -1256,6 +1477,32 @@ Schvaneveldt, P\BPBI L.%
   influences}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Adolescence}{36}{144}{767}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Strenze%
+}{%
+Strenze%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+Strenze2007}
+\APACinsertmetastar {%
+Strenze2007}%
+\begin{APACrefauthors}%
+Strenze, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Intelligence and socioeconomic success: A meta-analytic
+  review of longitudinal research}} {{Intelligence and socioeconomic success: A
+  meta-analytic review of longitudinal research}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Intelligence}{35}{5}{401--426}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.intell.2006.09.004} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

@@ -16,7 +16,7 @@
 \usepackage{verbatim}
 \usepackage[yyyymmdd,hhmmss]{datetime}
 \usepackage{pdflscape}
-
+\usepackage{varioref} %references page location
 
 %%%%%%%%%%%% New Commands %%%%%%%%%%%%
 
