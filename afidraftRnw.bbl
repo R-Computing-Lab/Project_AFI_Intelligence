@@ -1480,6 +1480,36 @@ Schvaneveldt, P\BPBI L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Spriggs%
+\ \BBA {} Halpern%
+}{%
+Spriggs%
+\ \BBA {} Halpern%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+Spriggs2008}
+\APACinsertmetastar {%
+Spriggs2008}%
+\begin{APACrefauthors}%
+Spriggs, A\BPBI L.%
+\BCBT {}\ \BBA {} Halpern, C\BPBI T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Timing of sexual debut and initiation of postsecondary
+  education by early adulthood.}} {{Timing of sexual debut and initiation of
+  postsecondary education by early adulthood.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Perspectives on sexual and reproductive
+  health}{40}{3}{152--161}.
+\newblock
+\begin{APACrefDOI} \doi{10.1363/4015208} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Strenze%
 }{%
 Strenze%

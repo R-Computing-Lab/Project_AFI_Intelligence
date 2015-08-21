@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  19 AUG 2015 14:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  19 AUG 2015 17:36
 entering extended mode
 **afidraftRnw.tex
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\afidraftRnw.tex
@@ -2164,7 +2164,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 254.
 See the caption package documentation for explanation.
 
-<plots/betweenewithin.png, id=584, 699.61375pt x 356.83313pt>
+<plots/betweenewithin.png, id=588, 699.61375pt x 356.83313pt>
 File: plots/betweenewithin.png Graphic file (type png)
 
 <use plots/betweenewithin.png>
@@ -2176,7 +2176,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 257.
 See the caption package documentation for explanation.
 
-<plots/betweennewithin.png, id=586, 722.19812pt x 351.81438pt>
+<plots/betweennewithin.png, id=590, 722.19812pt x 351.81438pt>
 File: plots/betweennewithin.png Graphic file (type png)
 
 <use plots/betweennewithin.png>
@@ -2413,10 +2413,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 374.
  ) 
 Here is how much of TeX's memory you used:
- 24716 strings out of 493921
- 437539 string characters out of 3147269
- 537777 words of memory out of 3000000
- 27270 multiletter control sequences out of 15000+200000
+ 24722 strings out of 493921
+ 437646 string characters out of 3147269
+ 537840 words of memory out of 3000000
+ 27275 multiletter control sequences out of 15000+200000
  46451 words of font info for 43 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,12n,76p,1853b,1773s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2432,9 +2432,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX
 blic/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on afidraftRnw.pdf (51 pages, 418089 bytes).
+Output written on afidraftRnw.pdf (51 pages, 418991 bytes).
 PDF statistics:
- 776 PDF objects out of 1000 (max. 8388607)
- 189 named destinations out of 1000 (max. 500000)
+ 780 PDF objects out of 1000 (max. 8388607)
+ 190 named destinations out of 1000 (max. 500000)
  319 words of extra memory for PDF output out of 10000 (max. 10000000)
 
