@@ -1,13 +1,13 @@
 {
-    "path" : "C:/Dropbox/Work/Research/Projects/NLSY/AFI/R/content",
+    "path" : "C:/Dropbox/Work/Research/Projects/NLSY/AFI/R",
     "sortOrder" : [
-        {
-            "ascending" : false,
-            "columnIndex" : 4
-        },
         {
             "ascending" : true,
             "columnIndex" : 2
+        },
+        {
+            "ascending" : false,
+            "columnIndex" : 4
         }
     ]
 }
