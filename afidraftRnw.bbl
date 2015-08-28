@@ -147,7 +147,7 @@ Buhi, E\BPBI R.%
 }{%
 {Center for Human Resources Research}%
 }{%
-{\protect \APACyear {2009}}%
+{\protect \APACyear {2006}}%
 }]{%
 nlsy79datauser}
 \APACinsertmetastar {%
@@ -157,18 +157,10 @@ nlsy79datauser}%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2009}.
+\APACrefYear{2006}.
 \newblock
-\APACrefbtitle {{NLSY79 CHILD & YOUNG ADULT DATA USERS GUIDE: A Guide to the
-  1986 - 2006 Child Data 1994 - 2006 Young Adult Data}} {{NLSY79 CHILD & YOUNG
-  ADULT DATA USERS GUIDE: A Guide to the 1986 - 2006 Child Data 1994 - 2006
-  Young Adult Data}}.
-\newblock
-\APACaddressPublisher{}{Bureau of Labor Statistics, U.S. Department of Labor}.
-\newblock
-\begin{APACrefURL}
-  \url{https://www.nlsinfo.org/pub/usersvc/Child-Young-Adult/2006ChildYA-DataUsersGuide.pdf}
-  \end{APACrefURL}
+\APACrefbtitle {{NLSY79 Child and Young Adult Data Users Guide}} {{NLSY79 Child
+  and Young Adult Data Users Guide}}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -250,6 +242,33 @@ Devlin, B.%
   IQ}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Nature}{388}{6641}{468--471}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+DiBlasio%
+\ \BBA {} Benda%
+}{%
+DiBlasio%
+\ \BBA {} Benda%
+}{%
+{\protect \APACyear {1990}}%
+}]{%
+diblasio1990adolescent}
+\APACinsertmetastar {%
+diblasio1990adolescent}%
+\begin{APACrefauthors}%
+DiBlasio, F\BPBI A.%
+\BCBT {}\ \BBA {} Benda, B\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1990}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Adolescent Sexual Behavior Multivariate Analysis of a
+  Social Learning Model}} {{Adolescent Sexual Behavior Multivariate Analysis of
+  a Social Learning Model}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Adolescent Research}{5}{4}{449--466}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -528,6 +547,55 @@ Herrnstein, R\BPBI J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Hirschi%
+}{%
+Hirschi%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+hirschi2002causes}
+\APACinsertmetastar {%
+hirschi2002causes}%
+\begin{APACrefauthors}%
+Hirschi, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2002}.
+\newblock
+\APACrefbtitle {{Causes of delinquency}} {{Causes of delinquency}}.
+\newblock
+\APACaddressPublisher{}{Transaction publishers}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hogben%
+\ \BBA {} Byrne%
+}{%
+Hogben%
+\ \BBA {} Byrne%
+}{%
+{\protect \APACyear {1998}}%
+}]{%
+hogben1998using}
+\APACinsertmetastar {%
+hogben1998using}%
+\begin{APACrefauthors}%
+Hogben, M.%
+\BCBT {}\ \BBA {} Byrne, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Using social learning theory to explain individual
+  differences in human sexuality}} {{Using social learning theory to explain
+  individual differences in human sexuality}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Sex Research}{35}{1}{58--71}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Kaestle%
 , Halpern%
 , Miller%
@@ -608,7 +676,7 @@ Kearney, M\BPBI S.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2014}{{\APACmonth{01}}}{}.
+\APACrefYearMonthDay{2014}{jan}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Media Influences on Social Outcomes: The Impact of
   MTV's 16 and Pregnant on Teen Childbearing}} {{Media Influences on Social
@@ -947,9 +1015,40 @@ McGrevy, D\BPBI F.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Miller%
+Meschke%
+, Zweig%
+, Barber%
+\BCBL {}\ \BBA {} Eccles%
+}{%
+Meschke%
 \ \protect \BOthers {.}}{%
-Miller%
+{\protect \APACyear {2000}}%
+}]{%
+Meschke2000}
+\APACinsertmetastar {%
+Meschke2000}%
+\begin{APACrefauthors}%
+Meschke, L\BPBI L.%
+, Zweig, J\BPBI M.%
+, Barber, B\BPBI L.%
+\BCBL {}\ \BBA {} Eccles, J\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Demographic, Biological, Psychological, and Social
+  Predictors of the Timing of First Intercourse}} {{Demographic, Biological,
+  Psychological, and Social Predictors of the Timing of First
+  Intercourse}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Research on Adolescence}{10}{3}{315--338}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+B\BPBI C.~Miller%
+\ \protect \BOthers {.}}{%
+B\BPBI C.~Miller%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {1997}}%
 }]{%
@@ -961,7 +1060,7 @@ Miller, B\BPBI C.%
 , Norton, M\BPBI C.%
 , Curtis, T.%
 , Hill, E\BPBI J.%
-, Schvaneveldt, P.%
+, Schvaneveldt, P\BPBI L.%
 \BCBL {}\ \BBA {} Young, M\BPBI H.%
 \end{APACrefauthors}%
 \unskip\
@@ -973,6 +1072,35 @@ Miller, B\BPBI C.%
   among adolescents family, peer, and other antecedents}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Youth \& Society}{29}{1}{54--83}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+W\BPBI B.~Miller%
+\ \protect \BOthers {.}}{%
+W\BPBI B.~Miller%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1999}}%
+}]{%
+miller1999dopamine}
+\APACinsertmetastar {%
+miller1999dopamine}%
+\begin{APACrefauthors}%
+Miller, W\BPBI B.%
+, Pasta, D\BPBI J.%
+, MacMurray, J.%
+, Chiu, C.%
+, Wu, H.%
+\BCBL {}\ \BBA {} Comings, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Dopamine receptor genes are associated with age at
+  first sexual intercourse}} {{Dopamine receptor genes are associated with age
+  at first sexual intercourse}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Biosocial Science}{31}{01}{43--54}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1107,7 +1235,7 @@ Palmer%
 , Hartke%
 , Ree%
 , Welsh%
-\BCBL {}\ \BBA {} {Valentine Jr}%
+\BCBL {}\ \BBA {} {Valentine, Jr.}%
 }{%
 Palmer%
 \ \protect \BOthers {.}}{%
@@ -1121,7 +1249,7 @@ Palmer, P.%
 , Hartke, D\BPBI D.%
 , Ree, M\BPBI J.%
 , Welsh, J\BPBI R.%
-\BCBL {}\ \BBA {} {Valentine Jr}, L\BPBI D.%
+\BCBL {}\ \BBA {} {Valentine, Jr.}, L\BPBI D.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -1156,7 +1284,7 @@ Paul, C.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2000}{{\APACmonth{08}}}{}.
+\APACrefYearMonthDay{2000}{aug}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{The determinants of sexual intercourse before age 16}}
   {{The determinants of sexual intercourse before age 16}}.{\BBCQ}
@@ -1164,6 +1292,31 @@ Paul, C.%
 \APACjournalVolNumPages{Journal of Adolescent Health}{27}{2}{136--147}.
 \newblock
 \begin{APACrefDOI} \doi{10.1016/S1054-139X(99)00095-6} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Petersen%
+}{%
+Petersen%
+}{%
+{\protect \APACyear {1987}}%
+}]{%
+petersen1987nature}
+\APACinsertmetastar {%
+petersen1987nature}%
+\begin{APACrefauthors}%
+Petersen, A\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1987}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The nature of biological-psychosocial interactions: The
+  sample case of early adolescence.}} {{The nature of biological-psychosocial
+  interactions: The sample case of early adolescence.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Biological-psychosocial interactions in early
+  adolescence. Child psychology.}{}{}{35--61}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1339,6 +1492,35 @@ Rodgers, J\BPBI L.%
   NLSY79Respondents: Children of Siblings and Biometrical Models.}}
 \newblock
 Charlottesville, VA.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodgers%
+, Rowe%
+\BCBL {}\ \BBA {} Buster%
+}{%
+Rodgers%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1999}}%
+}]{%
+rodgers1999nature}
+\APACinsertmetastar {%
+rodgers1999nature}%
+\begin{APACrefauthors}%
+Rodgers, J\BPBI L.%
+, Rowe, D\BPBI C.%
+\BCBL {}\ \BBA {} Buster, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Nature, nurture and first sexual intercourse in the
+  USA: fitting behavioural genetic models to NLSY kinship data}} {{Nature,
+  nurture and first sexual intercourse in the USA: fitting behavioural genetic
+  models to NLSY kinship data}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Biosocial Science}{31}{01}{29--41}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1536,6 +1718,30 @@ Strenze, T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Udry%
+}{%
+Udry%
+}{%
+{\protect \APACyear {1979}}%
+}]{%
+udry1979age}
+\APACinsertmetastar {%
+udry1979age}%
+\begin{APACrefauthors}%
+Udry, J\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1979}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Age at menarche, at first intercourse, and at first
+  pregnancy}} {{Age at menarche, at first intercourse, and at first
+  pregnancy}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Biosocial Science}{11}{04}{433--441}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {U.S. Coast Guard}%
 }{%
 {U.S. Coast Guard}%
@@ -1682,7 +1888,7 @@ Wellings, K.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2001}{{\APACmonth{12}}}{}.
+\APACrefYearMonthDay{2001}{dec}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Sexual behaviour in Britain: Early heterosexual
   experience}} {{Sexual behaviour in Britain: Early heterosexual
@@ -1748,7 +1954,7 @@ West, S\BPBI G.%
 
 \bibitem [\protect \citeauthoryear {%
 Wilbourn%
-, {Valentine Jr}%
+, {Valentine, Jr.}%
 \BCBL {}\ \BBA {} Ree%
 }{%
 Wilbourn%
@@ -1760,7 +1966,7 @@ wilbourn1984}
 wilbourn1984}%
 \begin{APACrefauthors}%
 Wilbourn, J.%
-, {Valentine Jr}, L\BPBI D.%
+, {Valentine, Jr.}, L\BPBI D.%
 \BCBL {}\ \BBA {} Ree, M\BPBI J.%
 \end{APACrefauthors}%
 \unskip\
@@ -1790,7 +1996,7 @@ Woodward2001}
 \APACinsertmetastar {%
 Woodward2001}%
 \begin{APACrefauthors}%
-Woodward, L.%
+Woodward, L\BPBI J.%
 , Fergusson, D\BPBI M.%
 \BCBL {}\ \BBA {} Horwood, L\BPBI J.%
 \end{APACrefauthors}%
@@ -1806,6 +2012,36 @@ Woodward, L.%
 \APACjournalVolNumPages{Journal of Marriage and Family}{63}{4}{1170--1184}.
 \newblock
 \begin{APACrefDOI} \doi{10.1111/j.1741-3737.2001.01170.x} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zimmer-Gembeck%
+\ \BBA {} Helfand%
+}{%
+Zimmer-Gembeck%
+\ \BBA {} Helfand%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+zimmer2008ten}
+\APACinsertmetastar {%
+zimmer2008ten}%
+\begin{APACrefauthors}%
+Zimmer-Gembeck, M\BPBI J.%
+\BCBT {}\ \BBA {} Helfand, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Ten years of longitudinal research on US adolescent
+  sexual behavior: Developmental correlates of sexual intercourse, and the
+  importance of age, gender and ethnic background}} {{Ten years of longitudinal
+  research on US adolescent sexual behavior: Developmental correlates of sexual
+  intercourse, and the importance of age, gender and ethnic
+  background}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Developmental Review}{28}{2}{153--224}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

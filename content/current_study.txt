@@ -7,7 +7,7 @@
 \end{itemize}\end{itemize}
 
 
-To summarize, the current study examines the relationship between intelligence and age at first intercourse, using siblings and their children from a multigenerational nationally representative sample. This examination extends the intelligence literature in several key ways. We \begin{enumerate}\item tested whether the relationship between intelligence and age at first intercourse was consistent using between and within familty analyses; \item evaluated the alternative explanation that maternal intelligence influences child AFI; and \item whether these effects would replicate using earlier measures of intelligence.\end{enumerate}
+To summarize, the current study examines the relationship between intelligence and age at first intercourse, using siblings and their children from a multigenerational nationally representative sample. This examination extends the intelligence literature in several key ways. We \begin{enumerate}\item tested whether the relationship between intelligence and age at first intercourse was consistent using between and within family analyses; \item evaluated the alternative explanation that maternal intelligence influences child AFI; and \item whether these effects would replicate using earlier measures of intelligence.\end{enumerate}
 
 We made the following predictions, based upon recent meta-analyses XX and findings from Harden and Mendle:  \begin{enumerate}\item \hypothesis{timing}
 

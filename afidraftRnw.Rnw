@@ -1,4 +1,4 @@
-\documentclass[a4paper,man,natbib,12pt,apacite]{apa6}
+\documentclass[a4paper,man,apacite,natbib,12pt]{apa6}
 %%%%%%%%%%%% Packages %%%%%%%%%%%%
 \usepackage{changepage}
 \usepackage[english]{babel}
@@ -7,8 +7,9 @@
 \usepackage{graphicx}
 \usepackage[graphicx]{realboxes}
 \usepackage{hyperref}
+
 \usepackage[longnamesfirst]{natbib}
-%\usepackage[natbibapa]{apacite}
+\usepackage[natbibapa,nodoi]{apacite}
 \usepackage{enumitem}
 \usepackage{lineno}
 \usepackage{listings}
@@ -19,6 +20,33 @@
 \usepackage{varioref} %references page location
 
 %%%%%%%%%%%% New Commands %%%%%%%%%%%%
+
+%%%Remove DOI %UNCOMMENT ALL to toggle between DOI and URL
+\usepackage{etoolbox}
+\usepackage{environ}
+
+\newtoggle{bibdoi}
+%\newtoggle{biburl}
+\makeatletter
+
+%\undef{\APACrefURL}
+%\undef{\endAPACrefURL}
+\undef{\APACrefDOI}
+\undef{\endAPACrefDOI}
+
+%\long\def\collect@url#1{\global\def\bib@url{#1}}
+\long\def\collect@doi#1{\global\def\bib@doi{#1}}
+%\newenvironment{APACrefURL}{\global\toggletrue{biburl}\Collect@Body\collect@url}{\unskip\unskip}
+\newenvironment{APACrefDOI}{\global\toggletrue{bibdoi}\Collect@Body\collect@doi}{}
+
+%\AtBeginEnvironment{thebibliography}{
+% \pretocmd{\PrintBackRefs}{%
+%  \iftoggle{bibdoi}
+%    {\iftoggle{biburl}{\unskip\unskip doi:\bib@doi}{}}
+%    {\iftoggle{biburl}{Retrieved from\bib@url}{}}
+%  \togglefalse{bibdoi}\togglefalse{biburl}%
+%  }{}{}
+%}
 
 %%% Partial Input
 \usepackage[ascii]{inputenc}

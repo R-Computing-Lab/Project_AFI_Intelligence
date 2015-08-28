@@ -1,4 +1,4 @@
-\subsection{Generation 2} Administration of ability measures has varied considerably across the lifecourse of the NLSY-CYA survey (See Table 2.12 from \citealp{nlsy79datauser} for a summary). However, the vast majority of subjects have completed the following test batteries: \begin{itemize}
+﻿\subsection{Generation 2} Administration of ability measures has varied considerably across the lifecourse of the NLSY-CYA survey (See Table 2.12 from \citealp{nlsy79datauser} for a summary). However, the vast majority of subjects have completed the following test batteries: \begin{itemize}
 \item Peabody Individual Achievement Test (PIAT; \citealp{dunn1970peabody}):\begin{itemize}\item Math Subtest (84 items),
 \item Reading Recognition Subtest (84 items),
 \item Reading Comprehension Subtest (84 items),\end{itemize}
@@ -11,4 +11,4 @@ Although the administration created non-randomly missing data, the standard scor
 In order to confirm the validity of this method, we replicated all age 9.5 ability analyses using ages 10.5 and 11.5. These replications can be found in the Appendices \ref{appen10} and \ref{appen11}, respectively. Appendix \ref{appen10} begins on page \pageref{appen10} and appendix \ref{appen11} begins on page \pageref{appen11}.
 
 \subsubsection{Measurement}
- A unidimensional confirmatory factor analytic model was run in Mplus 7.3 \citep{mplus}, and used a robust maximum likelihood estimator (MLR). There were 8,254 useable observations in 3,742 clusters. A single factor solution fit the model decently (RMSEA $=$ .101, p(RMESA $< .05) = 0$; CFI $= .973$; TLI $= .946$, SRMR = .027). Table \vref{table_gen2measurement_9} contains a full summary of the model fit statistics, and Table \vref{table_g2loading_9} contains the factor loadings.
+A unidimensional confirmatory factor analytic model was run in Mplus 7.3 \citep{mplus}, and used a robust maximum likelihood estimator (MLR). There were 8,254 useable observations in 3,742 clusters. A single factor solution fit the model decently (RMSEA $=$ .101, p(RMESA $< .05) = 0$; CFI $= .973$; TLI $= .946$, SRMR = .027). Table \vref{table_gen2measurement_9} contains a full summary of the model fit statistics, and Table \vref{table_g2loading_9} contains the factor loadings.
