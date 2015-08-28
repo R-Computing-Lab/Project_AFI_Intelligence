@@ -61,6 +61,88 @@ Beasley, W\BPBI H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Belmont%
+\ \BBA {} Marolla%
+}{%
+Belmont%
+\ \BBA {} Marolla%
+}{%
+{\protect \APACyear {1973}}%
+}]{%
+belmont1973birth}
+\APACinsertmetastar {%
+belmont1973birth}%
+\begin{APACrefauthors}%
+Belmont, L.%
+\BCBT {}\ \BBA {} Marolla, F\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1973}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Birth Order, Family Size, and Intelligence A study of a
+  total population of 19-year-old men born in the Netherlands is presented}}
+  {{Birth Order, Family Size, and Intelligence A study of a total population of
+  19-year-old men born in the Netherlands is presented}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Science}{182}{4117}{1096--1101}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Berbaum%
+\ \BBA {} Moreland%
+}{%
+Berbaum%
+\ \BBA {} Moreland%
+}{%
+{\protect \APACyear {1980}}%
+}]{%
+berbaum1980intellectual}
+\APACinsertmetastar {%
+berbaum1980intellectual}%
+\begin{APACrefauthors}%
+Berbaum, M\BPBI L.%
+\BCBT {}\ \BBA {} Moreland, R\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1980}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Intellectual development within the family: A new
+  application of the confluence model.}} {{Intellectual development within the
+  family: A new application of the confluence model.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Developmental Psychology}{16}{5}{506}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Black%
+, Devereux%
+\BCBL {}\ \BBA {} Salvanes%
+}{%
+Black%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+black2011older}
+\APACinsertmetastar {%
+black2011older}%
+\begin{APACrefauthors}%
+Black, S\BPBI E.%
+, Devereux, P\BPBI J.%
+\BCBL {}\ \BBA {} Salvanes, K\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Older and wiser? Birth order and IQ of young men}}
+  {{Older and wiser? Birth order and IQ of young men}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{CESifo Economic Studies}{57}{1}{103--120}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Boislard%
 \ \BBA {} Poulin%
 }{%
@@ -147,7 +229,7 @@ Buhi, E\BPBI R.%
 }{%
 {Center for Human Resources Research}%
 }{%
-{\protect \APACyear {2006}}%
+{\protect \APACyear {2009}}%
 }]{%
 nlsy79datauser}
 \APACinsertmetastar {%
@@ -157,10 +239,75 @@ nlsy79datauser}%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2006}.
+\APACrefYear{2009}.
 \newblock
-\APACrefbtitle {{NLSY79 Child and Young Adult Data Users Guide}} {{NLSY79 Child
-  and Young Adult Data Users Guide}}.
+\APACrefbtitle {{NLSY79 CHILD & YOUNG ADULT DATA USERS GUIDE: A Guide to the
+  1986 - 2006 Child Data 1994 - 2006 Young Adult Data}} {{NLSY79 CHILD & YOUNG
+  ADULT DATA USERS GUIDE: A Guide to the 1986 - 2006 Child Data 1994 - 2006
+  Young Adult Data}}.
+\newblock
+\APACaddressPublisher{}{Bureau of Labor Statistics, U.S. Department of Labor}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.nlsinfo.org/pub/usersvc/Child-Young-Adult/2006ChildYA-DataUsersGuide.pdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{bbbbbbbbbbbbbbbb} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Clark%
+\ \BBA {} Rice%
+}{%
+Clark%
+\ \BBA {} Rice%
+}{%
+{\protect \APACyear {1982}}%
+}]{%
+clark1982family}
+\APACinsertmetastar {%
+clark1982family}%
+\begin{APACrefauthors}%
+Clark, R\BPBI D.%
+\BCBT {}\ \BBA {} Rice, G\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1982}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Family constellations and eminence: The birth orders of
+  Nobel Prize winners}} {{Family constellations and eminence: The birth orders
+  of Nobel Prize winners}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Psychology}{110}{2}{281--287}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Damian%
+\ \BBA {} Roberts%
+}{%
+Damian%
+\ \BBA {} Roberts%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+damian2015associations}
+\APACinsertmetastar {%
+damian2015associations}%
+\begin{APACrefauthors}%
+Damian, R\BPBI I.%
+\BCBT {}\ \BBA {} Roberts, B\BPBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The associations of birth order with personality and
+  intelligence in a representative sample of US high school students}} {{The
+  associations of birth order with personality and intelligence in a
+  representative sample of US high school students}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Research in Personality}{58}{}{96--105}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -345,6 +492,29 @@ Finer, L\BPBI B.%
   1954--2003}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Public Health Reports}{122}{1}{73}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Galton%
+}{%
+Galton%
+}{%
+{\protect \APACyear {1875}}%
+}]{%
+galton1875english}
+\APACinsertmetastar {%
+galton1875english}%
+\begin{APACrefauthors}%
+Galton, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1875}.
+\newblock
+\APACrefbtitle {{English men of science: Their nature and nurture}} {{English
+  men of science: Their nature and nurture}}.
+\newblock
+\APACaddressPublisher{New York}{D. Appleton and Co.}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1374,6 +1544,33 @@ Raffaelli, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Retherford%
+\ \BBA {} Sewell%
+}{%
+Retherford%
+\ \BBA {} Sewell%
+}{%
+{\protect \APACyear {1991}}%
+}]{%
+retherford1991birth}
+\APACinsertmetastar {%
+retherford1991birth}%
+\begin{APACrefauthors}%
+Retherford, R\BPBI D.%
+\BCBT {}\ \BBA {} Sewell, W\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1991}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Birth order and intelligence: Further tests of the
+  confluence model}} {{Birth order and intelligence: Further tests of the
+  confluence model}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Sociological Review}{}{}{141--158}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Rodgers%
 }{%
 Rodgers%
@@ -1399,6 +1596,31 @@ Rodgers, J\BPBI L.%
   and context}\ (\BPGS\ 85--110).
 \newblock
 \APACaddressPublisher{Mahwah, New Jersey}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodgers%
+}{%
+Rodgers%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+rodgers2014birth}
+\APACinsertmetastar {%
+rodgers2014birth}%
+\begin{APACrefauthors}%
+Rodgers, J\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Are birth order effects on intelligence really Flynn
+  Effects? Reinterpreting Belmont and Marolla 40years later}} {{Are birth order
+  effects on intelligence really Flynn Effects? Reinterpreting Belmont and
+  Marolla 40years later}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Intelligence}{42}{}{128--133}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1458,10 +1680,6 @@ Rodgers, J\BPBI L.%
   intelligence.}}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{American Psychologist}{55}{6}{599--612}.
-\newblock
-\begin{APACrefURL}
-  \url{http://doi.apa.org/getdoi.cfm?doi=10.1037/0003-066X.55.6.599}
-  \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1037//0003-066X.55.6.599} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -1953,6 +2171,68 @@ West, S\BPBI G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Wichman%
+, Rodgers%
+\BCBL {}\ \BBA {} Maccallum%
+}{%
+Wichman%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Wichman2006}
+\APACinsertmetastar {%
+Wichman2006}%
+\begin{APACrefauthors}%
+Wichman, A\BPBI L.%
+, Rodgers, J\BPBI L.%
+\BCBL {}\ \BBA {} Maccallum, R\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A Multilevel Approach to the Relationship Between Birth
+  Order and Intelligence}} {{A Multilevel Approach to the Relationship Between
+  Birth Order and Intelligence}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Personality and social psychology
+  bulletin}{32}{1}{117--127}.
+\newblock
+\begin{APACrefDOI} \doi{10.1177/0146167205279581} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wichman%
+, Rodgers%
+\BCBL {}\ \BBA {} Maccallum%
+}{%
+Wichman%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Wichman2007}
+\APACinsertmetastar {%
+Wichman2007}%
+\begin{APACrefauthors}%
+Wichman, A\BPBI L.%
+, Rodgers, J\BPBI L.%
+\BCBL {}\ \BBA {} Maccallum, R\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Birth order has no effect on intelligence: a reply and
+  extension of previous findings.}} {{Birth order has no effect on
+  intelligence: a reply and extension of previous findings.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Personality and social psychology
+  bulletin}{33}{9}{1195--1200}.
+\newblock
+\begin{APACrefDOI} \doi{10.1177/0146167207303028} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Wilbourn%
 , {Valentine, Jr.}%
 \BCBL {}\ \BBA {} Ree%
@@ -2012,6 +2292,32 @@ Woodward, L\BPBI J.%
 \APACjournalVolNumPages{Journal of Marriage and Family}{63}{4}{1170--1184}.
 \newblock
 \begin{APACrefDOI} \doi{10.1111/j.1741-3737.2001.01170.x} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zajonc%
+}{%
+Zajonc%
+}{%
+{\protect \APACyear {1976}}%
+}]{%
+zajonc1976family}
+\APACinsertmetastar {%
+zajonc1976family}%
+\begin{APACrefauthors}%
+Zajonc, R\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1976}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Family configuration and intelligence: Variations in
+  scholastic aptitude scores parallel trends in family size and the spacing of
+  children.}} {{Family configuration and intelligence: Variations in scholastic
+  aptitude scores parallel trends in family size and the spacing of
+  children.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Science}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

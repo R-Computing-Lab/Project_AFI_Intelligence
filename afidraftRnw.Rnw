@@ -1,27 +1,64 @@
 \documentclass[a4paper,man,apacite,natbib,12pt]{apa6}
 %%%%%%%%%%%% Packages %%%%%%%%%%%%
-\usepackage{changepage}
+%%% Formatting
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage[graphicx]{realboxes}
-\usepackage{hyperref}
-
-\usepackage[longnamesfirst]{natbib}
-\usepackage[natbibapa,nodoi]{apacite}
-\usepackage{enumitem}
-\usepackage{lineno}
 \usepackage{listings}
-\usepackage{longtable}
 \usepackage{verbatim}
 \usepackage[yyyymmdd,hhmmss]{datetime}
+\usepackage{changepage}
+\usepackage{enumitem}
+\usepackage{lineno}
 \usepackage{pdflscape}
+\usepackage{longtable}
+
+%%% Graphics
+\usepackage{animate}
+\usepackage{media9}
+\usepackage{graphicx}
+\usepackage[graphicx]{realboxes}
+
+%%% References
 \usepackage{varioref} %references page location
+\usepackage{hyperref}
+\usepackage[longnamesfirst]{natbib}
+\usepackage[natbibapa,nodoi]{apacite}
+
+
+%%%%%%%%%%%% Formatting %%%%%%%%%%%%
+
+%%% Item Spacing
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{\itemsep}
+\addtolength{\wideitemsep}{-10pt}
+\let\olditem\item
+\renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}
+
+%%% Margins
+\addtolength{\marginparwidth}{6cm}
+\addtolength{\paperwidth}{\marginparwidth-1cm}
+
+%%% Nicer Looking Square Root
+\let\oldsqrt\sqrt
+% it defines the new \sqrt in terms of the old one
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
+{\box0\lower0.4pt\box2}}
 
 %%%%%%%%%%%% New Commands %%%%%%%%%%%%
 
-%%%Remove DOI %UNCOMMENT ALL to toggle between DOI and URL
+%%% Short Hand
+\usepackage{xspace}
+\newcommand{\R}{\textup{\textrm{R}}\xspace}
+\newcommand{\meb}{{\bf Garrison, S. M.}\xspace}
+\newcommand{\et}{\textit{et al}.\xspace}
+\newcommand{\eg}{\textit{e.g},\xspace}
+
+%%% Remove DOI %UNCOMMENT ALL to toggle between DOI and URL
 \usepackage{etoolbox}
 \usepackage{environ}
 
@@ -97,28 +134,15 @@
 \newcommand{\cmb}[1]{\todo[color=blue!40]{\begin{adjustwidth*}{1mm}{}\lstinline|#1|\end{adjustwidth*}}}
 
 
-%%% Ref counters
+%%% Hypothesis counters
 \newcounter{myhypothesis}
 \newcommand\hypothesis[1]
 {
   \refstepcounter{myhypothesis}\label{hyp_#1}%
 }
-%
-%\twolabels{4}{a}
-%I have two labels: \ref{hyp_4} and \ref{hyp_a}.
 
-%%%%%%%%%%%% Formatting %%%%%%%%%%%%
 
-%%% Item Spacing
-\newlength{\wideitemsep}
-\setlength{\wideitemsep}{\itemsep}
-\addtolength{\wideitemsep}{-10pt}
-\let\olditem\item
-\renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}
 
-%%% Margins
-\addtolength{\marginparwidth}{6cm}
-\addtolength{\paperwidth}{\marginparwidth-1cm}
 
 %%%%%%%%%%%% Title %%%%%%%%%%%%
 \title{Intelligence and Age at First Intercourse: Cause or Confound?}
@@ -385,7 +409,7 @@ capture.output(stargazer(g2loading_11,summary=FALSE,flip = FALSE, dep.var.labels
 
 \section{Results}\cmb{content/results.txt}\input{content/results.txt}
 %\subsection{Between vs. Within Illustration}
-%\cmb{content/results_meancomp.txt}\input{content/results_meancomp.txt}
+
 <<regressionresults,echo=FALSE, comment=NA, include=FALSE>>=
 
 ##9.5
