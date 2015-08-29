@@ -1,6 +1,31 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Anastasi%
+}{%
+Anastasi%
+}{%
+{\protect \APACyear {1956}}%
+}]{%
+Anastasi1956}
+\APACinsertmetastar {%
+Anastasi1956}%
+\begin{APACrefauthors}%
+Anastasi, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1956}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Intelligence and family size}} {{Intelligence and
+  family size}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Psychological Bulletin}{53}{3}{187--209}.
+\newblock
+\begin{APACrefDOI} \doi{10.1080/00324728.1954.10415562} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Baker%
 , Keck%
 , Mott%
@@ -118,7 +143,8 @@ Berbaum, M\BPBI L.%
 \bibitem [\protect \citeauthoryear {%
 Black%
 , Devereux%
-\BCBL {}\ \BBA {} Salvanes%
+, Salvanes%
+\BCBL {}\ \BBA {} Salvanesz%
 }{%
 Black%
 \ \protect \BOthers {.}}{%
@@ -130,7 +156,8 @@ black2011older}%
 \begin{APACrefauthors}%
 Black, S\BPBI E.%
 , Devereux, P\BPBI J.%
-\BCBL {}\ \BBA {} Salvanes, K\BPBI G.%
+, Salvanes, K\BPBI G.%
+\BCBL {}\ \BBA {} Salvanesz, K\BPBI G.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -140,6 +167,33 @@ Black, S\BPBI E.%
   {{Older and wiser? Birth order and IQ of young men}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{CESifo Economic Studies}{57}{1}{103--120}.
+\newblock
+\begin{APACrefDOI} \doi{10.1093/cesifo/ifq022} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Blake%
+}{%
+Blake%
+}{%
+{\protect \APACyear {1981}}%
+}]{%
+Blake1981}
+\APACinsertmetastar {%
+Blake1981}%
+\begin{APACrefauthors}%
+Blake, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1981}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Family size and the quality of children.}} {{Family
+  size and the quality of children.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Demography}{18}{4}{421--442}.
+\newblock
+\begin{APACrefDOI} \doi{10.2307/2060941} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -229,7 +283,7 @@ Buhi, E\BPBI R.%
 }{%
 {Center for Human Resources Research}%
 }{%
-{\protect \APACyear {2009}}%
+{\protect \APACyear {2006}}%
 }]{%
 nlsy79datauser}
 \APACinsertmetastar {%
@@ -239,20 +293,10 @@ nlsy79datauser}%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2009}.
+\APACrefYear{2006}.
 \newblock
-\APACrefbtitle {{NLSY79 CHILD & YOUNG ADULT DATA USERS GUIDE: A Guide to the
-  1986 - 2006 Child Data 1994 - 2006 Young Adult Data}} {{NLSY79 CHILD & YOUNG
-  ADULT DATA USERS GUIDE: A Guide to the 1986 - 2006 Child Data 1994 - 2006
-  Young Adult Data}}.
-\newblock
-\APACaddressPublisher{}{Bureau of Labor Statistics, U.S. Department of Labor}.
-\newblock
-\begin{APACrefURL}
-  \url{https://www.nlsinfo.org/pub/usersvc/Child-Young-Adult/2006ChildYA-DataUsersGuide.pdf}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{bbbbbbbbbbbbbbbb} \end{APACrefDOI}
+\APACrefbtitle {{NLSY79 Child and Young Adult Data Users Guide}} {{NLSY79 Child
+  and Young Adult Data Users Guide}}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2318,6 +2362,34 @@ Zajonc, R\BPBI B.%
   children.}}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Science}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zajonc%
+\ \BBA {} Bargh%
+}{%
+Zajonc%
+\ \BBA {} Bargh%
+}{%
+{\protect \APACyear {1980}}%
+}]{%
+zajonc1980}
+\APACinsertmetastar {%
+zajonc1980}%
+\begin{APACrefauthors}%
+Zajonc, R\BPBI B.%
+\BCBT {}\ \BBA {} Bargh, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1980}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The Confluence Model : Parameter Estimation for Six
+  Divergent Data Sets on Family Factors and Intelligence}} {{The Confluence
+  Model : Parameter Estimation for Six Divergent Data Sets on Family Factors
+  and Intelligence}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Intelligence}{4}{}{349--361}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

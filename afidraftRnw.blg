@@ -1,10 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: afidraftRnw.aux
 The style file: apacite.bst
 Database file #1: AFI.bib
-Repeated entry---line 883 of file AFI.bib
+Repeated entry---line 964 of file AFI.bib
  : @book{nlsy79datauser
  :                     ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No institution in asvabtech4
 Warning--No address in asvabtech4

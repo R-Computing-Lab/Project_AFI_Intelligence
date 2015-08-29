@@ -2,7 +2,7 @@
 We adapted Kenny and colleagues \citeyearpar{kenny2001social,kenny2006dyadic} reciprocal standard dyad model.\\
 \begin{center}\vspace{-17pt}
 \[\mathrm{Y_{i\Delta}} = \beta_0 + \beta_1\mathrm{\bar{Y_{i}}} + \beta_2\mathrm{\bar{X_{i}}} + \beta_3\mathrm{X_{i\Delta}}}\]
-\end{center}\vspace{1pt}
+\end{center}\vspace{-10pt}
 where
 \begin{center}\vspace{-40pt}
 \[ Y_{i1} = \mathrm{max}(Y_{ij});\, Y_{i2} = \mathrm{min}(Y_{ij});\, Y_{i\Delta} = Y_{i1} - Y_{i2};\, X_{i\Delta} = X_{i1} - X_{i2}\]
