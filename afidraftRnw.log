@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  28 AUG 2015 18:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  31 AUG 2015 13:49
 entering extended mode
 **afidraftRnw.tex
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\afidraftRnw.tex
@@ -466,33 +466,24 @@ sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count153
 \cp@tempcnt=\count154
-)
-(C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty
-Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip74
-\enit@outerparindent=\dimen151
-\enit@toks=\toks33
-\enit@inbox=\box32
-\enitdp@description=\count155
 ) (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\lineno\lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count156
-\output=\toks34
-\linenoprevgraf=\count157
-\linenumbersep=\dimen152
-\linenumberwidth=\dimen153
-\c@linenumber=\count158
-\c@pagewiselinenumber=\count159
-\c@LN@truepage=\count160
-\c@internallinenumber=\count161
-\c@internallinenumbers=\count162
-\quotelinenumbersep=\dimen154
-\bframerule=\dimen155
-\bframesep=\dimen156
-\bframebox=\box33
+\linenopenalty=\count155
+\output=\toks33
+\linenoprevgraf=\count156
+\linenumbersep=\dimen151
+\linenumberwidth=\dimen152
+\c@linenumber=\count157
+\c@pagewiselinenumber=\count158
+\c@LN@truepage=\count159
+\c@internallinenumber=\count160
+\c@internallinenumbers=\count161
+\quotelinenumbersep=\dimen153
+\bframerule=\dimen154
+\bframesep=\dimen155
+\bframebox=\box32
 LaTeX Info: Redefining \\ on input line 3056.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
@@ -502,23 +493,30 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip75
-\LTright=\skip76
-\LTpre=\skip77
-\LTpost=\skip78
-\LTchunksize=\count163
-\LTcapwidth=\dimen157
-\LT@head=\box34
-\LT@firsthead=\box35
-\LT@foot=\box36
-\LT@lastfoot=\box37
-\LT@cols=\count164
-\LT@rows=\count165
-\c@LT@tables=\count166
-\c@LT@chunks=\count167
-\LT@p@ftn=\toks35
+\LTleft=\skip74
+\LTright=\skip75
+\LTpre=\skip76
+\LTpost=\skip77
+\LTchunksize=\count162
+\LTcapwidth=\dimen156
+\LT@head=\box33
+\LT@firsthead=\box34
+\LT@foot=\box35
+\LT@lastfoot=\box36
+\LT@cols=\count163
+\LT@rows=\count164
+\c@LT@tables=\count165
+\c@LT@chunks=\count166
+\LT@p@ftn=\toks34
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\animate\animate.sty"
+(C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip78
+\enit@outerparindent=\dimen157
+\enit@toks=\toks35
+\enit@inbox=\box37
+\enitdp@description=\count167
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\animate\animate.sty"
 Package: animate 2015/06/19 PDF animations from files and inline graphics
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
@@ -1320,7 +1318,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 
+l.78 
      
 The package apacite has already been loaded with options:
   [bibnewpage]
@@ -1349,7 +1347,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142 \usepackage
+l.144 \usepackage
                  [T1]{fontenc}
 The package inputenc has already been loaded with options:
   [utf8x]
@@ -1469,29 +1467,29 @@ Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 ))
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\afidraftRnw.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 209.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 209.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 211.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 211.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 209.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 211.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1558,7 +1556,7 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 \AtBeginShipoutBox=\box70
 
 ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 209.
+Package hyperref Info: Link coloring OFF on input line 211.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1569,25 +1567,25 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 \c@section@level=\count392
 LaTeX Info: Redefining \Ref on input line 513.
 )
-LaTeX Info: Redefining \ref on input line 209.
-LaTeX Info: Redefining \pageref on input line 209.
-LaTeX Info: Redefining \nameref on input line 209.
+LaTeX Info: Redefining \ref on input line 211.
+LaTeX Info: Redefining \pageref on input line 211.
+LaTeX Info: Redefining \nameref on input line 211.
 
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\afidraftRnw.out)
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\afidraftRnw.out)
 \@outlinefile=\write6
-LaTeX Info: Redefining \Ref on input line 209.
-Class apa6 Info: Keywords not defined on input line 212.
+LaTeX Info: Redefining \Ref on input line 211.
+Class apa6 Info: Keywords not defined on input line 214.
  [1{C:/Users/smaso_000/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ] [2]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 212.
+ine 214.
 
 ! Argument of \reserved@a has an extra }.
 <inserted text> 
                 \par 
-l.212 \cmb{content/introduction.txt}
+l.214 \cmb{content/introduction.txt}
                                     \input{content/introduction.txt}
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -1601,7 +1599,7 @@ Runaway argument?
 ! Paragraph ended before \reserved@a was complete.
 <to be read again> 
                    \par 
-l.212 \cmb{content/introduction.txt}
+l.214 \cmb{content/introduction.txt}
                                     \input{content/introduction.txt}
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1681,16 +1679,16 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 20.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 20.
- [5]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 29.
+ [5] [6]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 33.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [6] [7] [8])
+) [7] [8])
 ! Argument of \reserved@a has an extra }.
 <inserted text> 
                 \par 
-l.214 \cmb{content/current_study.txt}
+l.216 \cmb{content/current_study.txt}
                                      \section{Current Study}\label{current_s...
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -1704,17 +1702,18 @@ Runaway argument?
 ! Paragraph ended before \reserved@a was complete.
 <to be read again> 
                    \par 
-l.214 \cmb{content/current_study.txt}
+l.216 \cmb{content/current_study.txt}
                                      \section{Current Study}\label{current_s...
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/current_study.txt)
+(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/current_study.txt
+[9])
 ! Argument of \reserved@a has an extra }.
 <inserted text> 
                 \par 
-l.217 \section{Methods}\cmb{content/methods.txt}
+l.219 \section{Methods}\cmb{content/methods.txt}
                                                 \input{content/methods.txt}
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -1728,13 +1727,13 @@ Runaway argument?
 ! Paragraph ended before \reserved@a was complete.
 <to be read again> 
                    \par 
-l.217 \section{Methods}\cmb{content/methods.txt}
+l.219 \section{Methods}\cmb{content/methods.txt}
                                                 \input{content/methods.txt}
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/methods.txt [9]
+(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/methods.txt
 ! Extra }, or forgotten $.
 l.4 ...\bar{X_{i}}} + \beta_3\mathrm{X_{i\Delta}}}
                                                   \]
@@ -1744,14 +1743,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
+[10]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 14.
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [10] [11]) [12]
+) [11] [12])
 ! Argument of \reserved@a has an extra }.
 <inserted text> 
                 \par 
-l.220 \cmb{content/Gen1measure.txt}
+l.222 \cmb{content/Gen1measure.txt}
                                    \input{content/Gen1measure.txt}
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -1765,17 +1765,18 @@ Runaway argument?
 ! Paragraph ended before \reserved@a was complete.
 <to be read again> 
                    \par 
-l.220 \cmb{content/Gen1measure.txt}
+l.222 \cmb{content/Gen1measure.txt}
                                    \input{content/Gen1measure.txt}
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/Gen1measure.txt [13])
+(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/Gen1measure.txt [13]
+[14])
 ! Argument of \reserved@a has an extra }.
 <inserted text> 
                 \par 
-l.222 \cmb{content/Gen2measure.txt}
+l.224 \cmb{content/Gen2measure.txt}
                                    \input{content/Gen2measure.txt}
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -1789,7 +1790,7 @@ Runaway argument?
 ! Paragraph ended before \reserved@a was complete.
 <to be read again> 
                    \par 
-l.222 \cmb{content/Gen2measure.txt}
+l.224 \cmb{content/Gen2measure.txt}
                                    \input{content/Gen2measure.txt}
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1799,14 +1800,14 @@ My plan is to forget the whole thing and hope for the best.
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\uni-254.def
 File: uni-254.def 2013/05/13 UCS: Unicode data U+FE00..U+FEFF
 )
-[14] (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\uni-32.def
+(C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
 [15])
 ! Argument of \reserved@a has an extra }.
 <inserted text> 
                 \par 
-l.224 \section{Results}\cmb{content/results.txt}
+l.226 \section{Results}\cmb{content/results.txt}
                                                 \input{content/results.txt}
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -1820,17 +1821,17 @@ Runaway argument?
 ! Paragraph ended before \reserved@a was complete.
 <to be read again> 
                    \par 
-l.224 \section{Results}\cmb{content/results.txt}
+l.226 \section{Results}\cmb{content/results.txt}
                                                 \input{content/results.txt}
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/results.txt)
+(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/results.txt) [16]
 ! Argument of \reserved@a has an extra }.
 <inserted text> 
                 \par 
-l.228 ...nlayses}\cmb{content/results_between.txt}
+l.230 ...nlayses}\cmb{content/results_between.txt}
                                                   \input{content/results_bet...
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -1844,7 +1845,7 @@ Runaway argument?
 ! Paragraph ended before \reserved@a was complete.
 <to be read again> 
                    \par 
-l.228 ...nlayses}\cmb{content/results_between.txt}
+l.230 ...nlayses}\cmb{content/results_between.txt}
                                                   \input{content/results_bet...
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1863,7 +1864,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
 
-[16]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 5.
@@ -1876,6 +1876,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 5.
 
+[17]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 7.
@@ -1892,7 +1893,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ! Argument of \reserved@a has an extra }.
 <inserted text> 
                 \par 
-l.231 \cmb{content/results_between.txt}
+l.233 \cmb{content/results_between.txt}
                                        \input{content/results_within.txt}
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -1906,14 +1907,13 @@ Runaway argument?
 ! Paragraph ended before \reserved@a was complete.
 <to be read again> 
                    \par 
-l.231 \cmb{content/results_between.txt}
+l.233 \cmb{content/results_between.txt}
                                        \input{content/results_within.txt}
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\content/results_within.txt
-[17]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4.
@@ -1926,6 +1926,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4.
 
+[18]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 10.
@@ -1940,13 +1941,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 LaTeX Warning: Hyper reference `table_Dif_Kid_Intelligence_Dif_Child_AFI_9' on 
-page 18 undefined on input line 10.
+page 19 undefined on input line 10.
 
 
 LaTeX Warning: Reference `table_Dif_Kid_Intelligence_Dif_Child_AFI_9' on page 1
-8 undefined on input line 10.
+9 undefined on input line 10.
 
-[18]
+[19]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 15.
@@ -1959,11 +1960,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 15.
 
-[19]) [20]
+) [20]
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1971,7 +1972,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1979,7 +1980,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -1988,7 +1989,7 @@ So I'll assume that you meant to type \cr instead.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1996,7 +1997,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \@preamble ...ignorespaces \@sharp \unskip \hfil }
                                                   \hskip \tabcolsep 
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2007,7 +2008,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2018,7 +2019,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2029,7 +2030,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2037,7 +2038,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \@preamble ...ignorespaces \@sharp \unskip \hfil }
                                                   \hskip \tabcolsep 
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2048,7 +2049,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2059,7 +2060,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2070,7 +2071,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2078,7 +2079,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2086,7 +2087,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2094,7 +2095,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \nopagebreak ->\noalign 
                         {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4
-l.243 ...0}{table_summary_stats_sibinsampleg1.tex}
+l.245 ...0}{table_summary_stats_sibinsampleg1.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2106,7 +2107,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.245 
+l.247 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2115,7 +2116,7 @@ or  <return>  to continue without it.
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2123,7 +2124,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2131,7 +2132,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -2140,7 +2141,7 @@ So I'll assume that you meant to type \cr instead.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2148,7 +2149,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \@preamble ...ignorespaces \@sharp \unskip \hfil }
                                                   \hskip \tabcolsep 
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2159,7 +2160,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2170,7 +2171,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2181,7 +2182,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2189,7 +2190,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \@preamble ...ignorespaces \@sharp \unskip \hfil }
                                                   \hskip \tabcolsep 
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2200,7 +2201,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2211,7 +2212,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2222,7 +2223,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2230,7 +2231,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2238,7 +2239,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2246,13 +2247,13 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \nopagebreak ->\noalign 
                         {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4
-l.248 ...0}{table_summary_stats_sibinsampleg2.tex}
+l.250 ...0}{table_summary_stats_sibinsampleg2.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (9.46481pt too wide) in alignment at lines 246--249
+Overfull \hbox (9.46481pt too wide) in alignment at lines 248--251
  [] [] [] [] [] [] [] 
  []
 
@@ -2260,7 +2261,7 @@ Overfull \hbox (9.46481pt too wide) in alignment at lines 246--249
 ! Undefined control sequence.
 <recently read> \npnoround 
                            
-l.250 \npnoround
+l.252 \npnoround
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2271,7 +2272,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2279,7 +2280,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2287,7 +2288,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -2296,7 +2297,7 @@ So I'll assume that you meant to type \cr instead.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2304,7 +2305,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \endtemplate 
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2315,7 +2316,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2323,7 +2324,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2334,7 +2335,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2342,7 +2343,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \@preamble ...ignorespaces \@sharp \unskip \hfil }
                                                   \hskip \tabcolsep 
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2353,7 +2354,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2364,7 +2365,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2375,7 +2376,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2383,7 +2384,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2391,7 +2392,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2399,7 +2400,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2407,7 +2408,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2415,7 +2416,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2423,7 +2424,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2431,7 +2432,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2439,7 +2440,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2447,7 +2448,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2455,84 +2456,84 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.253 ...8}{table_summary_stats_AFIRACEGENDER.tex}
+l.255 ...8}{table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 [22] [23] [24]
-Overfull \hbox (55.74641pt too wide) in alignment at lines 276--279
+Overfull \hbox (55.74641pt too wide) in alignment at lines 278--281
  [] [] [] [] 
  []
 
 [25]
-Overfull \hbox (21.12122pt too wide) in alignment at lines 281--284
+Overfull \hbox (21.12122pt too wide) in alignment at lines 283--286
  [] [] [] [] 
  []
 
 [26]
-Overfull \hbox (55.74641pt too wide) in alignment at lines 286--21
+Overfull \hbox (55.74641pt too wide) in alignment at lines 288--21
  [] [] [] [] 
  []
 
 
-Overfull \hbox (55.74641pt too wide) in alignment at lines 21--289
+Overfull \hbox (55.74641pt too wide) in alignment at lines 21--291
  [] [] [] [] 
  []
 
 [27]
-Overfull \hbox (43.99644pt too wide) in alignment at lines 291--21
+Overfull \hbox (43.99644pt too wide) in alignment at lines 293--21
  [] [] [] [] 
  []
 
 
-Overfull \hbox (43.99644pt too wide) in alignment at lines 21--294
+Overfull \hbox (43.99644pt too wide) in alignment at lines 21--296
  [] [] [] [] 
  []
 
 [28]
-Overfull \hbox (55.74641pt too wide) in alignment at lines 296--21
+Overfull \hbox (55.74641pt too wide) in alignment at lines 298--21
  [] [] [] [] 
  []
 
 
-Overfull \hbox (55.74641pt too wide) in alignment at lines 21--299
+Overfull \hbox (55.74641pt too wide) in alignment at lines 21--301
  [] [] [] [] 
  []
 
 [29]
-Overfull \hbox (38.12146pt too wide) in alignment at lines 301--20
+Overfull \hbox (38.12146pt too wide) in alignment at lines 303--20
  [] [] [] [] 
  []
 
 
-Overfull \hbox (38.12146pt too wide) in alignment at lines 20--304
+Overfull \hbox (38.12146pt too wide) in alignment at lines 20--306
  [] [] [] [] 
  []
 
 [30]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 309.
+(caption)                particular \caption on input line 311.
 See the caption package documentation for explanation.
 
-<plots/betweenewithin.png, id=682, 699.61375pt x 356.83313pt>
+<plots/betweenewithin.png, id=694, 699.61375pt x 356.83313pt>
 File: plots/betweenewithin.png Graphic file (type png)
 
 <use plots/betweenewithin.png>
-Package pdftex.def Info: plots/betweenewithin.png used on input line 310.
+Package pdftex.def Info: plots/betweenewithin.png used on input line 312.
 (pdftex.def)             Requested size: 452.9679pt x 231.03493pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 312.
+(caption)                particular \caption on input line 314.
 See the caption package documentation for explanation.
 
-<plots/betweennewithin.png, id=684, 722.19812pt x 351.81438pt>
+<plots/betweennewithin.png, id=696, 722.19812pt x 351.81438pt>
 File: plots/betweennewithin.png Graphic file (type png)
 
 <use plots/betweennewithin.png>
-Package pdftex.def Info: plots/betweennewithin.png used on input line 313.
+Package pdftex.def Info: plots/betweennewithin.png used on input line 315.
 (pdftex.def)             Requested size: 452.9679pt x 220.66183pt.
  [31 <C:/Dropbox/Work/Research/Projects/NLSY/AFI/R/plots/betweenewithin.png> <C
 :/Dropbox/Work/Research/Projects/NLSY/AFI/R/plots/betweennewithin.png>]pdfTeX w
@@ -2540,16 +2541,16 @@ arning (ext4): destination with the same identifier (name{table.1}) has been al
 ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.337 ...input{12}{34}{table_g2_10measurement.tex}
+l.339 ...input{12}{34}{table_g2_10measurement.tex}
                                                    [32
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{table.2}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.347 \end{longtable}
+l.349 \end{longtable}
                      \pagebreak [33]
-Overfull \hbox (55.74641pt too wide) in alignment at lines 349--352
+Overfull \hbox (55.74641pt too wide) in alignment at lines 351--354
  [] [] [] [] 
  []
 
@@ -2557,9 +2558,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.352 \end{longtable}
+l.354 \end{longtable}
                      \pagebreak [34]
-Overfull \hbox (43.99644pt too wide) in alignment at lines 354--357
+Overfull \hbox (43.99644pt too wide) in alignment at lines 356--359
  [] [] [] [] 
  []
 
@@ -2567,9 +2568,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.357 \end{longtable}
+l.359 \end{longtable}
                      \pagebreak [35]
-Overfull \hbox (55.74641pt too wide) in alignment at lines 359--21
+Overfull \hbox (55.74641pt too wide) in alignment at lines 361--21
  [] [] [] [] 
  []
 
@@ -2577,14 +2578,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.361 ...Joint_Intelligence_Mean_Child_AFI_10.tex}
+l.363 ...Joint_Intelligence_Mean_Child_AFI_10.tex}
                                                   
-Overfull \hbox (55.74641pt too wide) in alignment at lines 21--362
+Overfull \hbox (55.74641pt too wide) in alignment at lines 21--364
  [] [] [] [] 
  []
 
 [36]
-Overfull \hbox (43.99644pt too wide) in alignment at lines 364--21
+Overfull \hbox (43.99644pt too wide) in alignment at lines 366--21
  [] [] [] [] 
  []
 
@@ -2592,14 +2593,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.366 ...if_Mom_Intelligence_Dif_Child_AFI_10.tex}
+l.368 ...if_Mom_Intelligence_Dif_Child_AFI_10.tex}
                                                   
-Overfull \hbox (43.99644pt too wide) in alignment at lines 21--367
+Overfull \hbox (43.99644pt too wide) in alignment at lines 21--369
  [] [] [] [] 
  []
 
 [37]
-Overfull \hbox (49.87143pt too wide) in alignment at lines 369--21
+Overfull \hbox (49.87143pt too wide) in alignment at lines 371--21
  [] [] [] [] 
  []
 
@@ -2607,14 +2608,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.371 ..._Child_Intelligence_Dif_Child_AFI_10.tex}
+l.373 ..._Child_Intelligence_Dif_Child_AFI_10.tex}
                                                   
-Overfull \hbox (49.87143pt too wide) in alignment at lines 21--372
+Overfull \hbox (49.87143pt too wide) in alignment at lines 21--374
  [] [] [] [] 
  []
 
 [38]
-Overfull \hbox (38.12146pt too wide) in alignment at lines 374--20
+Overfull \hbox (38.12146pt too wide) in alignment at lines 376--20
  [] [] [] [] 
  []
 
@@ -2622,9 +2623,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.376 ..._Joint_Intelligence_Dif_Child_AFI_10.tex}
+l.378 ..._Joint_Intelligence_Dif_Child_AFI_10.tex}
                                                   
-Overfull \hbox (38.12146pt too wide) in alignment at lines 20--377
+Overfull \hbox (38.12146pt too wide) in alignment at lines 20--379
  [] [] [] [] 
  []
 
@@ -2632,16 +2633,16 @@ Overfull \hbox (38.12146pt too wide) in alignment at lines 20--377
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.388 ...input{12}{34}{table_g2_11measurement.tex}
+l.390 ...input{12}{34}{table_g2_11measurement.tex}
                                                    [40
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{table.2}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.397 \end{longtable}
+l.399 \end{longtable}
                      \pagebreak [41]
-Overfull \hbox (55.74641pt too wide) in alignment at lines 399--402
+Overfull \hbox (55.74641pt too wide) in alignment at lines 401--404
  [] [] [] [] 
  []
 
@@ -2649,9 +2650,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.402 \end{longtable}
+l.404 \end{longtable}
                      \pagebreak [42]
-Overfull \hbox (49.87143pt too wide) in alignment at lines 404--407
+Overfull \hbox (49.87143pt too wide) in alignment at lines 406--409
  [] [] [] [] 
  []
 
@@ -2659,9 +2660,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.407 \end{longtable}
+l.409 \end{longtable}
                      \pagebreak [43]
-Overfull \hbox (55.74641pt too wide) in alignment at lines 409--21
+Overfull \hbox (55.74641pt too wide) in alignment at lines 411--21
  [] [] [] [] 
  []
 
@@ -2669,14 +2670,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.411 ...Joint_Intelligence_Mean_Child_AFI_11.tex}
+l.413 ...Joint_Intelligence_Mean_Child_AFI_11.tex}
                                                   
-Overfull \hbox (55.74641pt too wide) in alignment at lines 21--412
+Overfull \hbox (55.74641pt too wide) in alignment at lines 21--414
  [] [] [] [] 
  []
 
 [44]
-Overfull \hbox (43.99644pt too wide) in alignment at lines 414--21
+Overfull \hbox (43.99644pt too wide) in alignment at lines 416--21
  [] [] [] [] 
  []
 
@@ -2684,14 +2685,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.416 ...if_Mom_Intelligence_Dif_Child_AFI_11.tex}
+l.418 ...if_Mom_Intelligence_Dif_Child_AFI_11.tex}
                                                   
-Overfull \hbox (43.99644pt too wide) in alignment at lines 21--417
+Overfull \hbox (43.99644pt too wide) in alignment at lines 21--419
  [] [] [] [] 
  []
 
 [45]
-Overfull \hbox (55.74641pt too wide) in alignment at lines 419--21
+Overfull \hbox (55.74641pt too wide) in alignment at lines 421--21
  [] [] [] [] 
  []
 
@@ -2699,14 +2700,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.421 ..._Child_Intelligence_Dif_Child_AFI_11.tex}
+l.423 ..._Child_Intelligence_Dif_Child_AFI_11.tex}
                                                   
-Overfull \hbox (55.74641pt too wide) in alignment at lines 21--422
+Overfull \hbox (55.74641pt too wide) in alignment at lines 21--424
  [] [] [] [] 
  []
 
 [46]
-Overfull \hbox (38.12146pt too wide) in alignment at lines 424--20
+Overfull \hbox (38.12146pt too wide) in alignment at lines 426--20
  [] [] [] [] 
  []
 
@@ -2714,9 +2715,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.426 ..._Joint_Intelligence_Dif_Child_AFI_11.tex}
+l.428 ..._Joint_Intelligence_Dif_Child_AFI_11.tex}
                                                   
-Overfull \hbox (38.12146pt too wide) in alignment at lines 20--427
+Overfull \hbox (38.12146pt too wide) in alignment at lines 20--429
  [] [] [] [] 
  []
 
@@ -2735,15 +2736,16 @@ might try typing `S' now just to see what is salvageable.
 
 [48
 
-] [49] [50] [51] [52] [53]) AED endfloat: Processing end Figures and Tables
-Package atenddvi Info: Last page = 54.
+] [49] [50] [51] [52] [53] [54])
+AED endfloat: Processing end Figures and Tables
+Package atenddvi Info: Last page = 55.
+ [55]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 434.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 434.
 
-[54]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 432.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 432.
- (C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\afidraftRnw.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 432.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 432.
+(C:\Dropbox\Work\Research\Projects\NLSY\AFI\R\afidraftRnw.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 434.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 434.
 Package rerunfilecheck Info: File `afidraftRnw.out' has not changed.
 (rerunfilecheck)             Checksum: 38A5309CCA4C1DB8C499E169548B3601;2493.
 
@@ -2752,10 +2754,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 33803 strings out of 493921
- 631096 string characters out of 3147269
- 714632 words of memory out of 3000000
- 36215 multiletter control sequences out of 15000+200000
+ 33830 strings out of 493921
+ 631587 string characters out of 3147269
+ 714751 words of memory out of 3000000
+ 36231 multiletter control sequences out of 15000+200000
  71018 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,12n,76p,10373b,1755s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2772,9 +2774,9 @@ blic/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/lm/lmtt12.pfb>
-Output written on afidraftRnw.pdf (54 pages, 485551 bytes).
+Output written on afidraftRnw.pdf (55 pages, 488903 bytes).
 PDF statistics:
- 886 PDF objects out of 1000 (max. 8388607)
- 218 named destinations out of 1000 (max. 500000)
+ 905 PDF objects out of 1000 (max. 8388607)
+ 229 named destinations out of 1000 (max. 500000)
  319 words of extra memory for PDF output out of 10000 (max. 10000000)
 

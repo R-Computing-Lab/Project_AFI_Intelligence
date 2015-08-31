@@ -810,6 +810,40 @@ Hogben, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Hutchinson%
+, Jemmott%
+, Jemmott%
+, Braverman%
+\BCBL {}\ \BBA {} Fong%
+}{%
+Hutchinson%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+hutchinson2003role}
+\APACinsertmetastar {%
+hutchinson2003role}%
+\begin{APACrefauthors}%
+Hutchinson, M\BPBI K.%
+, Jemmott, J\BPBI B.%
+, Jemmott, L\BPBI S.%
+, Braverman, P.%
+\BCBL {}\ \BBA {} Fong, G\BPBI T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The role of mother--daughter sexual risk communication
+  in reducing sexual risk behaviors among urban adolescent females: a
+  prospective study}} {{The role of mother--daughter sexual risk communication
+  in reducing sexual risk behaviors among urban adolescent females: a
+  prospective study}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of adolescent health}{33}{2}{98--107}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Kaestle%
 , Halpern%
 , Miller%
@@ -1226,6 +1260,33 @@ McGrevy, D\BPBI F.%
   \APACbVolEdTR{}{\BTR{}}.
 \newblock
 \APACaddressInstitution{}{DTIC Document}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mercy%
+\ \BBA {} Steelman%
+}{%
+Mercy%
+\ \BBA {} Steelman%
+}{%
+{\protect \APACyear {1982}}%
+}]{%
+mercy1982familial}
+\APACinsertmetastar {%
+mercy1982familial}%
+\begin{APACrefauthors}%
+Mercy, J\BPBI A.%
+\BCBT {}\ \BBA {} Steelman, L\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1982}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Familial influence on the intellectual attainment of
+  children}} {{Familial influence on the intellectual attainment of
+  children}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Sociological Review}{}{}{532--542}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
