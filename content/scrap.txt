@@ -1,0 +1,42 @@
+#########SCRAP WRITING
+
+
+\begin{comment}
+
+
+Indeed many of the negative consequences of early AFI, such as reduced education attainment vanish when analyses are adjusted for intelligence and various family level variables \citep[such as parental education][]{Spriggs2008}. Accordingly it stands to reason that the relationship between intelligence and AFI could be a product of the same phenomena. \end{comment}
+
+Alternatively, the link between intelligence and AFI could also be the product of individual level confounds that are highly correlated with both intelligence and AFI. 
+\begin{comment}Moreover, many of the consequences associated with early AFI, such as teenage pregnancy, are in part a function of family level factors \citep{fergusson1999maternal}.
+\end{comment}
+
+\begin{itemize}
+\item family level factors (ses, mother education, use mother intelligence as a transition)
+\begin{itemize} \item Disadvantaged Backgrounds are associated with both lower levels of intelligence and earlier AFI. 
+\begin{itemize} \item poverty\item larger family \item lower SES \item being on welfare \end{itemize}
+\item Parental Characteristics \begin{itemize} \item parental education  \item marital status
+\item parental intelligence
+\end{itemize}\end{itemize}
+\item alternative individual level factors (genes, education, presplit)
+school performance, delinquency
+\end{itemize}
+
+
+substantive confounds\\
+
+statistical confounds\\, use to transition to explaining between and within family findings. IF a result is truly causal, then findings from between family analyses will be replicated by within family results. IF said replication fails, then the characteristic cannot be a direct cause of the effect. That isn't to say intelligence isn't a distal cause -- any many of the AFI-intelligence theories suggest that risk perception is an essential element . However, being intelligent in and of itself does not cause changes in AFI
+
+\subsection{Between vs. Within Family Analyses}
+
+Therefore, in order to determine whether the link between intelligence and AFI is causal, we need to find a way to untangle the between family influences from the within family (i.e. causal) influences. One of the fundamental challenges in psychological research is evaluating causal hypotheses that are either situation driven or person driven. Randomized experiments are particularly effective at determining causality for situational hypotheses because random assignment controls for genetic and environmental confounds across repeated trials. However, some situation driven explanations, such as maternal influence, cannot be ethically evaluated via randomized experiment. Moreover, evaluating person-driven hypotheses are comparably problematic, as random assignment of person characteristics (e.g., personality) isn't feasible (see \citealp{west2009alternatives}). Traditional alternatives to evaluating such hypotheses tend to focus upon between-family longitudinal studies, where potential confounds are included as covariates.
+
+However, the between-family covariate approach cannot control for systematically confounded genetic characteristics and environmental influences. The approach can result in misattributions of causality, as the misattributed cause might sufficiently covary with the true cause. Indeed, poverty and individual differences covary with genes and environment, to such a degree that between family analyses are fundamentally biased \citep{Rowe1997}. Yet, the covariate approach has been the primary method used to evaluate the causal mechanism behind the AFI-intelligence relationship.
+
+
+NOTE THAT AGE IS INDUCED AS A CONFOUND WHEN DOING WITHIN SINGLE FAMILT< SHOUTLDN"T BE PROBELM IN MDAN -- we're comparing first borns across. MOREOVER--AGE AT ASSESSMENT CONFOUNDS -- HENCE WE GOT SCORES AT SAME DEVELOPMENTAL AGE
+**CLEANING** Pillaged from NSF GRFP
+
+
+Instead, quasi-experimental designs can be used; such designs support causal inference without random assignment. Sibling-based quasi-experimental models are particularly effective at incorporating genetic and environmental design elements. However, such models are underused in psychology (Rodgers \textit{et al}, 2001), tend to focus on environmental confounds and do not naturally incorporate varying levels of relatedness. 
+
+Traditional sibling comparison models often rely on rare events (i.e., twins) or advanced methodology (e.g., propensity score matching, multilevel modeling). As an alternative, we have adapted Kenny's reciprocal standard dyad model\citep{kenny2001social,kenny2006dyadic}. Our adaptation controls for gene and shared environmental influences within a simple regression framework, by taking the difference between the two siblings

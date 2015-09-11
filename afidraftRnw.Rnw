@@ -166,7 +166,6 @@
 
 \cmb{content/current_study.txt}\section{Current Study}\label{current_study}\vspace{-.61cm}\input{content/current_study.txt}
 
-
 \section{Methods}\cmb{content/methods.txt}\input{content/methods.txt}
 <<setup, include=FALSE>>=
 file_drive= "C:"

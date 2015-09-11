@@ -143,8 +143,7 @@ Berbaum, M\BPBI L.%
 \bibitem [\protect \citeauthoryear {%
 Black%
 , Devereux%
-, Salvanes%
-\BCBL {}\ \BBA {} Salvanesz%
+\BCBL {}\ \BBA {} Salvanes%
 }{%
 Black%
 \ \protect \BOthers {.}}{%
@@ -156,8 +155,7 @@ black2011older}%
 \begin{APACrefauthors}%
 Black, S\BPBI E.%
 , Devereux, P\BPBI J.%
-, Salvanes, K\BPBI G.%
-\BCBL {}\ \BBA {} Salvanesz, K\BPBI G.%
+\BCBL {}\ \BBA {} Salvanes, K\BPBI G.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -225,6 +223,36 @@ Boislard, P\BPBI M\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Bouchard%
+}{%
+Bouchard%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+Bouchard2004}
+\APACinsertmetastar {%
+Bouchard2004}%
+\begin{APACrefauthors}%
+Bouchard, T\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{aug}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Genetic Influence on Human Psychological Traits. A
+  Survey}} {{Genetic Influence on Human Psychological Traits. A
+  Survey}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Current Directions in Psychological
+  Science}{13}{4}{148--151}.
+\newblock
+\begin{APACrefURL} \url{http://cdp.sagepub.com/content/13/4/148}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1111/j.0963-7214.2004.00295.x} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Bozon%
 }{%
 Bozon%
@@ -283,7 +311,7 @@ Buhi, E\BPBI R.%
 }{%
 {Center for Human Resources Research}%
 }{%
-{\protect \APACyear {2006}}%
+{\protect \APACyear {2009}}%
 }]{%
 nlsy79datauser}
 \APACinsertmetastar {%
@@ -293,10 +321,20 @@ nlsy79datauser}%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2006}.
+\APACrefYear{2009}.
 \newblock
-\APACrefbtitle {{NLSY79 Child and Young Adult Data Users Guide}} {{NLSY79 Child
-  and Young Adult Data Users Guide}}.
+\APACrefbtitle {{NLSY79 CHILD & YOUNG ADULT DATA USERS GUIDE: A Guide to the
+  1986 - 2006 Child Data 1994 - 2006 Young Adult Data}} {{NLSY79 CHILD & YOUNG
+  ADULT DATA USERS GUIDE: A Guide to the 1986 - 2006 Child Data 1994 - 2006
+  Young Adult Data}}.
+\newblock
+\APACaddressPublisher{}{Bureau of Labor Statistics, U.S. Department of Labor}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.nlsinfo.org/pub/usersvc/Child-Young-Adult/2006ChildYA-DataUsersGuide.pdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{bbbbbbbbbbbbbbbb} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -672,7 +710,12 @@ Harden, K\BPBI P.%
   on adolescent sexual behavior: Why genes matter for environmentally oriented
   researchers.}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Psychological bulletin}{140}{2}{434}.
+\APACjournalVolNumPages{Psychological bulletin}{140}{2}{434--65}.
+\newblock
+\begin{APACrefURL} \url{http://www.ncbi.nlm.nih.gov/pubmed/23855958}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1037/a0033564} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -684,9 +727,9 @@ Harden%
 }{%
 {\protect \APACyear {2011}}%
 }]{%
-harden2011don}
+Harden2011}
 \APACinsertmetastar {%
-harden2011don}%
+Harden2011}%
 \begin{APACrefauthors}%
 Harden, K\BPBI P.%
 \BCBT {}\ \BBA {} Mendle, J.%
@@ -699,7 +742,9 @@ Harden, K\BPBI P.%
   approach}} {{Why don't smart teens have sex? A behavioral genetic
   approach}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Child development}{82}{4}{1327--1344}.
+\APACjournalVolNumPages{Child Development}{82}{4}{1327--1344}.
+\newblock
+\begin{APACrefDOI} \doi{10.1111/j.1467-8624.2011.01607.x} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1346,7 +1391,7 @@ Miller, B\BPBI C.%
   family, peer, and other antecedents}} {{The timing of sexual intercourse
   among adolescents family, peer, and other antecedents}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Youth \& Society}{29}{1}{54--83}.
+\APACjournalVolNumPages{Youth and Society}{29}{1}{54--83}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1503,6 +1548,34 @@ Neisser, U.%
   and unknowns.}}\ (\BVOL~51)\ (\BNUM~2).
 \newblock
 \begin{APACrefDOI} \doi{10.1037/0003-066X.51.2.77} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Page%
+\ \BBA {} Grandon%
+}{%
+Page%
+\ \BBA {} Grandon%
+}{%
+{\protect \APACyear {1979}}%
+}]{%
+page1979family}
+\APACinsertmetastar {%
+page1979family}%
+\begin{APACrefauthors}%
+Page, E\BPBI B.%
+\BCBT {}\ \BBA {} Grandon, G\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1979}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Family configuration and mental ability: Two theories
+  contrasted with US data}} {{Family configuration and mental ability: Two
+  theories contrasted with US data}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Educational Research
+  Journal}{16}{3}{257--272}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2249,30 +2322,6 @@ Welsh, J\BPBI R.%
 \newblock
 \APACaddressInstitution{Brooks Air Force Base, Texas}{Manpower and Personnel
   Division Air Force Human Resources Laboratory}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-West%
-}{%
-West%
-}{%
-{\protect \APACyear {2009}}%
-}]{%
-west2009alternatives}
-\APACinsertmetastar {%
-west2009alternatives}%
-\begin{APACrefauthors}%
-West, S\BPBI G.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2009}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Alternatives to randomized experiments}} {{Alternatives
-  to randomized experiments}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Current Directions in Psychological
-  Science}{18}{5}{299--304}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
