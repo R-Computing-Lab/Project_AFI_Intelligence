@@ -223,9 +223,9 @@ Boislard, P\BPBI M\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Bouchard%
+{Bouchard, Jr.}%
 }{%
-Bouchard%
+{Bouchard, Jr.}%
 }{%
 {\protect \APACyear {2004}}%
 }]{%
@@ -233,7 +233,7 @@ Bouchard2004}
 \APACinsertmetastar {%
 Bouchard2004}%
 \begin{APACrefauthors}%
-Bouchard, T\BPBI J.%
+{Bouchard, Jr.}, T\BPBI J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -311,7 +311,7 @@ Buhi, E\BPBI R.%
 }{%
 {Center for Human Resources Research}%
 }{%
-{\protect \APACyear {2009}}%
+{\protect \APACyear {2006}}%
 }]{%
 nlsy79datauser}
 \APACinsertmetastar {%
@@ -321,20 +321,10 @@ nlsy79datauser}%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2009}.
+\APACrefYear{2006}.
 \newblock
-\APACrefbtitle {{NLSY79 CHILD & YOUNG ADULT DATA USERS GUIDE: A Guide to the
-  1986 - 2006 Child Data 1994 - 2006 Young Adult Data}} {{NLSY79 CHILD & YOUNG
-  ADULT DATA USERS GUIDE: A Guide to the 1986 - 2006 Child Data 1994 - 2006
-  Young Adult Data}}.
-\newblock
-\APACaddressPublisher{}{Bureau of Labor Statistics, U.S. Department of Labor}.
-\newblock
-\begin{APACrefURL}
-  \url{https://www.nlsinfo.org/pub/usersvc/Child-Young-Adult/2006ChildYA-DataUsersGuide.pdf}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{bbbbbbbbbbbbbbbb} \end{APACrefDOI}
+\APACrefbtitle {{NLSY79 Child and Young Adult Data Users Guide}} {{NLSY79 Child
+  and Young Adult Data Users Guide}}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -550,6 +540,36 @@ Dunn, L\BPBI M.%
   achievement test}}.
 \newblock
 \APACaddressPublisher{}{American Guidance Service}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Engel%
+}{%
+Engel%
+}{%
+{\protect \APACyear {1977}}%
+}]{%
+Engel1977}
+\APACinsertmetastar {%
+Engel1977}%
+\begin{APACrefauthors}%
+Engel, G\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1977}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The need for a new medical model: a challenge for
+  biomedicine}} {{The need for a new medical model: a challenge for
+  biomedicine}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Science}{196}{4286}{129--136}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencemag.org/content/196/4286/129\nhttp://www.ncbi.nlm.nih.gov/pubmed/847460}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1126/science.847460} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -776,33 +796,6 @@ Harden, K\BPBI P.%
   {{Rethinking timing of first sex and delinquency}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Youth and Adolescence}{37}{4}{373--385}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Herrnstein%
-\ \BBA {} Murray%
-}{%
-Herrnstein%
-\ \BBA {} Murray%
-}{%
-{\protect \APACyear {1994}}%
-}]{%
-herrnstein1994bell}
-\APACinsertmetastar {%
-herrnstein1994bell}%
-\begin{APACrefauthors}%
-Herrnstein, R\BPBI J.%
-\BCBT {}\ \BBA {} Murray, C.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1994}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{The bell curve: The reshaping of American life by
-  differences in intelligence}} {{The bell curve: The reshaping of American
-  life by differences in intelligence}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{New York: Free}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1522,6 +1515,37 @@ Muth\'{e}n, L\BPBI K.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Nedelec%
+, Schwartz%
+, Connolly%
+\BCBL {}\ \BBA {} Beaver%
+}{%
+Nedelec%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+nedelec2012exploring}
+\APACinsertmetastar {%
+nedelec2012exploring}%
+\begin{APACrefauthors}%
+Nedelec, J\BPBI L.%
+, Schwartz, J\BPBI A.%
+, Connolly, E\BPBI J.%
+\BCBL {}\ \BBA {} Beaver, K\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Exploring the association between IQ and differential
+  life outcomes: Results from a longitudinal sample of monozygotic twins}}
+  {{Exploring the association between IQ and differential life outcomes:
+  Results from a longitudinal sample of monozygotic twins}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Temas em Psicologia}{20}{1}{31--43}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Neisser%
 \ \protect \BOthers {.}}{%
 Neisser%
@@ -1534,7 +1558,7 @@ Neisser1996}%
 \begin{APACrefauthors}%
 Neisser, U.%
 , Boodoo, G.%
-, {Bouchard, Thomas J.}, J.%
+, {Bouchard, Jr.}, T\BPBI J.%
 , Boykin, A\BPBI W.%
 , Brody, N.%
 , Ceci, S\BPBI J.%
