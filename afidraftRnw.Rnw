@@ -7,19 +7,24 @@
 \usepackage{listings}
 \usepackage{verbatim}
 \usepackage[yyyymmdd,hhmmss]{datetime}
-\usepackage{changepage}
-\usepackage{lineno} %Line numbering
+
+
+%%% Page size and length etc
 \usepackage{pdflscape}
 \usepackage{longtable}
+\usepackage{changepage}
+\usepackage{lineno} %Line numbering
 
 %%% Lists
 \usepackage{enumitem}%resume numbering
 
 %%% Graphics
-\usepackage{animate}
-\usepackage{media9}
 \usepackage{graphicx}
 \usepackage[graphicx]{realboxes}
+
+%%% Animate
+\usepackage{animate}
+\usepackage{media9}
 
 %%% References
 \usepackage{varioref} %references page location
@@ -157,7 +162,7 @@
 
 \abstract{Your abstract here.\\\today\ at \currenttime}
 
-\authornote{This material is based upon work that has been supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. (DGE-1445197) and various means of institutional support from the following universities: University of British Columbia \& Vanderbilt University.}
+\authornote{This material is based upon work that has been supported by [INSERT JOE'S GRANTS HERE] and the National Science Foundation Graduate Research Fellowship Program under Grant No. (DGE-1445197) and various means of institutional support from the following universities: University of British Columbia \& Vanderbilt University.}
 
 \begin{document}
 \maketitle
@@ -173,22 +178,24 @@ file_drive= "C:"
 #Libraries
 
 library(devtools);dev_mode(on=T)
-library(WrightMap)
-library(knitr)
-library(ggplot2)
 library(effects)
-library(stargazer)
-library(NlsyLinks)
-library(plyr)
-library(tables)
+library(ggplot2)
 library(Hmisc)
+library(knitr)
 library(MplusAutomation)
+library(NlsyLinks)
+library(plyr);library(psych)
+library(stargazer)
+library(tables)
+library(WrightMap)
+library(xtable)
 #install_github("LiveOak/NlsyLinks")
 #install_github("ggplot2")#dev_mode(on=F) 
 #install_github("harrelfe/Hmisc")
 #Functions
 ####### FUNCTIONS #######
-source("https://raw.githubusercontent.com/smasongarrison/Functions/master/Mason_Functions.R")
+#source("https://raw.githubusercontent.com/smasongarrison/Functions/master/Mason_Functions.R")
+source(paste(file_drive,"/Dropbox/Work/Templates/R/Functions/Mason_Functions.R",sep=""))
 
 #OPtions
 options(scipen=999)
@@ -232,6 +239,8 @@ model.meanmomskids.b_9<-lm(AFIKIDmean ~ INTMOMmean + Int_Mean, data = data)
 model.diffkids.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = data)
 model.diffmoms.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
+@
+<<setup_Data_10,include=FALSE>>=
 #Data_10
 LinkedMDAN_discord_AFI_z_10 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_1011912.csv",sep=""))
 LinkedMDAN_discord_AFI_z_10$Gendermean<-as.factor(LinkedMDAN_discord_AFI_z_10$Gendermean)
@@ -268,6 +277,8 @@ model.meanmomskids.b_10<-lm(AFIKIDmean ~ INTMOMmean + Int_Mean, data = data)
 model.diffkids.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = data)
 model.diffmoms.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
+@
+<<setup_Data_11,include=FALSE>>=
 #Data_11
 LinkedMDAN_discord_AFI_z_11 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_11121013.csv",sep=""))
 LinkedMDAN_discord_AFI_z_11$Gendermean<-as.factor(LinkedMDAN_discord_AFI_z_11$Gendermean)
@@ -304,6 +315,8 @@ model.meanmomskids.b_11<-lm(AFIKIDmean ~ INTMOMmean + Int_Mean, data = data)
 model.diffkids.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = data)
 model.diffmoms.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
+@
+<<setup_summarystats,include=FALSE>>=
 #summarystats
 birthweight <- read.table(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/79/SASGen1Kids/birthweight.dat",sep=""), quote="\"", stringsAsFactors=FALSE)
 names(birthweight)<-c('CASEID','MCASEID','RACE','SEX_G2','YRB','WGT')
@@ -323,13 +336,13 @@ names(new_data) <- c('C0000100','C0000200','C0005300','C0005400')
   new_data[new_data == -2] = NA  # Dont know 
   new_data[new_data == -3] = NA  # Invalid missing 
   new_data[new_data == -7] = NA  # Missing 
-
+  
 # If there are values not categorized they will be represented as NA
 vallabels = function(data) {
  # data$C0000100 <- cut(data$C0000100, c(1.0,9999999.0), labels=c("1 TO 9999999: See Min & Max values below for range as of this release"), right=FALSE)
 #  data$C0000200 <- cut(data$C0000200, c(1.0,12686.0), labels=c("1 TO 12686: NLSY79 Public ID"), right=FALSE)
-  data$C0005300 <- factor(data$C0005300, levels=c(1.0,2.0,3.0), labels=c("HISPANIC","BLACK","NON-BLACK, NON-HISPANIC"))
-  data$C0005400 <- factor(data$C0005400, levels=c(1.0,2.0), labels=c("MALE","FEMALE"))
+  data$C0005300 <- factor(data$C0005300, levels=c(1.0,2.0,3.0), labels=c("Hispanic","Black","Non-Black, Non-Hispanic"))
+  data$C0005400 <- factor(data$C0005400, levels=c(1.0,2.0), labels=c("Male","Female"))
   return(data)
 }
 
@@ -363,14 +376,169 @@ names(Gen2AFI_exportconcor)<-c("CASEID","AFI_G2")
 Gen1AFIConcor <- merge(momintel,Gen1AFI_exportconcor,by="MCASEID",all=T)
 Gen2AFIConcor <- merge(kidintel,Gen2AFI_exportconcor,by="CASEID",all=T)
 Gen2AFIConcor_2 <- merge(categories_g2,Gen2AFI_exportconcor,by="CASEID",all=T)
+@
+<<setup_Reliability,include=FALSE>>=
+##Reliability 
+#AFI
 
+new_data <- read.table('afi_reliability.dat', sep=' ')
+names(new_data) <- c('R0000100','R0000149','R0214700','R0214800','R0988000','R1020700','R1312200','R1379600','R1379700','R1379800','R1691600','R1760000','R1760100','R1760200')
+
+# Handle missing values
+  new_data[new_data == -1] = NA  # Refused 
+  new_data[new_data == -2] = NA  # Dont know 
+  new_data[new_data == -3] = NA  # Invalid missing 
+  new_data[new_data == -4] = NA  # Valid missing 
+  new_data[new_data == -5] = NA  # Non-interview 
+
+# If there are values not categorized they will be represented as NA
+vallabels = function(data) {
+  data$R0214700 <- factor(data$R0214700, levels=c(1.0,2.0,3.0), labels=c("Hispanic","Black","Non-Black, Non-Hispanic"))
+  data$R0214800 <- factor(data$R0214800, levels=c(1.0,2.0), labels=c("Male","Female"))
+  return(data)
+}
+
+varlabels <- c(    "ID# (1-12686) 79",
+    "HH ID # 79",
+    "RACL/ETHNIC COHORT /SCRNR 79",
+    "SEX OF R 79",
+    "MALE AGE 1ST HAD INTERCOURSE 83",
+    "F AGE 1ST HAD SEXUAL INTERCOURSE 83",
+    "MALE AGE 1ST HAD INTERCOURSE 84",
+    "F AGE 1ST HAD SEXUAL INTERCOURSE 84",
+    "F USE B-DT YR 1ST INTERCOURSE 84",
+    "F MO SEXUAL INTERCOURSE 1ST TIME 84",
+    "MALE AGE 1ST HAD INTERCOURSE 85",
+    "F AGE 1ST HAD SEXUAL INTERCOURSE 85",
+    "F USE B-DT YR/1ST INTERCOURSE 85",
+    "F MO SEXUAL INTERCOURSE 1ST TIME 85"
+)
+
+# Use qnames rather than rnums
+qnames = function(data) {
+  names(data) <- c("CASEID","HHID","RACE","SEX","MAFI_1983","FAFI_1983","MAFI_1984","FAFI_1984","FAFI_YEAR_1984","FAFI_MON_1984","MAFI_1985","FAFI_1985","FAFI_YEAR_1985","FAFI_MON_1985")
+  return(data)
+}
+
+
+# Remove the '#' before the following line to create a data file called "categories" with value labels. 
+categories <- vallabels(new_data)
+
+# Remove the '#' before the following lines to rename variables using Qnames instead of Reference Numbers
+categories <- qnames(categories)
+testretest<-categories[,c(1,2,4)]
+testretest$AFI_83<-as.numeric(NA);testretest$AFI_84<-as.numeric(NA);testretest$AFI_85<-as.numeric(NA);testretest$AFI_83z<-as.numeric(NA);testretest$AFI_84z<-as.numeric(NA);testretest$AFI_85z<-as.numeric(NA)
+for(i in 1:length(categories[,1])){
+  if(testretest$SEX[i]=="Male"){
+    testretest$AFI_83[i]<-as.numeric(categories$MAFI_1983[i])
+    testretest$AFI_84[i]<-as.numeric(categories$MAFI_1984[i])
+    testretest$AFI_85[i]<-as.numeric(categories$MAFI_1985[i])
+    testretest$AFI_83z[i]<-(as.numeric(categories$MAFI_1983[i])-15.88)/2.15
+    testretest$AFI_84z[i]<-(as.numeric(categories$MAFI_1984[i])-15.88)/2.15
+    testretest$AFI_85z[i]<-(as.numeric(categories$MAFI_1985[i])-15.88)/2.15
+  }
+    if(testretest$SEX[i]=="Female"){
+    testretest$AFI_83[i]<-as.numeric(categories$FAFI_1983[i])
+    testretest$AFI_84[i]<-as.numeric(categories$FAFI_1984[i])
+    testretest$AFI_85[i]<-as.numeric(categories$FAFI_1985[i])
+    testretest$AFI_83z[i]<-(as.numeric(categories$FAFI_1983[i])-16.47)/1.99
+    testretest$AFI_84z[i]<-(as.numeric(categories$FAFI_1984[i])-16.47)/1.99
+    testretest$AFI_85z[i]<-(as.numeric(categories$FAFI_1985[i])-16.47)/1.99
+    }
+}
+names(momintel)<-c("CASEID","Intel_G1","Intel_G1_SE","HID") 
+testretest<-merge(testretest,momintel[c(1,2)],by="CASEID", all=T)
+
+library(NlsyLinks)
+dsLinking <- subset(Links79Pair, RelationshipPath=="Gen1Housemates")
+
+dsOutcomes <- testretest
+dsOutcomes$SubjectTag <-dsOutcomes$CASEID*100
+dsSingle <- CreatePairLinksSingleEntered(
+outcomeDataset = dsOutcomes,
+linksPairDataset = dsLinking,
+outcomeNames = c(
+"AFI_83","AFI_84","AFI_85","AFI_83z","AFI_84z","AFI_85z"
+)
+)
+dsD <- CreatePairLinksDoubleEntered(
+outcomeDataset = dsOutcomes,
+linksPairDataset = dsLinking,
+outcomeNames = c(
+"AFI_83","AFI_84","AFI_85","AFI_83z","AFI_84z","AFI_85z","Intel_G1","SEX"
+)
+)
+dsD_nm<-dsD[dsD$SEX_S1=="FEMALE"]
+dsSingle$DIF_AFI_83z<-dsSingle$AFI_83z_S1-dsSingle$AFI_83z_S2
+dsSingle$DIF_AFI_84z<-dsSingle$AFI_84z_S1-dsSingle$AFI_84z_S2
+dsSingle$DIF_AFI_85z<-dsSingle$AFI_85z_S1-dsSingle$AFI_85z_S2
+matrix_g1<-data.frame(dsD$Intel_G1_S1,dsD$Intel_G1_S2,)
+
+matrix_afi_diff<-data.frame(dsSingle$DIF_AFI_83z,dsSingle$DIF_AFI_84z,dsSingle$DIF_AFI_85z)
+names(matrix_afi_diff)<-c("1983","1984","1985")
+capture.output(xtable(cor_1star(matrix_afi_diff,2,.01,include.n=TRUE)),file="content/table/table_diffafireliable_z.tex")
+matrix_tt_z<-data.frame(dsD$AFI_83z_S1,dsD$AFI_84z_S1,dsD$AFI_85z_S1)
+#matrix_tt<-data.frame(dsD$AFI_83_S1,dsD$AFI_84_S1,dsD$AFI_85_S1)
+#matrix_tt[matrix_tt<12]<-NA
+names(matrix_tt_z)<-c("1983","1984","1985")
+#names(matrix_tt)<-c("1983","1984","1985")
+capture.output(xtable(cor_1star(matrix_tt_z,2,.01,include.n=TRUE)),file="content/table/table_ttafireliable_z.tex")
+capture.output(xtable(cor_1star(matrix_g1,2,.01,include.n=TRUE)),file="content/table/table_sibintreliable_z.tex")
+#capture.output(xtable(cor_1star(matrix_tt,2,.01,include.n=TRUE)),file="content/table/table_ttafireliable.tex")
+#INTEL
+G_G2_9.5 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/79/kidsintl/cleaned_CFA_G_around_910811.csv",sep=""), header=FALSE)
+names(G_G2_9.5)<-c("CASEID","ASEID","G_G2_9.5","G_SE_G2_9.5","MCASEID")
+G_G2_10.5 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/79/kidsintl/cleaned_CFA_G_around_1011912.csv",sep=""), header=FALSE)
+names(G_G2_10.5)<-c("CASEID","ASEID","G_G2_10.5","G_SE_G2_10.5","MCASEID")
+G_G2_11.5 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/79/kidsintl/cleaned_CFA_G_around_11121013.csv",sep=""), header=FALSE)
+names(G_G2_11.5)<-c("CASEID","ASEID","G_G2_11.5","G_SE_G2_11.5","MCASEID")
+temp<-merge(G_G2_9.5[c(1,3)],G_G2_10.5[c(1,3)],by="CASEID",all=T)
+G_G2<-merge(temp,G_G2_11.5[c(1,3)],by="CASEID",all=T)
+capture.output(xtable(cor_1star(G_G2[2:4],2,.01,include.n=TRUE)),file="content/table/table_ttintreliable_z.tex")
+#standardized gendermxedd
+LinkedMDAN_discord_AFI_z_9_m<-LinkedMDAN_discord_AFI_z_9[,c(2,56,66,68,70,72,90)]
+names(LinkedMDAN_discord_AFI_z_9_m) <-c("ID" ,"AFIMOMdiff_9", "INTMOMdiff_9","AFMKIDdiff_9","AFIKIDdiff_9","CSMOMdiff_9",  "Intdiff_9" ) 
+LinkedMDAN_discord_AFI_z_10_m<-LinkedMDAN_discord_AFI_z_10[,c(2,56,66,68,70,72,90)]
+names(LinkedMDAN_discord_AFI_z_10_m) <-c("ID" ,"AFIMOMdiff_10", "INTMOMdiff_10","AFMKIDdiff_10","AFIKIDdiff_10","CSMOMdiff_10",  "Intdiff_10" ) 
+LinkedMDAN_discord_AFI_z_11_m<-LinkedMDAN_discord_AFI_z_11[,c(2,56,66,68,70,72,90)]
+names(LinkedMDAN_discord_AFI_z_11_m) <-c("ID" ,"AFIMOMdiff_11", "INTMOMdiff_11","AFMKIDdiff_11","AFIKIDdiff_11","CSMOMdiff_11",  "Intdiff_11" ) 
+diffscorereliable_z <- merge(LinkedMDAN_discord_AFI_z_9_m,LinkedMDAN_discord_AFI_z_10_m,by="ID",all=T)
+diffscorereliable_z <- merge(diffscorereliable_z,LinkedMDAN_discord_AFI_z_11_m,by="ID",all=T)
+matrix_z<-data.frame(diffscorereliable_z$Intdiff_9,diffscorereliable_z$Intdiff_10,diffscorereliable_z$Intdiff_11)
+names(matrix_z)<-c("Age 9.5","Age 10.5","Age 11.5")
+#Girls
+LinkedMDAN_discord_AFI_g_9_m<-LinkedMDAN_discord_AFI_g_9[,c(2,57,67,69,71,73,92)]
+names(LinkedMDAN_discord_AFI_g_9_m) <-c("ID" ,"AFIMOMdiff_9", "INTMOMdiff_9","AFMKIDdiff_9","AFIKIDdiff_9","CSMOMdiff_9",  "Intdiff_9" ) 
+LinkedMDAN_discord_AFI_g_10_m<-LinkedMDAN_discord_AFI_g_10[,c(2,57,67,69,71,73,92)]
+names(LinkedMDAN_discord_AFI_g_10_m) <-c("ID" ,"AFIMOMdiff_10", "INTMOMdiff_10","AFMKIDdiff_10","AFIKIDdiff_10","CSMOMdiff_10",  "Intdiff_10" ) 
+LinkedMDAN_discord_AFI_g_11_m<-LinkedMDAN_discord_AFI_g_11[,c(2,57,67,69,71,73,92)]
+names(LinkedMDAN_discord_AFI_g_11_m) <-c("ID" ,"AFIMOMdiff_11", "INTMOMdiff_11","AFMKIDdiff_11","AFIKIDdiff_11","CSMOMdiff_11",  "Intdiff_11" ) 
+diffscorereliable_g <- merge(LinkedMDAN_discord_AFI_g_9_m,LinkedMDAN_discord_AFI_g_10_m,by="ID",all=T)
+diffscorereliable_g <- merge(diffscorereliable_g,LinkedMDAN_discord_AFI_g_11_m,by="ID",all=T)
+matrix_g<-data.frame(diffscorereliable_g$Intdiff_9,diffscorereliable_g$Intdiff_10,diffscorereliable_g$Intdiff_11)
+names(matrix_g)<-c("Age 9.5","Age 10.5","Age 11.5")
+
+##Boys
+LinkedMDAN_discord_AFI_b_9_m<-LinkedMDAN_discord_AFI_b_9[,c(2,57,67,69,71,73,92)]
+names(LinkedMDAN_discord_AFI_b_9_m) <-c("ID" ,"AFIMOMdiff_9", "INTMOMdiff_9","AFMKIDdiff_9","AFIKIDdiff_9","CSMOMdiff_9",  "Intdiff_9" ) 
+LinkedMDAN_discord_AFI_b_10_m<-LinkedMDAN_discord_AFI_b_10[,c(2,57,67,69,71,73,92)]
+names(LinkedMDAN_discord_AFI_b_10_m) <-c("ID" ,"AFIMOMdiff_10", "INTMOMdiff_10","AFMKIDdiff_10","AFIKIDdiff_10","CSMOMdiff_10",  "Intdiff_10" ) 
+LinkedMDAN_discord_AFI_b_11_m<-LinkedMDAN_discord_AFI_b_11[,c(2,57,67,69,71,73,92)]
+names(LinkedMDAN_discord_AFI_b_11_m) <-c("ID" ,"AFIMOMdiff_11", "INTMOMdiff_11","AFMKIDdiff_11","AFIKIDdiff_11","CSMOMdiff_11",  "Intdiff_11" ) 
+diffscorereliable_b <- merge(LinkedMDAN_discord_AFI_b_9_m,LinkedMDAN_discord_AFI_b_10_m,by="ID",all=T)
+diffscorereliable_b <- merge(diffscorereliable_b,LinkedMDAN_discord_AFI_b_11_m,by="ID",all=T)
+matrix_b<-data.frame(diffscorereliable_b$Intdiff_9,diffscorereliable_b$Intdiff_10,diffscorereliable_b$Intdiff_11)
+names(matrix_b)<-c("Age 9.5","Age 10.5","Age 11.5")
+capture.output(xtable(cor_1star(matrix_b,2,.01,include.n=TRUE)),file="content/table/table_diffintreliable_b.tex")
+capture.output(xtable(cor_1star(matrix_g,2,.01,include.n=TRUE)),file="content/table/table_diffintreliable_g.tex")
+capture.output(xtable(cor_1star(matrix_z,2,.01,include.n=TRUE)),file="content/table/table_diffintreliable_z.tex")
 @
 <<measurement,include=FALSE>>=
 #G1
 #runModels(directory =paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/MplusG1",sep=""))
 ModelSummaries_Mplus<-extractModelSummaries(target = paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/MplusG1",sep=""))
 ModelSummaries_Mplus[,4]<-NULL;ModelSummaries_Mplus[,3]<-NULL;ModelSummaries_Mplus[,2]<-NULL;ModelSummaries_Mplus[,1]<-NULL;ModelSummaries_Mplus[,23]<-NULL
-capture.output(stargazer(ModelSummaries_Mplus,summary=FALSE,flip = TRUE, dep.var.labels.include = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_gen1measurement.tex",sep=""))
+capture.output(stargazer(ModelSummaries_Mplus,summary=FALSE,flip = TRUE, dep.var.labels.include = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_gen1measurement.tex",sep=""))
 
 ##irt plots
 
@@ -395,22 +563,23 @@ g2loading_11 <- read.csv(paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/
 ModelSummaries_Mplusg2_10<-extractModelSummaries(target = paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/MplusG2/g_around_1011912.out",sep=""))
 ModelSummaries_Mplusg2_11<-extractModelSummaries(target = paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/MplusG2/g_around_11121013.out",sep=""))
 ModelSummaries_Mplusg2_9[,4]<-NULL;ModelSummaries_Mplusg2_9[,3]<-NULL;ModelSummaries_Mplusg2_9[,2]<-NULL;ModelSummaries_Mplusg2_9[,1]<-NULL;ModelSummaries_Mplusg2_9[,26]<-NULL;ModelSummaries_Mplusg2_9[,7]<-NULL;ModelSummaries_Mplusg2_9[,7]<-NULL;ModelSummaries_Mplusg2_9[,7]<-NULL
-capture.output(stargazer(ModelSummaries_Mplusg2_9,summary=FALSE,flip = TRUE, dep.var.labels.include = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_g2_9measurement.tex",sep=""))
-capture.output(stargazer(g2loading_9,summary=FALSE,flip = FALSE, dep.var.labels.include = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_g2loading_9.tex",sep=""))
+capture.output(stargazer(ModelSummaries_Mplusg2_9,summary=FALSE,flip = TRUE, dep.var.labels.include = FALSE),file=paste0(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_g2_9measurement.tex"))
+capture.output(stargazer(g2loading_9,summary=FALSE,flip = FALSE, dep.var.labels.include = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_g2loading_9.tex",sep=""))
 
 ModelSummaries_Mplusg2_10[,4]<-NULL;ModelSummaries_Mplusg2_10[,3]<-NULL;ModelSummaries_Mplusg2_10[,2]<-NULL;ModelSummaries_Mplusg2_10[,1]<-NULL;ModelSummaries_Mplusg2_10[,26]<-NULL;ModelSummaries_Mplusg2_10[,7]<-NULL;ModelSummaries_Mplusg2_10[,7]<-NULL;ModelSummaries_Mplusg2_10[,7]<-NULL
-capture.output(stargazer(ModelSummaries_Mplusg2_10,summary=FALSE,flip = TRUE, dep.var.labels.include = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_g2_10measurement.tex",sep=""))
-capture.output(stargazer(g2loading_10,summary=FALSE,flip = FALSE, dep.var.labels.include = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_g2loading_10.tex",sep=""))
+capture.output(stargazer(ModelSummaries_Mplusg2_10,summary=FALSE,flip = TRUE, dep.var.labels.include = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_g2_10measurement.tex",sep=""))
+capture.output(stargazer(g2loading_10,summary=FALSE,flip = FALSE, dep.var.labels.include = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_g2loading_10.tex",sep=""))
 
 ModelSummaries_Mplusg2_11[,4]<-NULL;ModelSummaries_Mplusg2_11[,3]<-NULL;ModelSummaries_Mplusg2_11[,2]<-NULL;ModelSummaries_Mplusg2_11[,1]<-NULL;ModelSummaries_Mplusg2_11[,26]<-NULL;ModelSummaries_Mplusg2_11[,7]<-NULL;ModelSummaries_Mplusg2_11[,7]<-NULL;ModelSummaries_Mplusg2_11[,7]<-NULL
-capture.output(stargazer(ModelSummaries_Mplusg2_11,summary=FALSE,flip = TRUE, dep.var.labels.include = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_g2_11measurement.tex",sep=""))
-capture.output(stargazer(g2loading_11,summary=FALSE,flip = FALSE, dep.var.labels.include = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_g2loading_11.tex",sep=""))
+capture.output(stargazer(ModelSummaries_Mplusg2_11,summary=FALSE,flip = TRUE, dep.var.labels.include = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_g2_11measurement.tex",sep=""))
+capture.output(stargazer(g2loading_11,summary=FALSE,flip = FALSE, dep.var.labels.include = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_g2loading_11.tex",sep=""))
 
 @
 \cmb{content/Gen1measure.txt}\input{content/Gen1measure.txt}
 
 \cmb{content/Gen2measure.txt}\input{content/Gen2measure.txt}
 
+\cmb{content/differencescores.txt}\input{content/reliability.txt}
 \section{Results}\cmb{content/results.txt}\input{content/results.txt}
 %\subsection{Between vs. Within Illustration}
 
@@ -418,68 +587,68 @@ capture.output(stargazer(g2loading_11,summary=FALSE,flip = FALSE, dep.var.labels
 
 ##9.5
 capture.output(stargazer(model.meanmoms_9,model.meanmoms.g_9,model.meanmoms.b_9,font.size="small",no.space=TRUE,#style="demography",
-                         column.sep.width = "1pt",header = FALSE,covariate.labels=c("Gen1 Intel"), dep.var.labels=c("Mean Gen2 AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Mean_Mom_Intelligence_Mean_Child_AFI_9.tex",sep=""))
+                         column.sep.width = "1pt",header = FALSE,covariate.labels=c("Gen1 Intel"), dep.var.labels=c("Mean Gen2 AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Mean_Mom_Intelligence_Mean_Child_AFI_9.tex",sep=""))
 
-capture.output(stargazer(model.meankids_9,model.meankids.g_9,model.meankids.b_9,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE,covariate.labels=c("Gen2 Intel"), dep.var.labels=c("Mean Gen2 AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci = TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Mean_Child_Intelligence_Mean_Child_AFI_9.tex",sep=""))
+capture.output(stargazer(model.meankids_9,model.meankids.g_9,model.meankids.b_9,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE,covariate.labels=c("Gen2 Intel"), dep.var.labels=c("Mean Gen2 AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci = TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Mean_Child_Intelligence_Mean_Child_AFI_9.tex",sep=""))
 
 capture.output(stargazer(model.meanmomskids_9,model.meanmomskids.g_9,model.meanmomskids.b_9,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE, dep.var.labels=c("Mean Gen2 AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE,covariate.labels=c("Gen1 Intel","Gen2 Intel")
                          ),
-                         file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Mean_Joint_Intelligence_Mean_Child_AFI_9.tex",sep=""))
+                         file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Mean_Joint_Intelligence_Mean_Child_AFI_9.tex",sep=""))
 
 capture.output(stargazer(model.diffmoms_9,model.diffmoms.g_9,model.diffmoms.b_9,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE,dep.var.labels=c("Gen2 AFI Differences"),#covariate.labels=c("Gen2 AFI","Gen1 Intel", "Dif Gen1 Intel"),
-                         column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Dif_Mom_Intelligence_Dif_Child_AFI_9.tex",sep=""))
+                         column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Dif_Mom_Intelligence_Dif_Child_AFI_9.tex",sep=""))
 
 capture.output(stargazer(model.diffkids_9,model.diffkids.g_9,model.diffkids.b_9,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE,dep.var.labels=c("Gen2 AFI Differences"),#covariate.labels=c("Gen2 AFI","Gen2 Intel", "Dif Gen2 Intel"),
-                         column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Dif_Child_Intelligence_Dif_Child_AFI_9.tex",sep=""))
+                         column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Dif_Child_Intelligence_Dif_Child_AFI_9.tex",sep=""))
 
 
 capture.output(stargazer(model.diffmomskids_9,model.diffmomskids.g_9,model.diffmomskids.b_9,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE, dep.var.labels=c("Gen2 AFI Differences"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE#,covariate.labels=c("Gen2 AFI","Gen2 Intel","Gen1 Intel","Dif Gen2 Intel","Dif Gen1 Intel")
-                         ),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Dif_Joint_Intelligence_Dif_Child_AFI_9.tex",sep=""))
+                         ),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Dif_Joint_Intelligence_Dif_Child_AFI_9.tex",sep=""))
 
 ## 10.5
 capture.output(stargazer(model.meanmoms_10,model.meanmoms.g_10,model.meanmoms.b_10,font.size="small",no.space=TRUE,#style="demography",
-                         column.sep.width = "1pt",header = FALSE,covariate.labels=c("Gen1 Intel"), dep.var.labels=c("Mean AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Mean_Mom_Intelligence_Mean_Child_AFI_10.tex",sep=""))
+                         column.sep.width = "1pt",header = FALSE,covariate.labels=c("Gen1 Intel"), dep.var.labels=c("Mean AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Mean_Mom_Intelligence_Mean_Child_AFI_10.tex",sep=""))
 
-capture.output(stargazer(model.meankids_10,model.meankids.g_10,model.meankids.b_10,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE,covariate.labels=c("Gen2 Intel"), dep.var.labels=c("Mean AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci = TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Mean_Child_Intelligence_Mean_Child_AFI_10.tex",sep=""))
+capture.output(stargazer(model.meankids_10,model.meankids.g_10,model.meankids.b_10,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE,covariate.labels=c("Gen2 Intel"), dep.var.labels=c("Mean AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci = TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Mean_Child_Intelligence_Mean_Child_AFI_10.tex",sep=""))
 
 capture.output(stargazer(model.meanmomskids_10,model.meanmomskids.g_10,model.meanmomskids.b_10,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE, dep.var.labels=c("Mean AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE#,covariate.labels=c("Gen1 Intel","Gen2 Intel")
-                         ),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Mean_Joint_Intelligence_Mean_Child_AFI_10.tex",sep=""))
+                         ),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Mean_Joint_Intelligence_Mean_Child_AFI_10.tex",sep=""))
 
 capture.output(stargazer(model.diffmoms_10,model.diffmoms.g_10,model.diffmoms.b_10,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE,dep.var.labels=c("Gen2 AFI Differences")#,covariate.labels=c("Gen2 AFI","Gen1 Intel", "Dif Gen1 Intel")
-                         ,column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Dif_Mom_Intelligence_Dif_Child_AFI_10.tex",sep=""))
+                         ,column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Dif_Mom_Intelligence_Dif_Child_AFI_10.tex",sep=""))
 
 capture.output(stargazer(model.diffkids_10,model.diffkids.g_10,model.diffkids.b_10,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE,dep.var.labels=c("Gen2 AFI Differences")#,covariate.labels=c("Gen2 AFI","Gen2 Intel", "Dif Gen2 Intel")
-                         ,column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Dif_Child_Intelligence_Dif_Child_AFI_10.tex",sep=""))
+                         ,column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Dif_Child_Intelligence_Dif_Child_AFI_10.tex",sep=""))
 
 
 capture.output(stargazer(model.diffmomskids_10,model.diffmomskids.g_10,model.diffmomskids.b_10,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE, dep.var.labels=c("Gen2 AFI Differences"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE#,covariate.labels=c("Gen2 AFI","Gen2 Intel","Gen1 Intel","Dif Gen2 Intel","Dif Gen1 Intel")
-                         ),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Dif_Joint_Intelligence_Dif_Child_AFI_10.tex",sep=""))
+                         ),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Dif_Joint_Intelligence_Dif_Child_AFI_10.tex",sep=""))
 
 ##11.5
 
 capture.output(stargazer(model.meanmoms_11,model.meanmoms.g_11,model.meanmoms.b_11,font.size="small",no.space=TRUE,#style="demography",
-                         column.sep.width = "1pt",header = FALSE,covariate.labels=c("Gen1 Intel"), dep.var.labels=c("Mean AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Mean_Mom_Intelligence_Mean_Child_AFI_11.tex",sep=""))
+                         column.sep.width = "1pt",header = FALSE,covariate.labels=c("Gen1 Intel"), dep.var.labels=c("Mean AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Mean_Mom_Intelligence_Mean_Child_AFI_11.tex",sep=""))
 
-capture.output(stargazer(model.meankids_11,model.meankids.g_11,model.meankids.b_11,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE,covariate.labels=c("Gen2 Intel"), dep.var.labels=c("Mean AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci = TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Mean_Child_Intelligence_Mean_Child_AFI_11.tex",sep=""))
+capture.output(stargazer(model.meankids_11,model.meankids.g_11,model.meankids.b_11,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE,covariate.labels=c("Gen2 Intel"), dep.var.labels=c("Mean AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci = TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Mean_Child_Intelligence_Mean_Child_AFI_11.tex",sep=""))
 
 capture.output(stargazer(model.meanmomskids_11,model.meanmomskids.g_11,model.meanmomskids.b_11,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE, dep.var.labels=c("Mean AFI"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE#,covariate.labels=c("Gen1 Intel","Gen2 Intel")
-                         ),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Mean_Joint_Intelligence_Mean_Child_AFI_11.tex",sep=""))
+                         ),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Mean_Joint_Intelligence_Mean_Child_AFI_11.tex",sep=""))
 
 capture.output(stargazer(model.diffmoms_11,model.diffmoms.g_11,model.diffmoms.b_11,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE,dep.var.labels=c("Gen2 AFI Differences"),#covariate.labels=c("Gen2 AFI","Gen1 Intel", "Dif Gen1 Intel"),
-                         column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Dif_Mom_Intelligence_Dif_Child_AFI_11.tex",sep=""))
+                         column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Dif_Mom_Intelligence_Dif_Child_AFI_11.tex",sep=""))
 
 capture.output(stargazer(model.diffkids_11,model.diffkids.g_11,model.diffkids.b_11,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE,dep.var.labels=c("Gen2 AFI Differences"),
                          #covariate.labels=c("Gen2 AFI","Gen2 Intel", "Dif Gen2 Intel"),
-                         column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Dif_Child_Intelligence_Dif_Child_AFI_11.tex",sep=""))
+                         column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Dif_Child_Intelligence_Dif_Child_AFI_11.tex",sep=""))
 
 
 capture.output(stargazer(model.diffmomskids_11,model.diffmomskids.g_11,model.diffmomskids.b_11,font.size="small",no.space=TRUE,column.sep.width = "1pt",header = FALSE, dep.var.labels=c("Gen2 AFI Differences"),column.labels = c("Mixed", "Daughers", "Sons"),model.numbers=FALSE,float=FALSE,ci =TRUE,single.row = FALSE
                          #,covariate.labels=c("Gen2 AFI","Gen2 Intel","Gen1 Intel","Dif Gen2 Intel","Dif Gen1 Intel")
-                         ),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_Dif_Joint_Intelligence_Dif_Child_AFI_11.tex",sep=""))
+                         ),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_Dif_Joint_Intelligence_Dif_Child_AFI_11.tex",sep=""))
 
 capture.output(latex(
   tabular((Heading()*( 1 + RowFactor(CSEX)+ RowFactor(RACE) + RowFactor(CSEX)*RowFactor(RACE))~(Heading("AFI")*AFI_G2*(Mean_3 + Sd_2)
-            )), data = Gen2AFIConcor_2),numeric.dollar=TRUE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_summary_stats_AFIRACEGENDER.tex",sep=""))
+            )), data = Gen2AFIConcor_2),numeric.dollar=TRUE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_summary_stats_AFIRACEGENDER.tex",sep=""))
 @
 \subsection{Between Family Anlayses}\cmb{content/results_between.txt}\input{content/results_between.txt}
 
@@ -488,8 +657,8 @@ capture.output(latex(
 
 
 \section{Discussion}
-
-
+\subsection{Reliability of Difference Scores}
+\subsection{Limitations}
 
 \newpage\section{Tables}\label{appen_tables}
 <<include=FALSE>>=
@@ -526,35 +695,35 @@ summarystats_g2$zIntel_G2<-scale(summarystats_g2$Intel_G2)
 summarystats_g2 <- merge(summarystats_g2,birthweight_2,by="CASEID",all=T)
 
 capture.output(latex(
-  tabular(((Heading("Mother Age at Birth")*nlsyextract.Age + Heading("Standardized AFQT")*df.Intel_G1 + Heading("AFI")*df.AFI_G1 ) ~ Heading("Has Sibling in NLSY?")*(Mean_3 + Sd_2)*Heading()*( 1 + RowFactor(nlsyextract.SiblinginSample) )), data = summarystats_g1),numeric.dollar=TRUE,na.blank=TRUE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_summary_stats_sibinsampleg1.tex",sep=""))
+  tabular(((Heading("Mother Age at Birth")*nlsyextract.Age + Heading("Standardized AFQT")*df.Intel_G1 + Heading("AFI")*df.AFI_G1 ) ~ Heading("Has Sibling in NLSY?")*(Mean_3 + Sd_2)*Heading()*( 1 + RowFactor(nlsyextract.SiblinginSample) )), data = summarystats_g1),numeric.dollar=TRUE,na.blank=TRUE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_summary_stats_sibinsampleg1.tex",sep=""))
 
 capture.output(latex(
-  tabular(Heading("Year Born")*YRB + Heading("Standardized Ability Score")*zIntel_G2 + Heading("AFI")*AFI_G2 ~ (Heading("Has Sibling in NLSY?")*(Mean_3 + Sd_2)*Heading()*(1 + RowFactor(SiblinginSample))), data = summarystats_g2),numeric.dollar=TRUE,na.blank=TRUE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/table_summary_stats_sibinsampleg2.tex",sep=""))
+  tabular(Heading("Year Born")*YRB + Heading("Standardized Ability Score")*zIntel_G2 + Heading("AFI")*AFI_G2 ~ (Heading("Has Sibling in NLSY?")*(Mean_3 + Sd_2)*Heading()*(1 + RowFactor(SiblinginSample))), data = summarystats_g2),numeric.dollar=TRUE,na.blank=TRUE),file=paste(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI/R/content/table/table_summary_stats_sibinsampleg2.tex",sep=""))
 @
 \subsection{Descriptive Statistics}
 \begin{longtable}{@{\extracolsep{5pt}}lcccccc}
 \caption{Gen1 Summary Statistics by Sibling Status.}\label{table_summary_stats_sibinsampleg1}
-\partialinput{2}{10}{table_summary_stats_sibinsampleg1.tex}
+\partialinput{2}{10}{content/table/table_summary_stats_sibinsampleg1.tex}
 \end{longtable}\linebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}lcccccc}
 \caption{Gen2 Summary Statistics by Sibling Status.}\label{table_summary_stats_sibinsampleg2}
-\partialinput{2}{10}{table_summary_stats_sibinsampleg2.tex}
+\partialinput{2}{10}{content/table/table_summary_stats_sibinsampleg2.tex}
 \end{longtable}\pagebreak
 \npnoround
 \begin{longtable}{@{\extracolsep{5pt}}lllcc}
-\caption{Gen2 AFI by Gender, Race, and GenderxRace.}\label{table_afi_race_gender}
-\partialinput{2}{18}{table_summary_stats_AFIRACEGENDER.tex}
-\end{longtable}\pagebreak
-
-
+\caption{Gen2 AFI by Gender, Race, and Gender by Race.}\label{table_afi_race_gender}
+\partialinput{2}{18}{content/table/table_summary_stats_AFIRACEGENDER.tex}
+\end{longtable}
+\pagebreak
+\subsection{Measurement}
 \begin{longtable}{@{\extracolsep{5pt}}cc} 
 \caption{Gen2 Measurement Model.}\label{table_gen2measurement_9}
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
  & g at Age 9.5 \\ 
 \hline \\[-1.8ex] 
-\partialinput{12}{34}{table_g2_9measurement.tex}
+\partialinput{12}{34}{content/table/table_g2_9measurement.tex}
 \end{longtable}\pagebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}cccccc} 
@@ -563,38 +732,77 @@ capture.output(latex(
 \hline \\[-1.8ex] 
  & Test & Estimate & S.E. & Est./.S.E. & P.Value \\  
 \hline \\[-1.8ex] 
-\partialinput{12}{17}{table_g2loading_9.tex}
+\partialinput{12}{17}{content/table/table_g2loading_9.tex}
 \end{longtable}\pagebreak
 
+\subsection{Difference Scores}
+\begin{minipage}{\linewidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen1 Self-Reported AFI Across 1983-1985 }\label{table_measurement_trt_g1afi}
+\partialinput{6}{12}{content/table/table_ttafireliable_z}
+\end{longtable}
+\end{minipage}
+\pagebreak
+\begin{minipage}{\linewidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen1 Sibling Differences in Self-Reported AFI across 1983-1985 (Standardized by Gender)}\label{table_measurement_diffafireliable_z}
+\partialinput{6}{12}{content/table/table_diffafireliable_z}
+\end{longtable}
+\end{minipage}
+\noindent\begin{minipage}{\textwidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen2 Aggregated Intelligence across Ages 9.5, 10.5, 11.5 }\label{table_measurement_trt_g2int}
+\partialinput{6}{12}{content/table/table_ttintreliable_z}
+\end{longtable}
+\end{minipage}
+
+\pagebreak
+\begin{minipage}{\linewidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen2 First Born Cousin Differences in Intelligence across Ages 9.5-11.5}\label{table_measurement_diffintreliable_z}
+\partialinput{6}{12}{content/table/table_diffintreliable_z}
+\end{longtable}
+\end{minipage}
+\pagebreak
+
+\begin{minipage}{\linewidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen2 First Female Cousin Differences in Intelligence across Ages 9.5-11.5}\label{table_measurement_diffintreliable_g}
+\partialinput{6}{12}{content/table/table_diffintreliable_g}
+\end{longtable}
+\end{minipage}
+\pagebreak
+
+\begin{minipage}{\linewidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen2 First Male Cousin Differences in Intelligence across Ages 9.5-11.5}\label{table_measurement_diffintreliable_b}
+\partialinput{6}{12}{content/table/table_diffintreliable_b}
+\end{longtable}
+\end{minipage}
+\pagebreak
 \subsection{Between Family Analyses}
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Mean Gen1 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_9}
-\partialinput{5}{24}{table_Mean_Mom_Intelligence_Mean_Child_AFI_9.tex}
+\partialinput{5}{24}{content/table/table_Mean_Mom_Intelligence_Mean_Child_AFI_9.tex}
 \end{longtable}\pagebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Mean Gen2 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_9}
-\partialinput{5}{24}{table_Mean_Child_Intelligence_Mean_Child_AFI_9.tex}
+\partialinput{5}{24}{content/table/table_Mean_Child_Intelligence_Mean_Child_AFI_9.tex}
 \end{longtable}\pagebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Mean Joint Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_9}
-\partialinput{5}{26}{table_Mean_Joint_Intelligence_Mean_Child_AFI_9.tex}
+\partialinput{5}{26}{content/table/table_Mean_Joint_Intelligence_Mean_Child_AFI_9.tex}
 \end{longtable}\pagebreak
 \subsection{Within Family Analyses}
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Dif Gen1 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_9}
-\partialinput{5}{28}{table_Dif_Mom_Intelligence_Dif_Child_AFI_9.tex}
+\partialinput{5}{28}{content/table/table_Dif_Mom_Intelligence_Dif_Child_AFI_9.tex}
 \end{longtable}\pagebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Dif Gen2 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_9}
-\partialinput{5}{28}{table_Dif_Child_Intelligence_Dif_Child_AFI_9.tex}
+\partialinput{5}{28}{content/table/table_Dif_Child_Intelligence_Dif_Child_AFI_9.tex}
 \end{longtable}\pagebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Dif Joint Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_9}
-\partialinput{5}{32}{table_Dif_Joint_Intelligence_Dif_Child_AFI_9.tex}
+\partialinput{5}{32}{content/table/table_Dif_Joint_Intelligence_Dif_Child_AFI_9.tex}
 \end{longtable}
 \pagebreak
 \section{Figures}\label{figures}
@@ -628,7 +836,7 @@ capture.output(latex(
 \hline \\[-1.8ex] 
  & g at Age 10.5 \\ 
 \hline \\[-1.8ex] 
-\partialinput{12}{34}{table_g2_10measurement.tex}
+\partialinput{12}{34}{content/table/table_g2_10measurement.tex}
 \end{longtable}\pagebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}cccccc} 
@@ -637,37 +845,38 @@ capture.output(latex(
 \hline \\[-1.8ex] 
  & Test & Estimate & S.E. & Est./.S.E. & P Value \\  
 \hline \\[-1.8ex] 
-\partialinput{12}{17}{table_g2loading_10.tex}
+\partialinput{12}{17}{content/table/table_g2loading_10.tex}
 \end{longtable}\pagebreak
+
 \subsection{Between Family Analyses}
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Mean Gen1 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_10}
-\partialinput{5}{24}{table_Mean_Mom_Intelligence_Mean_Child_AFI_10.tex}
+\partialinput{5}{24}{content/table/table_Mean_Mom_Intelligence_Mean_Child_AFI_10.tex}
 \end{longtable}\pagebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Mean Gen2 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_10}
-\partialinput{5}{24}{table_Mean_Child_Intelligence_Mean_Child_AFI_10.tex}
+\partialinput{5}{24}{content/table/table_Mean_Child_Intelligence_Mean_Child_AFI_10.tex}
 \end{longtable}\pagebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Mean Joint Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_10}
-\partialinput{5}{26}{table_Mean_Joint_Intelligence_Mean_Child_AFI_10.tex}
+\partialinput{5}{26}{content/table/table_Mean_Joint_Intelligence_Mean_Child_AFI_10.tex}
 \end{longtable}\pagebreak
 \subsection{Within Family Analyses}
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Dif Gen1 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_10}
-\partialinput{5}{28}{table_Dif_Mom_Intelligence_Dif_Child_AFI_10.tex}
+\partialinput{5}{28}{content/table/table_Dif_Mom_Intelligence_Dif_Child_AFI_10.tex}
 \end{longtable}\pagebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Dif Gen2 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_10}
-\partialinput{5}{28}{table_Dif_Child_Intelligence_Dif_Child_AFI_10.tex}
+\partialinput{5}{28}{content/table/table_Dif_Child_Intelligence_Dif_Child_AFI_10.tex}
 \end{longtable}\pagebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Dif Joint Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_10}
-\partialinput{5}{32}{table_Dif_Joint_Intelligence_Dif_Child_AFI_10.tex}
+\partialinput{5}{32}{content/table/table_Dif_Joint_Intelligence_Dif_Child_AFI_10.tex}
 \end{longtable}
 
 
@@ -679,7 +888,7 @@ capture.output(latex(
 \hline \\[-1.8ex] 
  & g at Age 11.5 \\ 
 \hline \\[-1.8ex] 
-\partialinput{12}{34}{table_g2_11measurement.tex}
+\partialinput{12}{34}{content/table/table_g2_11measurement.tex}
 \end{longtable}\pagebreak
 \begin{longtable}{@{\extracolsep{5pt}}cccccc} 
 \caption{Gen2 Factor Loadings.}\label{table_g2loading_11}
@@ -687,37 +896,37 @@ capture.output(latex(
 \hline \\[-1.8ex] 
  & Test & Estimate & S.E. & Est./.S.E. & P.Value \\  
 \hline \\[-1.8ex] 
-\partialinput{12}{17}{table_g2loading_11.tex}
+\partialinput{12}{17}{content/table/table_g2loading_11.tex}
 \end{longtable}\pagebreak
 \subsection{Between Family Analyses}
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Mean Gen1 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_11}
-\partialinput{5}{24}{table_Mean_Mom_Intelligence_Mean_Child_AFI_11.tex}
+\partialinput{5}{24}{content/table/table_Mean_Mom_Intelligence_Mean_Child_AFI_11.tex}
 \end{longtable}\pagebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Mean Gen2 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_11}
-\partialinput{5}{24}{table_Mean_Child_Intelligence_Mean_Child_AFI_11.tex}
+\partialinput{5}{24}{content/table/table_Mean_Child_Intelligence_Mean_Child_AFI_11.tex}
 \end{longtable}\pagebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Mean Joint Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_11}
-\partialinput{5}{26}{table_Mean_Joint_Intelligence_Mean_Child_AFI_11.tex}
+\partialinput{5}{26}{content/table/table_Mean_Joint_Intelligence_Mean_Child_AFI_11.tex}
 \end{longtable}\pagebreak
 \subsection{Within Family Analyses}
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Dif Gen1 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_11}
-\partialinput{5}{28}{table_Dif_Mom_Intelligence_Dif_Child_AFI_11.tex}
+\partialinput{5}{28}{content/table/table_Dif_Mom_Intelligence_Dif_Child_AFI_11.tex}
 \end{longtable}\pagebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Dif Gen2 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_11}
-\partialinput{5}{28}{table_Dif_Child_Intelligence_Dif_Child_AFI_11.tex}
+\partialinput{5}{28}{content/table/table_Dif_Child_Intelligence_Dif_Child_AFI_11.tex}
 \end{longtable}\pagebreak
 
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
 \caption{Dif Joint Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_11}
-\partialinput{5}{32}{table_Dif_Joint_Intelligence_Dif_Child_AFI_11.tex}
+\partialinput{5}{32}{content/table/table_Dif_Joint_Intelligence_Dif_Child_AFI_11.tex}
 \end{longtable}
 %\section{Notes}
 %\input{content/NOTES.txt}

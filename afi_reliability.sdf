@@ -1,0 +1,19 @@
+
+
+Reference
+Number     Year  Variable Description                                                             Question Name  
+-------------------------------------------------------------------------------------------------------------------
+R00001.00  1979  IDENTIFICATION CODE                                                              CASEID         
+R00001.49  1979  HOUSEHOLD IDENTIFICATION NUMBER                                                  HHID           
+R02147.00  1979  R'S RACIAL/ETHNIC COHORT FROM SCREENER                                           SAMPLE_RACE    
+R02148.00  1979  SEX OF R                                                                         SAMPLE_SEX     
+R09880.00  1983  MALE - AGE WHEN FIRST HAD SEXUAL INTERCOURSE?                                    MFER-15        
+R10207.00  1983  FEMALE - AGE WHEN FIRST HAD SEXUAL INTERCOURSE?                                  FFER-92        
+R13122.00  1984  MALE - AGE WHEN FIRST HAD SEXUAL INTERCOURSE?                                    MFER-15        
+R13796.00  1984  FEMALE - AGE WHEN FIRST HAD SEXUAL INTERCOURSE?                                  FFER-92        
+R13797.00  1984  FEMALE - INT CHECK 84 - USING BIRTHDATE, COMPUTE YEAR OF 1ST SEXUAL INTERCOURSE  FFER-92A       
+R13798.00  1984  FEMALE - MONTH HAD SEXUAL INTERCOURSE FOR 1ST TIME                               FFER-92_M      
+R16916.00  1985  MALE - AGE WHEN FIRST HAD SEXUAL INTERCOURSE?                                    MFER-15        
+R17600.00  1985  FEMALE - AGE WHEN FIRST HAD SEXUAL INTERCOURSE?                                  FFER-92        
+R17601.00  1985  FEMALE - INT CHECK 85 - USING BIRTHDATE, COMPUTE YEAR OF 1ST SEXUAL INTERCOURSE  FFER-92A       
+R17602.00  1985  FEMALE - MONTH HAD SEXUAL INTERCOURSE FOR 1ST TIME                               FFER-92_M      

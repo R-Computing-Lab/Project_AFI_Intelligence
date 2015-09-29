@@ -3,9 +3,9 @@ library(beepr)
 library(ggplot2)
 jplu=c(10,11,9,12)
 
-new_data <- read.table("E:/Dropbox/SAS/MyFolders/G2Intel/standardized_data.dat", sep=' ')
+new_data <- read.table("C:/Dropbox/Software/SAS/MyFolders/G2Intel/standardized_data.dat", sep=' ')
 names(new_data) <- c('C0000100','C0000200','C0005300','C0005400','C0005700','C0578400','C0578700','C0579000','C0579800','C0580100','C0580400','C0580700','C0581000','C0797500','C0797900','C0798200','C0798500','C0799300','C0799600','C0799900','C0800200','C0800500','C0997400','C0997700','C0998500','C0998800','C0999100','C0999400','C0999700','C1197700','C1198500','C1198800','C1199100','C1199400','C1199700','C1506700','C1507500','C1507800','C1508100','C1508400','C1508700','C1564400','C1564700','C1565000','C1565300','C1565600','C1799800','C1800100','C1800400','C1800700','C1801000','C2500700','C2503700','C2503900','C2504300','C2504600','C2529200','C2532200','C2532400','C2532800','C2533100','C2800500','C2803000','C2803200','C2803600','C2803900','C3108500','C3111500','C3111700','C3112100','C3112400','C3612200','C3615200','C3615400','C3615800','C3616100','C3990800','C3993800','C3994000','C3994400','C3994700','C5534800','C5537800','C5538000','C5538400','C5538700')
-Gen2Age <- read.csv("E:/Dropbox/SAS/MyFolders/NLSYSAS/Gen2Age.csv")
+Gen2Age <- read.csv("C:/Dropbox/Software/SAS/MyFolders/NLSYSAS/Gen2Age.csv")
 names(Gen2Age)<-c("CASEID","MCASEID","YEARMONTH_BORN_G2")
 Gen2Age$YRB<-floor(Gen2Age$YEARMONTH_BORN_G2/365+1960)
 # Handle missing values
@@ -279,7 +279,7 @@ for (x in 1:length(jplu)) {
     }  
     #if (is.na(dataframe$DIGIT[n])) dataframe$DIGIT[n]<- sum(c(dataframe$DIGITF[n], dataframe$DIGITB[n]))
   }
-  #  write.table(dataframe, file=paste0("E:/Dropbox/MPlus/G2Intel/1 years/G_around_",j,".csv"), row.names=FALSE, col.names=FALSE,na="-9999", sep=",")
+  #  write.table(dataframe, file=paste0("C:/Dropbox/Software/MPlus/G2Intel/1 years/G_around_",j,".csv"), row.names=FALSE, col.names=FALSE,na="-9999", sep=",")
   
   assign(paste0("G_at_",j),  dataframe)
   
@@ -296,7 +296,7 @@ for (x in 1:length(jplu[1:3])) {
         dataframe[n,w]<- eval(parse(text= paste0("G_at_",jplus,"[",n,",",w,"]")))    
     }
   }
-  #  write.table(dataframe, file=paste0("E:/Dropbox/MPlus/G2Intel/2 years/G_around_",j,jplus,".csv"), row.names=FALSE, col.names=FALSE,na="-9999", sep=",")
+  #  write.table(dataframe, file=paste0("C:/Dropbox/Software/MPlus/G2Intel/2 years/G_around_",j,jplus,".csv"), row.names=FALSE, col.names=FALSE,na="-9999", sep=",")
   
   assign(paste0("G_around_",j,jplus),  dataframe)
   
@@ -313,7 +313,7 @@ for (x in 1:length(jplu[1:2])) {
         dataframe[n,w]<- eval(parse(text= paste0("G_at_",jplusplus,"[",n,",",w,"]")))    
     }
   }
-  # write.table(dataframe, file=paste0("E:/Dropbox/MPlus/G2Intel/3 years/G_around_",j,jplus,jplusplus,".csv"), row.names=FALSE, col.names=FALSE,na="-9999", sep=",")
+  # write.table(dataframe, file=paste0("C:/Dropbox/Software/MPlus/G2Intel/3 years/G_around_",j,jplus,jplusplus,".csv"), row.names=FALSE, col.names=FALSE,na="-9999", sep=",")
   
   assign(paste0("G_around_",j,jplus,jplusplus),  dataframe)
   
@@ -332,7 +332,7 @@ for (x in 1:length(jplu[1])) {
         dataframe[n,w]<- eval(parse(text= paste0("G_at_",jplusplusplus,"[",n,",",w,"]")))    
     }
   }
-  # write.table(dataframe, file=paste0("E:/Dropbox/MPlus/G2Intel/4 years/G_around_",j,jplus,jplusplus,jplusplusplus,".csv"), row.names=FALSE, col.names=FALSE,na="-9999", sep=",")
+  # write.table(dataframe, file=paste0("C:/Dropbox/Software/MPlus/G2Intel/4 years/G_around_",j,jplus,jplusplus,jplusplusplus,".csv"), row.names=FALSE, col.names=FALSE,na="-9999", sep=",")
   
   mplus <- mplusObject(
     TITLE = paste0("CFA G_around_",j,jplus,jplusplus,jplusplusplus,";"),
@@ -354,16 +354,16 @@ for (x in 1:length(jplu[1])) {
                     SAVE IS fscores; 
                     FORMAT IS free;"),
     rdata=dataframe)
-  res<- mplusModeler(mplus, modelout = paste0("E:/Dropbox/MPlus/G2Intel/1011zcenter/G_around_",j,jplus,jplusplus,jplusplusplus,".inp"), run = 0L)
+  res<- mplusModeler(mplus, modelout = paste0("C:/Dropbox/Software/MPlus/G2Intel/1011zcenter/G_around_",j,jplus,jplusplus,jplusplusplus,".inp"), run = 0L)
   
-  prepareMplusData(dataframe, paste0("E:/Dropbox/MPlus/G2Intel/1011zcenter/G_around_",j,jplus,jplusplus,jplusplusplus,".dat"))
+  prepareMplusData(dataframe, paste0("C:/Dropbox/Software/MPlus/G2Intel/1011zcenter/G_around_",j,jplus,jplusplus,jplusplusplus,".dat"))
   
   assign(paste0("G_around_",j,jplus,jplusplus,jplusplusplus),  dataframe)
   assign(paste0("mplus_G_around_",j,jplus,jplusplus,jplusplusplus),  mplus)
 }
-runModels(directory ="E:/Dropbox/MPlus/G2Intel/1011zcenter/")
-ModelSummaries_1011zcenter<-extractModelSummaries(target = "E:/Dropbox/MPlus/G2Intel/1011zcenter")
+runModels(directory ="C:/Dropbox/Software/MPlus/G2Intel/1011zcenter/")
+ModelSummaries_1011zcenter<-extractModelSummaries(target = "C:/Dropbox/Software/MPlus/G2Intel/1011zcenter")
 
 
-write.table(ModelSummaries_1011zcenter, file="E:/Dropbox/MPlus/G2Intel/1011zcenter/ModelSummaries_1011zcenter.csv",row.names=FALSE, na="-9999", sep=",")
+write.table(ModelSummaries_1011zcenter, file="C:/Dropbox/Software/MPlus/G2Intel/1011zcenter/ModelSummaries_1011zcenter.csv",row.names=FALSE, na="-9999", sep=",")
 beep()

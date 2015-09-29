@@ -311,7 +311,7 @@ Buhi, E\BPBI R.%
 }{%
 {Center for Human Resources Research}%
 }{%
-{\protect \APACyear {2006}}%
+{\protect \APACyear {2009}}%
 }]{%
 nlsy79datauser}
 \APACinsertmetastar {%
@@ -321,10 +321,20 @@ nlsy79datauser}%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2006}.
+\APACrefYear{2009}.
 \newblock
-\APACrefbtitle {{NLSY79 Child and Young Adult Data Users Guide}} {{NLSY79 Child
-  and Young Adult Data Users Guide}}.
+\APACrefbtitle {{NLSY79 CHILD & YOUNG ADULT DATA USERS GUIDE: A Guide to the
+  1986 - 2006 Child Data 1994 - 2006 Young Adult Data}} {{NLSY79 CHILD & YOUNG
+  ADULT DATA USERS GUIDE: A Guide to the 1986 - 2006 Child Data 1994 - 2006
+  Young Adult Data}}.
+\newblock
+\APACaddressPublisher{}{Bureau of Labor Statistics, U.S. Department of Labor}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.nlsinfo.org/pub/usersvc/Child-Young-Adult/2006ChildYA-DataUsersGuide.pdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{bbbbbbbbbbbbbbbb} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -758,9 +768,9 @@ Harden, K\BPBI P.%
 \newblock
 \APACrefYearMonthDay{2011}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Why don't smart teens have sex? A behavioral genetic
-  approach}} {{Why don't smart teens have sex? A behavioral genetic
-  approach}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Why Don't Smart Teens Have Sex? A Behavioral Genetic
+  Approach}} {{Why Don't Smart Teens Have Sex? A Behavioral Genetic
+  Approach}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Child Development}{82}{4}{1327--1344}.
 \newblock
@@ -796,6 +806,32 @@ Harden, K\BPBI P.%
   {{Rethinking timing of first sex and delinquency}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Youth and Adolescence}{37}{4}{373--385}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Herrnstein%
+\ \BBA {} Murray%
+}{%
+Herrnstein%
+\ \BBA {} Murray%
+}{%
+{\protect \APACyear {1994}}%
+}]{%
+herrnstein1994bell}
+\APACinsertmetastar {%
+herrnstein1994bell}%
+\begin{APACrefauthors}%
+Herrnstein, R\BPBI J.%
+\BCBT {}\ \BBA {} Murray, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1994}.
+\newblock
+\APACrefbtitle {{Bell curve: Intelligence and class structure in American
+  life.}} {{Bell curve: Intelligence and class structure in American life.}}
+\newblock
+\APACaddressPublisher{New York, NY}{Free Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1136,6 +1172,32 @@ Leitenberg, H.%
 \APACjournalVolNumPages{Archives of Sexual Behavior}{29}{3}{203--215}.
 \newblock
 \begin{APACrefDOI} \doi{10.1023/A:1001920212732} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lord%
+}{%
+Lord%
+}{%
+{\protect \APACyear {1963}}%
+}]{%
+Lord1963}
+\APACinsertmetastar {%
+Lord1963}%
+\begin{APACrefauthors}%
+Lord, F\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1963}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Elementary Models for Measuring Change}} {{Elementary
+  Models for Measuring Change}}.{\BBCQ}
+\newblock
+\BIn{} C\BPBI W.~Harris\ (\BED), \APACrefbtitle {Problems in Measuring Change}
+  {Problems in measuring change}\ (\BPGS\ 22--38).
+\newblock
+\APACaddressPublisher{Madison}{University of Wisconsin Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1575,6 +1637,35 @@ Neisser, U.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Open Science Collaboration}%
+}{%
+{Open Science Collaboration}%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+OpenScienceCollaboration2015}
+\APACinsertmetastar {%
+OpenScienceCollaboration2015}%
+\begin{APACrefauthors}%
+{Open Science Collaboration}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{aug}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Estimating the reproducibility of psychological
+  science}} {{Estimating the reproducibility of psychological science}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Science}{349}{6251}{aac4716--aac4716}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencemag.org/content/349/6251/aac4716.abstract}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1126/science.aac4716} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Page%
 \ \BBA {} Grandon%
 }{%
@@ -1613,9 +1704,9 @@ Palmer%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {1988}}%
 }]{%
-palmer1988armed}
+Palmer1988}
 \APACinsertmetastar {%
-palmer1988armed}%
+Palmer1988}%
 \begin{APACrefauthors}%
 Palmer, P.%
 , Hartke, D\BPBI D.%
@@ -1628,11 +1719,12 @@ Palmer, P.%
 \APACrefYearMonthDay{1988}{}{}.
 \newblock
 \APACrefbtitle {{Armed Services Vocational Aptitude Battery (ASVAB): Alternate
-  Forms Reliability (Forms 8, 9, 10, and 11).}} {{Armed Services Vocational
+  Forms Reliability (Forms 8, 9, 10, and 11)}} {{Armed Services Vocational
   Aptitude Battery (ASVAB): Alternate Forms Reliability (Forms 8, 9, 10, and
-  11).}}\ \APACbVolEdTR{}{\BTR{}}.
+  11)}}\ \APACbVolEdTR{}{\BTR{}}.
 \newblock
-\APACaddressInstitution{}{DTIC Document}.
+\APACaddressInstitution{Brooks Air Force Base, Texas}{Air Force Human Resources
+  Laboratory}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
