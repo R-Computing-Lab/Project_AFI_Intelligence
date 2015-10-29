@@ -1,0 +1,8 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+{@{\extracolsep{5pt}}lccc}
+\caption{Dif Joint Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_9}
+\partialinput{5}{26}{../Common/content/tables/table_Dif_Joint_Intelligence_Dif_Child_AFI_9.tex}
+\end{table*}
+\efloatseparator
+ 

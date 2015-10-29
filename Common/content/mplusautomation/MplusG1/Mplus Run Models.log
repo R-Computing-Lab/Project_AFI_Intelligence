@@ -1,0 +1,12 @@
+------Begin Mplus Model Run: 09Jun2015 15:08:25------
+Target directory: E:/Dropbox/Work/Research/Projects/NLSY/AFI/R/MplusG1
+Run options:
+	Recursive (run models in subdirectories): FALSE
+	Show output on console: FALSE
+	Replace existing outfile: always
+------
+Currently running model: IRT1factorG WLSMV -- no cluster.inp
+Currently running model: IRT1factorG WLSMV.inp
+Currently running model: IRT1factorG.inp
+
+------End Mplus Model Run: 09Jun2015 16:28:13------

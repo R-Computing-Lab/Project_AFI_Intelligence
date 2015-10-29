@@ -1,0 +1,605 @@
+\documentclass[a4paper,man,apacite,natbib,12pt]{apa6}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+%%%%%%%%%%%% Packages %%%%%%%%%%%%
+%%% Formatting
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage[yyyymmdd,hhmmss]{datetime}
+
+
+%%% Page size and length etc
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{lineno} %Line numbering
+
+%%% Lists
+\usepackage{enumitem}%resume numbering
+
+%%% Graphics
+\usepackage{graphicx}
+\usepackage[graphicx]{realboxes}
+
+%%% Animate
+\usepackage{animate}
+\usepackage{media9}
+
+%%% References
+\usepackage{varioref} %references page location
+\usepackage{hyperref}
+\usepackage[longnamesfirst]{natbib}
+\usepackage[natbibapa,nodoi]{apacite}
+
+\documentclass[a4paper,man,apacite,natbib,12pt]{apa6}
+%%%%%%%%%%%% Packages %%%%%%%%%%%%
+%%%%%% Formating %%%%%%
+%% Font
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x,ascii]{inputenc} %% Additional Characters
+%% Math
+\usepackage{amsmath}
+%% Date
+\usepackage[yyyymmdd,hhmmss]{datetime}
+%% Lists
+\usepackage{enumitem}%resume numbering
+
+%%%%%% Layout %%%%%%
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{xspace}
+
+%%%%%% References %%%%%%
+\usepackage{varioref} %references page location
+\usepackage{hyperref}
+\usepackage[longnamesfirst]{natbib}
+\usepackage[natbibapa,nodoi]{apacite}
+
+%%%%%% Graphics %%%%%%
+\usepackage{graphicx}
+\usepackage[graphicx]{realboxes}
+%%% Animate
+\usepackage{animate}
+\usepackage{media9}
+
+%%%%%% R %%%%%%
+\usepackage{listings}
+\usepackage{inconsolata}
+\usepackage{verbatim}
+\usepackage{etoolbox}
+
+
+
+%%%%%%%%%%%% New Commands %%%%%%%%%%%%
+%% Short Hand
+\newcommand{\R}{\textup{\textrm{R}}\xspace}
+\newcommand{\meb}{{\bf Garrison, S. M.}\xspace}
+\newcommand{\et}{\textit{et al}.\xspace}
+\newcommand{\eg}{\textit{e.g},\xspace}
+
+%%% Remove DOI %UNCOMMENT ALL to toggle between DOI and URL
+\usepackage{environ}
+\newtoggle{bibdoi}
+%\newtoggle{biburl}
+\makeatletter
+
+%\undef{\APACrefURL}
+%\undef{\endAPACrefURL}
+\undef{\APACrefDOI}
+\undef{\endAPACrefDOI}
+
+%\long\def\collect@url#1{\global\def\bib@url{#1}}
+\long\def\collect@doi#1{\global\def\bib@doi{#1}}
+%\newenvironment{APACrefURL}{\global\toggletrue{biburl}\Collect@Body\collect@url}{\unskip\unskip}
+\newenvironment{APACrefDOI}{\global\toggletrue{bibdoi}\Collect@Body\collect@doi}{}
+
+%\AtBeginEnvironment{thebibliography}{
+% \pretocmd{\PrintBackRefs}{%
+%  \iftoggle{bibdoi}
+%    {\iftoggle{biburl}{\unskip\unskip doi:\bib@doi}{}}
+%    {\iftoggle{biburl}{Retrieved from\bib@url}{}}
+%  \togglefalse{bibdoi}\togglefalse{biburl}%
+%  }{}{}
+%}
+%%% Partial Input
+\makeatletter
+\newread\pin@file
+\newcounter{pinlineno}
+\newcommand\pin@accu{}
+\newcommand\pin@ext{pintmp}
+% inputs #3, selecting only lines #1 to #2 (inclusive)
+\newcommand*\partialinput [3] {%
+  \IfFileExists{#3}{%
+    \openin\pin@file #3
+    % skip lines 1 to #1 (exclusive)
+    \setcounter{pinlineno}{1}
+    \@whilenum\value{pinlineno}<#1 \do{%
+      \read\pin@file to\pin@line
+      \stepcounter{pinlineno}%
+    }
+    % prepare reading lines #1 to #2 inclusive
+    \addtocounter{pinlineno}{-1}
+    \let\pin@accu\empty
+    \begingroup
+    \endlinechar\newlinechar
+    \@whilenum\value{pinlineno}<#2 \do{%
+      % use safe catcodes provided by e-TeX's \readline
+      \readline\pin@file to\pin@line
+      \edef\pin@accu{\pin@accu\pin@line}%
+      \stepcounter{pinlineno}%
+    }
+    \closein\pin@file
+    \expandafter\endgroup
+    \scantokens\expandafter{\pin@accu}%
+  }{%
+    \errmessage{File `#3' doesn't exist!}%
+  }%
+}
+\makeatother
+
+%%% Single Line Filler Text
+\makeatletter
+\newcounter{fillersentencecounter}
+\setcounter{fillersentencecounter}{1}
+\newread\pin@file
+\newcounter{pinlineno}
+\newcommand\pin@accu{}
+\newcommand\pin@ext{pintmp}
+
+\newcommand*\fillersentence [2] {%
+  \IfFileExists{#2}{%
+    \openin\pin@file #2
+
+    \setcounter{pinlineno}{1}
+    \@whilenum\value{pinlineno}<\value{fillersentencecounter} \do{%
+      \read\pin@file to\pin@line
+      \stepcounter{pinlineno}%
+    }
+    \addtocounter{fillersentencecounter}{#1}
+    \addtocounter{fillersentencecounter}{-1}
+    \addtocounter{pinlineno}{-1}
+    \let\pin@accu\empty
+    \begingroup
+    \endlinechar\newlinechar
+    \@whilenum\value{pinlineno}<\value{fillersentencecounter} \do{%
+      \readline\pin@file to\pin@line
+      \edef\pin@accu{\pin@accu\pin@line}%
+      \stepcounter{pinlineno}%
+    }
+    \addtocounter{fillersentencecounter}{1}
+    \closein\pin@file
+    \expandafter\endgroup
+    \scantokens\expandafter{\pin@accu}%
+  }{%
+    \errmessage{File `#2' doesn't exist!}%
+  }%
+}
+\makeatother
+%%% Nicer Looking Square Root
+\let\oldsqrt\sqrt
+% it defines the new \sqrt in terms of the old one
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
+{\box0\lower0.4pt\box2}}
+
+%%% In line Comments
+\usepackage[colorinlistoftodos]{todonotes}
+\newcommand{\cil}[1]{\todo[inline, color=green!40]{#1}}
+
+%%% Margin Comments
+\newcommand{\cm}[1]{\todo[color=green!40]{\begin{adjustwidth*}{1mm}{}#1\end{adjustwidth*}}}
+\newcommand{\cmb}[1]{\todo[color=blue!40]{\begin{adjustwidth*}{1mm}{}\lstinline|#1|\end{adjustwidth*}}}
+
+%%% Hypothesis counters
+\newcounter{myhypothesis}
+\newcommand\hypothesis[1]
+{
+  \refstepcounter{myhypothesis}\label{hyp_#1}%
+}
+
+%%%%%%%%%%%% Formatting %%%%%%%%%%%%
+%%% Foot Notes into Endnotes
+%\usepackage{endnotes}
+%\let\footnote\endnote
+
+%%% Item Spacing
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{\itemsep}
+\addtolength{\wideitemsep}{-10pt}
+\let\olditem\item
+\renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}
+
+%%% Margins
+\addtolength{\marginparwidth}{6cm}
+\addtolength{\paperwidth}{\marginparwidth-1cm}
+
+%%%%%% Style
+%%% R Output
+%-----------------
+%Define the colors you want to use
+\definecolor{keywordcolor}{rgb}{0,0.6,0.6}
+\definecolor{delimcolor}{rgb}{0.461,0.039,0.102}
+\definecolor{Rcommentcolor}{rgb}{0.101,0.043,0.432}
+\definecolor{Black}{rgb}{0,0,0}
+%-----------------
+\lstdefinestyle{Rsettings}{
+  language=R,
+  basicstyle=\ttfamily\color{Black},
+  breaklines=true,
+  showstringspaces=true,
+  keywords={if, else, function, theFunction, tmp},
+  otherkeywords={},
+  commentstyle=\itshape\color{Rcommentcolor},
+  keywordstyle=\color{keywordcolor},
+  moredelim=[s][\color{delimcolor}]{"}{"},
+}
+
+%%%%%%%%%%%% Title %%%%%%%%%%%%
+\title{Intelligence and Age at First Intercourse: Cause or Confound?}
+\shorttitle{Intelligence and AFI}
+\author{S. Mason Garrison and Joseph Lee Rodgers}
+\affiliation{Vanderbilt University}
+
+\abstract{Your abstract here.\\\today\ at \currenttime}
+
+\authornote{This material is based upon work that has been supported by National Institute of Health under Grant No. (R01-HD065865) and the National Science Foundation Graduate Research Fellowship Program under Grant No. (DGE-1445197) and various means of institutional support from the following universities: University of British Columbia, University of Oklahoma \& Vanderbilt University.}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+\maketitle
+%\linenumbers%\section{Introduction}\section{ }\vspace{-.8cm}
+\input{content/introduction.txt}
+
+\section{Current Study}\label{current_study}\vspace{-.61cm}\input{content/current_study.txt}
+
+\section{Methods}\input{content/methods.txt}
+
+
+
+
+
+
+\input{content/Gen1measure.txt}
+
+\input{content/Gen2measure.txt}
+
+\input{content/reliabilitya.txt}
+\begin{knitrout}\footnotesize
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{sigmax} \hlkwb{=} \hlkwd{sqrt}\hlstd{(}\hlnum{1.1881}\hlstd{)}
+\hlstd{sigmay} \hlkwb{=} \hlstd{sigmax}
+\hlstd{rxx} \hlkwb{=} \hlnum{.87}
+\hlstd{ryy} \hlkwb{=} \hlstd{rxx}
+\hlstd{rxy}\hlkwb{=}\hlnum{.67}
+\hlstd{(sigmax}\hlopt{*}\hlstd{sigmax}\hlopt{*}\hlstd{rxx} \hlopt{+}\hlstd{sigmay}\hlopt{*}\hlstd{sigmay}\hlopt{*}\hlstd{ryy} \hlopt{-}\hlnum{2}\hlopt{*}\hlstd{rxy}\hlopt{*}\hlstd{sigmax}\hlopt{*}\hlstd{sigmay)} \hlopt{/}
+  \hlstd{(sigmax}\hlopt{*}\hlstd{sigmax} \hlopt{+} \hlstd{sigmay}\hlopt{*}\hlstd{sigmay} \hlopt{-}\hlnum{2}\hlopt{*}\hlstd{rxy}\hlopt{*}\hlstd{sigmax}\hlopt{*}\hlstd{sigmay)}
+\end{alltt}
+\begin{verbatim}
+## [1] 0.606
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+Accordingly, we can substitute the following values into the above equation to calcualte the difference score reliability for Gen2 AFI.
+where, \begin{itemize}
+\item $\sigma_{x}^{2}$ and $\sigma_{y}^{2}$  are 4.41 (from Table \vref{table_summary_stats_sibinsampleg2}) %the variance of Gen2 AFI, 
+\item $\rho_{xx'}$ and $\rho_{yy'}$ are .76 (from Table \vref{table_measurement_trt_g1afi}), 
+\item $\rho_{xy}$ is the AFI correlation between first born cousins is .099.\end{itemize}
+\begin{knitrout}\footnotesize
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{sigmax} \hlkwb{=} \hlkwd{sqrt}\hlstd{(}\hlnum{4.41}\hlstd{)}
+\hlstd{sigmay} \hlkwb{=} \hlstd{sigmax}
+\hlstd{rxx} \hlkwb{=} \hlnum{.76}
+\hlstd{ryy} \hlkwb{=} \hlstd{rxx}
+\hlstd{rxy}\hlkwb{=}\hlnum{.099}
+\hlstd{(sigmax}\hlopt{*}\hlstd{sigmax}\hlopt{*}\hlstd{rxx} \hlopt{+}\hlstd{sigmay}\hlopt{*}\hlstd{sigmay}\hlopt{*}\hlstd{ryy} \hlopt{-}\hlnum{2}\hlopt{*}\hlstd{rxy}\hlopt{*}\hlstd{sigmax}\hlopt{*}\hlstd{sigmay)} \hlopt{/}
+  \hlstd{(sigmax}\hlopt{*}\hlstd{sigmax} \hlopt{+} \hlstd{sigmay}\hlopt{*}\hlstd{sigmay} \hlopt{-}\hlnum{2}\hlopt{*}\hlstd{rxy}\hlopt{*}\hlstd{sigmax}\hlopt{*}\hlstd{sigmay)}
+\end{alltt}
+\begin{verbatim}
+## [1] 0.734
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+\input{content/reliabilityb.txt}
+\section{Results}\input{content/results.txt}
+%\subsection{Between vs. Within Illustration}
+
+
+\subsection{Between Family Anlayses}\input{content/results_between.txt}
+
+\subsection{Within Family Analyses}
+\input{content/results_within.txt}
+\section{Discussion}
+\input{content/discussion.txt}
+
+
+\newpage\section{Tables}\label{appen_tables}
+
+\subsection{Descriptive Statistics}
+\begin{longtable}{@{\extracolsep{5pt}}lcccccc}
+\caption{Gen1 Summary Statistics by Sibling Status.}\label{table_summary_stats_sibinsampleg1}
+\partialinput{2}{10}{content/table/table_summary_stats_sibinsampleg1.tex}
+\end{longtable}\linebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lcccccc}
+\caption{Gen2 Summary Statistics by Sibling Status.}\label{table_summary_stats_sibinsampleg2}
+\partialinput{2}{10}{content/table/table_summary_stats_sibinsampleg2.tex}
+\end{longtable}\pagebreak
+\npnoround
+\begin{longtable}{@{\extracolsep{5pt}}lllcc}
+\caption{Gen2 AFI by Gender, Race, and Gender by Race.}\label{table_afi_race_gender}
+\partialinput{2}{18}{content/table/table_summary_stats_AFIRACEGENDER.tex}
+\end{longtable}
+\pagebreak
+\subsection{Measurement}
+\begin{longtable}{@{\extracolsep{5pt}}cc} 
+\caption{Gen2 Measurement Model.}\label{table_gen2measurement_9}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & g at Age 9.5 \\ 
+\hline \\[-1.8ex] 
+\partialinput{12}{34}{content/table/table_g2_9measurement.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}cccccc} 
+\caption{Gen2 Factor Loadings.}\label{table_g2loading_9}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & Test & Estimate & S.E. & Est./.S.E. & P.Value \\  
+\hline \\[-1.8ex] 
+\partialinput{12}{17}{content/table/table_g2loading_9.tex}
+\end{longtable}\pagebreak
+
+\subsection{Difference Scores}
+\begin{minipage}{\linewidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen1 Self-Reported AFI Across 1983-1985 }\label{table_measurement_trt_g1afi}
+\partialinput{6}{12}{content/table/table_ttafireliable_z}
+\end{longtable}
+\end{minipage}
+\pagebreak
+\begin{minipage}{\linewidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen1 Sibling Differences in Self-Reported AFI across 1983-1985 (Standardized by Gender)}\label{table_measurement_diffafireliable_z}
+\partialinput{6}{12}{content/table/table_diffafireliable_z}
+\end{longtable}
+\end{minipage}
+\noindent\begin{minipage}{\textwidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen2 Aggregated Intelligence across Ages 9.5, 10.5, 11.5 }\label{table_measurement_trt_g2int}
+\partialinput{6}{12}{content/table/table_ttintreliable_z}
+\end{longtable}
+\end{minipage}
+
+\pagebreak
+\begin{minipage}{\linewidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen2 First Born Cousin Differences in Intelligence across Ages 9.5-11.5}\label{table_measurement_diffintreliable_z}
+\partialinput{6}{12}{content/table/table_diffintreliable_z}
+\end{longtable}
+\end{minipage}
+\pagebreak
+
+\begin{minipage}{\linewidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen2 First Female Cousin Differences in Intelligence across Ages 9.5-11.5}\label{table_measurement_diffintreliable_g}
+\partialinput{6}{12}{content/table/table_diffintreliable_g}
+\end{longtable}
+\end{minipage}
+\pagebreak
+
+\begin{minipage}{\linewidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen2 First Male Cousin Differences in Intelligence across Ages 9.5-11.5}\label{table_measurement_diffintreliable_b}
+\partialinput{6}{12}{content/table/table_diffintreliable_b}
+\end{longtable}
+\end{minipage}
+\pagebreak
+\subsection{Between Family Analyses}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Gen1 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_9}
+\partialinput{5}{24}{content/table/table_Mean_Mom_Intelligence_Mean_Child_AFI_9.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Gen2 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_9}
+\partialinput{5}{24}{content/table/table_Mean_Child_Intelligence_Mean_Child_AFI_9.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Joint Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_9}
+\partialinput{5}{26}{content/table/table_Mean_Joint_Intelligence_Mean_Child_AFI_9.tex}
+\end{longtable}\pagebreak
+\subsection{Within Family Analyses}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Gen1 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_9}
+\partialinput{5}{28}{content/table/table_Dif_Mom_Intelligence_Dif_Child_AFI_9.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Gen2 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_9}
+\partialinput{5}{28}{content/table/table_Dif_Child_Intelligence_Dif_Child_AFI_9.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Joint Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_9}
+\partialinput{5}{32}{content/table/table_Dif_Joint_Intelligence_Dif_Child_AFI_9.tex}
+\end{longtable}
+\pagebreak
+\section{Figures}\label{figures}
+\noindent\begin{minipage}{\textwidth}
+    \centering
+    \captionof{figure}{Comparable Between Family and Within Family Effects}
+     \includegraphics[width=\textwidth]{plots/betweenewithin.png}
+	\vspace*{15mm}
+     \captionof{figure}{Unequal Between Family and Within Family Effects}
+    \includegraphics[width=\textwidth]{plots/betweennewithin.png}
+	%\label{betweennewithin}
+\end{minipage}
+
+
+%\begin{comment}
+%\begin{figure}
+%  \centering
+%    \includegraphics[height=.85\textwidth,angle=270]{G1wrightMap}
+%     \caption{Wright Map of Gen1 Cognitive Ability}\label{G1wrightMap}
+%\end{figure}
+%\end{comment}
+
+\appendix\label{appen}
+%\section{Endnotes}
+%\theendnotes
+
+\section{Age 10.5 Replication}\label{appen10}
+\begin{longtable}{@{\extracolsep{5pt}}cc} 
+\caption{Gen2 Measurement Model.}\label{table_gen2measurement_10}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & g at Age 10.5 \\ 
+\hline \\[-1.8ex] 
+\partialinput{12}{34}{content/table/table_g2_10measurement.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}cccccc} 
+\caption{Gen2 Factor Loadings.}\label{table_g2loading_10}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & Test & Estimate & S.E. & Est./.S.E. & P Value \\  
+\hline \\[-1.8ex] 
+\partialinput{12}{17}{content/table/table_g2loading_10.tex}
+\end{longtable}\pagebreak
+
+\subsection{Between Family Analyses}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Gen1 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_10}
+\partialinput{5}{24}{content/table/table_Mean_Mom_Intelligence_Mean_Child_AFI_10.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Gen2 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_10}
+\partialinput{5}{24}{content/table/table_Mean_Child_Intelligence_Mean_Child_AFI_10.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Joint Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_10}
+\partialinput{5}{26}{content/table/table_Mean_Joint_Intelligence_Mean_Child_AFI_10.tex}
+\end{longtable}\pagebreak
+\subsection{Within Family Analyses}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Gen1 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_10}
+\partialinput{5}{28}{content/table/table_Dif_Mom_Intelligence_Dif_Child_AFI_10.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Gen2 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_10}
+\partialinput{5}{28}{content/table/table_Dif_Child_Intelligence_Dif_Child_AFI_10.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Joint Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_10}
+\partialinput{5}{32}{content/table/table_Dif_Joint_Intelligence_Dif_Child_AFI_10.tex}
+\end{longtable}
+
+
+\section{Age 11.5 Replication}\label{appen11}
+
+\begin{longtable}{@{\extracolsep{5pt}}cc} 
+\caption{Gen2 Measurement Model.}\label{table_gen2measurement_11}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & g at Age 11.5 \\ 
+\hline \\[-1.8ex] 
+\partialinput{12}{34}{content/table/table_g2_11measurement.tex}
+\end{longtable}\pagebreak
+\begin{longtable}{@{\extracolsep{5pt}}cccccc} 
+\caption{Gen2 Factor Loadings.}\label{table_g2loading_11}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & Test & Estimate & S.E. & Est./.S.E. & P.Value \\  
+\hline \\[-1.8ex] 
+\partialinput{12}{17}{content/table/table_g2loading_11.tex}
+\end{longtable}\pagebreak
+\subsection{Between Family Analyses}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Gen1 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_11}
+\partialinput{5}{24}{content/table/table_Mean_Mom_Intelligence_Mean_Child_AFI_11.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Gen2 Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_11}
+\partialinput{5}{24}{content/table/table_Mean_Child_Intelligence_Mean_Child_AFI_11.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Joint Intelligence $\rightarrow$ Mean Gen2 AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_11}
+\partialinput{5}{26}{content/table/table_Mean_Joint_Intelligence_Mean_Child_AFI_11.tex}
+\end{longtable}\pagebreak
+\subsection{Within Family Analyses}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Gen1 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_11}
+\partialinput{5}{28}{content/table/table_Dif_Mom_Intelligence_Dif_Child_AFI_11.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Gen2 Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_11}
+\partialinput{5}{28}{content/table/table_Dif_Child_Intelligence_Dif_Child_AFI_11.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Dif Joint Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_11}
+\partialinput{5}{32}{content/table/table_Dif_Joint_Intelligence_Dif_Child_AFI_11.tex}
+\end{longtable}
+%\section{Notes}
+%\input{content/NOTES.txt}
+
+\bibliography{Projects-AFI}
+\end{document}

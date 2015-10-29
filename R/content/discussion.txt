@@ -1,0 +1,17 @@
+This article presents the relationship between AFI and intelligence using two difference designs: between and within families. The between-family design allowed us to replicate previous researchers who used a cross-sectional sample. The within-family design allowed us to evaluate intelligence differences within the family, to address issues of causality. The results revealed a stark contrast between the two methods. Notably, the between family analyses show a relationship between intellgience and AFI, however the relationship is stronger between mother intelligence and child AFI than between child intelligence and child AFI, which suggests that family-level rathar than individual level intelligence is source. In the within family analyses, the effect vanishes for both maternal intelligence and child intelligence. 
+
+\subsection{Intrepretation} 
+
+\citet{Rodgers2008AJS} looked at the relationship between IQ and education as they influenced age at first birth in Danish twin data.  Their conclusion:
+\begin{quote} variance in AFB emerges from [IQ and education] 	differences between families, not differences between 	sisters within the same family.\end{quote}
+We have exactly the same result in the current study
+Note that the IQ differences between siblings are relatively small; is this important?
+Under a purely genetic model, Rodgers & Rowe, Intelligence, 1987, estimated the average absolute deviation in IQ among random pairs to be 17.1 IQ points, compared to 12.1 for full siblings.  But cousins, who also are in our study, deviate on average by 16.1 IQ points, nearly as much as random pairs
+We believe that differences within the family simply are not important for defining AFI outcome differences
+This finding matches the Harden & Mendle biometrical analysis of Add Health, where they found that only shared environmental influences mattered – those would manifest in between-family differences, but not in within-family differences
+Further, we’re not convinced that in these between-family analyses, intelligence is the actual cause of AFI differences – if so, we think they would perhaps diffuse a bit, but would still show up in within-family analyses
+Rather, we think maternal and child IQ are indirect measures of many other household features, any one of which may be more proximal as the causal explanation – income, parental education, family interaction, etc.
+Or, the whole package of these features may stand in for a general environmental factor, a “little e,” which indexes the quality of home environment – a composite of parental income, intelligence, education, family interaction, etc.
+
+\subsection{Reliability of Difference Scores}
+\subsection{Limitations}

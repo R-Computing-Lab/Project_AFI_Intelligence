@@ -1,0 +1,321 @@
+Mplus VERSION 7.3
+MUTHEN & MUTHEN
+06/01/2015  10:13 PM
+
+INPUT INSTRUCTIONS
+
+  TITLE:
+  CFA G_around_1011912;
+  DATA:
+  FILE = "E:/Dropbox/MPlus/G2Intel/1011zcenter/G_around_1011912.dat";
+
+  VARIABLE:
+  NAMES = CASEID ASEID MCASEID YRB AGE ROUND DIGIT MATH RECOG COMP PPVT;
+   MISSING=.;
+   USEVARIABLES ARE DIGIT MATH RECOG  COMP PPVT;
+      CLUSTER = MCASEID;
+      auxiliary =CASEID ASEID;
+  ANALYSIS:
+  TYPE= complex;
+
+      ESTIMATOR=MLR;
+      iterations=200000;
+  MODEL:
+  g by DIGIT MATH RECOG COMP PPVT;
+  OUTPUT:
+  STANDARDIZED;
+
+
+
+*** WARNING
+  Data set contains cases with missing on all variables.
+  These cases were not included in the analysis.
+  Number of cases with missing on all variables:  3369
+   1 WARNING(S) FOUND IN THE INPUT INSTRUCTIONS
+
+
+
+
+CFA G_around_1011912;
+
+SUMMARY OF ANALYSIS
+
+Number of groups                                                 1
+Number of observations                                        8143
+
+Number of dependent variables                                    5
+Number of independent variables                                  0
+Number of continuous latent variables                            1
+
+Observed dependent variables
+
+  Continuous
+   DIGIT       MATH        RECOG       COMP        PPVT
+
+Observed auxiliary variables
+   CASEID      ASEID
+
+Continuous latent variables
+   G
+
+Variables with special functions
+
+  Cluster variable      MCASEID
+
+Estimator                                                      MLR
+Information matrix                                        OBSERVED
+Maximum number of iterations                                200000
+Convergence criterion                                    0.500D-04
+Maximum number of steepest descent iterations                   20
+Maximum number of iterations for H1                           2000
+Convergence criterion for H1                             0.100D-03
+
+Input data file(s)
+  E:/Dropbox/MPlus/G2Intel/1011zcenter/G_around_1011912.dat
+
+Input data format  FREE
+
+
+SUMMARY OF DATA
+
+     Number of missing data patterns            19
+     Number of clusters        3658
+
+
+
+COVARIANCE COVERAGE OF DATA
+
+Minimum covariance coverage value   0.100
+
+
+     PROPORTION OF DATA PRESENT
+
+
+           Covariance Coverage
+              DIGIT         MATH          RECOG         COMP          PPVT
+              ________      ________      ________      ________      ________
+ DIGIT          0.961
+ MATH           0.956         0.994
+ RECOG          0.955         0.991         0.993
+ COMP           0.948         0.984         0.986         0.986
+ PPVT           0.876         0.889         0.888         0.884         0.891
+
+
+
+THE MODEL ESTIMATION TERMINATED NORMALLY
+
+
+
+MODEL FIT INFORMATION
+
+Number of Free Parameters                       15
+
+Loglikelihood
+
+          H0 Value                     -143535.194
+          H0 Scaling Correction Factor      1.4788
+            for MLR
+          H1 Value                     -143303.518
+          H1 Scaling Correction Factor      1.3959
+            for MLR
+
+Information Criteria
+
+          Akaike (AIC)                  287100.388
+          Bayesian (BIC)                287205.461
+          Sample-Size Adjusted BIC      287157.794
+            (n* = (n + 2) / 24)
+
+Chi-Square Test of Model Fit
+
+          Value                            403.885*
+          Degrees of Freedom                     5
+          P-Value                           0.0000
+          Scaling Correction Factor         1.1472
+            for MLR
+
+*   The chi-square value for MLM, MLMV, MLR, ULSMV, WLSM and WLSMV cannot be used
+    for chi-square difference testing in the regular way.  MLM, MLR and WLSM
+    chi-square difference testing is described on the Mplus website.  MLMV, WLSMV,
+    and ULSMV difference testing is done using the DIFFTEST option.
+
+RMSEA (Root Mean Square Error Of Approximation)
+
+          Estimate                           0.099
+          90 Percent C.I.                    0.091  0.107
+          Probability RMSEA <= .05           0.000
+
+CFI/TLI
+
+          CFI                                0.974
+          TLI                                0.947
+
+Chi-Square Test of Model Fit for the Baseline Model
+
+          Value                          15183.808
+          Degrees of Freedom                    10
+          P-Value                           0.0000
+
+SRMR (Standardized Root Mean Square Residual)
+
+          Value                              0.024
+
+
+
+MODEL RESULTS
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+ G        BY
+    DIGIT              1.000      0.000    999.000    999.000
+    MATH               6.285      0.142     44.271      0.000
+    RECOG              7.477      0.164     45.690      0.000
+    COMP               6.917      0.164     42.173      0.000
+    PPVT               8.600      0.220     39.175      0.000
+
+ Intercepts
+    DIGIT              9.762      0.044    219.585      0.000
+    MATH             101.231      0.224    451.948      0.000
+    RECOG            103.439      0.232    445.559      0.000
+    COMP              99.625      0.213    467.299      0.000
+    PPVT              92.995      0.331    280.815      0.000
+
+ Variances
+    G                  3.112      0.146     21.332      0.000
+
+ Residual Variances
+    DIGIT              7.295      0.136     53.625      0.000
+    MATH             106.983      2.288     46.764      0.000
+    RECOG             65.940      1.880     35.066      0.000
+    COMP              58.374      1.860     31.389      0.000
+    PPVT             186.868      6.523     28.647      0.000
+
+
+STANDARDIZED MODEL RESULTS
+
+
+STDYX Standardization
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+ G        BY
+    DIGIT              0.547      0.010     54.424      0.000
+    MATH               0.731      0.007     97.858      0.000
+    RECOG              0.852      0.005    167.992      0.000
+    COMP               0.848      0.006    149.360      0.000
+    PPVT               0.743      0.009     81.385      0.000
+
+ Intercepts
+    DIGIT              3.026      0.029    103.817      0.000
+    MATH               6.676      0.060    111.846      0.000
+    RECOG              6.678      0.064    104.500      0.000
+    COMP               6.920      0.067    103.399      0.000
+    PPVT               4.554      0.063     72.201      0.000
+
+ Variances
+    G                  1.000      0.000    999.000    999.000
+
+ Residual Variances
+    DIGIT              0.701      0.011     63.785      0.000
+    MATH               0.465      0.011     42.581      0.000
+    RECOG              0.275      0.009     31.834      0.000
+    COMP               0.282      0.010     29.280      0.000
+    PPVT               0.448      0.014     33.037      0.000
+
+
+STDY Standardization
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+ G        BY
+    DIGIT              0.547      0.010     54.424      0.000
+    MATH               0.731      0.007     97.858      0.000
+    RECOG              0.852      0.005    167.992      0.000
+    COMP               0.848      0.006    149.360      0.000
+    PPVT               0.743      0.009     81.385      0.000
+
+ Intercepts
+    DIGIT              3.026      0.029    103.817      0.000
+    MATH               6.676      0.060    111.846      0.000
+    RECOG              6.678      0.064    104.500      0.000
+    COMP               6.920      0.067    103.399      0.000
+    PPVT               4.554      0.063     72.201      0.000
+
+ Variances
+    G                  1.000      0.000    999.000    999.000
+
+ Residual Variances
+    DIGIT              0.701      0.011     63.785      0.000
+    MATH               0.465      0.011     42.581      0.000
+    RECOG              0.275      0.009     31.834      0.000
+    COMP               0.282      0.010     29.280      0.000
+    PPVT               0.448      0.014     33.037      0.000
+
+
+STD Standardization
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+ G        BY
+    DIGIT              1.764      0.041     42.664      0.000
+    MATH              11.087      0.178     62.412      0.000
+    RECOG             13.190      0.165     79.822      0.000
+    COMP              12.202      0.158     77.305      0.000
+    PPVT              15.171      0.294     51.624      0.000
+
+ Intercepts
+    DIGIT              9.762      0.044    219.585      0.000
+    MATH             101.231      0.224    451.948      0.000
+    RECOG            103.439      0.232    445.559      0.000
+    COMP              99.625      0.213    467.299      0.000
+    PPVT              92.995      0.331    280.815      0.000
+
+ Variances
+    G                  1.000      0.000    999.000    999.000
+
+ Residual Variances
+    DIGIT              7.295      0.136     53.625      0.000
+    MATH             106.983      2.288     46.764      0.000
+    RECOG             65.940      1.880     35.066      0.000
+    COMP              58.374      1.860     31.389      0.000
+    PPVT             186.868      6.523     28.647      0.000
+
+
+R-SQUARE
+
+    Observed                                        Two-Tailed
+    Variable        Estimate       S.E.  Est./S.E.    P-Value
+
+    DIGIT              0.299      0.011     27.212      0.000
+    MATH               0.535      0.011     48.929      0.000
+    RECOG              0.725      0.009     83.996      0.000
+    COMP               0.718      0.010     74.680      0.000
+    PPVT               0.552      0.014     40.692      0.000
+
+
+QUALITY OF NUMERICAL RESULTS
+
+     Condition Number for the Information Matrix              0.255E-03
+       (ratio of smallest to largest eigenvalue)
+
+
+     Beginning Time:  22:13:25
+        Ending Time:  22:13:26
+       Elapsed Time:  00:00:01
+
+
+
+MUTHEN & MUTHEN
+3463 Stoner Ave.
+Los Angeles, CA  90066
+
+Tel: (310) 391-9971
+Fax: (310) 391-8971
+Web: www.StatModel.com
+Support: Support@StatModel.com
+
+Copyright (c) 1998-2014 Muthen & Muthen

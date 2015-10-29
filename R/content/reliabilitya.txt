@@ -1,0 +1,25 @@
+\subsection{Reliability of Difference Scores}
+
+Our design assumes that the difference scores of our measures are reliable. INSERT MORE ON THIS. We've reported the test-retest reliability of Gen2 intelligence and Gen1 AFI in earlier sections. Here, we report the test-retest reliability of the differences of those measures across kin. 
+\subsubsection{Estimated Reliabilities} Sibling differences in AFI as reported in 1983, 1984, and 1985 were strongly correlated with each other (See Table \vref{table_measurement_diffafireliable_z}). Comparing sibling differences in AFI as reported in 1983 and 1984 (n = 783 pairs) we found a strong correlation (r = .76). The sample of sibling pairs with complete information in 1985 was too small (n = 12) to compare to the other two years. Regardless, sibling differences in self-reported AFI appear reliable. Although we could not calculate test-retest reliabilities for Gen2, we have no reason to believe that those differences would fundamentally differ from Gen1's reports.
+
+Cousin differences in intelligence as assessed at ages 9.5, 10.5, and 11.5 were correlated using three different linking methods (Mixed, Daughers, Sons). Table \vref{table_measurement_diffintreliable_z} reports the correlated differences of the first borns of each sister, Table \vref{table_measurement_diffintreliable_g} reports the correlated differences of the first born girls, and Table \vref{table_measurement_diffintreliable_b} reports the correlated differences of the first born sons. Reliabilities across linking methods was consistent and high (min r = .86; max r = .95). However, again, we were unable to calculate the test-retest difference score reliablities for Gen1.
+
+\subsubsection{Calculated Reliabilities} Nonetheless, we were able to confirm that difference scores for both generations were reliable for the measures we could estimate. For the remainder, we have calculated the reliability of the difference scores using the following equation \citep{Lord1963}:
+\begin{center}\vspace{-17pt}
+\[\rho_{dd'} = \frac{\sigma_{x}^{2}\rho_{xx'}+\sigma_{y}^{2}\rho_{yy'} - 2\rho_{xy}\sigma_{x}\sigma_{y}}{\sigma_{x}^{2} + \sigma_{y}^{2}- 2\rho_{xy}\sigma_{x}\sigma_{y}}
+\]\end{center}
+where, \begin{itemize}
+\item $\rho_{dd'}$ is the reliability of the difference score,
+\item $\sigma_{x}^{2}$ is the variance of kin$_{1}$'s score, 
+\item $\rho_{xx'}$ is the reliability of kin$_{1}$'s score, 
+\item $\sigma_{y}^{2}$ is the variance of kin$_{2}$'s score, 
+\item $\rho_{yy'}$ is the reliability of kin$_{2}$'s score, 
+\item $\rho_{xy}$ is the correlation between kin$_{1}$'s and kin$_{2}$'s scores.
+\end{itemize}
+
+Accordingly, we can substitute the following values into the above equation to calcualte the difference score reliability for Gen1 intelligence.
+where, \begin{itemize}
+\item $\sigma_{x}^{2}$ and $\sigma_{y}^{2}$  are 1.1881 (from Table \vref{table_summary_stats_sibinsampleg1}) %the variance of the AFQT, 
+\item $\rho_{xx'}$ and $\rho_{yy'}$ are .87 \citep[the low end of AFQT reliability reported in][]{Palmer1988}, 
+\item $\rho_{xy}$ is the correlation between sisters is .67.\end{itemize}
