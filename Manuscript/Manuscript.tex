@@ -1,4 +1,4 @@
-\documentclass[a4paper,man,apacite,natbib,12pt]{apa6}\usepackage[]{graphicx}\usepackage[]{color}
+\documentclass[a4paper,man,apacite,natbib,12pt,longtable]{apa6}\usepackage[]{graphicx}\usepackage[]{color}
 %% maxwidth is the original width if it is less than linewidth
 %% otherwise use linewidth (to make sure the graphics do not exceed the margin)
 \makeatletter
@@ -55,18 +55,21 @@
 %%%%%%%%%%%% Title %%%%%%%%%%%%
 \title{Intelligence and Age at First Intercourse: Cause or Confound?}
 \shorttitle{Intelligence and AFI}
-
-% Authors and Affliations
+%
+% Authors and Affiliations
 \author{S. Mason Garrison and Joseph Lee Rodgers}
 \affiliation{Vanderbilt University}
-
+%
 % Author Note
 \authornote{\input{../Common/content/title/authornote.txt}}
-
+%
 % Abstract
 \abstract{Last compile was \today\ at \currenttime\\
-%% Empirical Study
 \input{../Common/content/title/abstract_empreport.txt}}
+%
+% Key Words
+\keywords{Age at first intercourse; Cross-sectional data; Intelligence; Quasi-Experimental}
+%
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 \maketitle
@@ -143,18 +146,19 @@ ryy = rxx\end{lstlisting}
 \begin{lstlisting}[style=Rsettings]
 rxy=.67\end{lstlisting}
 \begin{lstlisting}[style=Rsettings]
-r.diff.intelligence <- (sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) /
-  (sigmax*sigmax + sigmay*sigmay -2*rxy*sigmax*sigmay)\end{lstlisting}
+\end{lstlisting}
 \begin{lstlisting}[style=Rsettings]
-r.diff.intelligence\end{lstlisting}
+(sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) /
+  (sigmax*sigmax + sigmay*sigmay -2*rxy*sigmax*sigmay)\end{lstlisting}
 \begin{lstlisting}[style=Rsettings]
 ## [1] 0.606
 \end{lstlisting}
 \end{kframe}
 \end{knitrout}
+
 The calculated reliability of Generation 1's differences in AFQT was 0.606, acceptable, but lower than the empirical correlation we derived for cousin differences.\\
 
-We can also calculate the difference score reliability for Generation 2 AFI, by substituting the following values into equation \ref{equationLord1963},
+We can also calculate the difference score reliability for Generation 2 AFI, by substituting the following values into equation \ref{equation_Lord1963},
 where, \begin{itemize}
 \item $\sigma_{x}^{2}$ and $\sigma_{y}^{2}$ are 4.41 (from Table \vref{table_summary_stats_sibinsampleg2}) %the variance of Gen2 Mean AFI, 
 \item $\rho_{xx'}$ and $\rho_{yy'}$ are .76 (from Table \vref{table_measurement_trt_g1afi}), 
@@ -172,15 +176,14 @@ ryy = rxx\end{lstlisting}
 \begin{lstlisting}[style=Rsettings]
 rxy=.099\end{lstlisting}
 \begin{lstlisting}[style=Rsettings]
-r.diff.afi<-(sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) / 
+(sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) / 
   (sigmax*sigmax + sigmay*sigmay -2*rxy*sigmax*sigmay)\end{lstlisting}
-\begin{lstlisting}[style=Rsettings]
-r.diff.afi\end{lstlisting}
 \begin{lstlisting}[style=Rsettings]
 ## [1] 0.734
 \end{lstlisting}
 \end{kframe}
 \end{knitrout}
+
  Gen2 Mean AFI difference scores were also reliable (r = 0.734) and comparable to Generation 1 sibling differences.
 %%%%%%%%%%%% Results %%%%%%%%%%%%
 \section{Results}
@@ -370,24 +373,35 @@ r.diff.afi\end{lstlisting}
 \pagebreak
 %
 \begin{center}
-\captionof{figure}{Between Family Correlations}
-\label{plot_between}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=1.1\paperwidth]{figure/plot_corplotmatrix_between-1} 
-
-\end{knitrout}
-\end{center}
-\pagebreak
-%
-\begin{center}
-\captionof{figure}{Within Family Correlations}
-\label{plot_within}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
 \includegraphics[width=1.1\paperwidth]{figure/plot_corplotmatrix_within-1} 
 
 \end{knitrout}
+\captionof{figure}{Within Family Correlations}
+\label{plot_within}
+\end{center}
+\pagebreak
+%
+\begin{center}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=1.1\paperwidth]{figure/plot_corplotmatrix_between-1} 
+
+\end{knitrout}
+\captionof{figure}{Between Family Correlations}
+\label{plot_between}
+\end{center}
+\pagebreak
+
+\begin{center}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=.8\paperwidth]{figure/plot_spaghetti-1} 
+
+\end{knitrout}
+\captionof{figure}{Spaghetti Plot. The mean Within-Family Slope is \ensuremath{-1.662}; the median Within-Family Slope is 0.055}
+\label{plot_spaghetti}
 \end{center}
 %%%%%%%%%%%% References %%%%%%%%%%%%
 \bibliography{Projects-AFI}

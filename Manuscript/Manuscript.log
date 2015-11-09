@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  28 OCT 2015 15:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  30 OCT 2015 14:19
 entering extended mode
 **Manuscript.tex
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Manuscript\Manuscript.tex
@@ -86,12 +86,38 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen103
+\extrarowheight=\dimen104
+\NC@list=\toks14
+\extratabsurround=\skip48
+\backup@length=\skip49
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip50
+\LTright=\skip51
+\LTpre=\skip52
+\LTpost=\skip53
+\LTchunksize=\count88
+\LTcapwidth=\dimen105
+\LT@head=\box26
+\LT@firsthead=\box27
+\LT@foot=\box28
+\LT@lastfoot=\box29
+\LT@cols=\count89
+\LT@rows=\count90
+\c@LT@tables=\count91
+\c@LT@chunks=\count92
+\LT@p@ftn=\toks15
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks16
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
@@ -104,18 +130,18 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count88
-\Gm@cntv=\count89
-\c@Gm@tempcnt=\count90
-\Gm@bindingoffset=\dimen103
-\Gm@wd@mp=\dimen104
-\Gm@odd@mp=\dimen105
-\Gm@even@mp=\dimen106
-\Gm@layoutwidth=\dimen107
-\Gm@layoutheight=\dimen108
-\Gm@layouthoffset=\dimen109
-\Gm@layoutvoffset=\dimen110
-\Gm@dimlist=\toks15
+\Gm@cnth=\count93
+\Gm@cntv=\count94
+\c@Gm@tempcnt=\count95
+\Gm@bindingoffset=\dimen106
+\Gm@wd@mp=\dimen107
+\Gm@odd@mp=\dimen108
+\Gm@even@mp=\dimen109
+\Gm@layoutwidth=\dimen110
+\Gm@layoutheight=\dimen111
+\Gm@layouthoffset=\dimen112
+\Gm@layoutvoffset=\dimen113
+\Gm@dimlist=\toks17
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
@@ -141,46 +167,46 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count91
+\Gread@gobject=\count96
 ))
-\Gin@req@height=\dimen111
-\Gin@req@width=\dimen112
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen113
-\lightrulewidth=\dimen114
-\cmidrulewidth=\dimen115
-\belowrulesep=\dimen116
-\belowbottomsep=\dimen117
-\aboverulesep=\dimen118
-\abovetopsep=\dimen119
-\cmidrulesep=\dimen120
-\cmidrulekern=\dimen121
-\defaultaddspace=\dimen122
-\@cmidla=\count92
-\@cmidlb=\count93
-\@aboverulesep=\dimen123
-\@belowrulesep=\dimen124
-\@thisruleclass=\count94
-\@lastruleclass=\count95
-\@thisrulewidth=\dimen125
+\heavyrulewidth=\dimen116
+\lightrulewidth=\dimen117
+\cmidrulewidth=\dimen118
+\belowrulesep=\dimen119
+\belowbottomsep=\dimen120
+\aboverulesep=\dimen121
+\abovetopsep=\dimen122
+\cmidrulesep=\dimen123
+\cmidrulekern=\dimen124
+\defaultaddspace=\dimen125
+\@cmidla=\count97
+\@cmidlb=\count98
+\@aboverulesep=\dimen126
+\@belowrulesep=\dimen127
+\@thisruleclass=\count99
+\@lastruleclass=\count100
+\@thisrulewidth=\dimen128
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\threeparttable\threepa
 rttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box26
+\@tempboxb=\box30
 )
-\b@level@one@skip=\skip48
-\e@level@one@skip=\skip49
-\b@level@two@skip=\skip50
-\e@level@two@skip=\skip51
-\b@level@three@skip=\skip52
-\e@level@three@skip=\skip53
-\b@level@four@skip=\skip54
-\e@level@four@skip=\skip55
-\b@level@five@skip=\skip56
-\e@level@five@skip=\skip57
+\b@level@one@skip=\skip54
+\e@level@one@skip=\skip55
+\b@level@two@skip=\skip56
+\e@level@two@skip=\skip57
+\b@level@three@skip=\skip58
+\e@level@three@skip=\skip59
+\b@level@four@skip=\skip60
+\e@level@four@skip=\skip61
+\b@level@five@skip=\skip62
+\e@level@five@skip=\skip63
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
@@ -188,23 +214,28 @@ Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen126
-\captionmargin@=\dimen127
-\captionwidth=\dimen128
-\caption@tempdima=\dimen129
-\caption@indent=\dimen130
-\caption@parindent=\dimen131
-\caption@hangindent=\dimen132
+\captionmargin=\dimen129
+\captionmargin@=\dimen130
+\captionwidth=\dimen131
+\caption@tempdima=\dimen132
+\caption@indent=\dimen133
+\caption@parindent=\dimen134
+\caption@hangindent=\dimen135
 )
-\c@ContinuedFloat=\count96
+\c@ContinuedFloat=\count101
+Package caption Info: longtable package is loaded.
+
+(C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
+Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
+)
 Package caption Info: threeparttable package is loaded.
 )
-\c@APAenum=\count97
-\@text@par@indent=\skip58
-\gr@box=\box27
-\gr@boxwidth=\skip59
-\gr@boxheight=\skip60
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\bm.sty"
+\c@APAenum=\count102
+\@text@par@indent=\skip64
+\gr@box=\box31
+\gr@boxwidth=\skip65
+\gr@boxheight=\skip66
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\bm.sty"
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
@@ -212,28 +243,28 @@ Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
 LaTeX Info: Redefining \bm on input line 204.
 )
-\c@appendix=\count98
+\c@appendix=\count103
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
-\fancy@headwidth=\skip61
-\f@ncyO@elh=\skip62
-\f@ncyO@erh=\skip63
-\f@ncyO@olh=\skip64
-\f@ncyO@orh=\skip65
-\f@ncyO@elf=\skip66
-\f@ncyO@erf=\skip67
-\f@ncyO@olf=\skip68
-\f@ncyO@orf=\skip69
+\fancy@headwidth=\skip67
+\f@ncyO@elh=\skip68
+\f@ncyO@erh=\skip69
+\f@ncyO@olh=\skip70
+\f@ncyO@orh=\skip71
+\f@ncyO@elf=\skip72
+\f@ncyO@erf=\skip73
+\f@ncyO@olf=\skip74
+\f@ncyO@orf=\skip75
 ) (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\endfloat\endfloat.st
 y
 Package: endfloat 2011/12/25 v2.5d LaTeX2e package puts figures and tables at e
 nd (jdm)
-\c@posttable=\count99
+\c@posttable=\count104
 \efloat@postttt=\write3
-\@ef@tttopen=\count100
-\c@postfigure=\count101
+\@ef@tttopen=\count105
+\c@postfigure=\count106
 \efloat@postfff=\write4
-\@ef@fffopen=\count102
+\@ef@fffopen=\count107
 )
 
 Class apa6 Warning: \bibliographystyle command ignored on input line 1753.
@@ -248,11 +279,11 @@ Package color Info: Driver file: pdftex.def on input line 130.
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\framed\framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip70
-\fb@frw=\dimen133
-\fb@frh=\dimen134
-\FrameRule=\dimen135
-\FrameSep=\dimen136
+\OuterFrameSep=\skip76
+\fb@frw=\dimen136
+\fb@frh=\dimen137
+\FrameRule=\dimen138
+\FrameSep=\dimen139
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
 Package: alltt 1997/06/16 v2.0g defines alltt environment
@@ -267,8 +298,8 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
@@ -282,14 +313,14 @@ Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\uni-global.def
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
-\uc@secondtry=\count103
-\uc@combtoks=\toks18
-\uc@combtoksb=\toks19
-\uc@temptokena=\toks20
+\uc@secondtry=\count108
+\uc@combtoks=\toks20
+\uc@combtoksb=\toks21
+\uc@temptokena=\toks22
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip71
+\@mathmargin=\skip77
 
 For additional information on amsmath, use the `?' option.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
@@ -297,52 +328,52 @@ Package: amstext 2000/06/29 v2.01
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks21
-\ex@=\dimen137
+\@emptytoks=\toks23
+\ex@=\dimen140
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 LaTeX Info: Redefining \boldsymbol on input line 39.
-\pmbraise@=\dimen138
+\pmbraise@=\dimen141
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count104
+\inf@bad=\count109
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count105
-\leftroot@=\count106
+\uproot@=\count110
+\leftroot@=\count111
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count107
-\DOTSCASE@=\count108
+\classnum@=\count112
+\DOTSCASE@=\count113
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
-\big@size=\dimen139
+\Mathstrutbox@=\box32
+\strutbox@=\box33
+\big@size=\dimen142
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count109
-\c@MaxMatrixCols=\count110
+\macc@depth=\count114
+\c@MaxMatrixCols=\count115
 \dotsspace@=\muskip10
-\c@parentequation=\count111
-\dspbrk@lvl=\count112
-\tag@help=\toks22
-\row@=\count113
-\column@=\count114
-\maxfields@=\count115
-\andhelp@=\toks23
-\eqnshift@=\dimen140
-\alignsep@=\dimen141
-\tagshift@=\dimen142
-\tagwidth@=\dimen143
-\totwidth@=\dimen144
-\lineht@=\dimen145
-\@envbody=\toks24
-\multlinegap=\skip72
-\multlinetaggap=\skip73
-\mathdisplay@stack=\toks25
+\c@parentequation=\count116
+\dspbrk@lvl=\count117
+\tag@help=\toks24
+\row@=\count118
+\column@=\count119
+\maxfields@=\count120
+\andhelp@=\toks25
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks26
+\multlinegap=\skip78
+\multlinetaggap=\skip79
+\mathdisplay@stack=\toks27
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
@@ -364,9 +395,9 @@ Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\misc\etex.sty"
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count116
+\et@xins=\count121
 )
-\etb@tempcnta=\count117
+\etb@tempcnta=\count122
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fmtcount.sty
 Package: fmtcount 2015/05/05 v3.01
@@ -378,9 +409,9 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-\XKV@toks=\toks26
-\XKV@tempa@toks=\toks27
-\XKV@depth=\count118
+\XKV@toks=\toks28
+\XKV@tempa@toks=\toks29
+\XKV@depth=\count123
 File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
 ))
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fcprefix.sty
@@ -389,17 +420,17 @@ Package: fcprefix 2012/09/28
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fcnumparser.s
 ty
 Package: fcnumparser 2012/09/28
-\fc@digit@counter=\count119
+\fc@digit@counter=\count124
 ))
-\c@padzeroesN=\count120
-\fc@tmpcatcode=\count121
-\@DT@modctr=\count122
-\@ordinalctr=\count123
-\@orgargctr=\count124
-\@strctr=\count125
-\@tmpstrctr=\count126
-\@DT@loopN=\count127
-\@DT@X=\count128
+\c@padzeroesN=\count125
+\fc@tmpcatcode=\count126
+\@DT@modctr=\count127
+\@ordinalctr=\count128
+\@orgargctr=\count129
+\@strctr=\count130
+\@tmpstrctr=\count131
+\@DT@loopN=\count132
+\@DT@X=\count133
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-english.de
 f
@@ -409,58 +440,40 @@ File: fc-english.def 2013/08/17
 ults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count129
-\@month=\count130
-\@year=\count131
-\c@HOUR=\count132
-\c@HOURXII=\count133
-\c@MINUTE=\count134
-\c@TOHOUR=\count135
-\c@TOMINUTE=\count136
-\c@SECOND=\count137
-\currenthour=\count138
-\currentminute=\count139
-\currentsecond=\count140
+\@day=\count134
+\@month=\count135
+\@year=\count136
+\c@HOUR=\count137
+\c@HOURXII=\count138
+\c@MINUTE=\count139
+\c@TOHOUR=\count140
+\c@TOMINUTE=\count141
+\c@SECOND=\count142
+\currenthour=\count143
+\currentminute=\count144
+\currentsecond=\count145
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
-\@dtctr=\count141
-\dayofyear=\count142
-\dayofweek=\count143
+\@dtctr=\count146
+\dayofyear=\count147
+\dayofweek=\count148
 LaTeX Info: Redefining \today on input line 736.
-\dt@a=\toks28
-\dt@b=\toks29
+\dt@a=\toks30
+\dt@b=\toks31
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip74
-\enit@outerparindent=\dimen146
-\enit@toks=\toks30
-\enit@inbox=\box30
-\enitdp@description=\count144
+\labelindent=\skip80
+\enit@outerparindent=\dimen149
+\enit@toks=\toks32
+\enit@inbox=\box34
+\enitdp@description=\count149
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
-Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip75
-\LTright=\skip76
-\LTpre=\skip77
-\LTpost=\skip78
-\LTchunksize=\count145
-\LTcapwidth=\dimen147
-\LT@head=\box31
-\LT@firsthead=\box32
-\LT@foot=\box33
-\LT@lastfoot=\box34
-\LT@cols=\count146
-\LT@rows=\count147
-\c@LT@tables=\count148
-\c@LT@chunks=\count149
-\LT@p@ftn=\toks31
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\changepage\changepage.
 sty
@@ -525,7 +538,7 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen148
+\@linkdim=\dimen150
 \Hy@linkcounter=\count153
 \Hy@pagecounter=\count154
 
@@ -551,10 +564,10 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen149
+\XeTeXLinkMargin=\dimen151
 \Fld@menulength=\count157
-\Field@Width=\dimen150
-\Fld@charsize=\dimen151
+\Field@Width=\dimen152
+\Fld@charsize=\dimen153
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -581,12 +594,12 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip79
+\Hy@SectionHShift=\skip81
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip80
-\bibsep=\skip81
+\bibhang=\skip82
+\bibsep=\skip83
 LaTeX Info: Redefining \cite on input line 694.
 LaTeX Info: Redefining \citeauthor on input line 712.
 LaTeX Info: Redefining \citeyear on input line 735.
@@ -634,14 +647,14 @@ Package: ifdraft 2008/08/11 v1.3 Detect class options draft and final (HO)
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count164
 \calc@Bcount=\count165
-\calc@Adimen=\dimen152
-\calc@Bdimen=\dimen153
-\calc@Askip=\skip82
-\calc@Bskip=\skip83
+\calc@Adimen=\dimen154
+\calc@Bdimen=\dimen155
+\calc@Askip=\skip84
+\calc@Bskip=\skip85
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count166
-\calc@Cskip=\skip84
+\calc@Cskip=\skip86
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\atenddvi.sty"
 Package: atenddvi 2007/04/17 v1.1 At end DVI hook (HO)
@@ -676,21 +689,21 @@ Package: animfp 2009/07/23 fixed point addition for animate.sty
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count176
-\scratchdimen=\dimen154
+\scratchdimen=\dimen156
 \scratchbox=\box36
 \nofMPsegments=\count177
 \nofMParguments=\count178
-\everyMPshowfont=\toks32
+\everyMPshowfont=\toks33
 \MPscratchCnt=\count179
-\MPscratchDim=\dimen155
+\MPscratchDim=\dimen157
 \MPnumerator=\count180
 \makeMPintoPDFobject=\count181
-\everyMPtoPDFconversion=\toks33
+\everyMPtoPDFconversion=\toks34
 )
 \@anim@box=\box37
 \@anim@measbox=\box38
-\@anim@tmpdima=\dimen156
-\@anim@tmpdimb=\dimen157
+\@anim@tmpdima=\dimen158
+\@anim@tmpdimb=\dimen159
 \@anim@ocnum=\count182
 \@anim@num=\count183
 \@anim@curframe=\count184
@@ -704,8 +717,8 @@ Package: animfp 2009/07/23 fixed point addition for animate.sty
 \@anim@curlayer=\count191
 \@anim@lineno=\count192
 \@anim@curfield=\count193
-\@anim@begin=\toks34
-\@anim@end=\toks35
+\@anim@begin=\toks35
+\@anim@end=\toks36
 \@anim@@resizeflags=\count194
 ) (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\media9\media9.sty
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
@@ -742,18 +755,18 @@ Normal \count register pool exhausted, switching to extended pool.
 \l__iow_current_word_int=\count279
 \l__iow_current_indentation_int=\count280
 L3 Module: l3skip 2015/07/14 v5659 L3 Dimensions and skips
-\c_zero_dim=\dimen158
-\c_max_dim=\dimen159
-\l_tmpa_dim=\dimen160
-\l_tmpb_dim=\dimen161
-\g_tmpa_dim=\dimen162
-\g_tmpb_dim=\dimen163
-\c_zero_skip=\skip85
-\c_max_skip=\skip86
-\l_tmpa_skip=\skip87
-\l_tmpb_skip=\skip88
-\g_tmpa_skip=\skip89
-\g_tmpb_skip=\skip90
+\c_zero_dim=\dimen160
+\c_max_dim=\dimen161
+\l_tmpa_dim=\dimen162
+\l_tmpb_dim=\dimen163
+\g_tmpa_dim=\dimen164
+\g_tmpb_dim=\dimen165
+\c_zero_skip=\skip87
+\c_max_skip=\skip88
+\l_tmpa_skip=\skip89
+\l_tmpb_skip=\skip90
+\g_tmpa_skip=\skip91
+\g_tmpb_skip=\skip92
 \c_zero_muskip=\muskip12
 \c_max_muskip=\muskip13
 \l_tmpa_muskip=\muskip14
@@ -781,13 +794,13 @@ L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
 \g_tmpb_box=\box43
 L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
 \l__coffin_internal_box=\box44
-\l__coffin_internal_dim=\dimen164
-\l__coffin_offset_x_dim=\dimen165
-\l__coffin_offset_y_dim=\dimen166
-\l__coffin_x_dim=\dimen167
-\l__coffin_y_dim=\dimen168
-\l__coffin_x_prime_dim=\dimen169
-\l__coffin_y_prime_dim=\dimen170
+\l__coffin_internal_dim=\dimen166
+\l__coffin_offset_x_dim=\dimen167
+\l__coffin_offset_y_dim=\dimen168
+\l__coffin_x_dim=\dimen169
+\l__coffin_y_dim=\dimen170
+\l__coffin_x_prime_dim=\dimen171
+\l__coffin_y_prime_dim=\dimen172
 \c_empty_coffin=\box45
 \l__coffin_aligned_coffin=\box46
 \l__coffin_aligned_internal_coffin=\box47
@@ -796,27 +809,27 @@ L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
 \l__coffin_display_coffin=\box50
 \l__coffin_display_coord_coffin=\box51
 \l__coffin_display_pole_coffin=\box52
-\l__coffin_display_offset_dim=\dimen171
-\l__coffin_display_x_dim=\dimen172
-\l__coffin_display_y_dim=\dimen173
+\l__coffin_display_offset_dim=\dimen173
+\l__coffin_display_x_dim=\dimen174
+\l__coffin_display_y_dim=\dimen175
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
 L3 Module: l3candidates 2015/07/22 v5677 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen174
-\l__box_bottom_dim=\dimen175
-\l__box_left_dim=\dimen176
-\l__box_right_dim=\dimen177
-\l__box_top_new_dim=\dimen178
-\l__box_bottom_new_dim=\dimen179
-\l__box_left_new_dim=\dimen180
-\l__box_right_new_dim=\dimen181
+\l__box_top_dim=\dimen176
+\l__box_bottom_dim=\dimen177
+\l__box_left_dim=\dimen178
+\l__box_right_dim=\dimen179
+\l__box_top_new_dim=\dimen180
+\l__box_bottom_new_dim=\dimen181
+\l__box_left_new_dim=\dimen182
+\l__box_right_new_dim=\dimen183
 \l__box_internal_box=\box53
-\l__coffin_bounding_shift_dim=\dimen182
-\l__coffin_left_corner_dim=\dimen183
-\l__coffin_right_corner_dim=\dimen184
-\l__coffin_bottom_corner_dim=\dimen185
-\l__coffin_top_corner_dim=\dimen186
-\l__coffin_scaled_total_height_dim=\dimen187
-\l__coffin_scaled_width_dim=\dimen188
+\l__coffin_bounding_shift_dim=\dimen184
+\l__coffin_left_corner_dim=\dimen185
+\l__coffin_right_corner_dim=\dimen186
+\l__coffin_bottom_corner_dim=\dimen187
+\l__coffin_top_corner_dim=\dimen188
+\l__coffin_scaled_total_height_dim=\dimen189
+\l__coffin_scaled_width_dim=\dimen190
 L3 Module: l3luatex 2015/06/30 v5646 L3 Experimental LuaTeX-specific functions
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3unicode-dat
@@ -920,9 +933,9 @@ Package: xparse 2015/07/28 v5700 L3 Experimental document command parser
 ty
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfuti
 l-common.tex
-\pgfutil@everybye=\toks36
-\pgfutil@tempdima=\dimen189
-\pgfutil@tempdimb=\dimen190
+\pgfutil@everybye=\toks37
+\pgfutil@tempdima=\dimen191
+\pgfutil@tempdimb=\dimen192
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfuti
 l-common-lists.tex))
@@ -949,30 +962,30 @@ Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkey
 s.code.tex
-\pgfkeys@pathtoks=\toks37
-\pgfkeys@temptoks=\toks38
+\pgfkeys@pathtoks=\toks38
+\pgfkeys@temptoks=\toks39
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkey
 sfiltered.code.tex
-\pgfkeys@tmptoks=\toks39
+\pgfkeys@tmptoks=\toks40
 ))
-\pgf@x=\dimen191
-\pgf@y=\dimen192
-\pgf@xa=\dimen193
-\pgf@ya=\dimen194
-\pgf@xb=\dimen195
-\pgf@yb=\dimen196
-\pgf@xc=\dimen197
-\pgf@yc=\dimen198
+\pgf@x=\dimen193
+\pgf@y=\dimen194
+\pgf@xa=\dimen195
+\pgf@ya=\dimen196
+\pgf@xb=\dimen197
+\pgf@yb=\dimen198
+\pgf@xc=\dimen199
+\pgf@yc=\dimen200
 \w@pgf@writea=\write5
 \r@pgf@reada=\read2
 \c@pgf@counta=\count343
 \c@pgf@countb=\count344
 \c@pgf@countc=\count345
 \c@pgf@countd=\count346
-\t@pgf@toka=\toks40
-\t@pgf@tokb=\toks41
-\t@pgf@tokc=\toks42
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgf.
 cfg
@@ -1028,12 +1041,12 @@ e.tex
 .code.tex)
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathpars
 er.code.tex
-\pgfmath@dimen=\dimen199
+\pgfmath@dimen=\dimen201
 \pgfmath@count=\count349
 \pgfmath@box=\box55
-\pgfmath@toks=\toks43
-\pgfmath@stack@operand=\toks44
-\pgfmath@stack@operation=\toks45
+\pgfmath@toks=\toks44
+\pgfmath@stack@operand=\toks45
+\pgfmath@stack@operation=\toks46
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunc
 tions.code.tex
@@ -1060,33 +1073,33 @@ t.code.tex
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
 repoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen200
-\pgf@picmaxx=\dimen201
 Normal \dimen register pool exhausted, switching to extended pool.
-\pgf@picminy=\dimen256
-\pgf@picmaxy=\dimen257
-\pgf@pathminx=\dimen258
-\pgf@pathmaxx=\dimen259
-\pgf@pathminy=\dimen260
-\pgf@pathmaxy=\dimen261
-\pgf@xx=\dimen262
-\pgf@xy=\dimen263
-\pgf@yx=\dimen264
-\pgf@yy=\dimen265
-\pgf@zx=\dimen266
-\pgf@zy=\dimen267
+\pgf@picminx=\dimen256
+\pgf@picmaxx=\dimen257
+\pgf@picminy=\dimen258
+\pgf@picmaxy=\dimen259
+\pgf@pathminx=\dimen260
+\pgf@pathmaxx=\dimen261
+\pgf@pathminy=\dimen262
+\pgf@pathmaxy=\dimen263
+\pgf@xx=\dimen264
+\pgf@xy=\dimen265
+\pgf@yx=\dimen266
+\pgf@yy=\dimen267
+\pgf@zx=\dimen268
+\pgf@zy=\dimen269
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
 repathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen268
-\pgf@path@lasty=\dimen269
+\pgf@path@lastx=\dimen270
+\pgf@path@lasty=\dimen271
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
 repathusage.code.tex
 File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen270
-\pgf@shorten@start@additional=\dimen271
+\pgf@shorten@end@additional=\dimen272
+\pgf@shorten@start@additional=\dimen273
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
 rescopes.code.tex
@@ -1099,14 +1112,14 @@ File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
 regraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen272
+\pgflinewidth=\dimen274
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
 retransformations.code.tex
 File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen273
-\pgf@pt@y=\dimen274
-\pgf@pt@temp=\dimen275
+\pgf@pt@x=\dimen275
+\pgf@pt@y=\dimen276
+\pgf@pt@temp=\dimen277
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
 requick.code.tex
@@ -1123,12 +1136,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
 rearrows.code.tex
 File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen276
+\pgfarrowsep=\dimen278
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
 reshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen277
+\pgf@max=\dimen279
 \pgf@sys@shading@range@num=\count352
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
@@ -1164,8 +1177,8 @@ File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfc
 omp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen278
-\pgf@nodesepend=\dimen279
+\pgf@nodesepstart=\dimen280
+\pgf@nodesepend=\dimen281
 )
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfc
 omp-version-1-18.sty
@@ -1186,10 +1199,10 @@ Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.cod
 e.tex)
-\pgffor@iter=\dimen280
-\pgffor@skip=\dimen281
-\pgffor@stack=\toks46
-\pgffor@toks=\toks47
+\pgffor@iter=\dimen282
+\pgffor@skip=\dimen283
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
 ))
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\ti
 kz\tikz.code.tex
@@ -1199,14 +1212,14 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 raryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
 \pgf@plot@mark@count=\count353
-\pgfplotmarksize=\dimen282
+\pgfplotmarksize=\dimen284
 )
-\tikz@lastx=\dimen283
-\tikz@lasty=\dimen284
-\tikz@lastxsaved=\dimen285
-\tikz@lastysaved=\dimen286
-\tikzleveldistance=\dimen287
-\tikzsiblingdistance=\dimen288
+\tikz@lastx=\dimen285
+\tikz@lasty=\dimen286
+\tikz@lastxsaved=\dimen287
+\tikz@lastysaved=\dimen288
+\tikzleveldistance=\dimen289
+\tikzsiblingdistance=\dimen290
 \tikz@figbox=\box61
 \tikz@figbox@bg=\box62
 \tikz@tempbox=\box63
@@ -1232,9 +1245,9 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 Package: media9 2015/07/30 v0.57 acrobat-9/X compatible media
 \g_mix_pkgresizeflag_int=\count362
 \l_mix_poster_box=\box65
-\g_mix_wd_dim=\dimen289
-\g_mix_ht_dim=\dimen290
-\g_mix_dp_dim=\dimen291
+\g_mix_wd_dim=\dimen291
+\g_mix_ht_dim=\dimen292
+\g_mix_dp_dim=\dimen293
 \g_mix_rmcnt_int=\count363
 \l_mix_viewcnt_int=\count364
 \g@mix@page@int=\count365
@@ -1247,7 +1260,7 @@ Package: media9 2015/07/30 v0.57 acrobat-9/X compatible media
 . Defining command \addmediapath with sig. 'm' on line 1327.
 .................................................
 \l_mix_pbtn_box=\box66
-\mix@btn@dim=\dimen292
+\mix@btn@dim=\dimen294
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1263,16 +1276,16 @@ Package: media9 2015/07/30 v0.57 acrobat-9/X compatible media
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
 \lst@mode=\count370
 \lst@gtempboxa=\box67
-\lst@token=\toks48
+\lst@token=\toks49
 \lst@length=\count371
-\lst@currlwidth=\dimen293
+\lst@currlwidth=\dimen295
 \lst@column=\count372
 \lst@pos=\count373
-\lst@lostspace=\dimen294
-\lst@width=\dimen295
+\lst@lostspace=\dimen296
+\lst@width=\dimen297
 \lst@newlines=\count374
 \lst@lineno=\count375
-\lst@maxwidth=\dimen296
+\lst@maxwidth=\dimen298
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
@@ -1375,8 +1388,8 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks49
-\verbatim@line=\toks50
+\every@verbatim=\toks50
+\verbatim@line=\toks51
 \verbatim@in@stream=\read3
 )
 
@@ -1470,28 +1483,28 @@ Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Manuscript\Manuscript.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 74.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 71.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 74.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1545,19 +1558,13 @@ File: APAamerican.txt 2012/02/23 v1.25 apa6 configuration for American English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
-Package caption Info: longtable package is loaded.
-
-(C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
-Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
-)
 Package caption Info: End \AtBeginDocument code.
-(C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\ucsencs.def
+ (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 \AtBeginShipoutBox=\box69
-Package hyperref Info: Link coloring OFF on input line 71.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package hyperref Info: Link coloring OFF on input line 74.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
@@ -1566,58 +1573,55 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 \c@section@level=\count384
 LaTeX Info: Redefining \Ref on input line 513.
 )
-LaTeX Info: Redefining \ref on input line 71.
-LaTeX Info: Redefining \pageref on input line 71.
-LaTeX Info: Redefining \nameref on input line 71.
+LaTeX Info: Redefining \ref on input line 74.
+LaTeX Info: Redefining \pageref on input line 74.
+LaTeX Info: Redefining \nameref on input line 74.
 
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Manuscript\Manuscript.out)
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Manuscript\Manuscript.out)
 \@outlinefile=\write6
-LaTeX Info: Redefining \Ref on input line 71.
+LaTeX Info: Redefining \Ref on input line 74.
 
 ABD: EveryShipout initializing macros
 \c@lstlisting=\count385
-Class apa6 Info: Keywords not defined on input line 75.
 
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Common\content\title\authornote.txt
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 13.
+LaTeX Font Info:    Try loading font information for T1+zi4 on input line 3.
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\inconsolata\t1zi4.fd
 File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
 )
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 13.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 13.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 13.
-
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 13.
-
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 13.
+(Font)              <10.95> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 13.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 13.
-LaTeX Font Info:    Try loading font information for U+msa on input line 13.
+(Font)              <6> on input line 3.
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 13.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1639,23 +1643,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.19 \subsection{Intelligence as a Confound}\\
+l.15 \subsection{Intelligence as a Confound}\\
                                               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 22.
+(Font)              <12> on input line 18.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 22.
+(Font)              <10> on input line 18.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 22.
+(Font)              <7> on input line 18.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 22.
+(Font)              <5> on input line 18.
 [6])
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Common\content\introduction\current
-_study.txt [7]) [8]
+_study.txt [7] [8])
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Common\content\method\design.txt
 ! Extra }, or forgotten $.
 l.4 ...\bar{X_{i}}} + \beta_3\mathrm{X_{i\Delta}}}
@@ -1666,20 +1670,29 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-)
+! Undefined control sequence.
+l.13 ... If the effect is a spurious effect -- \ie
+                                                   the function of between f...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) [9]
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Common\content\method\subjects.txt
-[9]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 7.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 1.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-))
-(C:\Dropbox\Work\Research\Projects\NLSY\AFI\Common\content\method\tetrad.txt
-[10]) (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Common\content\method\AFI.txt
+)) [10]
+(C:\Dropbox\Work\Research\Projects\NLSY\AFI\Common\content\method\tetrad.txt)
+(C:\Dropbox\Work\Research\Projects\NLSY\AFI\Common\content\method\AFI.txt
 [11]) [12]
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Common\content\method\Gen1measures.
 txt [13])
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Common\content\method\Gen2measures.
-txt
+txt [14]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `ascii'.
@@ -1722,7 +1735,7 @@ l.6 ...echsler Intelligence Scales for Childrenâ€“
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[14] [15])
+[15])
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Common\content\method\diffscores.tx
 t
 
@@ -1733,11 +1746,10 @@ LaTeX Warning: Hyper reference `table_measurement_diffafireliable_z' on page 16
 LaTeX Warning: Reference `table_measurement_diffafireliable_z' on page 16 undef
 ined on input line 2.
 
-[16])
+[16] [17])
 
-Package xcolor Warning: Incompatible color definition on input line 134.
+Package xcolor Warning: Incompatible color definition on input line 137.
 
-[17]
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang2.st
@@ -1749,14 +1761,10 @@ File: lstlang3.sty 2015/06/04 1.6 listings language file
 )
 
 LaTeX Font Warning: Font shape `T1/zi4/m/it' undefined
-(Font)              using `T1/zi4/m/n' instead on input line 151.
+(Font)              using `T1/zi4/m/n' instead on input line 154.
 
 
-LaTeX Warning: Reference `equationLord1963' on page 18 undefined on input line 
-157.
-
-
-Package xcolor Warning: Incompatible color definition on input line 163.
+Package xcolor Warning: Incompatible color definition on input line 167.
 
 [18]
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Common\content\results\results.txt)
@@ -1861,12 +1869,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [22])
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Common\content\discussion\discussio
-n.txt
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 2.
-
-[23]
+n.txt [23]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `ascii'.
@@ -1875,7 +1878,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 ...shared environmental influences mattered â
+l.14 ...shared environmental influences mattered â
                                                   €“ those would manifest in...
 
 You need to provide a definition with \DeclareInputText 
@@ -1889,7 +1892,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 ...hared environmental influences mattered â€
+l.14 ...hared environmental influences mattered â€
                                                   “ those would manifest in ...
 
 You need to provide a definition with \DeclareInputText 
@@ -1903,12 +1906,13 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 ...ared environmental influences mattered â€“
+l.14 ...ared environmental influences mattered â€“
                                                    those would manifest in b...
 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
+[24]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `ascii'.
@@ -1917,7 +1921,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 ...e is the actual cause of AFI differences â
+l.16 ...e is the actual cause of AFI differences â
                                                   €“ if so, we think they wo...
 
 You need to provide a definition with \DeclareInputText 
@@ -1931,7 +1935,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 ... is the actual cause of AFI differences â€
+l.16 ... is the actual cause of AFI differences â€
                                                   “ if so, we think they wou...
 
 You need to provide a definition with \DeclareInputText 
@@ -1945,7 +1949,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 ...is the actual cause of AFI differences â€“
+l.16 ...is the actual cause of AFI differences â€“
                                                    if so, we think they woul...
 
 You need to provide a definition with \DeclareInputText 
@@ -1959,7 +1963,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12 ... more proximal as the causal explanation â
+l.17 ... more proximal as the causal explanation â
                                                   €“ income, parental educat...
 
 You need to provide a definition with \DeclareInputText 
@@ -1973,7 +1977,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12 ...more proximal as the causal explanation â€
+l.17 ...more proximal as the causal explanation â€
                                                   “ income, parental educati...
 
 You need to provide a definition with \DeclareInputText 
@@ -1987,7 +1991,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12 ...ore proximal as the causal explanation â€“
+l.17 ...ore proximal as the causal explanation â€“
                                                    income, parental educatio...
 
 You need to provide a definition with \DeclareInputText 
@@ -2001,7 +2005,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13 ... indexes the quality of home environment â
+l.17 ... indexes the quality of home environment â
                                                   €“ a composite of parental...
 
 You need to provide a definition with \DeclareInputText 
@@ -2015,7 +2019,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13 ...indexes the quality of home environment â€
+l.17 ...indexes the quality of home environment â€
                                                   “ a composite of parental ...
 
 You need to provide a definition with \DeclareInputText 
@@ -2029,17 +2033,17 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13 ...ndexes the quality of home environment â€“
+l.17 ...ndexes the quality of home environment â€“
                                                    a composite of parental i...
 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-) [24]
+) [25]
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.210 ...es/table_summary_stats_sibinsampleg1.tex}
+l.213 ...es/table_summary_stats_sibinsampleg1.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2047,7 +2051,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.210 ...es/table_summary_stats_sibinsampleg1.tex}
+l.213 ...es/table_summary_stats_sibinsampleg1.tex}
                                                   
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2055,7 +2059,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.210 ...es/table_summary_stats_sibinsampleg1.tex}
+l.213 ...es/table_summary_stats_sibinsampleg1.tex}
                                                   
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -2064,7 +2068,7 @@ So I'll assume that you meant to type \cr instead.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.210 ...es/table_summary_stats_sibinsampleg1.tex}
+l.213 ...es/table_summary_stats_sibinsampleg1.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2072,7 +2076,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.210 ...es/table_summary_stats_sibinsampleg1.tex}
+l.213 ...es/table_summary_stats_sibinsampleg1.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2080,7 +2084,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.210 ...es/table_summary_stats_sibinsampleg1.tex}
+l.213 ...es/table_summary_stats_sibinsampleg1.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2088,7 +2092,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \nopagebreak ->\noalign 
                         {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4
-l.210 ...es/table_summary_stats_sibinsampleg1.tex}
+l.213 ...es/table_summary_stats_sibinsampleg1.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2100,7 +2104,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.214 \begin
+l.217 \begin
             {longtable}{@{\extracolsep{5pt}}lcccccc}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2109,7 +2113,7 @@ or  <return>  to continue without it.
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.216 ...es/table_summary_stats_sibinsampleg2.tex}
+l.219 ...es/table_summary_stats_sibinsampleg2.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2117,7 +2121,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.216 ...es/table_summary_stats_sibinsampleg2.tex}
+l.219 ...es/table_summary_stats_sibinsampleg2.tex}
                                                   
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2125,7 +2129,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.216 ...es/table_summary_stats_sibinsampleg2.tex}
+l.219 ...es/table_summary_stats_sibinsampleg2.tex}
                                                   
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -2134,7 +2138,7 @@ So I'll assume that you meant to type \cr instead.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.216 ...es/table_summary_stats_sibinsampleg2.tex}
+l.219 ...es/table_summary_stats_sibinsampleg2.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2142,7 +2146,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.216 ...es/table_summary_stats_sibinsampleg2.tex}
+l.219 ...es/table_summary_stats_sibinsampleg2.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2150,7 +2154,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.216 ...es/table_summary_stats_sibinsampleg2.tex}
+l.219 ...es/table_summary_stats_sibinsampleg2.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2158,21 +2162,21 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \nopagebreak ->\noalign 
                         {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4
-l.216 ...es/table_summary_stats_sibinsampleg2.tex}
+l.219 ...es/table_summary_stats_sibinsampleg2.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (27.08977pt too wide) in alignment at lines 214--217
+Overfull \hbox (27.08977pt too wide) in alignment at lines 217--220
  [] [] [] [] [] [] [] 
  []
 
-[25]
+[26]
 ! Undefined control sequence.
 <recently read> \npnoround 
                            
-l.220 \npnoround
+l.223 \npnoround
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2183,7 +2187,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.223 ...es/table_summary_stats_AFIRACEGENDER.tex}
+l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2191,7 +2195,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.223 ...es/table_summary_stats_AFIRACEGENDER.tex}
+l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2199,7 +2203,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.223 ...es/table_summary_stats_AFIRACEGENDER.tex}
+l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -2208,7 +2212,7 @@ So I'll assume that you meant to type \cr instead.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.223 ...es/table_summary_stats_AFIRACEGENDER.tex}
+l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2216,7 +2220,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.223 ...es/table_summary_stats_AFIRACEGENDER.tex}
+l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2224,7 +2228,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.223 ...es/table_summary_stats_AFIRACEGENDER.tex}
+l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2232,7 +2236,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.223 ...es/table_summary_stats_AFIRACEGENDER.tex}
+l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2240,7 +2244,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.223 ...es/table_summary_stats_AFIRACEGENDER.tex}
+l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2248,7 +2252,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.223 ...es/table_summary_stats_AFIRACEGENDER.tex}
+l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2256,7 +2260,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.223 ...es/table_summary_stats_AFIRACEGENDER.tex}
+l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2264,7 +2268,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.223 ...es/table_summary_stats_AFIRACEGENDER.tex}
+l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2272,7 +2276,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.223 ...es/table_summary_stats_AFIRACEGENDER.tex}
+l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2280,7 +2284,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.223 ...es/table_summary_stats_AFIRACEGENDER.tex}
+l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2288,16 +2292,16 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.223 ...es/table_summary_stats_AFIRACEGENDER.tex}
+l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-[26] [27] [28]
+[27] [28] [29]
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.257 ...content/tables/table_ttafireliable_z.tex}
+l.260 ...content/tables/table_ttafireliable_z.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2305,7 +2309,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.257 ...content/tables/table_ttafireliable_z.tex}
+l.260 ...content/tables/table_ttafireliable_z.tex}
                                                   
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2313,7 +2317,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.257 ...content/tables/table_ttafireliable_z.tex}
+l.260 ...content/tables/table_ttafireliable_z.tex}
                                                   
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -2326,7 +2330,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.262 \begin
+l.265 \begin
             {longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Ge...
 
 Your command was ignored.
@@ -2336,7 +2340,7 @@ or  <return>  to continue without it.
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.263 ...ntent/tables/table_diffafireliable_z.tex}
+l.266 ...ntent/tables/table_diffafireliable_z.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2344,7 +2348,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.263 ...ntent/tables/table_diffafireliable_z.tex}
+l.266 ...ntent/tables/table_diffafireliable_z.tex}
                                                   
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2352,7 +2356,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.263 ...ntent/tables/table_diffafireliable_z.tex}
+l.266 ...ntent/tables/table_diffafireliable_z.tex}
                                                   
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -2361,7 +2365,7 @@ So I'll assume that you meant to type \cr instead.
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.269 ...content/tables/table_ttintreliable_z.tex}
+l.272 ...content/tables/table_ttintreliable_z.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2369,7 +2373,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.269 ...content/tables/table_ttintreliable_z.tex}
+l.272 ...content/tables/table_ttintreliable_z.tex}
                                                   
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2377,22 +2381,22 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.269 ...content/tables/table_ttintreliable_z.tex}
+l.272 ...content/tables/table_ttintreliable_z.tex}
                                                   
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
 
-Overfull \hbox (28.90755pt too wide) in paragraph at lines 255--272
+Overfull \hbox (28.90755pt too wide) in paragraph at lines 258--275
 []$[]$ 
  []
 
-[29]
+[30]
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.278 ...ntent/tables/table_diffintreliable_z.tex}
+l.281 ...ntent/tables/table_diffintreliable_z.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2400,7 +2404,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.278 ...ntent/tables/table_diffintreliable_z.tex}
+l.281 ...ntent/tables/table_diffintreliable_z.tex}
                                                   
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2408,7 +2412,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.278 ...ntent/tables/table_diffintreliable_z.tex}
+l.281 ...ntent/tables/table_diffintreliable_z.tex}
                                                   
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -2417,7 +2421,7 @@ So I'll assume that you meant to type \cr instead.
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.283 ...ntent/tables/table_diffintreliable_g.tex}
+l.286 ...ntent/tables/table_diffintreliable_g.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2425,7 +2429,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.283 ...ntent/tables/table_diffintreliable_g.tex}
+l.286 ...ntent/tables/table_diffintreliable_g.tex}
                                                   
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2433,7 +2437,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.283 ...ntent/tables/table_diffintreliable_g.tex}
+l.286 ...ntent/tables/table_diffintreliable_g.tex}
                                                   
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -2442,7 +2446,7 @@ So I'll assume that you meant to type \cr instead.
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.288 ...ntent/tables/table_diffintreliable_b.tex}
+l.291 ...ntent/tables/table_diffintreliable_b.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2450,7 +2454,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.288 ...ntent/tables/table_diffintreliable_b.tex}
+l.291 ...ntent/tables/table_diffintreliable_b.tex}
                                                   
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2458,89 +2462,110 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.288 ...ntent/tables/table_diffintreliable_b.tex}
+l.291 ...ntent/tables/table_diffintreliable_b.tex}
                                                   
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
 
-Overfull \hbox (28.90755pt too wide) in paragraph at lines 276--293
+Overfull \hbox (28.90755pt too wide) in paragraph at lines 279--296
 []$[]$ 
  []
 
-[30] [31
+[31] [32
 
-] [32] [33] [34] [35] [36]
+] [33] [34] [35] [36] [37]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 362.
+(caption)                particular \caption on input line 365.
 See the caption package documentation for explanation.
 
 
-Package xcolor Warning: Incompatible color definition on input line 365.
+Package xcolor Warning: Incompatible color definition on input line 368.
 
-<figure/plot_afi_by_race_sex-1.pdf, id=867, 361.35pt x 216.81pt>
+<figure/plot_afi_by_race_sex-1.pdf, id=903, 361.35pt x 216.81pt>
 File: figure/plot_afi_by_race_sex-1.pdf Graphic file (type pdf)
 
 <use figure/plot_afi_by_race_sex-1.pdf>
 Package pdftex.def Info: figure/plot_afi_by_race_sex-1.pdf used on input line 3
-66.
+69.
 (pdftex.def)             Requested size: 478.00812pt x 286.80872pt.
 
-Overfull \hbox (25.04022pt too wide) in paragraph at lines 366--367
+Overfull \hbox (25.04022pt too wide) in paragraph at lines 369--370
  [] 
  []
 
-[37
+[38
 
  <C:/Dropbox/Work/Research/Projects/NLSY/AFI/Manuscript/figure/plot_afi_by_race
 _sex-1.pdf>]
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 373.
-See the caption package documentation for explanation.
+Package xcolor Warning: Incompatible color definition on input line 377.
 
-
-Package xcolor Warning: Incompatible color definition on input line 376.
-
-<figure/plot_corplotmatrix_between-1.pdf, id=879, 505.89pt x 303.1325pt>
-File: figure/plot_corplotmatrix_between-1.pdf Graphic file (type pdf)
-
-<use figure/plot_corplotmatrix_between-1.pdf>
-Package pdftex.def Info: figure/plot_corplotmatrix_between-1.pdf used on input 
-line 377.
-(pdftex.def)             Requested size: 657.2623pt x 393.84557pt.
-
-Overfull \hbox (204.2944pt too wide) in paragraph at lines 377--378
- [] 
- []
-
-[38 <C:/Dropbox/Work/Research/Projects/NLSY/AFI/Manuscript/figure/plot_corplotm
-atrix_between-1.pdf>]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 384.
-See the caption package documentation for explanation.
-
-
-Package xcolor Warning: Incompatible color definition on input line 387.
-
-<figure/plot_corplotmatrix_within-1.pdf, id=889, 505.89pt x 303.1325pt>
+<figure/plot_corplotmatrix_within-1.pdf, id=914, 505.89pt x 303.1325pt>
 File: figure/plot_corplotmatrix_within-1.pdf Graphic file (type pdf)
 
 <use figure/plot_corplotmatrix_within-1.pdf>
 Package pdftex.def Info: figure/plot_corplotmatrix_within-1.pdf used on input l
-ine 388.
+ine 378.
 (pdftex.def)             Requested size: 657.2623pt x 393.84557pt.
 
-Overfull \hbox (204.2944pt too wide) in paragraph at lines 388--389
+Overfull \hbox (204.2944pt too wide) in paragraph at lines 378--379
  [] 
  []
 
-(C:\Dropbox\Work\Research\Projects\NLSY\AFI\Manuscript\Manuscript.bbl [39 <C:/D
-ropbox/Work/Research/Projects/NLSY/AFI/Manuscript/figure/plot_corplotmatrix_wit
-hin-1.pdf>] [40
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 381.
+See the caption package documentation for explanation.
+
+[39 <C:/Dropbox/Work/Research/Projects/NLSY/AFI/Manuscript/figure/plot_corplotm
+atrix_within-1.pdf>]
+
+Package xcolor Warning: Incompatible color definition on input line 388.
+
+<figure/plot_corplotmatrix_between-1.pdf, id=925, 505.89pt x 303.1325pt>
+File: figure/plot_corplotmatrix_between-1.pdf Graphic file (type pdf)
+
+<use figure/plot_corplotmatrix_between-1.pdf>
+Package pdftex.def Info: figure/plot_corplotmatrix_between-1.pdf used on input 
+line 389.
+(pdftex.def)             Requested size: 657.2623pt x 393.84557pt.
+
+Overfull \hbox (204.2944pt too wide) in paragraph at lines 389--390
+ [] 
+ []
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 392.
+See the caption package documentation for explanation.
+
+[40 <C:/Dropbox/Work/Research/Projects/NLSY/AFI/Manuscript/figure/plot_corplotm
+atrix_between-1.pdf>]
+
+Package xcolor Warning: Incompatible color definition on input line 399.
+
+<figure/plot_spaghetti-1.pdf, id=935, 505.89pt x 505.89pt>
+File: figure/plot_spaghetti-1.pdf Graphic file (type pdf)
+
+<use figure/plot_spaghetti-1.pdf>
+Package pdftex.def Info: figure/plot_spaghetti-1.pdf used on input line 400.
+(pdftex.def)             Requested size: 478.00812pt x 478.01453pt.
+
+Overfull \hbox (25.04022pt too wide) in paragraph at lines 400--401
+ [] 
+ []
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 403.
+See the caption package documentation for explanation.
+
+(C:\Dropbox\Work\Research\Projects\NLSY\AFI\Manuscript\Manuscript.bbl [41 <C:/D
+ropbox/Work/Research/Projects/NLSY/AFI/Manuscript/figure/plot_spaghetti-1.pdf>]
+[42
 
 ]
 ! Misplaced alignment tab character &.
@@ -2567,7 +2592,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[41] [42] [43] [44] [45] [46]
+[43] [44] [45] [46] [47] [48]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `ascii'.
@@ -2594,106 +2619,106 @@ l.2152 ...Edition}.} {{SASÂ® University Edition}.}
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[47] [48]) [49]pdfTeX warning (ext4): destination with the same identifier (nam
+[49] [50]) [51]pdfTeX warning (ext4): destination with the same identifier (nam
 e{table.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.408 ...ontent/tables/table_g2_10measurement.tex}
-                                                   [50
+l.422 ...ontent/tables/table_g2_10measurement.tex}
+                                                   [52
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{table.2}) ha
 s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.419 \end{longtable}
-                     \pagebreak [51]pdfTeX warning (ext4): destination with the
- same identifier (name{table.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.433 \end{longtable}
-                     \pagebreak [52
+                     \pagebreak [53]pdfTeX warning (ext4): destination with the
+ same identifier (name{table.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.447 \end{longtable}
+                     \pagebreak [54
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{table.4}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.443 \end{longtable}
-                     \pagebreak [53]pdfTeX warning (ext4): destination with the
+l.457 \end{longtable}
+                     \pagebreak [55]pdfTeX warning (ext4): destination with the
  same identifier (name{table.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.453 \end{longtable}
-                     \pagebreak [54]pdfTeX warning (ext4): destination with the
+l.467 \end{longtable}
+                     \pagebreak [56]pdfTeX warning (ext4): destination with the
  same identifier (name{table.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.466 \end{longtable}
-                     \pagebreak [55]pdfTeX warning (ext4): destination with the
+l.480 \end{longtable}
+                     \pagebreak [57]pdfTeX warning (ext4): destination with the
  same identifier (name{table.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.476 \end{longtable}
-                     \pagebreak [56]pdfTeX warning (ext4): destination with the
+l.490 \end{longtable}
+                     \pagebreak [58]pdfTeX warning (ext4): destination with the
  same identifier (name{table.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.486 \end{longtable}
-                      [57]pdfTeX warning (ext4): destination with the same iden
+l.500 \end{longtable}
+                      [59]pdfTeX warning (ext4): destination with the same iden
 tifier (name{table.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.499 ...ontent/tables/table_g2_11measurement.tex}
-                                                   [58
+l.513 ...ontent/tables/table_g2_11measurement.tex}
+                                                   [60
 
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{table.2}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.510 \end{longtable}
-                     \pagebreak [59]pdfTeX warning (ext4): destination with the
+l.524 \end{longtable}
+                     \pagebreak [61]pdfTeX warning (ext4): destination with the
  same identifier (name{table.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.524 \end{longtable}
-                     \pagebreak [60
+l.538 \end{longtable}
+                     \pagebreak [62
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{table.4}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.534 \end{longtable}
-                     \pagebreak [61]pdfTeX warning (ext4): destination with the
+l.548 \end{longtable}
+                     \pagebreak [63]pdfTeX warning (ext4): destination with the
  same identifier (name{table.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.544 \end{longtable}
-                     \pagebreak [62]pdfTeX warning (ext4): destination with the
+l.558 \end{longtable}
+                     \pagebreak [64]pdfTeX warning (ext4): destination with the
  same identifier (name{table.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.557 \end{longtable}
-                     \pagebreak [63]pdfTeX warning (ext4): destination with the
+l.571 \end{longtable}
+                     \pagebreak [65]pdfTeX warning (ext4): destination with the
  same identifier (name{table.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.567 \end{longtable}
-                     \pagebreak [64]pdfTeX warning (ext4): destination with the
+l.581 \end{longtable}
+                     \pagebreak [66]pdfTeX warning (ext4): destination with the
  same identifier (name{table.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.577 \end{longtable}
+l.591 \end{longtable}
                      
-Package atenddvi Info: Last page = 65.
- [65] AED endfloat: Processing end Figures and Tables
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 580.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 580.
+Package atenddvi Info: Last page = 67.
+ [67] AED endfloat: Processing end Figures and Tables
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 594.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 594.
 
 (C:\Dropbox\Work\Research\Projects\NLSY\AFI\Manuscript\Manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 580.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 580.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 594.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 594.
 Package rerunfilecheck Info: File `Manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 1E3DDE6F07D7A0E95235E275FC35EFD9;3297.
+(rerunfilecheck)             Checksum: FA8738A8E1DB0FB027678579F88235C5;3244.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2703,10 +2728,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 33683 strings out of 493921
- 630177 string characters out of 3147269
- 761967 words of memory out of 3000000
- 35988 multiletter control sequences out of 15000+200000
+ 33727 strings out of 493921
+ 630803 string characters out of 3147269
+ 737216 words of memory out of 3000000
+ 36029 multiletter control sequences out of 15000+200000
  84386 words of font info for 84 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  69i,12n,97p,10373b,1242s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2725,9 +2750,9 @@ es/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
 lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Manuscript.pdf (65 pages, 513488 bytes).
+Output written on Manuscript.pdf (67 pages, 532866 bytes).
 PDF statistics:
- 1122 PDF objects out of 1200 (max. 8388607)
- 283 named destinations out of 1000 (max. 500000)
- 428 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1172 PDF objects out of 1200 (max. 8388607)
+ 282 named destinations out of 1000 (max. 500000)
+ 425 words of extra memory for PDF output out of 10000 (max. 10000000)
 

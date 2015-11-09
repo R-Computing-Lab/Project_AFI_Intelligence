@@ -8,26 +8,28 @@
 \usepackage{amsmath}
 \usepackage{amssymb}       
 %% Date
-\usepackage[yyyymmdd,hhmmss]{datetime}
+\usepackage[mmddyyyy,hhmmss]{datetime}
 %% Lists
 \usepackage{enumitem}%resume numbering
 
 %%%%%% Layout %%%%%%
 \usepackage[pdftex]{lscape} % for landscaped tables
 \usepackage{pdflscape}
-\usepackage{longtable} %Lets tables break over multiple pages
 \usepackage{changepage}
 \usepackage{xspace}
 
 %%%%%% References %%%%%%
 \usepackage{varioref} %references page location
 \usepackage{hyperref}
-\usepackage[longnamesfirst]{natbib}
 \usepackage[natbibapa,nodoi]{apacite}
+\usepackage[longnamesfirst]{natbib}
+
 
 %%%%%% Graphics %%%%%%
-\usepackage{graphicx}
+\usepackage{graphicx}\graphicspath{{../Common/graphics/}}
 \usepackage[graphicx]{realboxes}
+%\usepackage{tikz}
+%\usetikzlibrary{decorations.fractals,calc,arrows,positioning}
 %%% Animate
 \usepackage{animate}
 \usepackage{media9}
@@ -38,19 +40,19 @@
 \usepackage{verbatim}
 \usepackage{etoolbox}
 \usepackage[svgnames]{xcolor}
-
+%
+% Color Definitions
 %-----------------
-%Define the colors you want to use
 \definecolor{black}{rgb}{0,0,0}
 \definecolor{keywordcolor}{rgb}{0,0.6,0.6}
 \definecolor{delimcolor}{rgb}{0.461,0.039,0.102}
 \definecolor{Rcommentcolor}{rgb}{0.101,0.043,0.432}
 %-----------------
-%Set up your listings. You can type `texdoc listings` in your terminal
+% Set up your listings. You can type `texdoc listings` in your terminal
 
 \lstdefinestyle{Rsettings}{
   language=R,
-    basicstyle=\ttfamily\color{black},
+  basicstyle=\ttfamily\color{black},
   breaklines=true,
   showstringspaces=false,
   keywords={if, else, function, theFunction, tmp},
@@ -59,6 +61,11 @@
   keywordstyle=\color{keywordcolor},
   moredelim=[s][\color{delimcolor}]{"}{"},
 }
+
+%%%%%% APA 6 overides %%%%%%
+%% Fix indents for tables
+\AtBeginEnvironment{tabular}{\noindent}
+\AtBeginEnvironment{longtable}{\noindent}
 
 %%%%%%%%%%%% New Commands %%%%%%%%%%%%
 %% Short Hand
@@ -176,13 +183,6 @@
 \setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
 {\box0\lower0.4pt\box2}}
 
-%%% In line Comments
-\usepackage[colorinlistoftodos]{todonotes}
-\newcommand{\cil}[1]{\todo[inline, color=green!40]{#1}}
-
-%%% Margin Comments
-\newcommand{\cm}[1]{\todo[color=green!40]{\begin{adjustwidth*}{1mm}{}#1\end{adjustwidth*}}}
-\newcommand{\cmb}[1]{\todo[color=blue!40]{\begin{adjustwidth*}{1mm}{}\lstinline|#1|\end{adjustwidth*}}}
 
 %%% Hypothesis counters
 \newcounter{myhypothesis}

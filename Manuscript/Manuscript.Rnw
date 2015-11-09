@@ -1,4 +1,4 @@
-\documentclass[a4paper,man,apacite,natbib,12pt]{apa6}
+\documentclass[a4paper,man,apacite,natbib,12pt,longtable]{apa6}
 \usepackage{../Common/style/Mason}
 \usepackage{listings}
 \usepackage{inconsolata}
@@ -6,19 +6,21 @@
 %%%%%%%%%%%% Title %%%%%%%%%%%%
 \title{Intelligence and Age at First Intercourse: Cause or Confound?}
 \shorttitle{Intelligence and AFI}
-
-% Authors and Affliations
+%
+% Authors and Affiliations
 \author{S. Mason Garrison and Joseph Lee Rodgers}
 \affiliation{Vanderbilt University}
-
+%
 % Author Note
 \authornote{\input{../Common/content/title/authornote.txt}}
-
+%
 % Abstract
 \abstract{Last compile was \today\ at \currenttime\\
-%% Empirical Study
 \input{../Common/content/title/abstract_empreport.txt}}
-
+%
+% Key Words
+\keywords{Age at first intercourse; Cross-sectional data; Intelligence; Quasi-Experimental}
+%
 \begin{document}
 \maketitle
 %
@@ -33,8 +35,9 @@
     paste("\\begin{lstlisting}[style=Rsettings]\n",
       x, "\\end{lstlisting}\n", sep = "")}
   knit_hooks$set(source=listing, output=listing)
+    knit_hooks$set(document = function(x) {sub('\\usepackage[]{color}', '\\usepackage{xcolor}', x, fixed = TRUE)})
 @
-<<setup, include=FALSE>>=
+<<setup, include=FALSE,cache=FALSE>>=
 # Libraries
 ## Install Most Current Version
 library(devtools)#;dev_mode(on=T)
@@ -42,6 +45,7 @@ library(devtools)#;dev_mode(on=T)
 #install_github("harrelfe/Hmisc");dev_mode(on=F)
 ## Attach Remaining
 library(corrplot)
+library(ggplot2);library(ggExtra)
 library(Hmisc)
 library(MplusAutomation)
 library(NlsyLinks)
@@ -54,7 +58,6 @@ library(xtable)
 file_drive= "C:"
 ##file_drive="E:"
 directory = paste0(file_drive,"/Dropbox/Work/Research/Projects/NLSY/AFI")
-#setwd("C:/Dropbox/Work/Research/Projects/NLSY/AFI")
 #
 # Functions
 ## source("https://raw.githubusercontent.com/smasongarrison/Functions/master/Mason_Functions.R")
@@ -69,10 +72,10 @@ cor_1star <- function(x,digit=3,sig=.05,include.n=FALSE){
   ## define notions for significance levels; spacing is important.
   mystars <- ifelse(p < sig, "* ", " ")
   
-  ## trunctuate the matrix that holds the correlations to two decimal
+  ## truncate the matrix that holds the correlations to two decimal
   R <- format(round(cbind(rep(-1.11, ncol(x)), R), digit))[,-1] 
   
-  ## build a new matrix that includes the correlations with their apropriate stars 
+  ## build a new matrix that includes the correlations with their appropriate stars 
   Rnew <- matrix(paste(R, mystars, sep=""), ncol=ncol(x)) 
   diag(Rnew) <- paste(diag(R), " ", sep="") 
   rownames(Rnew) <- colnames(x) 
@@ -86,7 +89,7 @@ cor_1star <- function(x,digit=3,sig=.05,include.n=FALSE){
     Rnew <- cbind(Rnew[1:length(Rnew)-1])
   }
   if(include.n){
-    #repalce upper triange with sample size
+    #replace upper triangle with sample size
     require(psych)
     ct<-corr.test(x)
     ct<-as.matrix(ct$n)
@@ -131,7 +134,7 @@ Sd <- function(x,digit=3,na.rm = TRUE) {
 substrRight <- function(x, n, fromend=0, end=nchar(x)-fromend){
   substr(x, end-n+1,end)}
 @
-<<setup_Data_9,include=FALSE>>=
+<<setup_Data_9,include=FALSE,cache=TRUE>>=
 # Import Data for age 9
 ## First Born Child
 LinkedMDAN_discord_AFI_z_9 <- read.csv(paste0(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_910811.csv"))
@@ -178,7 +181,7 @@ model.diffkids.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = da
 model.diffmoms.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
 @
-<<setup_Data_10,include=FALSE>>=
+<<setup_Data_10,include=FALSE,cache=TRUE>>=
 # Import Data for age 10
 ## First Born Child
 LinkedMDAN_discord_AFI_z_10 <- read.csv(paste0(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_1011912.csv"))
@@ -225,7 +228,7 @@ model.diffkids.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = d
 model.diffmoms.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
 @
-<<setup_Data_11,include=FALSE>>=
+<<setup_Data_11,include=FALSE,cache=TRUE>>=
 # Import Data for age 10
 ## First Born Child
 LinkedMDAN_discord_AFI_z_11 <- read.csv(paste0(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_11121013.csv"))
@@ -272,7 +275,7 @@ model.diffkids.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = d
 model.diffmoms.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
 @
-<<setup_summarystats,include=FALSE>>=
+<<setup_summarystats,include=FALSE,cache=TRUE>>=
 # Import Data
 ## Determine First Born
 birthweight <- read.table(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/79/SASGen1Kids/birthweight.dat",sep=""), quote="\"", stringsAsFactors=FALSE)
@@ -290,7 +293,7 @@ new_data <- read.table(paste0(directory,'/Common/content/data/gen2demographics.d
 names(new_data) <- c('C0000100','C0000200','C0005300','C0005400')
 ### Handle missing values
   new_data[new_data == -1] = NA  # Refused 
-  new_data[new_data == -2] = NA  # Dont know 
+  new_data[new_data == -2] = NA  # Don't know 
   new_data[new_data == -3] = NA  # Invalid missing 
   new_data[new_data == -7] = NA  # Missing 
 ### If there are values not categorized they will be represented as NA
@@ -328,7 +331,7 @@ Gen1AFIConcor <- merge(momintel,Gen1AFI_exportconcor,by="MCASEID",all=T)
 Gen2AFIConcor <- merge(kidintel,Gen2AFI_exportconcor,by="CASEID",all=T)
 Gen2AFIConcor_2 <- merge(categories_g2,Gen2AFI_exportconcor,by="CASEID",all=T)
 @
-<<setup_Reliability,include=FALSE>>=
+<<setup_Reliability,include=FALSE,cache=TRUE>>=
 # Reliability 
 ## AFI G1
 ###Import Data
@@ -337,7 +340,7 @@ names(new_data) <- c('R0000100','R0000149','R0214700','R0214800','R0988000','R10
 
 #### Handle missing values
   new_data[new_data == -1] = NA  # Refused 
-  new_data[new_data == -2] = NA  # Dont know 
+  new_data[new_data == -2] = NA  # Don't know 
   new_data[new_data == -3] = NA  # Invalid missing 
   new_data[new_data == -4] = NA  # Valid missing 
   new_data[new_data == -5] = NA  # Non-interview 
@@ -416,7 +419,7 @@ dsSingle$DIF_AFI_83z<-dsSingle$AFI_83z_S1-dsSingle$AFI_83z_S2
 dsSingle$DIF_AFI_84z<-dsSingle$AFI_84z_S1-dsSingle$AFI_84z_S2
 dsSingle$DIF_AFI_85z<-dsSingle$AFI_85z_S1-dsSingle$AFI_85z_S2
 
-### Correlation Matrixes
+### Correlation Matrices
 matrix_g1<-data.frame(dsD$Intel_G1_S1,dsD$Intel_G1_S2)
 matrix_afi_diff<-data.frame(dsSingle$DIF_AFI_83z,dsSingle$DIF_AFI_84z,dsSingle$DIF_AFI_85z)
 names(matrix_afi_diff)<-c("1983","1984","1985")
@@ -523,7 +526,7 @@ LinkedMDAN_discord_AFI_b_10_m<-LinkedMDAN_discord_AFI_b_10[,c(2,57,67,69,71,73,9
 names(LinkedMDAN_discord_AFI_b_10_m) <-c("ID" ,"AFIMOMdiff_10", "INTMOMdiff_10","AFMKIDdiff_10","AFIKIDdiff_10","CSMOMdiff_10",  "Intdiff_10" ) 
 LinkedMDAN_discord_AFI_b_11_m<-LinkedMDAN_discord_AFI_b_11[,c(2,57,67,69,71,73,92)]
 names(LinkedMDAN_discord_AFI_b_11_m) <-c("ID" ,"AFIMOMdiff_11", "INTMOMdiff_11","AFMKIDdiff_11","AFIKIDdiff_11","CSMOMdiff_11",  "Intdiff_11" ) 
-#### MErge
+#### Merge
 diffscorereliable_b <- merge(LinkedMDAN_discord_AFI_b_9_m,LinkedMDAN_discord_AFI_b_10_m,by="ID",all=T)
 diffscorereliable_b <- merge(diffscorereliable_b,LinkedMDAN_discord_AFI_b_11_m,by="ID",all=T)
 matrix_b<-data.frame(diffscorereliable_b$Intdiff_9,diffscorereliable_b$Intdiff_10,diffscorereliable_b$Intdiff_11)
@@ -534,7 +537,7 @@ capture.output(xtable(cor_1star(matrix_b,2,.01,include.n=TRUE)),file=paste0(dire
 capture.output(xtable(cor_1star(matrix_g,2,.01,include.n=TRUE)),file=paste0(directory,"/Common/content/tables/table_diffintreliable_g.tex"))
 capture.output(xtable(cor_1star(matrix_z,2,.01,include.n=TRUE)),file=paste0(directory,"/Common/content/tables/table_diffintreliable_z.tex"))
 @
-<<measurement,include=FALSE>>=
+<<measurement,include=FALSE,cache=TRUE>>=
 # G1
 ## mplus
 ### Run
@@ -575,7 +578,7 @@ capture.output(stargazer(g2loading_10,summary=FALSE,flip = FALSE, dep.var.labels
 capture.output(stargazer(ModelSummaries_Mplusg2_11,summary=FALSE,flip = TRUE, dep.var.labels.include = FALSE),file=paste0(directory,"/Common/content/tables/table_g2_11measurement.tex"))
 capture.output(stargazer(g2loading_11,summary=FALSE,flip = FALSE, dep.var.labels.include = FALSE),file=paste0(directory,"/Common/content/tables/table_g2loading_11.tex"))
 @
-<<results_regression,echo=FALSE, comment=NA, include=FALSE>>=
+<<results_regression,echo=FALSE, comment=NA, include=FALSE,cache=TRUE>>=
 # Stargazer Plot defaults
 font.size="small"
 no.space=TRUE
@@ -849,7 +852,7 @@ capture.output(latex(
   numeric.dollar=TRUE),
   file=paste0(directory,"/Common/content/tables/table_summary_stats_AFIRACEGENDER.tex"))
 @
-<<setup_tables,include=FALSE>>=
+<<setup_tables,include=FALSE,cache=TRUE>>=
 # Summary Stats G1
 ## Manage data
 ### Import
@@ -944,32 +947,39 @@ capture.output(latex(
 % Difference Score Reliability
 \subsection{Reliability of Difference Scores}
 \input{../Common/content/method/diffscores.txt}
-<<calculation,cache=FALSE>>=
+<<calculationint,cache=TRUE>>=
 sigmax = sqrt(1.1881)
 sigmay = sigmax
 rxx = .87
 ryy = rxx
 rxy=.67
+
+(sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) /
+  (sigmax*sigmax + sigmay*sigmay -2*rxy*sigmax*sigmay)
+@
+<<calculationint2,include=FALSE,cache=TRUE>>=
 r.diff.intelligence <- (sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) /
   (sigmax*sigmax + sigmay*sigmay -2*rxy*sigmax*sigmay)
-r.diff.intelligence
 @
 The calculated reliability of Generation 1's differences in AFQT was \Sexpr{r.diff.intelligence}, acceptable, but lower than the empirical correlation we derived for cousin differences.\\
 
-We can also calculate the difference score reliability for Generation 2 AFI, by substituting the following values into equation \ref{equationLord1963},
+We can also calculate the difference score reliability for Generation 2 AFI, by substituting the following values into equation \ref{equation_Lord1963},
 where, \begin{itemize}
 \item $\sigma_{x}^{2}$ and $\sigma_{y}^{2}$ are 4.41 (from Table \vref{table_summary_stats_sibinsampleg2}) %the variance of Gen2 Mean AFI, 
 \item $\rho_{xx'}$ and $\rho_{yy'}$ are .76 (from Table \vref{table_measurement_trt_g1afi}), 
 \item $\rho_{xy}$ is the AFI correlation between first born cousins is .099.(from Figure \vref{plot_between})\end{itemize}
-<<calculation2,cache=FALSE>>=
+<<calculationafi,cache=TRUE>>=
 sigmax = sqrt(4.41)
 sigmay = sigmax
 rxx = .76
 ryy = rxx
 rxy=.099
-r.diff.afi<-(sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) / 
+(sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) / 
   (sigmax*sigmax + sigmay*sigmay -2*rxy*sigmax*sigmay)
-r.diff.afi
+@
+<<calculationafi2,cache=TRUE,include=FALSE>>=
+r.diff.afi<- (sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) / 
+  (sigmax*sigmax + sigmay*sigmay -2*rxy*sigmax*sigmay)
 @
  Gen2 Mean AFI difference scores were also reliable (r = \Sexpr{r.diff.afi}) and comparable to Generation 1 sibling differences.
 %%%%%%%%%%%% Results %%%%%%%%%%%%
@@ -1152,7 +1162,7 @@ r.diff.afi
 \captionof{figure}{Smoothed Density Plots of AFI by Sex and Race}
 \label{plot_afi_by_race_sex}
 <<plot_afi_by_race_sex,fig=TRUE,echo=FALSE,cache=FALSE,echo=FALSE, fig.height=5*.6, fig.width=5,out.width=".8\\paperwidth",warning=FALSE>>=
-# Color Blind Pallete 
+# Color Blind Palette 
 cbbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7","#000000")
 # Data Prep
 dataframe<-data.frame(Gen2AFIConcor_2,Gen2AFIConcor$Intel_G2)
@@ -1193,14 +1203,12 @@ ggplot(dataframe, aes(x=AFI, colour=RACE, group=RACEbySEX, linetype = SEX))+ geo
 \pagebreak
 %
 \begin{center}
-\captionof{figure}{Between Family Correlations}
-\label{plot_between}
-<<plot_corplotmatrix_between,fig=TRUE,echo=FALSE,cache=FALSE,fig.height=7*.6, fig.width=7,out.width="1.1\\paperwidth",warning=FALSE>>=
-# Creat Cor Matrix Plot for Between Family and Sibling Effects
+<<plot_corplotmatrix_within,fig=TRUE,echo=FALSE,cache=FALSE,fig.height=7*.6, fig.width=7,out.width="1.1\\paperwidth",warning=FALSE>>=
+# Croat Cor Matrix Plot for Between Family and Sibling Effects
 dataframe<- LinkedMDAN_discord_AFI_z_9
 C<-dataframe[,c(8,13,23,24,26,31,41,42)]#,56,57,66,67,70,71
 ##
-## Rename variabls
+## Rename variables
 names(C)<-c("Intel_Mom_1","AFI_Mom_1","AFI_Kid_1","Intel_Kid_1","Intel_Mom_2","AFI_Mom_2","AFI_Kid_2","Intel_Kid_2")
 ##
 ## Reorder Variables
@@ -1209,18 +1217,18 @@ C<-C[c("Intel_Mom_1","Intel_Mom_2","Intel_Kid_1","Intel_Kid_2","AFI_Mom_1","AFI_
 ## Plot
 corrplot(Cor(C), method = "ellipse",type="lower",tl.col="black")
 @
+\captionof{figure}{Within Family Correlations}
+\label{plot_within}
 \end{center}
 \pagebreak
 %
 \begin{center}
-\captionof{figure}{Within Family Correlations}
-\label{plot_within}
-<<plot_corplotmatrix_within,fig=TRUE,echo=FALSE,cache=FALSE, fig.height=7*.6, fig.width=7,out.width="1.1\\paperwidth",warning=FALSE>>=
-# Creat Cor Matrix Plot for Between Family and Sibling Effects
+<<plot_corplotmatrix_between,fig=TRUE,echo=FALSE,cache=FALSE, fig.height=7*.6, fig.width=7,out.width="1.1\\paperwidth",warning=FALSE>>=
+# Create Cor Matrix Plot for Between Family and Sibling Effects
 dataframe<- LinkedMDAN_discord_AFI_z_9
 C<-dataframe[,c(56,57,66,67,70,71,89,90)]
 ##
-## Rename variabls
+## Rename variables
 names(C)<-c("AFI_Mom_diff","AFI_Mom_mean","Intel_Mom_diff","Intel_Mom_mean","AFI_Kid_diff","AFI_Kid_mean","Intel_Kid_mean","Intel_Kid_diff")
 ##
 ## Reorder Variables
@@ -1229,6 +1237,80 @@ C<-C[c("Intel_Mom_mean","Intel_Mom_diff","Intel_Kid_mean","Intel_Kid_diff","AFI_
 ## Plot
 corrplot(Cor(C), method = "ellipse",type="lower",tl.col="black")
 @
+\captionof{figure}{Between Family Correlations}
+\label{plot_between}
+\end{center}
+\pagebreak
+
+\begin{center}
+<<plot_spaghetti,fig=TRUE,echo=FALSE,cache=FALSE, fig.height=7, fig.width=7,out.width=".8\\paperwidth",warning=FALSE>>=
+# Plot Set up
+mytheme <- theme_classic() %+replace% 
+  theme(axis.title.x = element_text(face="bold",angle=0), 
+        axis.title.y = element_text(face="bold",angle=90)) 
+# Data Set Up
+dataframe<- LinkedMDAN_discord_AFI_z_9
+C<-dataframe[,c(2,8,13,23,24,26,31,41,42)]#,56,57,66,67,70,71
+##
+## Rename variables
+names(C)<-c("ID","Intel_Mom_1","AFI_Mom_1","AFI_Kid_1","Intel_Kid_1","Intel_Mom_2","AFI_Mom_2","AFI_Kid_2","Intel_Kid_2")
+##
+## Reorder Variables
+C<-C[c("ID","Intel_Mom_1","Intel_Mom_2","Intel_Kid_1","Intel_Kid_2","AFI_Mom_1","AFI_Mom_2","AFI_Kid_1","AFI_Kid_2")]
+
+C2<-C
+names(C2)<-c("ID","Intel_Mom_2","Intel_Mom_1","Intel_Kid_2","Intel_Kid_1","AFI_Mom_2","AFI_Mom_1","AFI_Kid_2","AFI_Kid_1")
+C2<-C2[c("ID","Intel_Mom_1","Intel_Mom_2","Intel_Kid_1","Intel_Kid_2","AFI_Mom_1","AFI_Mom_2","AFI_Kid_1","AFI_Kid_2")]
+
+Stack<-rbind(C,C2)
+
+Stack$slope <- (Stack$AFI_Kid_2-Stack$AFI_Kid_1)/(Stack$Intel_Kid_2-Stack$Intel_Kid_1)
+Stack$slopebinary<- as.numeric(NA)
+Stack$slopebinary[Stack$slope>0]<- 1
+Stack$slopebinary[Stack$slope<0]<- -1
+Stack$slopebinary[Stack$slope==0]<- 0
+Stack$slopebinary<-factor(Stack$slopebinary, levels=c("1", "0", "-1"), labels=c("Positive", "Zero", "Negative"))
+Stack2<-Stack[,c(1,2,4,6,8,11)]
+
+Stack3<-Stack2
+### Generate within vs. between slopes
+
+x <- rep(-5:5, length=233)
+
+
+btwn <- Cor(data.frame(Stack2$AFI_Kid_1,Stack2$Intel_Kid_1))[1,2] * x 
+
+within <- Mean(Stack$slope)* x
+within2 <- Median(Stack$slope)* x
+df <- data.frame(x, y=btwn)
+
+# create a copy of original data, but set y = x
+# this data will be used for the one-to-one line
+df2 <- data.frame(x, y=within)
+df22 <- data.frame(x, y=within2)
+# bind original and 'one-to-one data' together
+df3 <- rbind.data.frame(df, df2, df22)
+
+# create a grouping variable to separate stat_smoothers based on original and one-to-one data 
+df3$grp <- as.factor(rep(1:3, each = nrow(df)))
+
+df3$grp<-factor(df3$grp, levels=c("1", "2", "3"), labels=c("Between Family Slope", "Within Family Slope (mean)", "Within Family Slope (median)"))
+df3=df3[1:698,]
+# If you rather want to stack the two keys in the legend you can add:
+# guide = guide_legend(direction = "vertical")
+#...as argument in scale_colour_manual
+p1 <- ggplot(data = Stack2, aes(x = Intel_Kid_1, y = AFI_Kid_1, group = ID, color=slopebinary )) +
+  mytheme + scale_colour_manual(name = "Within Family \nSlope",values= c("#56B4E9", "#009E73", "#CC79A7")) +
+  labs(list(title = "Gen2. Within Family Spaghetti Plot of \nAFI by Intelligence", y = "Gender Standardized AFI", x = "Standardized Intelligence")) + 
+  geom_line(size=1,alpha=0.4)  + theme(legend.position="right",  legend.justification=c(1, 0.5)) + coord_cartesian(xlim = c(Min(Stack2$Intel_Kid_1),Max(Stack2$Intel_Kid_1) ),ylim = c(Min(Stack2$AFI_Kid_1),Max(Stack2$AFI_Kid_1)))  +
+  stat_smooth(aes(x = df3$x, y = df3$y, group = df3$grp, linetype=df3$grp), method = "lm", se = FALSE, size = 1) + scale_linetype_manual(name = "Slopes",values=c("solid","twodash", "dotted")) 
+
+p1 #+
+ # geom_smooth(method = "lm", se = FALSE, size = 1)
+
+@
+\captionof{figure}{Spaghetti Plot. The mean Within-Family Slope is \Sexpr{Mean(Stack$slope)}; the median Within-Family Slope is \Sexpr{Median(Stack$slope)}}
+\label{plot_spaghetti}
 \end{center}
 %%%%%%%%%%%% References %%%%%%%%%%%%
 \bibliography{Projects-AFI}
