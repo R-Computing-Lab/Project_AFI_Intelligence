@@ -335,33 +335,6 @@ nlsy79datauser}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Clark%
-\ \BBA {} Rice%
-}{%
-Clark%
-\ \BBA {} Rice%
-}{%
-{\protect \APACyear {1982}}%
-}]{%
-clark1982family}
-\APACinsertmetastar {%
-clark1982family}%
-\begin{APACrefauthors}%
-Clark, R\BPBI D.%
-\BCBT {}\ \BBA {} Rice, G\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1982}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Family constellations and eminence: The birth orders of
-  Nobel Prize winners}} {{Family constellations and eminence: The birth orders
-  of Nobel Prize winners}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{The Journal of Psychology}{110}{2}{281--287}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Damian%
 \ \BBA {} Roberts%
 }{%
@@ -498,6 +471,76 @@ DiBlasio, F\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+D'Onofrio%
+\ \BBA {} Lahey%
+}{%
+D'Onofrio%
+\ \BBA {} Lahey%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+DOnofrio2010}
+\APACinsertmetastar {%
+DOnofrio2010}%
+\begin{APACrefauthors}%
+D'Onofrio, B\BPBI M.%
+\BCBT {}\ \BBA {} Lahey, B\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{jun}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Biosocial Influences on the Family: A Decade Review.}}
+  {{Biosocial Influences on the Family: A Decade Review.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of marriage and the family}{72}{3}{762--782}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3760735&tool=pmcentrez&rendertype=abstract}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1111/j.1741-3737.2010.00729.x} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+D'Onofrio%
+, Lahey%
+, Turkheimer%
+\BCBL {}\ \BBA {} Lichtenstein%
+}{%
+D'Onofrio%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+DOnofrio2013}
+\APACinsertmetastar {%
+DOnofrio2013}%
+\begin{APACrefauthors}%
+D'Onofrio, B\BPBI M.%
+, Lahey, B\BPBI B.%
+, Turkheimer, E.%
+\BCBL {}\ \BBA {} Lichtenstein, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{oct}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Critical need for family-based, quasi-experimental
+  designs in integrating genetic and social science research.}} {{Critical need
+  for family-based, quasi-experimental designs in integrating genetic and
+  social science research.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American journal of public health}{103
+  Suppl}{}{S46--55}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3778076&tool=pmcentrez&rendertype=abstract}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.2105/AJPH.2013.301252} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Dunn%
 \ \BBA {} Dunn%
 }{%
@@ -597,29 +640,6 @@ Finer, L\BPBI B.%
   1954--2003}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Public Health Reports}{122}{1}{73}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Galton%
-}{%
-Galton%
-}{%
-{\protect \APACyear {1875}}%
-}]{%
-galton1875english}
-\APACinsertmetastar {%
-galton1875english}%
-\begin{APACrefauthors}%
-Galton, F.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{1875}.
-\newblock
-\APACrefbtitle {{English men of science: Their nature and nurture}} {{English
-  men of science: Their nature and nurture}}.
-\newblock
-\APACaddressPublisher{New York}{D. Appleton and Co.}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -903,6 +923,39 @@ Kaestle, C\BPBI E.%
   young adults}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{American Journal of Epidemiology}{161}{8}{774--780}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kann%
+\ \protect \BOthers {.}}{%
+Kann%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+Kann2014}
+\APACinsertmetastar {%
+Kann2014}%
+\begin{APACrefauthors}%
+Kann, L.%
+, Kinchen, S.%
+, Shanklin, S\BPBI L.%
+, Flint, K\BPBI H.%
+, Kawkins, J.%
+, Harris, W\BPBI a.%
+\BDBL {}Zaza, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+\APACrefbtitle {{Youth risk behavior surveillance--United States, 2013}}
+  {{Youth risk behavior surveillance--United States, 2013}}\
+  \APACbVolEdTR{\BVOL~63}{\BTR{}\ \BNUM~4}.
+\newblock
+\begin{APACrefURL} \url{http://www.ncbi.nlm.nih.gov/pubmed/24918634}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{ss6304a1 [pii]} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1850,6 +1903,29 @@ Rodgers%
 }{%
 Rodgers%
 }{%
+{\protect \APACyear {1984}}%
+}]{%
+rodgers1984confluence}
+\APACinsertmetastar {%
+rodgers1984confluence}%
+\begin{APACrefauthors}%
+Rodgers, J\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1984}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Confluence effects: Not here, not nowp.}} {{Confluence
+  effects: Not here, not nowp.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Developmental Psychology}{20}{2}{321}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodgers%
+}{%
+Rodgers%
+}{%
 {\protect \APACyear {1996}}%
 }]{%
 Rodgers1996}
@@ -2048,6 +2124,34 @@ Rodgers, J\BPBI L.%
   models to NLSY kinship data}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Biosocial Science}{31}{01}{29--41}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodgers%
+, Rowe%
+\BCBL {}\ \BBA {} May%
+}{%
+Rodgers%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1994}}%
+}]{%
+rodgers1994df}
+\APACinsertmetastar {%
+rodgers1994df}%
+\begin{APACrefauthors}%
+Rodgers, J\BPBI L.%
+, Rowe, D\BPBI C.%
+\BCBL {}\ \BBA {} May, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1994}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{DF analysis of NLSY IQ/achievement data: Nonshared
+  environmental influences}} {{DF analysis of NLSY IQ/achievement data:
+  Nonshared environmental influences}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Intelligence}{19}{2}{157--177}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2288,6 +2392,52 @@ Udry, J\BPBI R.%
   pregnancy}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Biosocial Science}{11}{04}{433--441}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Udry%
+}{%
+Udry%
+}{%
+{\protect \APACyear {1994}}%
+}]{%
+udry1994nature}
+\APACinsertmetastar {%
+udry1994nature}%
+\begin{APACrefauthors}%
+Udry, J\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1994}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The nature of gender}} {{The nature of gender}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Demography}{31}{4}{561--573}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Udry%
+}{%
+Udry%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+udry1995sociology}
+\APACinsertmetastar {%
+udry1995sociology}%
+\begin{APACrefauthors}%
+Udry, J\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Sociology and biology: what biology do sociologists
+  need to know?}} {{Sociology and biology: what biology do sociologists need to
+  know?}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Social Forces}{73}{4}{1267--1278}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

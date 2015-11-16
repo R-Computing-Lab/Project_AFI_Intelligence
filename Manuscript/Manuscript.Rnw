@@ -4,7 +4,7 @@
 \usepackage{inconsolata}
 
 %%%%%%%%%%%% Title %%%%%%%%%%%%
-\title{Intelligence and Age at First Intercourse: Cause or Confound?}
+\title{Is the Link Between Intelligence and Age at First Intercourse Causal or Correlational? \\ A Cross-Generational Sibling Comparison Design Using the NLSY}
 \shorttitle{Intelligence and AFI}
 %
 % Authors and Affiliations
@@ -19,7 +19,7 @@
 \input{../Common/content/title/abstract_empreport.txt}}
 %
 % Key Words
-\keywords{Age at first intercourse; Cross-sectional data; Intelligence; Quasi-Experimental}
+\keywords{Age at first intercourse; Cross-sectional Data; Discordant Sibling Design; Intelligence; Quasi-Experimental; Siblings}
 %
 \begin{document}
 \maketitle
@@ -35,7 +35,6 @@
     paste("\\begin{lstlisting}[style=Rsettings]\n",
       x, "\\end{lstlisting}\n", sep = "")}
   knit_hooks$set(source=listing, output=listing)
-    knit_hooks$set(document = function(x) {sub('\\usepackage[]{color}', '\\usepackage{xcolor}', x, fixed = TRUE)})
 @
 <<setup, include=FALSE,cache=FALSE>>=
 # Libraries
