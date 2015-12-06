@@ -1,0 +1,14 @@
+All outcomes were standardized within gender prior to tetrad creation. Table \vref{table_afi_race_gender} reports descriptive statistics for all relevative variables used throughout this paper by whether the respondent has a sibling in the sample.
+
+All outcomes were standardized  by gender prior to tetrad creation. [more detail here is required – standardized within gender pair?  By subtracting the gender pair mean from each score?   Or standardized within all females, and all males, by subtracting the male mean and the female mean?  Rationale?]  Table 3 on page 27 reports descriptive statistics for all relevative relevant variables used throughout this paper by whether the respondent has a sibling in the sample.  [This paragraph is problematic – first, tables are always referred to consecutively, Table 1 first, Table 2 second, etc;  second, tables need to make sense when referred to, and the measures, e.g., AFQT, haven’t been defined yet so the reader doesn’t know yet what these measure mean – this paragraph information needs to move to the section where the measures are defined – and the information here isn’t relevant to the construction of the tetrads anyway]
+
+
+Should add as cites
+
+Geronimus & Korenman, one of more papers from 1990’s using the NLSY to do sibling studies of the outcomes of adolescent pregnancy
+
+Udry’s paper in Demography, “What Biology Do Sociologists Need to Know?”
+
+One or more of Udry’s papers on relation of hormones to adolescent sexual behavior – some co-authored with John Billy – at least one paper on male hormones, and one on females
+
+A couple of Patricia East’s papers comparing teenage sisters, one who gets pregnant and one who doesn’t

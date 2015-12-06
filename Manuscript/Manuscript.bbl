@@ -26,34 +26,28 @@ Anastasi, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Baker%
-, Keck%
-, Mott%
-\BCBL {}\ \BBA {} Quinlan%
+Barclay%
 }{%
-Baker%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {1993}}%
+Barclay%
+}{%
+{\protect \APACyear {2015}}%
 }]{%
-baker1993nlsy}
+barclay2015within}
 \APACinsertmetastar {%
-baker1993nlsy}%
+barclay2015within}%
 \begin{APACrefauthors}%
-Baker, P\BPBI C.%
-, Keck, C\BPBI K.%
-, Mott, F\BPBI L.%
-\BCBL {}\ \BBA {} Quinlan, S\BPBI V.%
+Barclay, K\BPBI J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{1993}.
+\APACrefYearMonthDay{2015}{}{}.
 \newblock
-\APACrefbtitle {{NLSY Child Handbook, Revised Edition: A Guide to the 1986-1990
-  NLSY Child Data.}} {{NLSY Child Handbook, Revised Edition: A Guide to the
-  1986-1990 NLSY Child Data.}}
+{\BBOQ}\APACrefatitle {{A within-family analysis of birth order and
+  intelligence using population conscription data on Swedish men}} {{A
+  within-family analysis of birth order and intelligence using population
+  conscription data on Swedish men}}.{\BBCQ}
 \newblock
-\APACaddressPublisher{Columbus, Ohio}{The Ohio State University, Center for
-  Human Resource Research.}
+\APACjournalVolNumPages{Intelligence}{49}{}{134--143}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -141,6 +135,37 @@ Berbaum, M\BPBI L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Bjerkedal%
+, Kristensen%
+, Skjeret%
+\BCBL {}\ \BBA {} Brevik%
+}{%
+Bjerkedal%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+bjerkedal2007intelligence}
+\APACinsertmetastar {%
+bjerkedal2007intelligence}%
+\begin{APACrefauthors}%
+Bjerkedal, T.%
+, Kristensen, P.%
+, Skjeret, G\BPBI A.%
+\BCBL {}\ \BBA {} Brevik, J\BPBI I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Intelligence test scores and birth order among young
+  Norwegian men (conscripts) analyzed within and between families}}
+  {{Intelligence test scores and birth order among young Norwegian men
+  (conscripts) analyzed within and between families}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Intelligence}{35}{5}{503--514}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Black%
 , Devereux%
 \BCBL {}\ \BBA {} Salvanes%
@@ -167,31 +192,6 @@ Black, S\BPBI E.%
 \APACjournalVolNumPages{CESifo Economic Studies}{57}{1}{103--120}.
 \newblock
 \begin{APACrefDOI} \doi{10.1093/cesifo/ifq022} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Blake%
-}{%
-Blake%
-}{%
-{\protect \APACyear {1981}}%
-}]{%
-Blake1981}
-\APACinsertmetastar {%
-Blake1981}%
-\begin{APACrefauthors}%
-Blake, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1981}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Family size and the quality of children.}} {{Family
-  size and the quality of children.}}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Demography}{18}{4}{421--442}.
-\newblock
-\begin{APACrefDOI} \doi{10.2307/2060941} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -304,37 +304,6 @@ Buhi, E\BPBI R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-{Center for Human Resources Research}%
-}{%
-{Center for Human Resources Research}%
-}{%
-{\protect \APACyear {2009}}%
-}]{%
-nlsy79datauser}
-\APACinsertmetastar {%
-nlsy79datauser}%
-\begin{APACrefauthors}%
-{Center for Human Resources Research}.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{2009}.
-\newblock
-\APACrefbtitle {{NLSY79 CHILD & YOUNG ADULT DATA USERS GUIDE: A Guide to the
-  1986 - 2006 Child Data 1994 - 2006 Young Adult Data}} {{NLSY79 CHILD & YOUNG
-  ADULT DATA USERS GUIDE: A Guide to the 1986 - 2006 Child Data 1994 - 2006
-  Young Adult Data}}.
-\newblock
-\APACaddressPublisher{}{Bureau of Labor Statistics, U.S. Department of Labor}.
-\newblock
-\begin{APACrefURL}
-  \url{https://www.nlsinfo.org/pub/usersvc/Child-Young-Adult/2006ChildYA-DataUsersGuide.pdf}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{bbbbbbbbbbbbbbbb} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Damian%
 \ \BBA {} Roberts%
 }{%
@@ -360,28 +329,6 @@ Damian, R\BPBI I.%
   representative sample of US high school students}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Research in Personality}{58}{}{96--105}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-{Defense Manpower Data Center}%
-}{%
-{Defense Manpower Data Center}%
-}{%
-{\protect \APACyear {2012}}%
-}]{%
-asvabtech4}
-\APACinsertmetastar {%
-asvabtech4}%
-\begin{APACrefauthors}%
-{Defense Manpower Data Center}.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2012}{}{}.
-\newblock
-\APACrefbtitle {{ASVAB Technical Bulletin No. 4 P&P-ASVAB Forms 23-27}} {{ASVAB
-  Technical Bulletin No. 4 P&P-ASVAB Forms 23-27}}\ \APACbVolEdTR{}{\BTR{}\
-  \BNUM~4}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -495,10 +442,6 @@ D'Onofrio, B\BPBI M.%
 \newblock
 \APACjournalVolNumPages{Journal of marriage and the family}{72}{3}{762--782}.
 \newblock
-\begin{APACrefURL}
-  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3760735&tool=pmcentrez&rendertype=abstract}
-  \end{APACrefURL}
-\newblock
 \begin{APACrefDOI} \doi{10.1111/j.1741-3737.2010.00729.x} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
@@ -532,10 +475,6 @@ D'Onofrio, B\BPBI M.%
 \newblock
 \APACjournalVolNumPages{American journal of public health}{103
   Suppl}{}{S46--55}.
-\newblock
-\begin{APACrefURL}
-  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3778076&tool=pmcentrez&rendertype=abstract}
-  \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.2105/AJPH.2013.301252} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -951,9 +890,6 @@ Kann, L.%
 \APACrefbtitle {{Youth risk behavior surveillance--United States, 2013}}
   {{Youth risk behavior surveillance--United States, 2013}}\
   \APACbVolEdTR{\BVOL~63}{\BTR{}\ \BNUM~4}.
-\newblock
-\begin{APACrefURL} \url{http://www.ncbi.nlm.nih.gov/pubmed/24918634}
-  \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{ss6304a1 [pii]} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -1377,33 +1313,6 @@ McGrevy, D\BPBI F.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Mercy%
-\ \BBA {} Steelman%
-}{%
-Mercy%
-\ \BBA {} Steelman%
-}{%
-{\protect \APACyear {1982}}%
-}]{%
-mercy1982familial}
-\APACinsertmetastar {%
-mercy1982familial}%
-\begin{APACrefauthors}%
-Mercy, J\BPBI A.%
-\BCBT {}\ \BBA {} Steelman, L\BPBI C.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1982}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Familial influence on the intellectual attainment of
-  children}} {{Familial influence on the intellectual attainment of
-  children}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{American Sociological Review}{}{}{532--542}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Meredith%
 }{%
 Meredith%
@@ -1572,28 +1481,6 @@ Mott, F\BPBI L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Murray%
-}{%
-Murray%
-}{%
-{\protect \APACyear {1998}}%
-}]{%
-murray1998income}
-\APACinsertmetastar {%
-murray1998income}%
-\begin{APACrefauthors}%
-Murray, C.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{1998}.
-\newblock
-\APACrefbtitle {{Income inequality and IQ.}} {{Income inequality and IQ.}}
-\newblock
-\APACaddressPublisher{}{American Enterprise Inst. for Public Policy Research}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Muth{\'{e}}n%
 \ \BBA {} Muth{\'{e}}n%
 }{%
@@ -1645,58 +1532,6 @@ Nedelec, J\BPBI L.%
   Results from a longitudinal sample of monozygotic twins}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Temas em Psicologia}{20}{1}{31--43}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Neisser%
-\ \protect \BOthers {.}}{%
-Neisser%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {1996}}%
-}]{%
-Neisser1996}
-\APACinsertmetastar {%
-Neisser1996}%
-\begin{APACrefauthors}%
-Neisser, U.%
-, Boodoo, G.%
-, {Bouchard, Jr.}, T\BPBI J.%
-, Boykin, A\BPBI W.%
-, Brody, N.%
-, Ceci, S\BPBI J.%
-\BDBL {}Urbina, S.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1996}{}{}.
-\newblock
-\APACrefbtitle {{Intelligence: Knowns and unknowns.}} {{Intelligence: Knowns
-  and unknowns.}}\ (\BVOL~51)\ (\BNUM~2).
-\newblock
-\begin{APACrefDOI} \doi{10.1037/0003-066X.51.2.77} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-{Open Science Collaboration}%
-}{%
-{Open Science Collaboration}%
-}{%
-{\protect \APACyear {2015}}%
-}]{%
-OpenScienceCollaboration2015}
-\APACinsertmetastar {%
-OpenScienceCollaboration2015}%
-\begin{APACrefauthors}%
-{Open Science Collaboration}.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2015}{aug}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Estimating the reproducibility of psychological
-  science}} {{Estimating the reproducibility of psychological science}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Science}{349}{6251}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1915,8 +1750,8 @@ Rodgers, J\BPBI L.%
 \newblock
 \APACrefYearMonthDay{1984}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Confluence effects: Not here, not nowp.}} {{Confluence
-  effects: Not here, not nowp.}}{\BBCQ}
+{\BBOQ}\APACrefatitle {{Confluence effects: Not here, not now.}} {{Confluence
+  effects: Not here, not now.}}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Developmental Psychology}{20}{2}{321}.
 \PrintBackRefs{\CurrentBib}
@@ -1947,6 +1782,32 @@ Rodgers, J\BPBI L.%
   and context}\ (\BPGS\ 85--110).
 \newblock
 \APACaddressPublisher{Mahwah, New Jersey}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodgers%
+}{%
+Rodgers%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+Rodgers2001admixture}
+\APACinsertmetastar {%
+Rodgers2001admixture}%
+\begin{APACrefauthors}%
+Rodgers, J\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{What causes birth order-intelligence patterns? The
+  admixture hypothesis, revived.}} {{What causes birth order-intelligence
+  patterns? The admixture hypothesis, revived.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The American psychologist}{56}{6-7}{505--510}.
+\newblock
+\begin{APACrefDOI} \doi{10.1037/0003-066X.56.6-7.505} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2068,33 +1929,6 @@ Rodgers, J\BPBI L.%
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.biotechadv.2011.08.021.Secreted}
   \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Rodgers%
-\ \BBA {} Rowe%
-}{%
-Rodgers%
-\ \BBA {} Rowe%
-}{%
-{\protect \APACyear {1987}}%
-}]{%
-Rodgers1987}
-\APACinsertmetastar {%
-Rodgers1987}%
-\begin{APACrefauthors}%
-Rodgers, J\BPBI L.%
-\BCBT {}\ \BBA {} Rowe, D\BPBI C.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1987}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{IQ Similarity in Twins , Siblings , Half- Siblings ,
-  Cousins , and Random Pairs}} {{IQ Similarity in Twins , Siblings , Half-
-  Siblings , Cousins , and Random Pairs}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Intelligence}{206}{}{199--206}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2237,28 +2071,6 @@ Santelli, J\BPBI S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-{SAS Institute Inc}%
-}{%
-{SAS Institute Inc}%
-}{%
-{\protect \APACyear {2015}}%
-}]{%
-sas}
-\APACinsertmetastar {%
-sas}%
-\begin{APACrefauthors}%
-{SAS Institute Inc}.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2015}{}{}.
-\newblock
-\APACrefbtitle {{SAS® University Edition}.} {{SAS® University Edition}.}
-\newblock
-\APACaddressPublisher{}{SAS Institute Inc}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Savage%
 \ \BBA {} Freeman%
 }{%
@@ -2345,32 +2157,6 @@ Spriggs, A\BPBI L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Strenze%
-}{%
-Strenze%
-}{%
-{\protect \APACyear {2007}}%
-}]{%
-Strenze2007}
-\APACinsertmetastar {%
-Strenze2007}%
-\begin{APACrefauthors}%
-Strenze, T.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2007}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Intelligence and socioeconomic success: A meta-analytic
-  review of longitudinal research}} {{Intelligence and socioeconomic success: A
-  meta-analytic review of longitudinal research}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Intelligence}{35}{5}{401--426}.
-\newblock
-\begin{APACrefDOI} \doi{10.1016/j.intell.2006.09.004} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Udry%
 }{%
 Udry%
@@ -2438,108 +2224,6 @@ Udry, J\BPBI R.%
   know?}}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Social Forces}{73}{4}{1267--1278}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-{U.S. Coast Guard}%
-}{%
-{U.S. Coast Guard}%
-}{%
-{\protect \APACyear {2004}}%
-}]{%
-UnitedStatesCoastGuard2004}
-\APACinsertmetastar {%
-UnitedStatesCoastGuard2004}%
-\begin{APACrefauthors}%
-{U.S. Coast Guard}.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2004}{}{}.
-\newblock
-\APACrefbtitle {{Armed Services Vocational Aptitude Battery (ASVAB)
-  renorming.}} {{Armed Services Vocational Aptitude Battery (ASVAB)
-  renorming.}}\ \APACbVolEdTR{}{\BTR{}}.
-\newblock
-\APACaddressInstitution{}{U.S. Department of Homeland Security.}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-{U.S. Department of Defense}%
-}{%
-{U.S. Department of Defense}%
-}{%
-{\protect \APACyear {1982}}%
-}]{%
-DoD1982}
-\APACinsertmetastar {%
-DoD1982}%
-\begin{APACrefauthors}%
-{U.S. Department of Defense}.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1982}{}{}.
-\newblock
-\APACrefbtitle {{Profile of American Youth: 1980 nationwide administration of
-  the Armed Services Vocational Aptitude Battery.}} {{Profile of American
-  Youth: 1980 nationwide administration of the Armed Services Vocational
-  Aptitude Battery.}}
-\newblock
-\APACaddressPublisher{Washington, DC}{Office of the Assistant Secretary of
-  Defense (Manpower, Installations and Logistics)}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-{U.S. Department of the Army}%
-}{%
-{U.S. Department of the Army}%
-}{%
-{\protect \APACyear {2013}}%
-}]{%
-army2013}
-\APACinsertmetastar {%
-army2013}%
-\begin{APACrefauthors}%
-{U.S. Department of the Army}.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{2013}.
-\newblock
-\APACrefbtitle {{Pocket Recruiter Guide}} {{Pocket Recruiter Guide}}.
-\newblock
-\APACaddressPublisher{Fort Knox, KY}{Government Printing Agency}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Waters%
-, Laurence%
-, Camara%
-\BCBL {}\ \BBA {} Green%
-}{%
-Waters%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {1987}}%
-}]{%
-waters1987personnel}
-\APACinsertmetastar {%
-waters1987personnel}%
-\begin{APACrefauthors}%
-Waters, B\BPBI K.%
-, Laurence, J\BPBI H.%
-, Camara, W\BPBI J.%
-\BCBL {}\ \BBA {} Green, B\BPBI F.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{1987}.
-\newblock
-\APACrefbtitle {{Personnel enlistment and classification procedures in the US
-  military}} {{Personnel enlistment and classification procedures in the US
-  military}}.
-\newblock
-\APACaddressPublisher{}{National Academy Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2775,34 +2459,6 @@ Zajonc, R\BPBI B.%
   children.}}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Science}{}{}{}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Zajonc%
-\ \BBA {} Bargh%
-}{%
-Zajonc%
-\ \BBA {} Bargh%
-}{%
-{\protect \APACyear {1980}}%
-}]{%
-zajonc1980}
-\APACinsertmetastar {%
-zajonc1980}%
-\begin{APACrefauthors}%
-Zajonc, R\BPBI B.%
-\BCBT {}\ \BBA {} Bargh, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1980}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{The Confluence Model : Parameter Estimation for Six
-  Divergent Data Sets on Family Factors and Intelligence}} {{The Confluence
-  Model : Parameter Estimation for Six Divergent Data Sets on Family Factors
-  and Intelligence}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Intelligence}{4}{}{349--361}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

@@ -90,505 +90,206 @@
 %\section{Introduction}
 \section{ }\vspace{-.8cm}
 % Introduce the Major Problem
-\input{../Common/content/introduction/introduce_the_problem.txt}\\
-\input{../Common/content/introduction/importance_of_problem.txt}
-
-% Relevant Scholarship
-%\subsection{Relevant Scholarship}
-\input{../Common/content/introduction/relevant_scholarship.txt}\\
-
+\input{../Common/content/writing/introduction.txt}
 % Current Study
-\subsection{Current Study}
-\input{../Common/content/introduction/current_study.txt}
+\subsection{Current Study, Summary}
+\input{../Common/content/writing/current_study.txt}
 
 %%%%%%%%%%%% Method %%%%%%%%%%%%
 \section{Method}
-% Research Design
 \subsection{Research Design}
-\input{../Common/content/method/design.txt}
+\input{../Common/content/writing/design.txt}
 %
 % Sample
 \subsection{Sample}
-\input{../Common/content/method/subjects.txt}
+\input{../Common/content/writing/subjects.txt}
 %
 % Tetrads
 \subsection{Tetrads}
-\input{../Common/content/method/tetrad.txt}
-%
-% Age at First Intercourse
-\subsection{Age at First Intercourse}
-\input{../Common/content/method/AFI.txt}
+\input{../Common/content/writing/tetrad.txt}
 %
 %%%%%%%%%%%% Measurement %%%%%%%%%%%%
-\section{Measures}
-%
-% Gen1
-\subsection{Generation 1}
-\input{../Common/content/method/Gen1measures.txt}
-%
-% Gen2
-\subsection{Generation 2}
-\input{../Common/content/method/Gen2measures.txt}
-%
-% Difference Score Reliability
-\subsection{Reliability of Difference Scores}
-\input{../Common/content/method/diffscores.txt}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{lstlisting}[style=Rsettings]
-sigmax = sqrt(1.1881)\end{lstlisting}
-\begin{lstlisting}[style=Rsettings]
-sigmay = sigmax\end{lstlisting}
-\begin{lstlisting}[style=Rsettings]
-rxx = .87\end{lstlisting}
-\begin{lstlisting}[style=Rsettings]
-ryy = rxx\end{lstlisting}
-\begin{lstlisting}[style=Rsettings]
-rxy=.67\end{lstlisting}
-\begin{lstlisting}[style=Rsettings]
-\end{lstlisting}
-\begin{lstlisting}[style=Rsettings]
-(sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) /
-  (sigmax*sigmax + sigmay*sigmay -2*rxy*sigmax*sigmay)\end{lstlisting}
-\begin{lstlisting}[style=Rsettings]
-## [1] 0.606
-\end{lstlisting}
-\end{kframe}
-\end{knitrout}
-
-The calculated reliability of Generation 1's differences in AFQT was 0.606, acceptable, but lower than the empirical correlation we derived for cousin differences.\\
-
-We can also calculate the difference score reliability for Generation 2 AFI, by substituting the following values into equation \ref{equation_Lord1963},
-where, \begin{itemize}
-\item $\sigma_{x}^{2}$ and $\sigma_{y}^{2}$ are 4.41 (from Table \vref{table_summary_stats_sibinsampleg2}) %the variance of Gen2 Mean AFI, 
-\item $\rho_{xx'}$ and $\rho_{yy'}$ are .76 (from Table \vref{table_measurement_trt_g1afi}), 
-\item $\rho_{xy}$ is the AFI correlation between first born cousins is .099.(from Figure \vref{plot_between})\end{itemize}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{lstlisting}[style=Rsettings]
-sigmax = sqrt(4.41)\end{lstlisting}
-\begin{lstlisting}[style=Rsettings]
-sigmay = sigmax\end{lstlisting}
-\begin{lstlisting}[style=Rsettings]
-rxx = .76\end{lstlisting}
-\begin{lstlisting}[style=Rsettings]
-ryy = rxx\end{lstlisting}
-\begin{lstlisting}[style=Rsettings]
-rxy=.099\end{lstlisting}
-\begin{lstlisting}[style=Rsettings]
-(sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) / 
-  (sigmax*sigmax + sigmay*sigmay -2*rxy*sigmax*sigmay)\end{lstlisting}
-\begin{lstlisting}[style=Rsettings]
-## [1] 0.734
-\end{lstlisting}
-\end{kframe}
-\end{knitrout}
-
- Gen2 Mean AFI difference scores were also reliable (r = 0.734) and comparable to Generation 1 sibling differences.
-%%%%%%%%%%%% Results %%%%%%%%%%%%
-\section{Results}
-\input{../Common/content/results/results.txt}
-%
-% Between Family
-\subsection{Between Family}
-\input{../Common/content/results/results_between.txt}
-%
-% Within Family
-\subsection{Within Family}
-\input{../Common/content/results/results_within.txt}
-%
-%%%%%%%%%%%% Discussion %%%%%%%%%%%%
-\section{Discussion}
-\input{../Common/content/discussion/discussion.txt}
-
-%%%%%%%%%%%% Tables %%%%%%%%%%%%
-\newpage\section{Tables}
-% Descriptive Statistics
-\subsection{Descriptive Statistics}
-%
-%% Sibling in Sample Summary Stats
-%%% Gen 1
-\begin{longtable}{@{\extracolsep{5pt}}lcccccc}
-\caption{Gen1 Summary Statistics by Sibling Status.}\label{table_summary_stats_sibinsampleg1}
-\partialinput{2}{10}{../Common/content/tables/table_summary_stats_sibinsampleg1.tex}
-\end{longtable}\linebreak
-%%%
-%%% Gen 2
-\begin{longtable}{@{\extracolsep{5pt}}lcccccc}
-\caption{Gen2 Summary Statistics by Sibling Status.}\label{table_summary_stats_sibinsampleg2}
-\partialinput{2}{10}{../Common/content/tables/table_summary_stats_sibinsampleg2.tex}
-\end{longtable}\pagebreak
-%%
-%% AFI by Gender, Race, and Gender by Race
-\npnoround
-\begin{longtable}{@{\extracolsep{5pt}}lllcc}
-\caption{Gen2 Mean AFI by Gender, Race, and Gender by Race.}\label{table_afi_race_gender}
-\partialinput{2}{18}{../Common/content/tables/table_summary_stats_AFIRACEGENDER.tex}
-\end{longtable}\pagebreak
-%%
-% Measurement
-\subsection{Measurement}
-%%
-%% Age 9
-%%% Measurement Model
-\begin{longtable}{@{\extracolsep{5pt}}cc} 
-\caption{Gen2 Measurement Model.}\label{table_gen2measurement_9}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & g at Age 9.5 \\ 
-\hline \\[-1.8ex] 
-\partialinput{12}{34}{../Common/content/tables/table_g2_9measurement.tex}
-\end{longtable}\pagebreak
-%%%
-%%% Factor Loadings
-\begin{longtable}{@{\extracolsep{5pt}}cccccc} 
-\caption{Gen2 Factor Loadings.}\label{table_g2loading_9}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & Test & Estimate & S.E. & Est./.S.E. & P.Value \\  
-\hline \\[-1.8ex] 
-\partialinput{12}{17}{../Common/content/tables/table_g2loading_9.tex}
-\end{longtable}\pagebreak
-%
-% Difference Scores
-\subsection{Difference Scores}
-%
-%% AFI
-%%% AFI Test-Retest Gen 1
-\begin{minipage}{\linewidth}
-\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen1 Self-Reported AFI Across 1983-1985 }\label{table_measurement_trt_g1afi}
-\partialinput{6}{12}{../Common/content/tables/table_ttafireliable_z.tex}
-\end{longtable}
-\linebreak
-%%%
-%%% AFI Sibling Differences
-\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen1 Sibling Differences in Self-Reported AFI across 1983-1985 (Standardized by Gender)}\label{table_measurement_diffafireliable_z.tex}
-\partialinput{6}{12}{../Common/content/tables/table_diffafireliable_z.tex}
-\end{longtable}
-%%
-%% Intelligence
-%%% Test-retest Gen 2 intelligence
-\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen2 Aggregated Intelligence across Ages 9.5, 10.5, 11.5 }\label{table_measurement_trt_g2int}
-\partialinput{6}{12}{../Common/content/tables/table_ttintreliable_z.tex}
-\end{longtable}\end{minipage}
-\pagebreak
-\newpage
-%%%
-%%% Cousin Difference Scores Gen 2 intelligence
-%%%% First Born Child
-\begin{minipage}{\linewidth}
-\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen2 First Born Cousin Differences in Intelligence across Ages 9.5-11.5}\label{table_measurement_diffintreliable_z}
-\partialinput{6}{12}{../Common/content/tables/table_diffintreliable_z.tex}
-\end{longtable}
-%%%%
-%%%% First Born Daughter
-\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen2 First Female Cousin Differences in Intelligence across Ages 9.5-11.5}\label{table_measurement_diffintreliable_g}
-\partialinput{6}{12}{../Common/content/tables/table_diffintreliable_g.tex}
-\end{longtable}
-%%%%
-%%%% First Born Son
-\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen2 First Male Cousin Differences in Intelligence across Ages 9.5-11.5}\label{table_measurement_diffintreliable_b}
-\partialinput{6}{12}{../Common/content/tables/table_diffintreliable_b.tex}
-\end{longtable}\end{minipage}
-\pagebreak
-%
-% Between Family Analyses
-\begin{landscape}
-\subsection{Between Family Analyses}
-%%
-%% Mom -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_9}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
-\cline{2-4}
-\partialinput{10}{22}{../Common/content/tables/table_Mean_Mom_Intelligence_Mean_Child_AFI_9.tex}
-\end{longtable}\pagebreak
-%%
-%% Child -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Gen2 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_9}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
-\cline{2-4}
-\partialinput{10}{22}{../Common/content/tables/table_Mean_Child_Intelligence_Mean_Child_AFI_9.tex}
-\end{longtable}\pagebreak
-%%
-%% Mom Child -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Mean Joint Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_9}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
-\cline{2-4}
-\partialinput{10}{23}{../Common/content/tables/table_Mean_Joint_Intelligence_Mean_Child_AFI_9.tex}
-\end{longtable}\pagebreak
-%
-% Within Family Analyses
-\subsection{Within Family Analyses}
-%%
-%% Mom -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Gen1 Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_9}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
-\cline{2-4}
-\partialinput{10}{24}{../Common/content/tables/table_Dif_Mom_Intelligence_Dif_Child_AFI_9.tex}
-\end{longtable}\pagebreak
-%%
-%% Child -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Gen2 Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_9}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
-\cline{2-4}
-\partialinput{10}{24}{../Common/content/tables/table_Dif_Child_Intelligence_Dif_Child_AFI_9.tex}
-\end{longtable}\pagebreak
-%%
-%% Mom Child -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Dif Joint Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_9}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
-\cline{2-4}
-\partialinput{10}{26}{../Common/content/tables/table_Dif_Joint_Intelligence_Dif_Child_AFI_9.tex}
-\end{longtable}\end{landscape}
-
-%%%%%%%%%%%% Figures %%%%%%%%%%%%
-\section{Figures}
-\begin{center}
+% Age at First Intercourse
+\subsection{Measures}
+\input{../Common/content/writing/AFI.txt}
+\noindent\begin{minipage}{\linewidth}
 \captionof{figure}{Smoothed Density Plots of AFI by Sex and Race}
 \label{plot_afi_by_race_sex}
+\begin{center}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
 \includegraphics[width=.8\paperwidth]{figure/plot_afi_by_race_sex-1} 
 
 \end{knitrout}
 \end{center}
-\pagebreak
+\end{minipage}
 %
-\begin{center}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=1.1\paperwidth]{figure/plot_corplotmatrix_within-1} 
-
-\end{knitrout}
-\captionof{figure}{Within Family Correlations}
-\label{plot_within}
-\end{center}
-\pagebreak
+% Intelligence
+\input{../Common/content/writing/intelligence.txt}
 %
-\begin{center}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=1.1\paperwidth]{figure/plot_corplotmatrix_between-1} 
+% Difference Score Reliability
+\subsection{Reliability of Difference Scores}
 
-\end{knitrout}
-\captionof{figure}{Between Family Correlations}
-\label{plot_between}
-\end{center}
-\pagebreak
+Our design assumes that the difference scores of our measures are reliable. We've reported the test-retest reliability of Gen2 intelligence and Gen1 AFI in earlier sections. Here, we report the test-retest reliability of the pairwise differences of those measures. 
+\subsubsection{AFI} Comparing sibling differences in AFI as reported in 1983 and 1984 (n = 783 pairs) we found a strong correlation (r = .76). The sample of sibling pairs with complete information in 1985 was too small (n = 12 pairs) to compare to the other two years. Regardless, sibling differences in self-reported AFI appear reliable. Because we could not estimate test-retest reliabilities for Generation 2, we calculated the reliability using Lord's equation (\citeyear{Lord1963}). Generation 2 Mean AFI difference scores were also reliable (r = 0.734) and comparable to Generation 1 sibling differences.
 
-\begin{center}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=.8\paperwidth]{figure/plot_spaghetti-1} 
+\subsubsection{Intelligence} Cousin differences in intelligence as assessed at ages 9.5, 10.5, and 11.5 were correlated using three different linking methods (Mixed, Daughers, Sons). Reliabilities across linking methods was consistent and high (min r = .86; max r = .95). However, we could not estimate test-retest reliabilities for Generation 1; we calculated the reliability using Lord's equation (\citeyear{Lord1963}). The calculated reliability of Generation 1's differences in AFQT was 0.606, acceptable, but lower than the empirical correlation we derived for cousin differences.
 
-\end{knitrout}
-\captionof{figure}{Spaghetti Plot. The mean Within-Family Slope is \ensuremath{-1.662}; the median Within-Family Slope is 0.055}
-\label{plot_spaghetti}
-\end{center}
+%%%%%%%%%%%% Results %%%%%%%%%%%%
+\section{Results}
+\input{../Common/content/results/results.txt}
+%
+% Between Family
+\subsection{Between-Family Analyses}
+\input{../Common/content/results/results_between.txt}
+%
+% Within Family
+\subsection{Within-Family Analyses}
+\input{../Common/content/results/results_within.txt}
+%
+%%%%%%%%%%%% Discussion %%%%%%%%%%%%
+\section{Discussion}
+\input{../Common/content/discussion/discussion.txt}
+
 %%%%%%%%%%%% References %%%%%%%%%%%%
 \bibliography{Projects-AFI}
-%
-%%%%%%%%%%%% Appendix %%%%%%%%%%%%
-\appendix\label{appen}
-%
-% Age 10.5 Replication
-\section{Age 10.5 Replication}\label{appen10}
-%% Measurement
-%%% Measurement Model
-\begin{longtable}{@{\extracolsep{5pt}}cc} 
-\caption{Gen2 Measurement Model.}\label{table_gen2measurement_10}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & g at Age 10.5 \\ 
-\hline \\[-1.8ex] 
-\partialinput{12}{34}{../Common/content/tables/table_g2_10measurement.tex}
-\end{longtable}\pagebreak
-%%%
-%%% Factor Loadings
-\begin{longtable}{@{\extracolsep{5pt}}cccccc} 
-\caption{Gen2 Factor Loadings.}\label{table_g2loading_10}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & Test & Estimate & S.E. & Est./.S.E. & P Value \\  
-\hline \\[-1.8ex] 
-\partialinput{12}{17}{../Common/content/tables/table_g2loading_10.tex}
-\end{longtable}\pagebreak
-%%
-%% Between Family
-\begin{landscape}
-\subsection{Between Family Analyses}
-%%%
-%%% Mom -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Mean Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_10}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
-\cline{2-4}
-\partialinput{10}{22}{../Common/content/tables/table_Mean_Mom_Intelligence_Mean_Child_AFI_10.tex}
-\end{longtable}\pagebreak
-%%%
-%%% Child -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Gen2 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_10}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
-\cline{2-4}
-\partialinput{10}{22}{../Common/content/tables/table_Mean_Child_Intelligence_Mean_Child_AFI_10.tex}
-\end{longtable}\pagebreak
-%%%
-%%% Mom Child -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Mean Joint Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_10}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
-\cline{2-4}
-\partialinput{10}{23}{../Common/content/tables/table_Mean_Joint_Intelligence_Mean_Child_AFI_10.tex}
-\end{longtable}\pagebreak
-%%
-%% Within Family
-\subsection{Within Family Analyses}
-%%%
-%%% Mom -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Gen1 Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_10}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
-\cline{2-4}
-\partialinput{10}{24}{../Common/content/tables/table_Dif_Mom_Intelligence_Dif_Child_AFI_10.tex}
-\end{longtable}\pagebreak
-%%%
-%%% Child -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Gen2 Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_10}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
-\cline{2-4}
-\partialinput{10}{24}{../Common/content/tables/table_Dif_Child_Intelligence_Dif_Child_AFI_10.tex}
-\end{longtable}\pagebreak
-%%%
-%%% Mom Child -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Joint Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_10}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
-\cline{2-4}
-\partialinput{10}{26}{../Common/content/tables/table_Dif_Joint_Intelligence_Dif_Child_AFI_10.tex}
-\end{longtable}
-\end{landscape}
-%
-% Age 11.5 Replication
-\section{Age 11.5 Replication}\label{appen11}
-%% Measurement
-%%% Measurement Model
-\begin{longtable}{@{\extracolsep{5pt}}cc} 
-\caption{Gen2 Measurement Model.}\label{table_gen2measurement_11}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & g at Age 11.5 \\ 
-\hline \\[-1.8ex] 
-\partialinput{12}{34}{../Common/content/tables/table_g2_11measurement.tex}
-\end{longtable}\pagebreak
-%%%
-%%% Factor Loadings
-\begin{longtable}{@{\extracolsep{5pt}}cccccc} 
-\caption{Gen2 Factor Loadings.}\label{table_g2loading_11}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & Test & Estimate & S.E. & Est./.S.E. & P.Value \\  
-\hline \\[-1.8ex] 
-\partialinput{12}{17}{../Common/content/tables/table_g2loading_11.tex}
-\end{longtable}\pagebreak
-%%
-%% Between Family
-\begin{landscape}
-\subsection{Between Family Analyses}
-%%%
-%%% Mom -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Mean Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_11}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
-\cline{2-4}
-\partialinput{10}{22}{../Common/content/tables/table_Mean_Mom_Intelligence_Mean_Child_AFI_11.tex}
-\end{longtable}\pagebreak
-%%%
-%%% Child -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Gen2 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_11}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
-\cline{2-4}
-\partialinput{10}{22}{../Common/content/tables/table_Mean_Child_Intelligence_Mean_Child_AFI_11.tex}
-\end{longtable}\pagebreak
-%%%
-%%% Mom Child -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Mean Joint Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_11}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
-\cline{2-4}
-\partialinput{10}{23}{../Common/content/tables/table_Mean_Joint_Intelligence_Mean_Child_AFI_11.tex}
-\end{longtable}\pagebreak
-%%
-%% Within Family
-\subsection{Within Family Analyses}
-%%%
-%%% Child -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Gen1 Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_11}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
-\cline{2-4}
-\partialinput{10}{24}{../Common/content/tables/table_Dif_Mom_Intelligence_Dif_Child_AFI_11.tex}
-\end{longtable}\pagebreak
-%%%
-%%% Child -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Gen2 Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_11}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
-\cline{2-4}
-\partialinput{10}{24}{../Common/content/tables/table_Dif_Child_Intelligence_Dif_Child_AFI_11.tex}
-\end{longtable}\pagebreak
-%%%
-%%% Mom Child -> Child
-\begin{longtable}{@{\extracolsep{5pt}}lccc} 
-\caption{Dif Joint Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_11}
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
-\cline{2-4}
-\partialinput{10}{26}{../Common/content/tables/table_Dif_Joint_Intelligence_Dif_Child_AFI_11.tex}
-\end{longtable}
-\end{landscape}
-%
+  %%%%%%%%%%%% Appendix %%%%%%%%%%%%
+   \begin{landscape} \appendix\label{appen}
+  %
+  % Age 10.5 Replication
+  \section{Age 10.5 Replication}\label{appen10}
+  %% Between Family
+  
+  \subsection{Between Family Analyses}
+  %%%
+  %%% Mom -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Mean Gen1 Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_10}
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+  \cline{2-4}
+  \partialinput{10}{22}{../Common/content/tables/table_Mean_Mom_Intelligence_Mean_Child_AFI_10.tex}
+  \end{longtable}\pagebreak
+  %%%
+  %%% Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Gen2 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_10}
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+  \cline{2-4}
+  \partialinput{10}{22}{../Common/content/tables/table_Mean_Child_Intelligence_Mean_Child_AFI_10.tex}
+  \end{longtable}\pagebreak
+  %%%
+  %%% Mom Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Mean Joint Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_10}
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+  \cline{2-4}
+  \partialinput{10}{23}{../Common/content/tables/table_Mean_Joint_Intelligence_Mean_Child_AFI_10.tex}
+  \end{longtable}\pagebreak
+  %%
+    %% Within Family
+  \subsection{Within Family Analyses}
+  %%%
+  %%% Mom -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Gen1 Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_10}
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
+  \cline{2-4}
+  \partialinput{10}{24}{../Common/content/tables/table_Dif_Mom_Intelligence_Dif_Child_AFI_10.tex}
+  \end{longtable}\pagebreak
+  %%%
+  %%% Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Gen2 Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_10}
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
+  \cline{2-4}
+  \partialinput{10}{24}{../Common/content/tables/table_Dif_Child_Intelligence_Dif_Child_AFI_10.tex}
+  \end{longtable}\pagebreak
+  %%%
+  %%% Mom Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Joint Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_10}
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
+  \cline{2-4}
+  \partialinput{10}{26}{../Common/content/tables/table_Dif_Joint_Intelligence_Dif_Child_AFI_10.tex}
+  \end{longtable}
+  % Age 11.5 Replication
+  \section{Age 11.5 Replication}\label{appen11}
+  %% Between Family
+  \subsection{Between Family Analyses}
+  %%% Mom -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Mean Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_11}
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+  \cline{2-4}
+  \partialinput{10}{22}{../Common/content/tables/table_Mean_Mom_Intelligence_Mean_Child_AFI_11.tex}
+  \end{longtable}\pagebreak
+  %%%
+  %%% Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Gen2 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_11}
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+  \cline{2-4}
+  \partialinput{10}{22}{../Common/content/tables/table_Mean_Child_Intelligence_Mean_Child_AFI_11.tex}
+  \end{longtable}\pagebreak
+  %%%
+  %%% Mom Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Mean Joint Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_11}
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+  \cline{2-4}
+  \partialinput{10}{23}{../Common/content/tables/table_Mean_Joint_Intelligence_Mean_Child_AFI_11.tex}
+  \end{longtable}\pagebreak
+  %%
+    %% Within Family
+  \subsection{Within Family Analyses}
+  %%%
+  %%% Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Gen1 Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_11}
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
+  \cline{2-4}
+  \partialinput{10}{24}{../Common/content/tables/table_Dif_Mom_Intelligence_Dif_Child_AFI_11.tex}
+  \end{longtable}\pagebreak
+  %%%
+  %%% Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Gen2 Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_11}
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
+  \cline{2-4}
+  \partialinput{10}{24}{../Common/content/tables/table_Dif_Child_Intelligence_Dif_Child_AFI_11.tex}
+  \end{longtable}\pagebreak
+  %%%
+  %%% Mom Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Dif Joint Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_11}
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
+  \cline{2-4}
+  \partialinput{10}{26}{../Common/content/tables/table_Dif_Joint_Intelligence_Dif_Child_AFI_11.tex}
+  \end{longtable}
+  \end{landscape}
+  %
 \end{document}

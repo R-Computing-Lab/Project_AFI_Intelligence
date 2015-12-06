@@ -1,10 +1,12 @@
 base
 knitr
 devtools
+corrplot
+ggplot2
+ggExtra
 lattice
 survival
 Formula
-ggplot2
 Hmisc
 MplusAutomation
 NlsyLinks
@@ -13,5 +15,3 @@ psych
 stargazer
 tables
 xtable
-corrplot
-ggExtra

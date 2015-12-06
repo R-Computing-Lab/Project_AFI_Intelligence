@@ -1,7 +1,34 @@
-First, we examined the between family results. We tested whether the family average of Gen2 AFI could be predicted by the family averages of Gen1 ability and of Gen2 ability. We evaluated the influences both independently and simultaneously. All ability scores have been standardized by generation ($\overline{g} = 0$, sd $= 1$), prior to averaging by household. AFI scores have been standardized by gender ($\overline{\mathrm{AFI}} = 0$, sd $= 1$), prior to averaging by household.
+First, we examined the between family results. We tested whether the family average of Gen2 AFI could be predicted by the family averages of Gen1 intellectual ability and of Gen2 intellectual ability. We evaluated the influences both independently and simultaneously. All intelligence scores have been standardized by generation ($\overline{g} = 0$, sd $= 1$), prior to averaging by household. AFI scores have been standardized by gender ($\overline{\mathrm{AFI}} = 0$, sd $= 1$), prior to averaging by household.
 
-\subsubsection{Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI} Gen1 sister averages of standardized AFQT scores were used to predict Gen2 averages of gender standardized AFI. Table \vref{table_Mean_Mom_Intelligence_Mean_Child_AFI_9} displays the results by Gen2 linking. The Mixed model reports the averages of the first borns of each sister (n $= 342$), the Daughters model reports the averages of the first born girls (n $= 264$), and the Sons model reports the averages of the first born sons (n $= 282$). All three models reveal similar results. A one unit increase in the average standardized intelligence of the children's mothers predicted $\approx .013$ increase in average Gen2 AFI. The adjusted R$^{2}$ varied slightly by Gen2 linking (Mixed $= .087$, Daughters $= .097$, Sons $= .103$).
+\subsubsection{Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI} Gen1 sister averages (NLSY79 mothers) of standardized AFQT scores were used to predict Gen2 averages of gender standardized AFI. Table \ref{table_Mean_Mom_Intelligence_Mean_Child_AFI_9} displays the results by Gen2 linking. The Mixed model reports the averages of the first born child (both males and females) of each sister (n $= 342$), the Daughters model reports the averages of the first born girls (n $= 264$), and the Sons model reports the averages of the first born sons (n $= 282$). All three models reveal similar results. A one unit increase in the average standardized intelligence of the children's mothers predicted a statistically significant increase of $\approx .013$ standard deviations in average Gen2 AFI. The adjusted R$^{2}$ varied slightly by Gen2 linking (Mixed $= .087$, Daughters $= .097$, Sons $= .103$).
 
-\subsubsection{Gen2 Mean Intelligence $\rightarrow$ Gen2 Mean AFI} Gen2 cousin averages of standardized ability scores were used to predict Gen2 averages of gender standardized AFI. Table \vref{table_Mean_Child_Intelligence_Mean_Child_AFI_9} displays the results by Gen2 linking. The Mixed model reports the averages of the first borns of each sister (n $= 344$), the Daughters model reports the averages of the first born girls (n $= 267$), and the Sons model reports the averages of the first born sons (n $= 283$). All three models reveal similar results. A one unit increase in the average standardized intelligence of the children predicted $\approx .075$ increase in average Gen2 AFI. The adjusted R$^{2}$ varied slightly by Gen2 linking (Mixed $= .014$, Daughters $= .016$, Sons $= .009$).
+\subsubsection{Gen2 Mean Intelligence $\rightarrow$ Gen2 Mean AFI} Gen2 cousin averages of standardized intellectual ability scores were used to predict Gen2 averages of gender--standardized AFI. Table \ref{table_Mean_Child_Intelligence_Mean_Child_AFI_9} displays the results by Gen2 linking. The Mixed model reports the averages of the first-borns of each of the NLSY79 mothers (sisters) (n $= 344$), the Daughters model reports the averages of the first born girls (n $= 267$), and the Sons model reports the averages of the first born sons (n $= 283$). All three models reveal similar results. A one unit increase in the average standardized intelligence of the children predicted a statistically significant $\approx .075$ standard deviation increase in average Gen2 AFI. The adjusted R$^{2}$ varied slightly by Gen2 linking (Mixed $= .014$, Daughters $= .016$, Sons $= .009$). \cil{double checked. These R$^{2}$are correct.}
 
-\subsubsection{Joint Mean Intelligence $\rightarrow$ Gen2 Mean AFI} Results from the Gen1 sister averages of standardized AFQT scores and Gen2 cousin averages of standardized ability scores predictions of Gen2 averages of gender standardized AFI are displayed in Table \vref{table_Mean_Joint_Intelligence_Mean_Child_AFI_9}. Again, three models based on Gen2 linking are displayed: Mixed (n $= 337$), Daughters(n $= 260$), and the Sons(n $= 278$). All three models reveal similar results. Gen1 intelligence was significantly associated with Gen2 AFI (p $< .01$), while Gen2 intelligence was not significantly associated with Gen2 AFI. A one unit increase in the average standardized intelligence of the children's mothers predicted $\approx .014$ increase in average Gen2 AFI. The adjusted R$^{2}$ varied slightly by Gen2 linking (Mixed $= .086$, Daughters $= .097$, Sons $= .100$), but each were practically identical to the Mean Gen1 Intelligence models.
+\subsubsection{Joint Mean Intelligence $\rightarrow$ Gen2 Mean AFI} Results from the Gen1 sister averages of standardized AFQT scores and Gen2 cousin averages of standardized intellectual ability scores predictions of Gen2 averages of gender standardized AFI are displayed in Table \ref{table_Mean_Joint_Intelligence_Mean_Child_AFI_9}. Again, three models based on Gen2 linking are displayed: Mixed (n $= 337$), Daughters(n $= 260$), and the Sons(n $= 278$). All three models reveal similar results. Gen1 (maternal) intelligence was significantly associated with Gen2 AFI (p $< .01$), while Gen2 (child) intelligence was not significantly associated with Gen2 AFI. A one unit increase in the average standardized intelligence of the children's mothers predicted $\approx .014$ standard deviation increase in average Gen2 AFI. The adjusted R$^{2}$ varied slightly by Gen2 linking (Mixed $= .086$, Daughters $= .097$, Sons $= .100$); each was practically identical to the Mean Gen1 Intelligence models.\pagebreak
+\begin{landscape}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_9}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+& \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+\cline{2-4}
+\partialinput{10}{22}{../Common/content/tables/table_Mean_Mom_Intelligence_Mean_Child_AFI_9.tex}
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Gen2 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_9}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+& \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+\cline{2-4}
+\partialinput{10}{22}{../Common/content/tables/table_Mean_Child_Intelligence_Mean_Child_AFI_9.tex}
+\end{longtable}\pagebreak
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Mean Joint Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_9}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+& \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+\cline{2-4}
+\partialinput{10}{23}{../Common/content/tables/table_Mean_Joint_Intelligence_Mean_Child_AFI_9.tex}
+\end{longtable}
+\end{landscape}\pagebreak

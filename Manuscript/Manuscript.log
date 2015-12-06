@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  15 NOV 2015 11:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  18 NOV 2015 18:48
 entering extended mode
 **Manuscript.tex
 (C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Manuscript\Manuscript.tex
@@ -1712,139 +1712,278 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\introduction\
-introduce_the_problem.txt)
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\introduction\
-importance_of_problem.txt) [4]
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\introduction\
-relevant_scholarship.txt [5] [6]
+(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\writing\intro
+duction.txt [4] [5] [6] [7]
+Runaway argument?
+{geronimus1992socioeconomic, and is correlated with intelligence \citep \ETC.
+! Paragraph ended before \@citex was complete.
+<to be read again> 
+                   \par 
+l.26 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.14 \subsection{Intelligence as a Confound}\\
-                                              
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 17.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 17.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 17.
-[7] [8])
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\introduction\
-current_study.txt [9])
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\method\design
-.txt [10]
-! Extra }, or forgotten $.
-l.4 ...\bar{X_{i}}} + \beta_3\mathrm{X_{i\Delta}}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-)
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\method\subjec
-ts.txt [11]
+) [8]
+(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\writing\curre
+nt_study.txt [9])
+(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\writing\desig
+n.txt [10])
+(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\writing\subje
+cts.txt
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 1.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-))
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\method\tetrad
-.txt [12])
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\method\AFI.tx
-t [13]) [14]
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\method\Gen1me
-asures.txt [15])
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\method\Gen2me
-asures.txt
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+) [11])
+(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\writing\tetra
+d.txt [12])
+(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\writing\AFI.t
+xt
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
+l.5 ...n/content/tables/table_ttafireliable_z.tex}
                                                   
-l.6 ... Wechsler Intelligence Scales for Children‚
-                                                  ÄìRevised (WISC-R; \citeal...
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
 
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.5 ...n/content/tables/table_ttafireliable_z.tex}
                                                   
-l.6 ...Wechsler Intelligence Scales for Children‚Ä
-                                                  ìRevised (WISC-R; \citealp...
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
 
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+! Extra alignment tab has been changed to \cr.
+<template> \endtemplate 
+                        
+l.5 ...n/content/tables/table_ttafireliable_z.tex}
                                                   
-l.6 ...echsler Intelligence Scales for Children‚Äì
-                                                  Revised (WISC-R; \citealp{...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
+[13]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 12.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 12.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 12.
+ [14]
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
+l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
 
-[16] [17])
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\method\diffsc
-ores.txt
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+                                                  
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
 
-LaTeX Warning: Hyper reference `table_measurement_diffafireliable_z' on page 18
- undefined on input line 2.
+! Extra alignment tab has been changed to \cr.
+<template> \endtemplate 
+                        
+l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+                                                  
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Misplaced \noalign.
+<recently read> \noalign 
+                         
+l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+<recently read> \noalign 
+                         
+l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+<recently read> \noalign 
+                         
+l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+<recently read> \noalign 
+                         
+l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+<recently read> \noalign 
+                         
+l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+<recently read> \noalign 
+                         
+l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+<recently read> \noalign 
+                         
+l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+<recently read> \noalign 
+                         
+l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+<recently read> \noalign 
+                         
+l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+<recently read> \noalign 
+                         
+l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+<recently read> \noalign 
+                         
+l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+) [15]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 116.
+See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `table_measurement_diffafireliable_z' on page 18 undef
-ined on input line 2.
+Package xcolor Warning: Incompatible color definition on input line 120.
 
-[18])
+<figure/plot_afi_by_race_sex-1.pdf, id=580, 361.35pt x 216.81pt>
+File: figure/plot_afi_by_race_sex-1.pdf Graphic file (type pdf)
 
-Package xcolor Warning: Incompatible color definition on input line 137.
+<use figure/plot_afi_by_race_sex-1.pdf>
+Package pdftex.def Info: figure/plot_afi_by_race_sex-1.pdf used on input line 1
+21.
+(pdftex.def)             Requested size: 478.00812pt x 286.80872pt.
 
-[19]
-(C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang2.st
-y
-File: lstlang2.sty 2015/06/04 1.6 listings language file
-)
-(C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang3.sty
-File: lstlang3.sty 2015/06/04 1.6 listings language file
-)
-
-LaTeX Font Warning: Font shape `T1/zi4/m/it' undefined
-(Font)              using `T1/zi4/m/n' instead on input line 154.
+Overfull \hbox (25.04022pt too wide) in paragraph at lines 121--122
+ [] 
+ []
 
 
-Package xcolor Warning: Incompatible color definition on input line 167.
+(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\writing\intel
+ligence.txt [16] [17 <C:/Dropbox/Work/Research/Projects/Legacy/NLSY/AFI/Manuscr
+ipt/figure/plot_afi_by_race_sex-1.pdf>] [18]
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
+l.20 .../content/tables/table_ttintreliable_z.tex}
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
 
-[20]
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.20 .../content/tables/table_ttintreliable_z.tex}
+                                                  
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Extra alignment tab has been changed to \cr.
+<template> \endtemplate 
+                        
+l.20 .../content/tables/table_ttintreliable_z.tex}
+                                                  
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+) [19]
 (C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\results\resul
-ts.txt)
+ts.txt
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ily analyses replicate the between-family Ô
+                                                  ¨Åndings using within-fami...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ly analyses replicate the between-family Ô¨
+                                                  Åndings using within-famil...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...y analyses replicate the between-family Ô¨Å
+                                                  ndings using within-family...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+)
 (C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\results\resul
-ts_between.txt [21]
+ts_between.txt [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
@@ -1881,21 +2020,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 7.
 
-) [22]
+[21] [22] [23
+
+] [24] [25])
 (C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\results\resul
 ts_within.txt
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 4.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\delta' on input line 4.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 4.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4.
@@ -1908,7 +2037,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4.
 
-[23]
+[26
+
+]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 9.
@@ -1922,12 +2053,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 9.
 
 
-LaTeX Warning: Hyper reference `table_Dif_Kid_Intelligence_Dif_Child_AFI_9' on 
-page 24 undefined on input line 9.
-
-
 LaTeX Warning: Reference `table_Dif_Kid_Intelligence_Dif_Child_AFI_9' on page 2
-4 undefined on input line 9.
+7 undefined on input line 9.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1941,9 +2068,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 14.
 
-[24])
+[27] [28] [29
+
+] [30] [31])
 (C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\discussion\di
-scussion.txt [25]
+scussion.txt
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `ascii'.
@@ -1952,8 +2081,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.14 ...shared environmental influences mattered ‚
-                                                  Äì those would manifest in...
+l.5 ...mily analyses finding a link between child‚
+                                                  Äôs intelligence and AFI a...
 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1966,8 +2095,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.14 ...hared environmental influences mattered ‚Ä
-                                                  ì those would manifest in ...
+l.5 ...ily analyses finding a link between child‚Ä
+                                                  ôs intelligence and AFI ar...
 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1980,12 +2109,15 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.14 ...ared environmental influences mattered ‚Äì
-                                                   those would manifest in b...
+l.5 ...ly analyses finding a link between child‚Äô
+                                                  s intelligence and AFI are...
 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
+[32
+
+]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `ascii'.
@@ -1994,49 +2126,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16 ...e is the actual cause of AFI differences ‚
-                                                  Äì if so, we think they wo...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.16 ... is the actual cause of AFI differences ‚Ä
-                                                  ì if so, we think they wou...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.16 ...is the actual cause of AFI differences ‚Äì
-                                                   if so, we think they woul...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.17 ... more proximal as the causal explanation ‚
+l.9 ... more proximal as the causal explanation -‚
                                                   Äì income, parental educat...
 
 You need to provide a definition with \DeclareInputText 
@@ -2050,7 +2140,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 ...more proximal as the causal explanation ‚Ä
+l.9 ...more proximal as the causal explanation -‚Ä
                                                   ì income, parental educati...
 
 You need to provide a definition with \DeclareInputText 
@@ -2064,7 +2154,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 ...ore proximal as the causal explanation ‚Äì
+l.9 ...ore proximal as the causal explanation -‚Äì
                                                    income, parental educatio...
 
 You need to provide a definition with \DeclareInputText 
@@ -2078,7 +2168,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 ... indexes the quality of home environment ‚
+l.9 ... indexes the quality of home environment -‚
                                                   Äì a composite of parental...
 
 You need to provide a definition with \DeclareInputText 
@@ -2092,7 +2182,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 ...indexes the quality of home environment ‚Ä
+l.9 ...indexes the quality of home environment -‚Ä
                                                   ì a composite of parental ...
 
 You need to provide a definition with \DeclareInputText 
@@ -2106,727 +2196,128 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 ...ndexes the quality of home environment ‚Äì
+l.9 ...ndexes the quality of home environment -‚Äì
                                                    a composite of parental i...
 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-) [26] [27]
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.213 ...es/table_summary_stats_sibinsampleg1.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.213 ...es/table_summary_stats_sibinsampleg1.tex}
-                                                  
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Extra alignment tab has been changed to \cr.
-<template> \endtemplate 
-                        
-l.213 ...es/table_summary_stats_sibinsampleg1.tex}
-                                                  
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.213 ...es/table_summary_stats_sibinsampleg1.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.213 ...es/table_summary_stats_sibinsampleg1.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.213 ...es/table_summary_stats_sibinsampleg1.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-\nopagebreak ->\noalign 
-                        {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4
-l.213 ...es/table_summary_stats_sibinsampleg1.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.217 \begin
-            {longtable}{@{\extracolsep{5pt}}lcccccc}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.219 ...es/table_summary_stats_sibinsampleg2.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.219 ...es/table_summary_stats_sibinsampleg2.tex}
-                                                  
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Extra alignment tab has been changed to \cr.
-<template> \endtemplate 
-                        
-l.219 ...es/table_summary_stats_sibinsampleg2.tex}
-                                                  
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.219 ...es/table_summary_stats_sibinsampleg2.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.219 ...es/table_summary_stats_sibinsampleg2.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.219 ...es/table_summary_stats_sibinsampleg2.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-\nopagebreak ->\noalign 
-                        {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4
-l.219 ...es/table_summary_stats_sibinsampleg2.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-
-Overfull \hbox (27.08977pt too wide) in alignment at lines 217--220
- [] [] [] [] [] [] [] 
- []
-
-[28]
-! Undefined control sequence.
-<recently read> \npnoround 
-                           
-l.223 \npnoround
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Extra alignment tab has been changed to \cr.
-<template> \endtemplate 
-                        
-l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.226 ...es/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[29] [30] [31]
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.260 ...content/tables/table_ttafireliable_z.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.260 ...content/tables/table_ttafireliable_z.tex}
-                                                  
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Extra alignment tab has been changed to \cr.
-<template> \endtemplate 
-                        
-l.260 ...content/tables/table_ttafireliable_z.tex}
-                                                  
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.265 \begin
-            {longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Ge...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.266 ...ntent/tables/table_diffafireliable_z.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.266 ...ntent/tables/table_diffafireliable_z.tex}
-                                                  
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Extra alignment tab has been changed to \cr.
-<template> \endtemplate 
-                        
-l.266 ...ntent/tables/table_diffafireliable_z.tex}
-                                                  
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.272 ...content/tables/table_ttintreliable_z.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.272 ...content/tables/table_ttintreliable_z.tex}
-                                                  
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Extra alignment tab has been changed to \cr.
-<template> \endtemplate 
-                        
-l.272 ...content/tables/table_ttintreliable_z.tex}
-                                                  
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-
-Overfull \hbox (28.90755pt too wide) in paragraph at lines 258--275
-[]$[]$ 
- []
-
-[32]
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.281 ...ntent/tables/table_diffintreliable_z.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.281 ...ntent/tables/table_diffintreliable_z.tex}
-                                                  
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Extra alignment tab has been changed to \cr.
-<template> \endtemplate 
-                        
-l.281 ...ntent/tables/table_diffintreliable_z.tex}
-                                                  
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.286 ...ntent/tables/table_diffintreliable_g.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.286 ...ntent/tables/table_diffintreliable_g.tex}
-                                                  
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Extra alignment tab has been changed to \cr.
-<template> \endtemplate 
-                        
-l.286 ...ntent/tables/table_diffintreliable_g.tex}
-                                                  
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.291 ...ntent/tables/table_diffintreliable_b.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.291 ...ntent/tables/table_diffintreliable_b.tex}
-                                                  
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Extra alignment tab has been changed to \cr.
-<template> \endtemplate 
-                        
-l.291 ...ntent/tables/table_diffintreliable_b.tex}
-                                                  
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-
-Overfull \hbox (28.90755pt too wide) in paragraph at lines 279--296
-[]$[]$ 
- []
-
-[33] [34
-
-] [35] [36] [37] [38] [39]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 365.
-See the caption package documentation for explanation.
-
-
-Package xcolor Warning: Incompatible color definition on input line 368.
-
-<figure/plot_afi_by_race_sex-1.pdf, id=940, 361.35pt x 216.81pt>
-File: figure/plot_afi_by_race_sex-1.pdf Graphic file (type pdf)
-
-<use figure/plot_afi_by_race_sex-1.pdf>
-Package pdftex.def Info: figure/plot_afi_by_race_sex-1.pdf used on input line 3
-69.
-(pdftex.def)             Requested size: 478.00812pt x 286.80872pt.
-
-Overfull \hbox (25.04022pt too wide) in paragraph at lines 369--370
- [] 
- []
-
-[40
-
- <C:/Dropbox/Work/Research/Projects/Legacy/NLSY/AFI/Manuscript/figure/plot_afi_
-by_race_sex-1.pdf>]
-
-Package xcolor Warning: Incompatible color definition on input line 377.
-
-<figure/plot_corplotmatrix_within-1.pdf, id=951, 505.89pt x 303.1325pt>
-File: figure/plot_corplotmatrix_within-1.pdf Graphic file (type pdf)
-
-<use figure/plot_corplotmatrix_within-1.pdf>
-Package pdftex.def Info: figure/plot_corplotmatrix_within-1.pdf used on input l
-ine 378.
-(pdftex.def)             Requested size: 657.2623pt x 393.84557pt.
-
-Overfull \hbox (204.2944pt too wide) in paragraph at lines 378--379
- [] 
- []
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 381.
-See the caption package documentation for explanation.
-
-[41 <C:/Dropbox/Work/Research/Projects/Legacy/NLSY/AFI/Manuscript/figure/plot_c
-orplotmatrix_within-1.pdf>]
-
-Package xcolor Warning: Incompatible color definition on input line 388.
-
-<figure/plot_corplotmatrix_between-1.pdf, id=962, 505.89pt x 303.1325pt>
-File: figure/plot_corplotmatrix_between-1.pdf Graphic file (type pdf)
-
-<use figure/plot_corplotmatrix_between-1.pdf>
-Package pdftex.def Info: figure/plot_corplotmatrix_between-1.pdf used on input 
-line 389.
-(pdftex.def)             Requested size: 657.2623pt x 393.84557pt.
-
-Overfull \hbox (204.2944pt too wide) in paragraph at lines 389--390
- [] 
- []
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 392.
-See the caption package documentation for explanation.
-
-[42 <C:/Dropbox/Work/Research/Projects/Legacy/NLSY/AFI/Manuscript/figure/plot_c
-orplotmatrix_between-1.pdf>]
-
-Package xcolor Warning: Incompatible color definition on input line 399.
-
-<figure/plot_spaghetti-1.pdf, id=972, 505.89pt x 505.89pt>
-File: figure/plot_spaghetti-1.pdf Graphic file (type pdf)
-
-<use figure/plot_spaghetti-1.pdf>
-Package pdftex.def Info: figure/plot_spaghetti-1.pdf used on input line 400.
-(pdftex.def)             Requested size: 478.00812pt x 478.01453pt.
-
-Overfull \hbox (25.04022pt too wide) in paragraph at lines 400--401
- [] 
- []
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 403.
-See the caption package documentation for explanation.
-
+) [33]
 (C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Manuscript\Manuscript.bbl
-[43 <C:/Dropbox/Work/Research/Projects/Legacy/NLSY/AFI/Manuscript/figure/plot_s
-paghetti-1.pdf>] [44
+[34] [35
 
-]
-! Misplaced alignment tab character &.
-<argument> {NLSY79 CHILD &
-                           YOUNG ADULT DATA USERS GUIDE: A Guide to the 1986...
-l.326   Young Adult Data}}
-                          .
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+] [36] [37] [38] [39] [40] [41] [42]) [43]pdfTeX warning (ext4): destination wi
+th the same identifier (name{table.1}) has been already used, duplicate ignored
 
-! Misplaced alignment tab character &.
-<argument> {ASVAB Technical Bulletin No. 4 P&
-                                             P-ASVAB Forms 23-27}
-l.383 ...al Bulletin No. 4 P&P-ASVAB Forms 23-27}}
-                                                  \ \APACbVolEdTR{}{\BTR{}\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-[45] [46] [47] [48] [49] [50] [51]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2256 ...Edition}.} {{SAS¬Æ University Edition}.}
-                                                  
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2256 ...Edition}.} {{SAS¬Æ University Edition}.}
-                                                  
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-[52] [53]) [54]pdfTeX warning (ext4): destination with the same identifier (nam
-e{table.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.422 ...ontent/tables/table_g2_10measurement.tex}
-                                                   [55
-
-]pdfTeX warning (ext4): destination with the same identifier (name{table.2}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.433 \end{longtable}
-                     \pagebreak [56]pdfTeX warning (ext4): destination with the
- same identifier (name{table.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.447 \end{longtable}
-                     \pagebreak [57
-
-]pdfTeX warning (ext4): destination with the same identifier (name{table.4}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.457 \end{longtable}
-                     \pagebreak [58]pdfTeX warning (ext4): destination with the
- same identifier (name{table.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.467 \end{longtable}
-                     \pagebreak [59]pdfTeX warning (ext4): destination with the
- same identifier (name{table.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.480 \end{longtable}
-                     \pagebreak [60]pdfTeX warning (ext4): destination with the
- same identifier (name{table.7}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.490 \end{longtable}
-                     \pagebreak [61]pdfTeX warning (ext4): destination with the
- same identifier (name{table.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.500 \end{longtable}
-                      [62]pdfTeX warning (ext4): destination with the same iden
-tifier (name{table.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.513 ...ontent/tables/table_g2_11measurement.tex}
-                                                   [63
+l.173   \end{longtable}
+                       \pagebreak [44
 
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{table.2}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.524 \end{longtable}
-                     \pagebreak [64]pdfTeX warning (ext4): destination with the
- same identifier (name{table.3}) has been already used, duplicate ignored
+l.183   \end{longtable}
+                       \pagebreak [45]pdfTeX warning (ext4): destination with t
+he same identifier (name{table.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.538 \end{longtable}
-                     \pagebreak [65
+l.193   \end{longtable}
+                       \pagebreak [46]pdfTeX warning (ext4): destination with t
+he same identifier (name{table.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.206   \end{longtable}
+                       \pagebreak [47]pdfTeX warning (ext4): destination with t
+he same identifier (name{table.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.216   \end{longtable}
+                       \pagebreak [48]pdfTeX warning (ext4): destination with t
+he same identifier (name{table.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.226   \end{longtable}
+                        [49]pdfTeX warning (ext4): destination with the same id
+entifier (name{table.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.239   \end{longtable}
+                       \pagebreak [50
 
-]pdfTeX warning (ext4): destination with the same identifier (name{table.4}) ha
+]pdfTeX warning (ext4): destination with the same identifier (name{table.2}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.548 \end{longtable}
-                     \pagebreak [66]pdfTeX warning (ext4): destination with the
- same identifier (name{table.5}) has been already used, duplicate ignored
+l.249   \end{longtable}
+                       \pagebreak [51]pdfTeX warning (ext4): destination with t
+he same identifier (name{table.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.558 \end{longtable}
-                     \pagebreak [67]pdfTeX warning (ext4): destination with the
- same identifier (name{table.6}) has been already used, duplicate ignored
+l.259   \end{longtable}
+                       \pagebreak [52]pdfTeX warning (ext4): destination with t
+he same identifier (name{table.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.571 \end{longtable}
-                     \pagebreak [68]pdfTeX warning (ext4): destination with the
- same identifier (name{table.7}) has been already used, duplicate ignored
+l.272   \end{longtable}
+                       \pagebreak [53]pdfTeX warning (ext4): destination with t
+he same identifier (name{table.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.581 \end{longtable}
-                     \pagebreak [69]pdfTeX warning (ext4): destination with the
- same identifier (name{table.8}) has been already used, duplicate ignored
+l.282   \end{longtable}
+                       \pagebreak [54]pdfTeX warning (ext4): destination with t
+he same identifier (name{table.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.591 \end{longtable}
-                     
-Package atenddvi Info: Last page = 70.
- [70] AED endfloat: Processing end Figures and Tables
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 594.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 594.
+l.292   \end{longtable}
+                       
+Package atenddvi Info: Last page = 55.
+ [55] AED endfloat: Processing end Figures and Tables
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 295.
 
 (C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Manuscript\Manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 594.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 594.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
 Package rerunfilecheck Info: File `Manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: BC73E03CC5FA6C3B4329E2A988097E66;3337.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+(rerunfilecheck)             Checksum: 7A7A13DD0BCC5F4AC48FF7BF5A187E21;2910.
 
 
 LaTeX Warning: There were undefined references.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 25 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 33806 strings out of 493921
- 632946 string characters out of 3147269
- 758780 words of memory out of 3000000
- 36096 multiletter control sequences out of 15000+200000
+ 33127 strings out of 493921
+ 623603 string characters out of 3147269
+ 684223 words of memory out of 3000000
+ 35535 multiletter control sequences out of 15000+200000
  88649 words of font info for 85 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 69i,12n,97p,10373b,1242s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/
-enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-r
-m.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/smaso
-_000/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}<C:/Use
-rs/smaso_000/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/inconsolata/Inconsol
-ata-zi4r.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
-lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Manuscript.pdf (70 pages, 562896 bytes).
+ 69i,12n,82p,10373b,1049s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{
+C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKT
+eX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
+ps/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{
+C:/Users/smaso_000/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/inconsolata/i4-t1
+-0.enc}<C:/Users/smaso_000/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/incons
+olata/Inconsolata-zi4r.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
+mbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lms
+y10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
+Output written on Manuscript.pdf (55 pages, 443567 bytes).
 PDF statistics:
- 1224 PDF objects out of 1440 (max. 8388607)
- 292 named destinations out of 1000 (max. 500000)
- 425 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 955 PDF objects out of 1000 (max. 8388607)
+ 213 named destinations out of 1000 (max. 500000)
+ 338 words of extra memory for PDF output out of 10000 (max. 10000000)
 
