@@ -223,9 +223,9 @@ Boislard, P\BPBI M\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-{Bouchard, Jr.}%
+Bouchard%
 }{%
-{Bouchard, Jr.}%
+Bouchard%
 }{%
 {\protect \APACyear {2004}}%
 }]{%
@@ -233,11 +233,11 @@ Bouchard2004}
 \APACinsertmetastar {%
 Bouchard2004}%
 \begin{APACrefauthors}%
-{Bouchard, Jr.}, T\BPBI J.%
+Bouchard, T\BPBI J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2004}{aug}{}.
+\APACrefYearMonthDay{2004}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Genetic Influence on Human Psychological Traits. A
   Survey}} {{Genetic Influence on Human Psychological Traits. A
@@ -435,12 +435,12 @@ D'Onofrio, B\BPBI M.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2010}{jun}{}.
+\APACrefYearMonthDay{2010}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Biosocial Influences on the Family: A Decade Review.}}
   {{Biosocial Influences on the Family: A Decade Review.}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of marriage and the family}{72}{3}{762--782}.
+\APACjournalVolNumPages{Journal of Marriage and the Family}{72}{3}{762--782}.
 \newblock
 \begin{APACrefDOI} \doi{10.1111/j.1741-3737.2010.00729.x} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -473,7 +473,7 @@ D'Onofrio, B\BPBI M.%
   for family-based, quasi-experimental designs in integrating genetic and
   social science research.}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{American journal of public health}{103
+\APACjournalVolNumPages{American Journal of Public Health}{103
   Suppl}{}{S46--55}.
 \newblock
 \begin{APACrefDOI} \doi{10.2105/AJPH.2013.301252} \end{APACrefDOI}
@@ -525,8 +525,8 @@ Dunn, L\BPBI M.%
 \newblock
 \APACrefYear{1970}.
 \newblock
-\APACrefbtitle {{Peabody individual achievement test}} {{Peabody individual
-  achievement test}}.
+\APACrefbtitle {{Peabody Individual Achievement Test}} {{Peabody Individual
+  Achievement Test}}.
 \newblock
 \APACaddressPublisher{}{American Guidance Service}.
 \PrintBackRefs{\CurrentBib}
@@ -579,6 +579,32 @@ Finer, L\BPBI B.%
   1954--2003}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Public Health Reports}{122}{1}{73}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Galbraith%
+}{%
+Galbraith%
+}{%
+{\protect \APACyear {1982}}%
+}]{%
+galbraith1982sibling}
+\APACinsertmetastar {%
+galbraith1982sibling}%
+\begin{APACrefauthors}%
+Galbraith, R\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1982}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Sibling spacing and intellectual development: A closer
+  look at the confluence models.}} {{Sibling spacing and intellectual
+  development: A closer look at the confluence models.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Developmental Psychology}{18}{2}{151--173}.
+\newblock
+\begin{APACrefDOI} \doi{10.1037//0012-1649.18.2.151} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -744,8 +770,8 @@ Herrnstein, R\BPBI J.%
 \newblock
 \APACrefYear{1994}.
 \newblock
-\APACrefbtitle {{Bell curve: Intelligence and class structure in American
-  life.}} {{Bell curve: Intelligence and class structure in American life.}}
+\APACrefbtitle {{Bell Curve: Intelligence and class structure in American
+  life.}} {{Bell Curve: Intelligence and class structure in American life.}}
 \newblock
 \APACaddressPublisher{New York, NY}{Free Press}.
 \PrintBackRefs{\CurrentBib}
@@ -880,7 +906,7 @@ Kann, L.%
 , Shanklin, S\BPBI L.%
 , Flint, K\BPBI H.%
 , Kawkins, J.%
-, Harris, W\BPBI a.%
+, Harris, W\BPBI A.%
 \BDBL {}Zaza, S.%
 \end{APACrefauthors}%
 \unskip\
@@ -918,9 +944,9 @@ Kass, R\BPBI A.%
 \APACrefYearMonthDay{1982}{}{}.
 \newblock
 \APACrefbtitle {{Factor Structer of the Armed Services Vocational Aptitude
-  Battery ( ASVAB ), Forms 8, 9, and 10: 1981 Army Applicant Sample}} {{Factor
-  Structer of the Armed Services Vocational Aptitude Battery ( ASVAB ), Forms
-  8, 9, and 10: 1981 Army Applicant Sample}}\ \APACbVolEdTR{}{\BTR{}}.
+  Battery (ASVAB ), Forms 8, 9, and 10: 1981 Army Applicant Sample}} {{Factor
+  Structer of the Armed Services Vocational Aptitude Battery (ASVAB ), Forms 8,
+  9, and 10: 1981 Army Applicant Sample}}\ \APACbVolEdTR{}{\BTR{}}.
 \newblock
 \APACaddressInstitution{}{US Army Research Institute for the Behavioral and
   Social Sciences}.
@@ -947,7 +973,7 @@ Kenny, D\BPBI A.%
 \newblock
 \APACrefYear{2006}.
 \newblock
-\APACrefbtitle {{Dyadic data analysis}} {{Dyadic data analysis}}.
+\APACrefbtitle {{Dyadic Data Analysis}} {{Dyadic Data Analysis}}.
 \newblock
 \APACaddressPublisher{}{Guilford Press}.
 \PrintBackRefs{\CurrentBib}
@@ -1449,8 +1475,10 @@ Mott, F\BPBI L.%
   youth}} {{Early fertility behavior among American youth: Evidence from the
   1982 national longitudinal surveys of labor force behavior of youth}}.{\BBCQ}
 \newblock
-\BIn{} \APACrefbtitle {America Public Health Association meetings, Dallas.}
-  {America public health association meetings, dallas.}
+\BIn{} \APACrefbtitle {America Public Health Association Meetings.} {America
+  public health association meetings.}
+\newblock
+\APACaddressPublisher{Dallas, TX}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1500,7 +1528,9 @@ Muth{\'{e}}n, L\BPBI K.%
 \newblock
 \APACrefYearMonthDay{2014}{}{}.
 \newblock
-\APACrefbtitle {{Mplus}.} {{Mplus}.}
+\APACrefbtitle {{Mplus: Statistical Analyses with Latent Variables. User's
+  Guide Version 7.3}.} {{Mplus: Statistical Analyses with Latent Variables.
+  User's Guide Version 7.3}.}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1617,7 +1647,7 @@ Paul, C.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2000}{aug}{}.
+\APACrefYearMonthDay{2000}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{The determinants of sexual intercourse before age 16}}
   {{The determinants of sexual intercourse before age 16}}.{\BBCQ}
@@ -1649,7 +1679,7 @@ Petersen, A\BPBI C.%
   interactions: The sample case of early adolescence.}}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Biological-psychosocial interactions in early
-  adolescence. Child psychology.}{}{}{35--61}.
+  adolescence. Child Psychology.}{}{}{35--61}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1675,8 +1705,8 @@ Plomin, R.%
 {\BBOQ}\APACrefatitle {{Intelligence: genetics, genes, and genomics.}}
   {{Intelligence: genetics, genes, and genomics.}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of personality and social
-  psychology}{86}{1}{112}.
+\APACjournalVolNumPages{Journal of Personality and Social
+  Psychology}{86}{1}{112}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1703,7 +1733,7 @@ Raffaelli, M.%
   self-regulation and attraction to risk.}} {{Sexual risk taking in
   adolescence: the role of self-regulation and attraction to risk.}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Developmental psychology}{39}{6}{1036}.
+\APACjournalVolNumPages{Developmental Psychology}{39}{6}{1036}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1808,31 +1838,6 @@ Rodgers, J\BPBI L.%
 \APACjournalVolNumPages{The American psychologist}{56}{6-7}{505--510}.
 \newblock
 \begin{APACrefDOI} \doi{10.1037/0003-066X.56.6-7.505} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Rodgers%
-}{%
-Rodgers%
-}{%
-{\protect \APACyear {2014}}%
-}]{%
-rodgers2014birth}
-\APACinsertmetastar {%
-rodgers2014birth}%
-\begin{APACrefauthors}%
-Rodgers, J\BPBI L.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2014}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Are birth order effects on intelligence really Flynn
-  Effects? Reinterpreting Belmont and Marolla 40years later}} {{Are birth order
-  effects on intelligence really Flynn Effects? Reinterpreting Belmont and
-  Marolla 40years later}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Intelligence}{42}{}{128--133}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2009,8 +2014,8 @@ Rowe, D\BPBI C.%
 \APACrefYearMonthDay{1997}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Poverty and Behavior : Are Environmental Measures
-  Nature and Nurture ?}} {{Poverty and Behavior : Are Environmental Measures
-  Nature and Nurture ?}}{\BBCQ}
+  Nature and Nurture?}} {{Poverty and Behavior : Are Environmental Measures
+  Nature and Nurture?}}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Developmental Review}{17}{3}{358--375}.
 \newblock
@@ -2271,7 +2276,7 @@ Wellings, K.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2001}{dec}{}.
+\APACrefYearMonthDay{2001}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Sexual behaviour in Britain: Early heterosexual
   experience}} {{Sexual behaviour in Britain: Early heterosexual
@@ -2303,9 +2308,10 @@ Welsh, J\BPBI R.%
 \newblock
 \APACrefYearMonthDay{1990}{}{}.
 \newblock
-\APACrefbtitle {{Armed Services Vocational Aptitude Battery (ASVAB: Integrative
-  Review of Validity Studies}} {{Armed Services Vocational Aptitude Battery
-  (ASVAB: Integrative Review of Validity Studies}}\ \APACbVolEdTR{}{\BTR{}}.
+\APACrefbtitle {{Armed Services Vocational Aptitude Battery (ASVAB):
+  Integrative Review of Validity Studies}} {{Armed Services Vocational Aptitude
+  Battery (ASVAB): Integrative Review of Validity Studies}}\
+  \APACbVolEdTR{}{\BTR{}}.
 \newblock
 \APACaddressInstitution{Brooks Air Force Base, Texas}{Manpower and Personnel
   Division Air Force Human Resources Laboratory}.
@@ -2367,8 +2373,8 @@ Wichman, A\BPBI L.%
   extension of previous findings.}} {{Birth order has no effect on
   intelligence: a reply and extension of previous findings.}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Personality and social psychology
-  bulletin}{33}{9}{1195--1200}.
+\APACjournalVolNumPages{Personality and Social Psychology
+  Bulletin}{33}{9}{1195--1200}.
 \newblock
 \begin{APACrefDOI} \doi{10.1177/0146167207303028} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}

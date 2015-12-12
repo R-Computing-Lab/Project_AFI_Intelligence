@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  18 NOV 2015 18:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  10 DEC 2015 11:49
 entering extended mode
 **Manuscript.tex
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Manuscript\Manuscript.tex
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Manuscript\Manuscript.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -288,7 +288,7 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
 Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\style\Mason.sty
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\style\Mason.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -1432,54 +1432,13 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \c@pinlineno=\count380
 \c@fillersentencecounter=\count381
 \pin@file=\read5
-
-
-! LaTeX Error: Command \c@pinlineno already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 \newcounter{pinlineno}
-                            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \pin@accu already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 \newcommand\pin@accu{}
-                            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \pin@ext already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.148 \newcommand\pin@ext{pintmp}
-                                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 \c@myhypothesis=\count382
-) (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\upquote\upquote.sty
+)
+(C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\upquote\upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
-) (C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Manuscript\Manuscript.aux)
+)
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Manuscript\Manuscript.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
@@ -1496,7 +1455,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 74.
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -1574,16 +1532,15 @@ LaTeX Info: Redefining \ref on input line 74.
 LaTeX Info: Redefining \pageref on input line 74.
 LaTeX Info: Redefining \nameref on input line 74.
 
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Manuscript\Manuscript.out)
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Manuscript\Manuscript.out)
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Manuscript\Manuscript.out")
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Manuscript\Manuscript.out")
 \@outlinefile=\write6
 LaTeX Info: Redefining \Ref on input line 74.
-
 ABD: EveryShipout initializing macros
 \c@lstlisting=\count385
 
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\title\authorn
-ote.txt
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\title\author
+note.tex"
 LaTeX Font Info:    Try loading font information for T1+zi4 on input line 3.
 
 (C:\Users\smaso_000\AppData\Roaming\MiKTeX\2.9\tex\latex\inconsolata\t1zi4.fd
@@ -1624,41 +1581,11 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 5.
+)) [1{C:/Users/smaso_000/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-! Argument of \reserved@a has an extra }.
-<inserted text> 
-                \par 
-l.5 ...ce/0160-2896/guide-for-authors}\end{quote}}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-{\def \@currenvir {quote}\edef \@currenvline {\on@line }\csuse {@begi\ETC.
-! Paragraph ended before \reserved@a was complete.
-<to be read again> 
-                   \par 
-l.5 ...ce/0160-2896/guide-for-authors}\end{quote}}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 5.
-[1{C:/Users/smaso_000/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
-
-])
-[2]
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\title\abstrac
-t_empreport.txt) [3]
+]
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\title\abstra
+ct_empreport.txt") [2]
 ! Argument of \@sect has an extra }.
 <inserted text> 
                 \par 
@@ -1712,34 +1639,77 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\writing\intro
-duction.txt [4] [5] [6] [7]
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\intr
+oduction.tex" [3] [4] [5]
+
+Package natbib Warning: Citation `rodgers2014birth' on page 6 undefined on inpu
+t line 24.
+
+[6]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 31.
+
+! Argument of \reserved@a has an extra }.
+<inserted text> 
+                \par 
+l.31 ...ty to separate these sources of variance.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
 Runaway argument?
-{geronimus1992socioeconomic, and is correlated with intelligence \citep \ETC.
-! Paragraph ended before \@citex was complete.
+{\def \reserved@a *{\nobreak \@xcentercr }\reserved@a }\def \reserved@b \ETC.
+! Paragraph ended before \reserved@a was complete.
 <to be read again> 
                    \par 
-l.26 
-     
+l.31 ...ty to separate these sources of variance.}
+                                                  
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-) [8]
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\writing\curre
-nt_study.txt [9])
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\writing\desig
-n.txt [10])
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\writing\subje
-cts.txt
+
+Package natbib Warning: Citation `geronimus1992socioeconomic' on page 7 undefin
+ed on input line 31.
+
+
+Package natbib Warning: Citation `murray1998income' on page 7 undefined on inpu
+t line 31.
+
+
+Package natbib Warning: Citation `Neisser1996' on page 7 undefined on input lin
+e 31.
+
+
+Package natbib Warning: Citation `Strenze2007' on page 7 undefined on input lin
+e 31.
+
+
+Package natbib Warning: Citation `mercy1982familial' on page 7 undefined on inp
+ut line 31.
+
+[7])
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\curr
+ent_study.tex" [8] [9])
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\desi
+gn.tex"
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 1.
+ [10])
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\subj
+ects.tex"
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 1.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [11])
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\writing\tetra
-d.txt [12])
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\writing\AFI.t
-xt
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\tetr
+ad.tex" [12])
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\AFI.
+tex" [13]
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
@@ -1765,18 +1735,17 @@ You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
-[13]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 12.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 12.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 12.
- [14]
+[14]
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1784,7 +1753,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1792,7 +1761,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -1801,7 +1770,7 @@ So I'll assume that you meant to type \cr instead.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1809,7 +1778,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1817,7 +1786,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1825,7 +1794,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1833,7 +1802,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1841,7 +1810,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1849,7 +1818,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1857,7 +1826,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1865,7 +1834,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1873,7 +1842,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1881,7 +1850,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.21 ...les/table_summary_stats_AFIRACEGENDER.tex}
+l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1895,7 +1864,7 @@ See the caption package documentation for explanation.
 
 Package xcolor Warning: Incompatible color definition on input line 120.
 
-<figure/plot_afi_by_race_sex-1.pdf, id=580, 361.35pt x 216.81pt>
+<figure/plot_afi_by_race_sex-1.pdf, id=595, 361.35pt x 216.81pt>
 File: figure/plot_afi_by_race_sex-1.pdf Graphic file (type pdf)
 
 <use figure/plot_afi_by_race_sex-1.pdf>
@@ -1908,9 +1877,9 @@ Overfull \hbox (25.04022pt too wide) in paragraph at lines 121--122
  []
 
 
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\writing\intel
-ligence.txt [16] [17 <C:/Dropbox/Work/Research/Projects/Legacy/NLSY/AFI/Manuscr
-ipt/figure/plot_afi_by_race_sex-1.pdf>] [18]
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\inte
+lligence.tex" [16] [17 <C:/Dropbox/Lab/Research/Projects/Current/NLSY AFI/Manus
+cript/figure/plot_afi_by_race_sex-1.pdf>] [18]
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
@@ -1937,8 +1906,8 @@ in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
 ) [19]
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\results\resul
-ts.txt
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\results\resu
+lts.txt"
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `ascii'.
@@ -1982,8 +1951,8 @@ You need to provide a definition with \DeclareInputText
 or \DeclareInputMath before using this key.
 
 )
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\results\resul
-ts_between.txt [20]
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\results\resu
+lts_between.txt" [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
@@ -2023,8 +1992,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [21] [22] [23
 
 ] [24] [25])
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\results\resul
-ts_within.txt
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\results\resu
+lts_within.txt"
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4.
@@ -2071,8 +2040,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [27] [28] [29
 
 ] [30] [31])
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Common\content\discussion\di
-scussion.txt
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\discussion\d
+iscussion.txt"
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `ascii'.
@@ -2203,16 +2172,16 @@ You need to provide a definition with \DeclareInputText
 or \DeclareInputMath before using this key.
 
 ) [33]
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Manuscript\Manuscript.bbl
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Manuscript\Manuscript.bbl"
 [34] [35
 
-] [36] [37] [38] [39] [40] [41] [42]) [43]pdfTeX warning (ext4): destination wi
-th the same identifier (name{table.1}) has been already used, duplicate ignored
-
+] [36] [37] [38] [39] [40] [41] [42] [43]) [44]pdfTeX warning (ext4): destinati
+on with the same identifier (name{table.1}) has been already used, duplicate ig
+nored
 <to be read again> 
                    \relax 
 l.173   \end{longtable}
-                       \pagebreak [44
+                       \pagebreak [45
 
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{table.2}) ha
@@ -2220,104 +2189,100 @@ s been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.183   \end{longtable}
-                       \pagebreak [45]pdfTeX warning (ext4): destination with t
+                       \pagebreak [46]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.193   \end{longtable}
-                       \pagebreak [46]pdfTeX warning (ext4): destination with t
+                       \pagebreak [47]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.206   \end{longtable}
-                       \pagebreak [47]pdfTeX warning (ext4): destination with t
+                       \pagebreak [48]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.216   \end{longtable}
-                       \pagebreak [48]pdfTeX warning (ext4): destination with t
+                       \pagebreak [49]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.226   \end{longtable}
-                        [49]pdfTeX warning (ext4): destination with the same id
+                        [50]pdfTeX warning (ext4): destination with the same id
 entifier (name{table.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.239   \end{longtable}
-                       \pagebreak [50
+                       \pagebreak [51
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{table.2}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.249   \end{longtable}
-                       \pagebreak [51]pdfTeX warning (ext4): destination with t
+                       \pagebreak [52]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.259   \end{longtable}
-                       \pagebreak [52]pdfTeX warning (ext4): destination with t
+                       \pagebreak [53]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.272   \end{longtable}
-                       \pagebreak [53]pdfTeX warning (ext4): destination with t
+                       \pagebreak [54]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.282   \end{longtable}
-                       \pagebreak [54]pdfTeX warning (ext4): destination with t
+                       \pagebreak [55]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.292   \end{longtable}
                        
-Package atenddvi Info: Last page = 55.
- [55] AED endfloat: Processing end Figures and Tables
+Package atenddvi Info: Last page = 56.
+ [56] AED endfloat: Processing end Figures and Tables
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 295.
-
-(C:\Dropbox\Work\Research\Projects\Legacy\NLSY\AFI\Manuscript\Manuscript.aux)
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Manuscript\Manuscript.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
 Package rerunfilecheck Info: File `Manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 7A7A13DD0BCC5F4AC48FF7BF5A187E21;2910.
-
+(rerunfilecheck)             Checksum: 963D9DFE18B9F8E8D9CDD1F07630E293;2910.
 
 LaTeX Warning: There were undefined references.
 
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 25 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 33127 strings out of 493921
- 623603 string characters out of 3147269
- 684223 words of memory out of 3000000
- 35535 multiletter control sequences out of 15000+200000
- 88649 words of font info for 85 fonts, out of 3000000 for 9000
+ 33128 strings out of 493921
+ 623641 string characters out of 3147269
+ 684160 words of memory out of 3000000
+ 35538 multiletter control sequences out of 15000+200000
+ 84386 words of font info for 84 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 69i,12n,82p,10373b,1049s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{
-C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKT
-eX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
-ps/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{
-C:/Users/smaso_000/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/inconsolata/i4-t1
--0.enc}<C:/Users/smaso_000/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/incons
-olata/Inconsolata-zi4r.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
-mbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lms
-y10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Manuscript.pdf (55 pages, 443567 bytes).
+ 69i,12n,80p,10373b,742s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
+es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.en
+c}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/smaso
+_000/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}<C:/Use
+rs/smaso_000/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/inconsolata/Inconsol
+ata-zi4r.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
+lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
+Output written on Manuscript.pdf (56 pages, 429098 bytes).
 PDF statistics:
- 955 PDF objects out of 1000 (max. 8388607)
- 213 named destinations out of 1000 (max. 500000)
+ 969 PDF objects out of 1000 (max. 8388607)
+ 212 named destinations out of 1000 (max. 500000)
  338 words of extra memory for PDF output out of 10000 (max. 10000000)
 

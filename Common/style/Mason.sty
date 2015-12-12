@@ -1,4 +1,6 @@
-%%%%%%%%%%%% Packages %%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+% 		Packages 
+%----------------------------------------------------------------------------------------
 %%%%%% Formating %%%%%%
 %% Font
 \usepackage{lmodern}
@@ -28,13 +30,13 @@
 %%%%%% Graphics %%%%%%
 \usepackage{graphicx}\graphicspath{{../Common/graphics/}}
 \usepackage[graphicx]{realboxes}
-%\usepackage{tikz}
-%\usetikzlibrary{decorations.fractals,calc,arrows,positioning}
 %%% Animate
 \usepackage{animate}
 \usepackage{media9}
 
-%%%%%% R %%%%%%
+%----------------------------------------------------------------------------------------
+% 		R 
+%----------------------------------------------------------------------------------------
 \usepackage{listings}
 \usepackage{inconsolata}
 \usepackage{verbatim}
@@ -67,7 +69,9 @@
 \AtBeginEnvironment{tabular}{\noindent}
 \AtBeginEnvironment{longtable}{\noindent}
 
-%%%%%%%%%%%% New Commands %%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+% 		Commands 
+%----------------------------------------------------------------------------------------
 %% Short Hand
 \newcommand{\R}{\textup{\textrm{R}}\xspace}
 \newcommand{\meb}{{\bf Garrison, S. M.}\xspace}
@@ -78,6 +82,7 @@
 %% In line Comments
 \usepackage[colorinlistoftodos]{todonotes}
 \newcommand{\cil}[1]{\todo[inline, color=green!40]{#1}}
+
 %%% Remove DOI %UNCOMMENT ALL to toggle between DOI and URL
 \usepackage{environ}
 \newtoggle{bibdoi}
@@ -144,7 +149,6 @@
 \setcounter{fillersentencecounter}{1}
 \newread\pin@file
 
-
 \newcommand*\fillersentence [2] {%
   \IfFileExists{#2}{%
     \openin\pin@file #2
@@ -184,7 +188,6 @@
 \advance\dimen0-0.2\ht0
 \setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
 {\box0\lower0.4pt\box2}}
-
 
 %%% Hypothesis counters
 \newcounter{myhypothesis}

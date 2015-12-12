@@ -12,10 +12,10 @@
 \affiliation{Vanderbilt University}
 %
 % Author Note
-\authornote{\input{../Common/content/title/authornote.txt}}
+\authornote{\input{../Common/content/title/authornote.tex}}
 %
 % Abstract
-\abstract{Last compile was \today\ at \currenttime\\
+\abstract{Last compiled \today\ at \currenttime\\
 \input{../Common/content/title/abstract_empreport.txt}}
 %
 % Key Words
@@ -29,7 +29,7 @@
   options(width=60)
   options(scipen=999)
   options(digits=3)
-  options(width=60)
+
 
   listing <- function(x, options){
     paste("\\begin{lstlisting}[style=Rsettings]\n",
@@ -56,7 +56,7 @@ library(xtable)
 # File Structure
 file_drive= "C:"
 ##file_drive="E:"
-directory = paste0(file_drive,"/Dropbox/Work/Research/Projects/Legacy/NLSY/AFI")
+directory = paste0(file_drive,"/Dropbox/Lab/Research/Projects/Current/NLSY AFI")
 #
 # Functions
 ## source("https://raw.githubusercontent.com/smasongarrison/Functions/master/Mason_Functions.R")
@@ -71,10 +71,10 @@ cor_1star <- function(x,digit=3,sig=.05,include.n=FALSE){
   R <- format(round(cbind(rep(-1.11, ncol(x)), R), digit))[,-1] 
   ## build a new matrix that includes the correlations with their appropriate stars 
   Rnew <- R
-  
-  if(is.numeric(sig)){
+  if(!is.na(sig)){
   ## define notions for significance levels; spacing is important.
   mystars <- ifelse(p < sig, "* ", " ")
+  
   ## build a new matrix that includes the correlations with their appropriate stars 
   Rnew <- matrix(paste(R, mystars, sep=""), ncol=ncol(x)) }
   diag(Rnew) <- paste(diag(R), " ", sep="") 
@@ -133,17 +133,17 @@ Sd <- function(x,digit=3,na.rm = TRUE) {
 substrRight <- function(x, n, fromend=0, end=nchar(x)-fromend){
   substr(x, end-n+1,end)}
 @
-<<setup_Data_9,include=FALSE,cache=TRUE>>=
+<<setup_Data_9,include=FALSE,cache=FALSE>>=
 # Import Data for age 9
 ## First Born Child
-LinkedMDAN_discord_AFI_z_9 <- read.csv(paste0(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_910811.csv"))
+LinkedMDAN_discord_AFI_z_9 <- read.csv(paste0(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_910811.csv"))
 LinkedMDAN_discord_AFI_z_9$Gendermean<-as.factor(LinkedMDAN_discord_AFI_z_9$Gendermean)
 ##
 ## First Born Girl
-LinkedMDAN_discord_AFI_g_9 <- read.csv(paste0(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_girls_910811.csv"))
+LinkedMDAN_discord_AFI_g_9 <- read.csv(paste0(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_girls_910811.csv"))
 ##
 ## First Born Boy
-LinkedMDAN_discord_AFI_b_9 <- read.csv(paste0(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_boys_910811.csv"))
+LinkedMDAN_discord_AFI_b_9 <- read.csv(paste0(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_boys_910811.csv"))
 #
 # Models for age 9
 ## First Born Child
@@ -180,17 +180,17 @@ model.diffkids.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = da
 model.diffmoms.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
 @
-<<setup_Data_10,include=FALSE,cache=TRUE>>=
+<<setup_Data_10,include=FALSE,cache=FALSE>>=
 # Import Data for age 10
 ## First Born Child
-LinkedMDAN_discord_AFI_z_10 <- read.csv(paste0(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_1011912.csv"))
+LinkedMDAN_discord_AFI_z_10 <- read.csv(paste0(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_1011912.csv"))
 LinkedMDAN_discord_AFI_z_10$Gendermean<-as.factor(LinkedMDAN_discord_AFI_z_10$Gendermean)
 ##
 ## First Born Girl
-LinkedMDAN_discord_AFI_g_10 <- read.csv(paste0(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_girls_1011912.csv"))
+LinkedMDAN_discord_AFI_g_10 <- read.csv(paste0(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_girls_1011912.csv"))
 ##
 ## First Born Boy
-LinkedMDAN_discord_AFI_b_10 <- read.csv(paste0(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_boys_1011912.csv"))
+LinkedMDAN_discord_AFI_b_10 <- read.csv(paste0(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_boys_1011912.csv"))
 #
 # Models for age 10
 ## First Born Child
@@ -227,17 +227,17 @@ model.diffkids.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = d
 model.diffmoms.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
 @
-<<setup_Data_11,include=FALSE,cache=TRUE>>=
+<<setup_Data_11,include=FALSE,cache=FALSE>>=
 # Import Data for age 10
 ## First Born Child
-LinkedMDAN_discord_AFI_z_11 <- read.csv(paste0(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_11121013.csv"))
+LinkedMDAN_discord_AFI_z_11 <- read.csv(paste0(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_11121013.csv"))
 LinkedMDAN_discord_AFI_z_11$Gendermean<-as.factor(LinkedMDAN_discord_AFI_z_11$Gendermean)
 ##
 ## First Born Girl
-LinkedMDAN_discord_AFI_g_11 <- read.csv(paste0(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_girls_11121013.csv"))
+LinkedMDAN_discord_AFI_g_11 <- read.csv(paste0(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_girls_11121013.csv"))
 ##
 ## First Born Boy
-LinkedMDAN_discord_AFI_b_11 <- read.csv(paste0(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_boys_11121013.csv"))
+LinkedMDAN_discord_AFI_b_11 <- read.csv(paste0(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_boys_11121013.csv"))
 #
 # Models for age 11
 ## First Born Child
@@ -274,11 +274,11 @@ model.diffkids.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = d
 model.diffmoms.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
 @
-<<setup_summarystats,include=FALSE,cache=TRUE>>=
+<<setup_summarystats,include=FALSE,cache=FALSE>>=
 # Import Data
 ## Determine First Born
-birthweight <- read.table(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/79/SASGen1Kids/birthweight.dat",sep=""), quote="\"", stringsAsFactors=FALSE)
-names(birthweight)<-c('CASEID','MCASEID','RACE','SEX_G2','YRB','WGT')
+birthweight <- read.table(paste(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/79/SASGen1Kids/birthweight.dat",sep=""), quote="\"", stringsAsFactors=FALSE)
+names(birthweight)<-c('CASEID','MCASEID','Race','SEX_G2','YRB','WGT')
 birthweight$WGT[birthweight$WGT < 0] <- NA
 birthweight$firstborn<-0
 birthweight$firstborn<-substrRight(birthweight$CASEID,2)
@@ -302,27 +302,27 @@ vallabels = function(data) {
   return(data)}
 varlabels <- c("ID CODE OF CHILD",
     "ID CODE OF MOTHER OF CHILD",
-    "RACE OF CHILD (FROM MOTHERS SCREENER 79)",
+    "Race OF CHILD (FROM MOTHERS SCREENER 79)",
     "SEX OF CHILD")
 qnames = function(data) {
-  names(data) <- c("CASEID","MCASEID","RACE","CSEX")
+  names(data) <- c("CASEID","MCASEID","Race","CSEX")
   return(data)
 }
 categories_g2 <- qnames(vallabels(new_data))
-momintel <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/79/SASGen1/momintel.csv",sep=""), header=FALSE)
+momintel <- read.csv(paste(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/79/SASGen1/momintel.csv",sep=""), header=FALSE)
 names(momintel)<-c("MCASEID","Intel_G1","Intel_G1_SE","HID")
 ##
 ## Gen2 Mean Intelligence
-kidintel<-read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/79/kidsintl/cleaned_CFA_G_around_910811.csv",sep=""), header=FALSE)
+kidintel<-read.csv(paste(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/79/kidsintl/cleaned_CFA_G_around_910811.csv",sep=""), header=FALSE)
 names(kidintel)<-c("CASEID","ASEID","Intel_G2","Intel_G2_SE","MCASEID")
 ##
 ## Gen1 AFI
-Gen1AFI_exportconcor <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/CTT/Gen1AFI_exportconcor_910811.csv",sep=""))
+Gen1AFI_exportconcor <- read.csv(paste(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/NLSYSAS/CTT/Gen1AFI_exportconcor_910811.csv",sep=""))
 Gen1AFI_exportconcor <- Gen1AFI_exportconcor[2:length(Gen1AFI_exportconcor[,1]),]
 names(Gen1AFI_exportconcor)<-c("MCASEID","AFI_G1")
 ##
 ## Gen2 Mean AFI
-Gen2AFI_exportconcor <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/NLSYSAS/Gen2AFI_exportconcor_910811.csv",sep=""))
+Gen2AFI_exportconcor <- read.csv(paste(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/NLSYSAS/Gen2AFI_exportconcor_910811.csv",sep=""))
 names(Gen2AFI_exportconcor)<-c("CASEID","AFI_G2")
 ##
 # Merge
@@ -330,7 +330,7 @@ Gen1AFIConcor <- merge(momintel,Gen1AFI_exportconcor,by="MCASEID",all=T)
 Gen2AFIConcor <- merge(kidintel,Gen2AFI_exportconcor,by="CASEID",all=T)
 Gen2AFIConcor_2 <- merge(categories_g2,Gen2AFI_exportconcor,by="CASEID",all=T)
 @
-<<setup_Reliability,include=FALSE,cache=TRUE>>=
+<<setup_Reliability,include=FALSE,cache=FALSE>>=
 # Reliability 
 ## AFI G1
 ###Import Data
@@ -367,7 +367,7 @@ varlabels <- c(    "ID# (1-12686) 79",
     "F MO SEXUAL INTERCOURSE 1ST TIME 85"
 )
 qnames = function(data) {
-  names(data) <- c("CASEID","HHID","RACE","SEX","MAFI_1983","FAFI_1983","MAFI_1984","FAFI_1984","FAFI_YEAR_1984","FAFI_MON_1984","MAFI_1985","FAFI_1985","FAFI_YEAR_1985","FAFI_MON_1985")
+  names(data) <- c("CASEID","HHID","Race","SEX","MAFI_1983","FAFI_1983","MAFI_1984","FAFI_1984","FAFI_YEAR_1984","FAFI_MON_1984","MAFI_1985","FAFI_1985","FAFI_YEAR_1985","FAFI_MON_1985")
   return(data)
 }
 categories <- qnames(vallabels(new_data))
@@ -471,18 +471,18 @@ outcomeNames = c(
 )
 ### Export Matrix
 matrix_afi_cousincor<-data.frame(dsSinglez$AFI_G2z_S1,dsSinglez$AFI_G2z_S2)
-capture.output(xtable(cor_1star(matrix_afi_cousincor,2,NA,include.n=TRUE)),file=paste0(directory,"/Common/content/tables/table_sibafig2_z.tex"))
+capture.output(xtable(cor_1star(matrix_afi_cousincor,2,sig=NA,include.n=TRUE)),file=paste0(directory,"/Common/content/tables/table_sibafig2_z.tex"))
 Cor(matrix_afi_cousincor)
 
 
 ## Gen2 Mean Intelligence
 ### Test-Retest
 #### Import
-G_G2_9.5 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/79/kidsintl/cleaned_CFA_G_around_910811.csv",sep=""), header=FALSE)
+G_G2_9.5 <- read.csv(paste(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/79/kidsintl/cleaned_CFA_G_around_910811.csv",sep=""), header=FALSE)
 names(G_G2_9.5)<-c("CASEID","ASEID","G_G2_9.5","G_SE_G2_9.5","MCASEID")
-G_G2_10.5 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/79/kidsintl/cleaned_CFA_G_around_1011912.csv",sep=""), header=FALSE)
+G_G2_10.5 <- read.csv(paste(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/79/kidsintl/cleaned_CFA_G_around_1011912.csv",sep=""), header=FALSE)
 names(G_G2_10.5)<-c("CASEID","ASEID","G_G2_10.5","G_SE_G2_10.5","MCASEID")
-G_G2_11.5 <- read.csv(paste(file_drive,"/Dropbox/Software/SAS/MyFolders/79/kidsintl/cleaned_CFA_G_around_11121013.csv",sep=""), header=FALSE)
+G_G2_11.5 <- read.csv(paste(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/79/kidsintl/cleaned_CFA_G_around_11121013.csv",sep=""), header=FALSE)
 names(G_G2_11.5)<-c("CASEID","ASEID","G_G2_11.5","G_SE_G2_11.5","MCASEID")
 #### Merge
 temp<-merge(G_G2_9.5[c(1,3)],G_G2_10.5[c(1,3)],by="CASEID",all=T)
@@ -490,7 +490,7 @@ G_G2<-merge(temp,G_G2_11.5[c(1,3)],by="CASEID",all=T)
 #### Export Matrix Test Retest
 A<-G_G2[2:4]
 names(A)<-c("Age 9.5","Age 10.5","Age 11.5")
-capture.output(xtable(cor_1star(A,2,.01,include.n=TRUE)),file=paste0(directory,"/Common/content/tables/table_ttintreliable_z.tex"))
+capture.output(xtable(cor_1star(A,2,NA,include.n=TRUE)),file=paste0(directory,"/Common/content/tables/table_ttintreliable_z.tex"))
 
 ### First Born Child
 #### Import Data
@@ -539,7 +539,7 @@ capture.output(xtable(cor_1star(matrix_b,2,.01,include.n=TRUE)),file=paste0(dire
 capture.output(xtable(cor_1star(matrix_g,2,.01,include.n=TRUE)),file=paste0(directory,"/Common/content/tables/table_diffintreliable_g.tex"))
 capture.output(xtable(cor_1star(matrix_z,2,.01,include.n=TRUE)),file=paste0(directory,"/Common/content/tables/table_diffintreliable_z.tex"))
 @
-<<measurement,include=FALSE,cache=TRUE>>=
+<<measurement,include=FALSE,cache=FALSE>>=
 # G1
 ## mplus
 ### Run
@@ -580,7 +580,7 @@ capture.output(stargazer(g2loading_10,summary=FALSE,flip = FALSE, dep.var.labels
 capture.output(stargazer(ModelSummaries_Mplusg2_11,summary=FALSE,flip = TRUE, dep.var.labels.include = FALSE),file=paste0(directory,"/Common/content/tables/table_g2_11measurement.tex"))
 capture.output(stargazer(g2loading_11,summary=FALSE,flip = FALSE, dep.var.labels.include = FALSE),file=paste0(directory,"/Common/content/tables/table_g2loading_11.tex"))
 @
-<<results_regression,echo=FALSE, comment=NA, include=FALSE,cache=TRUE>>=
+<<results_regression,echo=FALSE, comment=NA, include=FALSE,cache=FALSE>>=
 # Stargazer Plot defaults
 font.size="small"
 no.space=TRUE
@@ -849,12 +849,12 @@ capture.output(stargazer(model.diffmomskids_11,model.diffmomskids.g_11,model.dif
 
 # Summary Stats by Race and Gender
 capture.output(latex(
-  tabular((Heading()*( 1 + RowFactor(CSEX)+ RowFactor(RACE) + RowFactor(CSEX)*RowFactor(RACE))~(Heading("AFI")*AFI_G2*(Mean + Sd))), 
+  tabular((Heading()*( 1 +RowFactor(CSEX)*RowFactor(Race)+ RowFactor(CSEX)+ RowFactor(Race) )~(Heading("AFI")*AFI_G2*(Mean + Sd))), 
           data = Gen2AFIConcor_2),
   numeric.dollar=TRUE),
   file=paste0(directory,"/Common/content/tables/table_summary_stats_AFIRACEGENDER.tex"))
 @
-<<setup_tables,include=FALSE,cache=TRUE>>=
+<<setup_tables,include=FALSE,cache=FALSE>>=
 # Summary Stats G1
 ## Manage data
 ### Import
@@ -906,79 +906,79 @@ capture.output(latex(
 %\section{Introduction}
 \section{ }\vspace{-.8cm}
 % Introduce the Major Problem
-\input{../Common/content/writing/introduction.txt}
+\input{../Common/content/writing/introduction.tex}
 % Current Study
 \subsection{Current Study, Summary}
-\input{../Common/content/writing/current_study.txt}
+\input{../Common/content/writing/current_study.tex}
 
 %%%%%%%%%%%% Method %%%%%%%%%%%%
 \section{Method}
 \subsection{Research Design}
-\input{../Common/content/writing/design.txt}
+\input{../Common/content/writing/design.tex}
 %
 % Sample
 \subsection{Sample}
-\input{../Common/content/writing/subjects.txt}
+\input{../Common/content/writing/subjects.tex}
 %
 % Tetrads
 \subsection{Tetrads}
-\input{../Common/content/writing/tetrad.txt}
+\input{../Common/content/writing/tetrad.tex}
 %
 %%%%%%%%%%%% Measurement %%%%%%%%%%%%
 % Age at First Intercourse
 \subsection{Measures}
-\input{../Common/content/writing/AFI.txt}
+\input{../Common/content/writing/AFI.tex}
 \noindent\begin{minipage}{\linewidth}
-\captionof{figure}{Smoothed Density Plots of AFI by Sex and Race}
+\captionof{figure}{Smoothed Density Plots of AFI by Race and Sex}
 \label{plot_afi_by_race_sex}
 \begin{center}
-<<plot_afi_by_race_sex,fig=TRUE,echo=FALSE,cache=TRUE,echo=FALSE, fig.height=5*.6, fig.width=5,out.width=".8\\paperwidth",warning=FALSE>>=
+<<plot_afi_by_race_sex,fig=TRUE,echo=FALSE,cache=FALSE,echo=FALSE, fig.height=5*.6, fig.width=5,out.width=".8\\paperwidth",warning=FALSE>>=
   # Color Blind Palette 
   cbbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7","#000000")
   # Data Prep
   dataframe<-data.frame(Gen2AFIConcor_2,Gen2AFIConcor$Intel_G2)
-  names(dataframe)<- c("CASEID","MCASEID","RACE","SEX","AFI","Intel")
+  names(dataframe)<- c("CASEID","MCASEID","Race","SEX","AFI","Intel")
   
   ## Race by Sex factor
-  dataframe$RACEbySEX<-"0"
+  dataframe$RacebySEX<-"0"
   ###
   ### Hispanic
   #### Male
-  dataframe$RACEbySEX[dataframe$RACE=='Hispanic' & dataframe$SEX=='Male']<-"Hispanic Male"
+  dataframe$RacebySEX[dataframe$Race=='Hispanic' & dataframe$SEX=='Male']<-"Hispanic Male"
   ####
   #### Female
-  dataframe$RACEbySEX[dataframe$RACE=='Hispanic'&dataframe$SEX=='Female']<-"Hispanic Female"
+  dataframe$RacebySEX[dataframe$Race=='Hispanic'&dataframe$SEX=='Female']<-"Hispanic Female"
   ###
   ### Black
   #### Male
-  dataframe$RACEbySEX[dataframe$RACE=='Black'&dataframe$SEX=='Male']<-"Black Male"
+  dataframe$RacebySEX[dataframe$Race=='Black'&dataframe$SEX=='Male']<-"Black Male"
   ####
   #### Female
-  dataframe$RACEbySEX[dataframe$RACE=='Black'&dataframe$SEX=='Female']<-"Black Female"
+  dataframe$RacebySEX[dataframe$Race=='Black'&dataframe$SEX=='Female']<-"Black Female"
   ###
   ### Non-Black, Non-Hispanic
   #### Male
-  dataframe$RACEbySEX[dataframe$RACE=='Non-Black, Non-Hispanic'&dataframe$SEX=='Male']<-"White Male"
+  dataframe$RacebySEX[dataframe$Race=='Non-Black, Non-Hispanic'&dataframe$SEX=='Male']<-"White Male"
   ####
   #### Female
-  dataframe$RACEbySEX[dataframe$RACE=='Non-Black, Non-Hispanic'&dataframe$SEX=='Female']<-"White Female"
+  dataframe$RacebySEX[dataframe$Race=='Non-Black, Non-Hispanic'&dataframe$SEX=='Female']<-"White Female"
   ###
   ### Unknown Race
-  dataframe$RACEbySEX[dataframe$RACEbySEX=='0']<-"Unknown"
-  dataframe$RACE<-revalue(dataframe$RACE, c("Non-Black, Non-Hispanic"="White"))
-  #summary(as.factor(dataframe$RACEbySEX))
+  dataframe$RacebySEX[dataframe$RacebySEX=='0']<-"Unknown"
+ dataframe$Race<-revalue(dataframe$Race, c("Non-Black, Non-Hispanic"="Non-Black,\nNon-Hispanic"))
+  #summary(as.factor(dataframe$RacebySEX))
   
-  ggplot(dataframe, aes(x=AFI, colour=RACE, group=RACEbySEX, linetype = SEX))+ geom_density(fill=NA,adjust=2)+ theme_bw() + theme(axis.text=element_text(size=10), axis.title=element_text(size=12), plot.title=element_text(size=12)) +  theme(legend.position="right",  legend.justification=c(1, 0.5)) +   xlab("AFI") + ylab("Density") +scale_colour_manual(values= c("#56B4E9", "#009E73", "#CC79A7")) + coord_cartesian(ylim=c(0,0.30), xlim=c(12,25))
+  ggplot(dataframe, aes(x=AFI, colour=Race, group=RacebySEX, linetype = SEX))+ geom_density(fill=NA,adjust=2)+ theme_bw() + theme(axis.text=element_text(size=10), axis.title=element_text(size=12), plot.title=element_text(size=12)) +  theme(legend.position="right",  legend.justification=c(1, 0.5),legend.text=element_text(size=8)) +   xlab("AFI") + ylab("Density") +scale_colour_manual(values= c("#56B4E9", "#009E73", "#CC79A7")) + coord_cartesian(ylim=c(0,0.30), xlim=c(12,25))
   @
 \end{center}
 \end{minipage}
 %
 % Intelligence
-\input{../Common/content/writing/intelligence.txt}
+\input{../Common/content/writing/intelligence.tex}
 %
 % Difference Score Reliability
 \subsection{Reliability of Difference Scores}
-<<calculationalphadif,cache=TRUE,include=FALSE>>=
+<<calculationalphadif,cache=FALSE,include=FALSE>>=
 # Intelligence
 sigmax = sqrt(1.1881)
 sigmay = sigmax
@@ -995,21 +995,21 @@ rxy=.099
 r.diff.afi <- (sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) / (sigmax*sigmax + sigmay*sigmay -2*rxy*sigmax*sigmay)
 @
 Our design assumes that the difference scores of our measures are reliable. We've reported the test-retest reliability of Gen2 intelligence and Gen1 AFI in earlier sections. Here, we report the test-retest reliability of the pairwise differences of those measures. 
-\subsubsection{AFI} Comparing sibling differences in AFI as reported in 1983 and 1984 (n = 783 pairs) we found a strong correlation (r = .76). The sample of sibling pairs with complete information in 1985 was too small (n = 12 pairs) to compare to the other two years. Regardless, sibling differences in self-reported AFI appear reliable. Because we could not estimate test-retest reliabilities for Generation 2, we calculated the reliability using Lord's equation (\citeyear{Lord1963}). Generation 2 Mean AFI difference scores were also reliable (r = \Sexpr{r.diff.afi}) and comparable to Generation 1 sibling differences.
+\subsubsection{AFI} Comparing sibling differences in AFI as reported in 1983 and 1984 (n = 783 pairs) we found a moderate correlation (r = .76). The sample of sibling pairs with complete information in 1985 was too small (n = 12 pairs) to compare to the other two years. Regardless, sibling differences in self-reported AFI appear satisfactory for research purposes. We note that the common concern with unreliability of difference scores is at least partially mitigated when the separate scores defining the differences are reliable themselves. Because we could not estimate test-retest reliabilities for Generation 2, we calculated the reliability using Lord's equation (\citeyear{Lord1963}). Generation 2 Mean AFI difference scores were also moderately reliable (r = \Sexpr{r.diff.afi}) and comparable to Generation 1 sibling differences.
 
-\subsubsection{Intelligence} Cousin differences in intelligence as assessed at ages 9.5, 10.5, and 11.5 were correlated using three different linking methods (Mixed, Daughers, Sons). Reliabilities across linking methods was consistent and high (min r = .86; max r = .95). However, we could not estimate test-retest reliabilities for Generation 1; we calculated the reliability using Lord's equation (\citeyear{Lord1963}). The calculated reliability of Generation 1's differences in AFQT was \Sexpr{r.diff.intelligence}, acceptable, but lower than the empirical correlation we derived for cousin differences.
+\subsubsection{Intelligence} Cousin differences in intelligence as assessed at ages 9.5, 10.5, and 11.5 were correlated using three different linking methods (Mixed, Daughters, Sons). Reliabilities across linking methods was consistent and high (min r = .86; max r = .95). However, we could not estimate test-retest reliabilities for Generation 1; we calculated the reliability using Lord's equation (\citeyear{Lord1963}). The calculated reliability of Generation 1's differences in AFQT was .61, which was only minimally  acceptable, and obviously lower than the empirical correlation we derived for cousin differences.%\Sexpr{r.diff.intelligence}
 
 %%%%%%%%%%%% Results %%%%%%%%%%%%
 \section{Results}
-\input{../Common/content/results/results.txt}
+\input{../Common/content/writing/results.tex}
 %
 % Between Family
 \subsection{Between-Family Analyses}
-\input{../Common/content/results/results_between.txt}
+\input{../Common/content/writing/results_between.tex}
 %
 % Within Family
 \subsection{Within-Family Analyses}
-\input{../Common/content/results/results_within.txt}
+\input{../Common/content/writing/results_within.tex}
 %
 %%%%%%%%%%%% Discussion %%%%%%%%%%%%
 \section{Discussion}
