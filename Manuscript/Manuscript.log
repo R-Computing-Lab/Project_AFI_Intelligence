@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  10 DEC 2015 11:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  12 DEC 2015 19:26
 entering extended mode
 **Manuscript.tex
 ("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Manuscript\Manuscript.tex"
@@ -603,7 +603,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 \usepackage
+l.27 \usepackage
                 [longnamesfirst]{natbib}
 The package apacite has already been loaded with options:
   [bibnewpage]
@@ -1398,7 +1398,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 \definecolor
+l.48 \definecolor
                  {black}{rgb}{0,0,0}
 The package xcolor has already been loaded with options:
   []
@@ -1906,53 +1906,10 @@ in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
 ) [19]
-("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\results\resu
-lts.txt"
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 ...ily analyses replicate the between-family Ô
-                                                  ¨Åndings using within-fami...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 ...ly analyses replicate the between-family Ô¨
-                                                  Åndings using within-famil...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 ...y analyses replicate the between-family Ô¨Å
-                                                  ndings using within-family...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-)
-("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\results\resu
-lts_between.txt" [20]
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\resu
+lts.tex")
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\resu
+lts_between.tex" [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
@@ -1992,8 +1949,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [21] [22] [23
 
 ] [24] [25])
-("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\results\resu
-lts_within.txt"
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\resu
+lts_within.tex"
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4.
@@ -2040,51 +1997,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [27] [28] [29
 
 ] [30] [31])
-("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\discussion\d
-iscussion.txt"
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 ...mily analyses finding a link between child‚
-                                                  Äôs intelligence and AFI a...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 ...ily analyses finding a link between child‚Ä
-                                                  ôs intelligence and AFI ar...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 ...ly analyses finding a link between child‚Äô
-                                                  s intelligence and AFI are...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-[32
+("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\disc
+ussion.tex" [32
 
 ]
 
@@ -2095,7 +2009,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 ... more proximal as the causal explanation -‚
+l.11 ...more proximal as the causal explanation -‚
                                                   Äì income, parental educat...
 
 You need to provide a definition with \DeclareInputText 
@@ -2109,7 +2023,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 ...more proximal as the causal explanation -‚Ä
+l.11 ...ore proximal as the causal explanation -‚Ä
                                                   ì income, parental educati...
 
 You need to provide a definition with \DeclareInputText 
@@ -2123,50 +2037,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 ...ore proximal as the causal explanation -‚Äì
+l.11 ...re proximal as the causal explanation -‚Äì
                                                    income, parental educatio...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 ... indexes the quality of home environment -‚
-                                                  Äì a composite of parental...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 ...indexes the quality of home environment -‚Ä
-                                                  ì a composite of parental ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 ...ndexes the quality of home environment -‚Äì
-                                                   a composite of parental i...
 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -2253,16 +2125,16 @@ Package atveryend Info: Executing hook `AfterLastShipout' on input line 295.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
 Package rerunfilecheck Info: File `Manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 963D9DFE18B9F8E8D9CDD1F07630E293;2910.
+(rerunfilecheck)             Checksum: 1EDA53E0EA24CCBBA7ED8FB0CA6EA040;2910.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 33128 strings out of 493921
- 623641 string characters out of 3147269
- 684160 words of memory out of 3000000
- 35538 multiletter control sequences out of 15000+200000
+ 33122 strings out of 493921
+ 623393 string characters out of 3147269
+ 684125 words of memory out of 3000000
+ 35537 multiletter control sequences out of 15000+200000
  84386 words of font info for 84 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  69i,12n,80p,10373b,742s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2280,9 +2152,9 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
 lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Manuscript.pdf (56 pages, 429098 bytes).
+Output written on Manuscript.pdf (56 pages, 429819 bytes).
 PDF statistics:
- 969 PDF objects out of 1000 (max. 8388607)
- 212 named destinations out of 1000 (max. 500000)
+ 972 PDF objects out of 1000 (max. 8388607)
+ 211 named destinations out of 1000 (max. 500000)
  338 words of extra memory for PDF output out of 10000 (max. 10000000)
 

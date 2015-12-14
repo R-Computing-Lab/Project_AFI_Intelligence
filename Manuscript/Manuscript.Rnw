@@ -1003,17 +1003,17 @@ Our design assumes that the difference scores of our measures are reliable. We'v
 \section{Results}
 \input{../Common/content/writing/results.tex}
 %
-% Between Family
+% Between-Family
 \subsection{Between-Family Analyses}
 \input{../Common/content/writing/results_between.tex}
 %
-% Within Family
+% Within-Family
 \subsection{Within-Family Analyses}
 \input{../Common/content/writing/results_within.tex}
 %
 %%%%%%%%%%%% Discussion %%%%%%%%%%%%
 \section{Discussion}
-\input{../Common/content/discussion/discussion.txt}
+\input{../Common/content/writing/discussion.tex}
 
 %%%%%%%%%%%% References %%%%%%%%%%%%
 \bibliography{Projects-AFI}
@@ -1022,13 +1022,13 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %
   % Age 10.5 Replication
   \section{Age 10.5 Replication}\label{appen10}
-  %% Between Family
+  %% Between-Family
   
-  \subsection{Between Family Analyses}
+  \subsection{Between-Family Analyses}
   %%%
   %%% Mom -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Mean Gen1 Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_10}
+  \caption{Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_10}
   \\[-1.8ex]\hline 
   \hline \\[-1.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
@@ -1056,8 +1056,8 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   \partialinput{10}{23}{../Common/content/tables/table_Mean_Joint_Intelligence_Mean_Child_AFI_10.tex}
   \end{longtable}\pagebreak
   %%
-    %% Within Family
-  \subsection{Within Family Analyses}
+    %% Within-Family
+  \subsection{Within-Family Analyses}
   %%%
   %%% Mom -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
@@ -1090,11 +1090,11 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   \end{longtable}
   % Age 11.5 Replication
   \section{Age 11.5 Replication}\label{appen11}
-  %% Between Family
-  \subsection{Between Family Analyses}
+  %% Between-Family
+  \subsection{Between-Family Analyses}
   %%% Mom -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Mean Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_11}
+  \caption{Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_11}
   \\[-1.8ex]\hline 
   \hline \\[-1.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
@@ -1122,8 +1122,8 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   \partialinput{10}{23}{../Common/content/tables/table_Mean_Joint_Intelligence_Mean_Child_AFI_11.tex}
   \end{longtable}\pagebreak
   %%
-    %% Within Family
-  \subsection{Within Family Analyses}
+    %% Within-Family
+  \subsection{Within-Family Analyses}
   %%%
   %%% Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
