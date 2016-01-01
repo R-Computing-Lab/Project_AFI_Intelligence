@@ -23,6 +23,7 @@
 %
 \begin{document}
 \maketitle
+
 %
 %%%%%%%%%%%% R %%%%%%%%%%%%
 <<sweave,echo=FALSE>>=
@@ -49,7 +50,7 @@ library(Hmisc)
 library(MplusAutomation)
 library(NlsyLinks)
 library(plyr);library(psych)
-library(stargazer)
+#library(stargazer)
 library(tables)
 library(xtable)
 #
@@ -60,6 +61,9 @@ directory = paste0(file_drive,"/Dropbox/Lab/Research/Projects/Current/NLSY AFI")
 #
 # Functions
 ## source("https://raw.githubusercontent.com/smasongarrison/Functions/master/Mason_Functions.R")
+#Modded Stargazer
+source(paste0(directory,"/Common/content/functions/stargazer.R"))
+source(paste0(directory,"/Common/content/functions/stargazer-internal.R"))
 ## cor_1star
 ### Prints out clean correlation matrix. If you want to replace the upper triangle with the sample size, toggle include.n, whose default is FALSE.
 cor_1star <- function(x,digit=3,sig=.05,include.n=FALSE){ 
@@ -67,15 +71,15 @@ cor_1star <- function(x,digit=3,sig=.05,include.n=FALSE){
   x <- as.matrix(x) 
   R <- rcorr(x)$r 
   p <- rcorr(x)$P 
-   ## truncate the matrix that holds the correlations to two decimal
+ ## truncate the matrix that holds the correlations to two decimal
   R <- format(round(cbind(rep(-1.11, ncol(x)), R), digit))[,-1] 
-  ## build a new matrix that includes the correlations with their appropriate stars 
+## build a new matrix that includes the correlations with their appropriate stars 
   Rnew <- R
   if(!is.na(sig)){
-  ## define notions for significance levels; spacing is important.
+## define notions for significance levels; spacing is important.
   mystars <- ifelse(p < sig, "* ", " ")
   
-  ## build a new matrix that includes the correlations with their appropriate stars 
+## build a new matrix that includes the correlations with their appropriate stars 
   Rnew <- matrix(paste(R, mystars, sep=""), ncol=ncol(x)) }
   diag(Rnew) <- paste(diag(R), " ", sep="") 
   rownames(Rnew) <- colnames(x) 
@@ -83,13 +87,13 @@ cor_1star <- function(x,digit=3,sig=.05,include.n=FALSE){
   
   Rnew <- as.matrix(Rnew)
   if(!include.n){
-    ## remove upper triangle
+  ## remove upper triangle
     Rnew[upper.tri(Rnew, diag = TRUE)] <- ""
     Rnew <- as.data.frame(Rnew) 
     Rnew <- cbind(Rnew[1:length(Rnew)-1])
   }
   if(include.n){
-    #replace upper triangle with sample size
+  #replace upper triangle with sample size
     require(psych)
     ct<-corr.test(x)
     ct<-as.matrix(ct$n)
@@ -329,6 +333,10 @@ names(Gen2AFI_exportconcor)<-c("CASEID","AFI_G2")
 Gen1AFIConcor <- merge(momintel,Gen1AFI_exportconcor,by="MCASEID",all=T)
 Gen2AFIConcor <- merge(kidintel,Gen2AFI_exportconcor,by="CASEID",all=T)
 Gen2AFIConcor_2 <- merge(categories_g2,Gen2AFI_exportconcor,by="CASEID",all=T)
+Gen2AFIConcor_3 <- merge(Gen1AFIConcor,Gen2AFIConcor,by="MCASEID",all=T)
+Gen2AFIConcor_3$Intel_G1_SE<-NULL
+Gen2AFIConcor_3$Intel_G2_SE<-NULL
+Gen2AFIConcor_3$ASEID<-NULL
 @
 <<setup_Reliability,include=FALSE,cache=FALSE>>=
 # Reliability 
@@ -592,6 +600,7 @@ model.numbers=FALSE
 float=FALSE
 ci =TRUE
 single.row = TRUE
+notes.append = TRUE
 # 9.5
 capture.output(stargazer(model.meanmoms_9,model.meanmoms.g_9,model.meanmoms.b_9,
                          font.size=font.size,
@@ -901,7 +910,42 @@ capture.output(latex(
   numeric.dollar=TRUE,na.blank=TRUE),
   file=paste0(directory,"/Common/content/tables/table_summary_stats_sibinsampleg2.tex"))
 @
+<<figurestyle,include=FALSE>>=
+# Color Blind Palette 
+  cbbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7","#000000")
 
+# Ribbon Color
+ribbonfill='seagreen3'
+ribbonalpha=.35
+# Function adapted from http://stackoverflow.com/questions/4094094/modifying-fonts-in-ggplot2
+theme_min = function (size=10, font=NA, face='plain',
+                      axisColor='#999999',
+                      textColor='black'){
+  element_text = function(...)
+
+  ggplot2::element_text(#family=font, face=face,
+    colour=textColor, size=size, ...)
+
+  theme(
+    axis.text.x = element_text(),
+    axis.text.y = element_text(),
+    axis.line = element_blank(),
+    axis.ticks = element_line(colour=axisColor, size=0.25),
+
+    legend.key = element_rect(fill = 'white', size = 0.5),
+    legend.text = element_text(hjust=0),
+    legend.title = element_text(hjust=0),
+
+    panel.background = element_rect(fill = "white",colour = NA),
+	  panel.border = element_rect(fill = NA,colour = "grey50"),
+    panel.grid.major = element_line(colour = "grey90", size = 0.2),
+	  panel.grid.minor = element_line(colour = "grey98", size = 0.5),
+	  plot.title = element_text(hjust=0),
+	  strip.background = element_rect(fill = "grey80", colour = "grey50", size = 0.2),
+    strip.text.x = element_text(hjust=0),
+    strip.text.y = element_text(angle=-90)
+  )}
+@
 %%%%%%%%%%%% Introduction %%%%%%%%%%%%
 %\section{Introduction}
 \section{ }\vspace{-.8cm}
@@ -932,43 +976,53 @@ capture.output(latex(
 \captionof{figure}{Smoothed Density Plots of AFI by Race and Sex}
 \label{plot_afi_by_race_sex}
 \begin{center}
-<<plot_afi_by_race_sex,fig=TRUE,echo=FALSE,cache=FALSE,echo=FALSE, fig.height=5*.6, fig.width=5,out.width=".8\\paperwidth",warning=FALSE>>=
-  # Color Blind Palette 
-  cbbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7","#000000")
-  # Data Prep
-  dataframe<-data.frame(Gen2AFIConcor_2,Gen2AFIConcor$Intel_G2)
-  names(dataframe)<- c("CASEID","MCASEID","Race","SEX","AFI","Intel")
+<<plot_afi_by_race_sex,fig=TRUE,echo=FALSE,cache=FALSE,echo=FALSE, fig.height=5*.8, fig.width=5,out.width=".65\\paperwidth",warning=FALSE>>=
+# Data Prep
+dataframe<-data.frame(Gen2AFIConcor_2,Gen2AFIConcor$Intel_G2)
+names(dataframe)<- c("CASEID","MCASEID","Race","SEX","AFI","Intel")
   
-  ## Race by Sex factor
+## Race by Sex factor
   dataframe$RacebySEX<-"0"
-  ###
-  ### Hispanic
-  #### Male
-  dataframe$RacebySEX[dataframe$Race=='Hispanic' & dataframe$SEX=='Male']<-"Hispanic Male"
-  ####
-  #### Female
-  dataframe$RacebySEX[dataframe$Race=='Hispanic'&dataframe$SEX=='Female']<-"Hispanic Female"
-  ###
-  ### Black
-  #### Male
-  dataframe$RacebySEX[dataframe$Race=='Black'&dataframe$SEX=='Male']<-"Black Male"
-  ####
-  #### Female
-  dataframe$RacebySEX[dataframe$Race=='Black'&dataframe$SEX=='Female']<-"Black Female"
-  ###
-  ### Non-Black, Non-Hispanic
-  #### Male
-  dataframe$RacebySEX[dataframe$Race=='Non-Black, Non-Hispanic'&dataframe$SEX=='Male']<-"White Male"
-  ####
-  #### Female
-  dataframe$RacebySEX[dataframe$Race=='Non-Black, Non-Hispanic'&dataframe$SEX=='Female']<-"White Female"
-  ###
-  ### Unknown Race
+###
+### Hispanic
+#### Male
+  dataframe$RacebySEX[dataframe$Race=='Hispanic' & dataframe$SEX=='Male']<-"Hispanic \nMale"
+####
+#### Female
+  dataframe$RacebySEX[dataframe$Race=='Hispanic'&dataframe$SEX=='Female']<-"Hispanic \nFemale"
+###
+### Black
+#### Male
+  dataframe$RacebySEX[dataframe$Race=='Black'&dataframe$SEX=='Male']<-"Black \nMale"
+####
+#### Female
+  dataframe$RacebySEX[dataframe$Race=='Black'&dataframe$SEX=='Female']<-"Black \nFemale"
+###
+### Non-Black, Non-Hispanic
+#### Male
+  dataframe$RacebySEX[dataframe$Race=='Non-Black, Non-Hispanic'&dataframe$SEX=='Male']<-"Non-Black, Non-Hispanic Male"
+####
+#### Female
+  dataframe$RacebySEX[dataframe$Race=='Non-Black, Non-Hispanic'&dataframe$SEX=='Female']<-"Non-Black, Non-Hispanic Female"
+###
+### Unknown Race
   dataframe$RacebySEX[dataframe$RacebySEX=='0']<-"Unknown"
  dataframe$Race<-revalue(dataframe$Race, c("Non-Black, Non-Hispanic"="Non-Black,\nNon-Hispanic"))
-  #summary(as.factor(dataframe$RacebySEX))
+ dataframe$RacebySEX<-revalue(dataframe$RacebySEX, c("Non-Black, Non-Hispanic Female"="Non-Black,\nNon-Hispanic \nFemale"))
+  dataframe$RacebySEX<-revalue(dataframe$RacebySEX, c("Non-Black, Non-Hispanic Male"="Non-Black,\nNon-Hispanic \nMale"))
+#summary(as.factor(dataframe$RacebySEX))
   
-  ggplot(dataframe, aes(x=AFI, colour=Race, group=RacebySEX, linetype = SEX))+ geom_density(fill=NA,adjust=2)+ theme_bw() + theme(axis.text=element_text(size=10), axis.title=element_text(size=12), plot.title=element_text(size=12)) +  theme(legend.position="right",  legend.justification=c(1, 0.5),legend.text=element_text(size=8)) +   xlab("AFI") + ylab("Density") +scale_colour_manual(values= c("#56B4E9", "#009E73", "#CC79A7")) + coord_cartesian(ylim=c(0,0.30), xlim=c(12,25))
+ggplot(dataframe, aes(x=AFI, colour=RacebySEX, group=RacebySEX, linetype = RacebySEX))+ geom_density(fill=NA,adjust=2)+ theme_min(size=10)+  
+    theme(legend.position="bottom",
+          legend.justification=c(1, 0.5),
+          legend.text=element_text(size=6),
+          legend.key = element_rect(fill = 'white', size = 0.5),
+          legend.title = element_blank()) +   
+    xlab("AFI") + 
+    ylab("Density") +
+    scale_colour_manual(values= c("#56B4E9","#56B4E9", "#009E73", "#009E73", "#CC79A7", "#CC79A7")) +
+    coord_cartesian(ylim=c(0,0.25), xlim=c(12,25)) +
+    scale_linetype_manual(values=c(1,2,1,2,1,2))
   @
 \end{center}
 \end{minipage}
@@ -1017,7 +1071,7 @@ Our design assumes that the difference scores of our measures are reliable. We'v
 
 %%%%%%%%%%%% References %%%%%%%%%%%%
 \bibliography{Projects-AFI}
-  %%%%%%%%%%%% Appendix %%%%%%%%%%%%
+%%%%%%%%%%%% Appendix %%%%%%%%%%%%
    \begin{landscape} \appendix\label{appen}
   %
   % Age 10.5 Replication
@@ -1048,7 +1102,7 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %%%
   %%% Mom Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Mean Joint Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_10}
+  \caption{Joint Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_10}
   \\[-1.8ex]\hline 
   \hline \\[-1.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
@@ -1061,7 +1115,7 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %%%
   %%% Mom -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen1 Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_10}
+  \caption{Gen1 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_10}
   \\[-1.8ex]\hline 
   \hline \\[-1.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
@@ -1071,7 +1125,7 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %%%
   %%% Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen2 Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_10}
+  \caption{Gen2 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_10}
   \\[-1.8ex]\hline 
   \hline \\[-1.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
@@ -1081,7 +1135,7 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %%%
   %%% Mom Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Joint Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_10}
+  \caption{Joint Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_10}
   \\[-1.8ex]\hline 
   \hline \\[-1.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
@@ -1114,7 +1168,7 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %%%
   %%% Mom Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Mean Joint Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_11}
+  \caption{Joint Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_11}
   \\[-1.8ex]\hline 
   \hline \\[-1.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
@@ -1127,7 +1181,7 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %%%
   %%% Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen1 Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_11}
+  \caption{Gen1 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_11}
   \\[-1.8ex]\hline 
   \hline \\[-1.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
@@ -1137,7 +1191,7 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %%%
   %%% Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen2 Dif Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_11}
+  \caption{Gen2 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_11}
   \\[-1.8ex]\hline 
   \hline \\[-1.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
@@ -1147,7 +1201,7 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %%%
   %%% Mom Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Dif Joint Intelligence $\rightarrow$ Gen2 Dif AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_11}
+  \caption{Joint Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_11}
   \\[-1.8ex]\hline 
   \hline \\[-1.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
@@ -1156,4 +1210,78 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   \end{longtable}
   \end{landscape}
   %
+\begin{landscape}
+\noindent\begin{minipage}{\linewidth}
+\captionof{figure}{Generation 1: Age at First Intercourse vs. Intelligence}
+\label{plot_gen1_afi}
+\begin{center}
+<<plot_gen1_afi,fig=TRUE,echo=FALSE,cache=FALSE,echo=FALSE, fig.height=5*.8, fig.width=5,out.width=".8\\paperwidth",warning=FALSE>>=
+library(ggplot2)
+library(gtable)
+library(grid)
+library(gridExtra)
+library(NlsyLinks)
+# Gen 1 Plot
+dsLinking <- subset(Links79Pair, RelationshipPath=="Gen1Housemates")
+dsOutcomes <- Gen1AFIConcor
+dsOutcomes$Sex<-testretest$SEX
+dsOutcomes$SubjectTag <-dsOutcomes$MCASEID*100
+dsD <- CreatePairLinksDoubleEntered(
+outcomeDataset = dsOutcomes,
+linksPairDataset = dsLinking,
+outcomeNames = c("Intel_G1","AFI_G1","Sex"))
+dsD$DIF_G<-#abs
+  (dsD$Intel_G1_S1-dsD$Intel_G1_S2)
+dsD$DIF_A<-#abs
+  (dsD$AFI_G1_S1-dsD$AFI_G1_S2)
+#m<-data.frame(Gen2AFIConcor$Intel_G2,Gen2AFIConcor$AFI_G2)
+
+shading<-c("navy","dodgerblue4","dodgerblue3","dodgerblue2","lightsteelblue1","dodgerblue2","dodgerblue3","dodgerblue4","navy")
+shading<-c("firebrick4",#"firebrick3","firebrick2",
+           "firebrick1",#"mediumvioletred",
+             "dodgerblue1",#"dodgerblue2","dodgerblue3",
+           "dodgerblue4")
+max_val <- max(abs(dsD$DIF_G),na.rm=TRUE)
+values <- seq(-max_val, max_val, length = length(shading))
+##############
+ggplot(dsD, aes(y=AFI_G1_S1, x=Intel_G1_S1,colour=(DIF_G))) + 
+  geom_point(size =1,alpha = 1,na.rm=TRUE,position = position_jitter(w = 0.1, h = 0.5)) +
+  scale_colour_gradientn(name="Sibling \nDifferences \nin AFQT",colours=shading,values=values,rescaler = function(x, ...) x, oob = identity)+
+  theme_min(size=10) +
+     theme(plot.title=element_text(size=16,face="bold"))+ 
+  ylab("Age at First Intercourse") +
+  xlab("AFQT (Z Score)") #+
+#ggtitle("Generation 1:\n Age at First Intercourse vs. Intelligence")
+
+@
+\end{center}
+\end{minipage}
+\noindent\begin{minipage}{\linewidth}
+\captionof{figure}{Generation 2: Age at First Intercourse vs. Intelligence}
+\label{plot_gen2_afi}
+\begin{center}
+<<plot_gen2_afi,fig=TRUE,echo=FALSE,cache=FALSE,echo=FALSE, fig.height=5*.8, fig.width=5,out.width=".8\\paperwidth",warning=FALSE>>=
+
+# Gen 2 Plot
+dsLinking <- subset(Links79Pair, RelationshipPath=="Gen1Housemates")
+dsOutcomes <- Gen2AFIConcor_3
+
+dsOutcomes$SubjectTag <-dsOutcomes$MCASEID*100
+dsOutcomes<-dsOutcomes[!is.na(dsOutcomes$SubjectTag),]
+ds2D <-dsOutcomes#
+max_val <- max(abs(ds2D$Intel_G1),na.rm=TRUE)
+values <- seq(-max_val, max_val, length = length(shading))
+##############
+ggplot(ds2D, aes(y=AFI_G2, x=Intel_G2,colour=(Intel_G1))) + 
+  geom_point(size =1,alpha = 1,na.rm=TRUE,position = position_jitter(w = 0.01, h = 0.5)) +
+  scale_color_gradientn(values=values,rescaler = function(x, ...) x, oob = identity,name="Maternal\n AFQT",colours=shading)+
+  theme_min(size=10) +
+     theme(plot.title=element_text(size=16,face="bold"))+ 
+  ylab("Age at First Intercourse") +
+  xlab("General Cognitive Ability") #+
+#ggtitle("Generation 1:\n Age at First Intercourse vs. Intelligence")
+
+@
+\end{center}
+\end{minipage}\end{landscape}
 \end{document}

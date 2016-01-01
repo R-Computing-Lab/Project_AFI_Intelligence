@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  12 DEC 2015 19:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.26)  1 JAN 2016 10:23
 entering extended mode
 **Manuscript.tex
 ("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Manuscript\Manuscript.tex"
@@ -1589,7 +1589,7 @@ ct_empreport.txt") [2]
 ! Argument of \@sect has an extra }.
 <inserted text> 
                 \par 
-l.78 
+l.76 
      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -1604,7 +1604,7 @@ C.
 ! Paragraph ended before \@sect was complete.
 <to be read again> 
                    \par 
-l.78 
+l.76 
      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1612,12 +1612,12 @@ My plan is to forget the whole thing and hope for the best.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 78.
+(hyperref)                removing `\\' on input line 76.
 
 ! Argument of \@sect has an extra }.
 <inserted text> 
                 \par 
-l.78 
+l.76 
      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -1632,7 +1632,7 @@ C.
 ! Paragraph ended before \@sect was complete.
 <to be read again> 
                    \par 
-l.78 
+l.76 
      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1641,60 +1641,25 @@ My plan is to forget the whole thing and hope for the best.
 
 ("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\intr
 oduction.tex" [3] [4] [5]
-
-Package natbib Warning: Citation `rodgers2014birth' on page 6 undefined on inpu
-t line 24.
-
-[6]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 31.
-
-! Argument of \reserved@a has an extra }.
-<inserted text> 
-                \par 
-l.31 ...ty to separate these sources of variance.}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
 Runaway argument?
-{\def \reserved@a *{\nobreak \@xcentercr }\reserved@a }\def \reserved@b \ETC.
-! Paragraph ended before \reserved@a was complete.
+{geronimus1992socioeconomic, and is correlated with intelligence \citep \ETC.
+! Paragraph ended before \@citex was complete.
 <to be read again> 
                    \par 
-l.31 ...ty to separate these sources of variance.}
-                                                  
+l.24 
+     
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
+[6]
 
-Package natbib Warning: Citation `geronimus1992socioeconomic' on page 7 undefin
-ed on input line 31.
-
-
-Package natbib Warning: Citation `murray1998income' on page 7 undefined on inpu
-t line 31.
-
-
-Package natbib Warning: Citation `Neisser1996' on page 7 undefined on input lin
-e 31.
-
-
-Package natbib Warning: Citation `Strenze2007' on page 7 undefined on input lin
-e 31.
-
-
-Package natbib Warning: Citation `mercy1982familial' on page 7 undefined on inp
-ut line 31.
+Package natbib Warning: Citation `rodgers2014birth' on page 7 undefined on inpu
+t line 25.
 
 [7])
 ("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\curr
-ent_study.tex" [8] [9])
+ent_study.tex" [8]) [9]
 ("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\desi
 gn.tex"
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1709,7 +1674,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\tetr
 ad.tex" [12])
 ("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\AFI.
-tex" [13]
+tex"
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
@@ -1735,147 +1700,55 @@ You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
+[13]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 12.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 12.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 12.
-[14]
+
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
+l.19 \hline
+           
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
+l.20 &
+       \multicolumn{2}{c}{AFI} \\
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
+l.20 &
+       \multicolumn{2}{c}{AFI} \\
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-<recently read> \noalign 
-                         
-l.18 ...les/table_summary_stats_AFIRACEGENDER.tex}
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-) [15]
+[14]) [15]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 116.
+(caption)                particular \caption on input line 117.
 See the caption package documentation for explanation.
 
 
-Package xcolor Warning: Incompatible color definition on input line 120.
+Package xcolor Warning: Incompatible color definition on input line 121.
 
-<figure/plot_afi_by_race_sex-1.pdf, id=595, 361.35pt x 216.81pt>
+<figure/plot_afi_by_race_sex-1.pdf, id=597, 361.35pt x 289.08pt>
 File: figure/plot_afi_by_race_sex-1.pdf Graphic file (type pdf)
 
 <use figure/plot_afi_by_race_sex-1.pdf>
 Package pdftex.def Info: figure/plot_afi_by_race_sex-1.pdf used on input line 1
-21.
-(pdftex.def)             Requested size: 478.00812pt x 286.80872pt.
-
-Overfull \hbox (25.04022pt too wide) in paragraph at lines 121--122
- [] 
- []
-
+22.
+(pdftex.def)             Requested size: 388.37646pt x 310.702pt.
 
 ("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\inte
 lligence.tex" [16] [17 <C:/Dropbox/Lab/Research/Projects/Current/NLSY AFI/Manus
@@ -1907,9 +1780,9 @@ So I'll assume that you meant to type \cr instead.
 
 ) [19]
 ("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\resu
-lts.tex")
+lts.tex") [20]
 ("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\resu
-lts_between.tex" [20]
+lts_between.tex"
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
@@ -1934,6 +1807,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 5.
 
+[21]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 7.
@@ -1946,7 +1820,174 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 7.
 
-[21] [22] [23
+[22]
+! Undefined control sequence.
+l.15 \SearchList
+                {\partialinput{10}{22}{../Common/content/tables/table_Mean_M...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.15 ...ean_Mom_Intelligence_Mean_Child_AFI_9.tex}
+                                                  }{Observations}{Sample}
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Misplaced \crcr.
+\endlongtable ->\crcr 
+                      \noalign {\let \LT@entry \LT@entry@chop \xdef \LT@save...
+l.16 \end{longtable}
+                    \pagebreak
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \noalign.
+\endlongtable ->\crcr \noalign 
+                               {\let \LT@entry \LT@entry@chop \xdef \LT@save...
+l.16 \end{longtable}
+                    \pagebreak
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \crcr.
+\LT@echunk ->\crcr 
+                   \LT@save@row \cr \egroup \global \setbox \@ne \lastbox \u...
+l.16 \end{longtable}
+                    \pagebreak
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> &
+            
+l.16 \end{longtable}
+                    \pagebreak
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
+                                                  \ifnum #1=\c@LT@chunks \el...
+l.16 \end{longtable}
+                    \pagebreak
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced alignment tab character &.
+<argument> &
+            
+l.16 \end{longtable}
+                    \pagebreak
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
+                                                  \ifnum #1=\c@LT@chunks \el...
+l.16 \end{longtable}
+                    \pagebreak
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced alignment tab character &.
+<argument> &
+            
+l.16 \end{longtable}
+                    \pagebreak
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
+                                                  \ifnum #1=\c@LT@chunks \el...
+l.16 \end{longtable}
+                    \pagebreak
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced alignment tab character &.
+<argument> &
+            
+l.16 \end{longtable}
+                    \pagebreak
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
+                                                  \ifnum #1=\c@LT@chunks \el...
+l.16 \end{longtable}
+                    \pagebreak
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \cr.
+\LT@echunk ->\crcr \LT@save@row \cr 
+                                    \egroup \global \setbox \@ne \lastbox \u...
+l.16 \end{longtable}
+                    \pagebreak
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! You can't use `\lastbox' in vertical mode.
+<recently read> \lastbox 
+                         
+l.16 \end{longtable}
+                    \pagebreak
+Sorry...I usually can't take things from the current page.
+This \lastbox will therefore be void.
+
+! You can't use `\unskip' in vertical mode.
+\LT@echunk ...lobal \setbox \@ne \lastbox \unskip 
+                                                  \egroup 
+l.16 \end{longtable}
+                    \pagebreak
+Sorry...I usually can't take things from the current page.
+Try `I\vskip-\lastskip' instead.
+
+! Extra }, or forgotten \endgroup.
+\LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
+                                                  
+l.16 \end{longtable}
+                    \pagebreak
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[23
 
 ] [24] [25])
 ("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Common\content\writing\resu
@@ -2043,7 +2084,7 @@ l.11 ...re proximal as the causal explanation -–
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-) [33]
+[33])
 ("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Manuscript\Manuscript.bbl"
 [34] [35
 
@@ -2052,7 +2093,7 @@ on with the same identifier (name{table.1}) has been already used, duplicate ig
 nored
 <to be read again> 
                    \relax 
-l.173   \end{longtable}
+l.174   \end{longtable}
                        \pagebreak [45
 
 
@@ -2060,101 +2101,148 @@ l.173   \end{longtable}
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.183   \end{longtable}
+l.184   \end{longtable}
                        \pagebreak [46]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.193   \end{longtable}
+l.194   \end{longtable}
                        \pagebreak [47]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.206   \end{longtable}
+l.207   \end{longtable}
                        \pagebreak [48]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.216   \end{longtable}
+l.217   \end{longtable}
                        \pagebreak [49]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.226   \end{longtable}
+l.227   \end{longtable}
                         [50]pdfTeX warning (ext4): destination with the same id
 entifier (name{table.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.239   \end{longtable}
+l.240   \end{longtable}
                        \pagebreak [51
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{table.2}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.249   \end{longtable}
+l.250   \end{longtable}
                        \pagebreak [52]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.259   \end{longtable}
+l.260   \end{longtable}
                        \pagebreak [53]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.272   \end{longtable}
+l.273   \end{longtable}
                        \pagebreak [54]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.282   \end{longtable}
+l.283   \end{longtable}
                        \pagebreak [55]pdfTeX warning (ext4): destination with t
 he same identifier (name{table.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.292   \end{longtable}
-                       
-Package atenddvi Info: Last page = 56.
- [56] AED endfloat: Processing end Figures and Tables
+l.293   \end{longtable}
+                        [56]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 298.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.298 ...ge at First Intercourse vs. Intelligence}
+                                                  
+
+Package xcolor Warning: Incompatible color definition on input line 302.
+
+<figure/plot_gen1_afi-1.pdf, id=884, 361.35pt x 289.08pt>
+File: figure/plot_gen1_afi-1.pdf Graphic file (type pdf)
+
+<use figure/plot_gen1_afi-1.pdf>
+Package pdftex.def Info: figure/plot_gen1_afi-1.pdf used on input line 303.
+(pdftex.def)             Requested size: 478.00812pt x 382.41162pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 309.
+See the caption package documentation for explanation.
+
+
+Package xcolor Warning: Incompatible color definition on input line 313.
+
+<figure/plot_gen2_afi-1.pdf, id=885, 361.35pt x 289.08pt>
+File: figure/plot_gen2_afi-1.pdf Graphic file (type pdf)
+
+<use figure/plot_gen2_afi-1.pdf>
+Package pdftex.def Info: figure/plot_gen2_afi-1.pdf used on input line 314.
+(pdftex.def)             Requested size: 478.00812pt x 382.41162pt.
+ [57
+
+
+ <C:/Dropbox/Lab/Research/Projects/Current/NLSY AFI/Manuscript/figure/plot_gen1
+_afi-1.pdf>]
+Package atenddvi Info: Last page = 58.
+ [58 <C:/Dropbox/Lab/Research/Projects/Current/NLSY AFI/Manuscript/figure/plot_
+gen2_afi-1.pdf>]
+AED endfloat: Processing end Figures and Tables
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 295.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 319.
 ("C:\Dropbox\Lab\Research\Projects\Current\NLSY AFI\Manuscript\Manuscript.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
 Package rerunfilecheck Info: File `Manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 1EDA53E0EA24CCBBA7ED8FB0CA6EA040;2910.
+(rerunfilecheck)             Checksum: 7FF69CD6166920CE438FCA90CE37675C;2906.
 
 LaTeX Warning: There were undefined references.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 23 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 33122 strings out of 493921
- 623393 string characters out of 3147269
- 684125 words of memory out of 3000000
- 35537 multiletter control sequences out of 15000+200000
- 84386 words of font info for 84 fonts, out of 3000000 for 9000
+ 33114 strings out of 493921
+ 623076 string characters out of 3147269
+ 685500 words of memory out of 3000000
+ 35522 multiletter control sequences out of 15000+200000
+ 88649 words of font info for 85 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 69i,12n,80p,10373b,742s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.en
-c}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/smaso
-_000/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}<C:/Use
-rs/smaso_000/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/inconsolata/Inconsol
-ata-zi4r.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
-lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Manuscript.pdf (56 pages, 429819 bytes).
+ 69i,12n,58p,10373b,826s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{
+C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKT
+eX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
+ps/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{
+C:/Users/smaso_000/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/inconsolata/i4-t1
+-0.enc}<C:/Users/smaso_000/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/incons
+olata/Inconsolata-zi4r.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
+mbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lms
+y10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
+Output written on Manuscript.pdf (58 pages, 1317957 bytes).
 PDF statistics:
- 972 PDF objects out of 1000 (max. 8388607)
- 211 named destinations out of 1000 (max. 500000)
- 338 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1003 PDF objects out of 1200 (max. 8388607)
+ 216 named destinations out of 1000 (max. 500000)
+ 348 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -219,7 +219,7 @@ Boislard, P\BPBI M\BPBI A.%
   friends-related and contextual predictors of early sexual
   intercourse.}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of adolescence}{34}{2}{289--300}.
+\APACjournalVolNumPages{Journal of Adolescence}{34}{2}{289--300}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -239,9 +239,9 @@ Bouchard, T\BPBI J.%
 \newblock
 \APACrefYearMonthDay{2004}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Genetic Influence on Human Psychological Traits. A
-  Survey}} {{Genetic Influence on Human Psychological Traits. A
-  Survey}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Genetic influence on human psychological traits: A
+  survey}} {{Genetic influence on human psychological traits: A
+  survey}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Current Directions in Psychological
   Science}{13}{4}{148--151}.
@@ -275,6 +275,34 @@ Bozon, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Brooks-Gunn%
+\ \BBA {} Furstenberg%
+}{%
+Brooks-Gunn%
+\ \BBA {} Furstenberg%
+}{%
+{\protect \APACyear {1989}}%
+}]{%
+Brooks-Gunn1989}
+\APACinsertmetastar {%
+Brooks-Gunn1989}%
+\begin{APACrefauthors}%
+Brooks-Gunn, J.%
+\BCBT {}\ \BBA {} Furstenberg, F\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1989}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Adolescent sexual behavior}} {{Adolescent sexual
+  behavior}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Psychologist}{44}{2}{249--257}.
+\newblock
+\begin{APACrefDOI} \doi{10.1037/0003-066X.44.2.249} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Buhi%
 \ \BBA {} Goodson%
 }{%
@@ -294,9 +322,9 @@ Buhi, E\BPBI R.%
 \newblock
 \APACrefYearMonthDay{2007}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Predictors of Adolescent Sexual Behavior and Intention:
-  A Theory-Guided Systematic Review}} {{Predictors of Adolescent Sexual
-  Behavior and Intention: A Theory-Guided Systematic Review}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Predictors of adolescent sexual behavior and intention:
+  A theory-guided systematic review}} {{Predictors of adolescent sexual
+  behavior and intention: A theory-guided systematic review}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Adolescent Health}{40}{1}{4--21}.
 \newblock
@@ -352,11 +380,10 @@ Der, G.%
 \newblock
 \APACrefYearMonthDay{2009}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Intelligence The association between IQ in adolescence
-  and a range of health outcomes at 40 in the 1979 US National Longitudinal
-  Study of Youth}} {{Intelligence The association between IQ in adolescence and
-  a range of health outcomes at 40 in the 1979 US National Longitudinal Study
-  of Youth}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{The association between IQ in adolescence and a range
+  of health outcomes at 40 in the 1979 US National Longitudinal Study of
+  Youth}} {{The association between IQ in adolescence and a range of health
+  outcomes at 40 in the 1979 US National Longitudinal Study of Youth}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Intelligence}{37}{6}{573--580}.
 \newblock
@@ -410,9 +437,9 @@ DiBlasio, F\BPBI A.%
 \newblock
 \APACrefYearMonthDay{1990}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Adolescent Sexual Behavior Multivariate Analysis of a
-  Social Learning Model}} {{Adolescent Sexual Behavior Multivariate Analysis of
-  a Social Learning Model}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Adolescent sexual behavior: Multivariate analysis of a
+  social learning model}} {{Adolescent sexual behavior: Multivariate analysis
+  of a social learning model}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Adolescent Research}{5}{4}{449--466}.
 \PrintBackRefs{\CurrentBib}
@@ -440,7 +467,7 @@ D'Onofrio, B\BPBI M.%
 {\BBOQ}\APACrefatitle {{Biosocial Influences on the Family: A Decade Review.}}
   {{Biosocial Influences on the Family: A Decade Review.}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of Marriage and the Family}{72}{3}{762--782}.
+\APACjournalVolNumPages{Journal of Marriage and Family}{72}{3}{762--782}.
 \newblock
 \begin{APACrefDOI} \doi{10.1111/j.1741-3737.2010.00729.x} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -653,10 +680,10 @@ Harden, K\BPBI P.%
 \newblock
 \APACrefYearMonthDay{2012}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{True Love Waits? A Sibling-Comparison Study of Age at
-  First Sexual Intercourse and Romantic Relationships in Young Adulthood}}
-  {{True Love Waits? A Sibling-Comparison Study of Age at First Sexual
-  Intercourse and Romantic Relationships in Young Adulthood}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{True love waits? A sibling-comparison study of age at
+  first sexual intercourse and romantic relationships in young adulthood}}
+  {{True love waits? A sibling-comparison study of age at first sexual
+  intercourse and romantic relationships in young adulthood}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Psychological Science}{23}{11}{1324--36}.
 \newblock
@@ -685,7 +712,7 @@ Harden, K\BPBI P.%
   on adolescent sexual behavior: Why genes matter for environmentally oriented
   researchers.}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Psychological bulletin}{140}{2}{434--65}.
+\APACjournalVolNumPages{Psychological Bulletin}{140}{2}{434--65}.
 \newblock
 \begin{APACrefDOI} \doi{10.1037/a0033564} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -710,9 +737,9 @@ Harden, K\BPBI P.%
 \newblock
 \APACrefYearMonthDay{2011}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Why Don't Smart Teens Have Sex? A Behavioral Genetic
-  Approach}} {{Why Don't Smart Teens Have Sex? A Behavioral Genetic
-  Approach}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Why don't smart teens have sex? A behavioral genetic
+  approach}} {{Why don't smart teens have sex? A behavioral genetic
+  approach}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Child Development}{82}{4}{1327--1344}.
 \newblock
@@ -850,13 +877,13 @@ Hutchinson, M\BPBI K.%
 \newblock
 \APACrefYearMonthDay{2003}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{The role of mother--daughter sexual risk communication
-  in reducing sexual risk behaviors among urban adolescent females: a
-  prospective study}} {{The role of mother--daughter sexual risk communication
-  in reducing sexual risk behaviors among urban adolescent females: a
+{\BBOQ}\APACrefatitle {{The role of mother-daughter sexual risk communication
+  in reducing sexual risk behaviors among urban adolescent females: A
+  prospective study}} {{The role of mother-daughter sexual risk communication
+  in reducing sexual risk behaviors among urban adolescent females: A
   prospective study}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of adolescent health}{33}{2}{98--107}.
+\APACjournalVolNumPages{Journal of Adolescent Health}{33}{2}{98--107}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -905,7 +932,7 @@ Kann, L.%
 , Kinchen, S.%
 , Shanklin, S\BPBI L.%
 , Flint, K\BPBI H.%
-, Kawkins, J.%
+, Hawkins, J.%
 , Harris, W\BPBI A.%
 \BDBL {}Zaza, S.%
 \end{APACrefauthors}%
@@ -913,8 +940,8 @@ Kann, L.%
 \newblock
 \APACrefYearMonthDay{2014}{}{}.
 \newblock
-\APACrefbtitle {{Youth risk behavior surveillance--United States, 2013}}
-  {{Youth risk behavior surveillance--United States, 2013}}\
+\APACrefbtitle {{Youth risk behavior surveillance -- United States, 2013}}
+  {{Youth risk behavior surveillance -- United States, 2013}}\
   \APACbVolEdTR{\BVOL~63}{\BTR{}\ \BNUM~4}.
 \newblock
 \begin{APACrefDOI} \doi{ss6304a1 [pii]} \end{APACrefDOI}
@@ -943,10 +970,10 @@ Kass, R\BPBI A.%
 \newblock
 \APACrefYearMonthDay{1982}{}{}.
 \newblock
-\APACrefbtitle {{Factor Structer of the Armed Services Vocational Aptitude
-  Battery (ASVAB ), Forms 8, 9, and 10: 1981 Army Applicant Sample}} {{Factor
-  Structer of the Armed Services Vocational Aptitude Battery (ASVAB ), Forms 8,
-  9, and 10: 1981 Army Applicant Sample}}\ \APACbVolEdTR{}{\BTR{}}.
+\APACrefbtitle {{Factor structure of the Armed Services Vocational Aptitude
+  Battery (ASVAB) Forms 8, 9, and 10: 1981 Army applicant sample}} {{Factor
+  structure of the Armed Services Vocational Aptitude Battery (ASVAB) Forms 8,
+  9, and 10: 1981 Army applicant sample}}\ \APACbVolEdTR{}{\BTR{}}.
 \newblock
 \APACaddressInstitution{}{US Army Research Institute for the Behavioral and
   Social Sciences}.
@@ -973,7 +1000,7 @@ Kenny, D\BPBI A.%
 \newblock
 \APACrefYear{2006}.
 \newblock
-\APACrefbtitle {{Dyadic Data Analysis}} {{Dyadic Data Analysis}}.
+\APACrefbtitle {{Dyadic data analysis}} {{Dyadic data analysis}}.
 \newblock
 \APACaddressPublisher{}{Guilford Press}.
 \PrintBackRefs{\CurrentBib}
@@ -1007,6 +1034,33 @@ Kenny, D\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Kinsey%
+, Pomeroy%
+\BCBL {}\ \BBA {} Martin%
+}{%
+Kinsey%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1948}}%
+}]{%
+kinsey1948sexual}
+\APACinsertmetastar {%
+kinsey1948sexual}%
+\begin{APACrefauthors}%
+Kinsey, A\BPBI C.%
+, Pomeroy, W\BPBI B.%
+\BCBL {}\ \BBA {} Martin, C\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1948}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Sexual behavior in the human male}} {{Sexual behavior
+  in the human male}}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Kirby%
 }{%
 Kirby%
@@ -1027,7 +1081,7 @@ Kirby, D.%
   contraceptive use, and pregnancy}} {{Antecedents of adolescent initiation of
   sex, contraceptive use, and pregnancy}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{American journal of health behavior}{26}{6}{473--485}.
+\APACjournalVolNumPages{American Journal of Health Behavior}{26}{6}{473--485}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1051,7 +1105,7 @@ Kirby, D.%
   sex, pregnancy, and childbearing}} {{Effective approaches to reducing
   adolescent unprotected sex, pregnancy, and childbearing}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of sex research}{39}{1}{51--57}.
+\APACjournalVolNumPages{Journal of Sex Research}{39}{1}{51--57}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1074,10 +1128,10 @@ Lahey, B\BPBI B.%
 \newblock
 \APACrefYearMonthDay{2010}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{All in the Family: Comparing Siblings to Test Causal
-  Hypotheses Regarding Environmental Influences on Behavior}} {{All in the
-  Family: Comparing Siblings to Test Causal Hypotheses Regarding Environmental
-  Influences on Behavior}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{All in the family: Comparing siblings to test causal
+  hypotheses regarding environmental influences on behavior}} {{All in the
+  family: Comparing siblings to test causal hypotheses regarding environmental
+  influences on behavior}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Current Directions in Psychological
   Science}{19}{5}{319--323}.
@@ -1139,11 +1193,11 @@ Leitenberg, H.%
 \newblock
 \APACrefYearMonthDay{2000}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{A Statewide Survey of Age at First Intercourse for
-  Adolescent Females and Age of Their Male Partners: Relation to Other Risk
-  Behaviors and Statutory Rape Implications}} {{A Statewide Survey of Age at
-  First Intercourse for Adolescent Females and Age of Their Male Partners:
-  Relation to Other Risk Behaviors and Statutory Rape Implications}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{A statewide survey of age at first intercourse for
+  adolescent females and age of their male partners: Relation to other risk
+  behaviors and statutory rape implications}} {{A statewide survey of age at
+  first intercourse for adolescent females and age of their male partners:
+  Relation to other risk behaviors and statutory rape implications}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Archives of Sexual Behavior}{29}{3}{203--215}.
 \newblock
@@ -1167,10 +1221,10 @@ Lord, F\BPBI M.%
 \newblock
 \APACrefYearMonthDay{1963}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Elementary Models for Measuring Change}} {{Elementary
-  Models for Measuring Change}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Elementary models for measuring change}} {{Elementary
+  models for measuring change}}.{\BBCQ}
 \newblock
-\BIn{} C\BPBI W.~Harris\ (\BED), \APACrefbtitle {Problems in Measuring Change}
+\BIn{} C\BPBI W.~Harris\ (\BED), \APACrefbtitle {Problems in measuring change}
   {Problems in measuring change}\ (\BPGS\ 22--38).
 \newblock
 \APACaddressPublisher{Madison}{University of Wisconsin Press}.
@@ -1273,10 +1327,10 @@ Mathews, J\BPBI J.%
 \newblock
 \APACrefYearMonthDay{1977}{}{}.
 \newblock
-\APACrefbtitle {{Analysis Aptitude Test for Selection of Airmen for the Radio
-  Communications Analysis Specialist Course: Development and Validation}}
-  {{Analysis Aptitude Test for Selection of Airmen for the Radio Communications
-  Analysis Specialist Course: Development and Validation}}\
+\APACrefbtitle {{Analysis Aptitude Test for selection of airmen for the radio
+  communications analysis specialist course: Development and validation}}
+  {{Analysis Aptitude Test for selection of airmen for the radio communications
+  analysis specialist course: Development and validation}}\
   \APACbVolEdTR{}{\BTR{}}.
 \newblock
 \APACaddressInstitution{Brooks Air Force Base, Texas}{Air Force Human Resources
@@ -1303,8 +1357,8 @@ Mayberry, P\BPBI W.%
 \newblock
 \APACrefYearMonthDay{1992}{}{}.
 \newblock
-\APACrefbtitle {{Computing AFQT Scores from Historical Data}} {{Computing AFQT
-  Scores from Historical Data}}\ \APACbVolEdTR{}{\BTR{}}.
+\APACrefbtitle {{Computing AFQT scores from historical data}} {{Computing AFQT
+  scores from historical data}}\ \APACbVolEdTR{}{\BTR{}}.
 \newblock
 \APACaddressInstitution{}{DTIC Document}.
 \PrintBackRefs{\CurrentBib}
@@ -1356,9 +1410,9 @@ Meredith, K\BPBI M.%
 \APACrefYear{2013}.
 \unskip\
 \newblock
-\APACrefbtitle {{Is AFI All in the Family? A Multi-Level Family Study of Age of
-  First Intercourse}} {{Is AFI All in the Family? A Multi-Level Family Study of
-  Age of First Intercourse}}\ \APACtypeAddressSchool {Dissertation}{}{}.
+\APACrefbtitle {{Is AFI all in the family? A multi-level family study of age of
+  first intercourse}} {{Is AFI all in the family? A multi-level family study of
+  age of first intercourse}}\ \APACtypeAddressSchool {Dissertation}{}{}.
 \unskip\
 \newblock
 \APACaddressSchool {}{University of Oklahoma}.
@@ -1387,10 +1441,10 @@ Meschke, L\BPBI L.%
 \newblock
 \APACrefYearMonthDay{2000}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Demographic, Biological, Psychological, and Social
-  Predictors of the Timing of First Intercourse}} {{Demographic, Biological,
-  Psychological, and Social Predictors of the Timing of First
-  Intercourse}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Demographic, biological, psychological, and social
+  predictors of the timing of first intercourse}} {{Demographic, biological,
+  psychological, and social predictors of the timing of first
+  intercourse}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Research on Adolescence}{10}{3}{315--338}.
 \PrintBackRefs{\CurrentBib}
@@ -1528,9 +1582,9 @@ Muth{\'{e}}n, L\BPBI K.%
 \newblock
 \APACrefYearMonthDay{2014}{}{}.
 \newblock
-\APACrefbtitle {{Mplus: Statistical Analyses with Latent Variables. User's
-  Guide Version 7.3}.} {{Mplus: Statistical Analyses with Latent Variables.
-  User's Guide Version 7.3}.}
+\APACrefbtitle {{Mplus: Statistical analyses with latent variables. User's
+  guide version 7.3}.} {{Mplus: Statistical analyses with latent variables.
+  User's guide version 7.3}.}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1597,7 +1651,7 @@ Palmer%
 , Hartke%
 , Ree%
 , Welsh%
-\BCBL {}\ \BBA {} {Valentine, Jr.}%
+\BCBL {}\ \BBA {} Valentine%
 }{%
 Palmer%
 \ \protect \BOthers {.}}{%
@@ -1611,15 +1665,15 @@ Palmer, P.%
 , Hartke, D\BPBI D.%
 , Ree, M\BPBI J.%
 , Welsh, J\BPBI R.%
-\BCBL {}\ \BBA {} {Valentine, Jr.}, L\BPBI D.%
+\BCBL {}\ \BBA {} Valentine, L\BPBI D.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{1988}{}{}.
 \newblock
 \APACrefbtitle {{Armed Services Vocational Aptitude Battery (ASVAB): Alternate
-  Forms Reliability (Forms 8, 9, 10, and 11)}} {{Armed Services Vocational
-  Aptitude Battery (ASVAB): Alternate Forms Reliability (Forms 8, 9, 10, and
+  forms reliability (Forms 8, 9, 10, and 11)}} {{Armed Services Vocational
+  Aptitude Battery (ASVAB): Alternate forms reliability (Forms 8, 9, 10, and
   11)}}\ \APACbVolEdTR{}{\BTR{}}.
 \newblock
 \APACaddressInstitution{Brooks Air Force Base, Texas}{Air Force Human Resources
@@ -1678,8 +1732,8 @@ Petersen, A\BPBI C.%
   sample case of early adolescence.}} {{The nature of biological-psychosocial
   interactions: The sample case of early adolescence.}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Biological-psychosocial interactions in early
-  adolescence. Child Psychology.}{}{}{35--61}.
+\APACjournalVolNumPages{Biological-Psychosocial interactions in early
+  adolescence. Child psychology.}{}{}{35--61}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1729,9 +1783,9 @@ Raffaelli, M.%
 \newblock
 \APACrefYearMonthDay{2003}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Sexual risk taking in adolescence: the role of
+{\BBOQ}\APACrefatitle {{Sexual risk taking in adolescence: The role of
   self-regulation and attraction to risk.}} {{Sexual risk taking in
-  adolescence: the role of self-regulation and attraction to risk.}}{\BBCQ}
+  adolescence: The role of self-regulation and attraction to risk.}}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Developmental Psychology}{39}{6}{1036}.
 \PrintBackRefs{\CurrentBib}
@@ -1807,8 +1861,8 @@ Rodgers, J\BPBI L.%
   transitions in adolescence}}.{\BBCQ}
 \newblock
 \BIn{} J\BPBI A.~Graber, J.~Brooks-Gunn\BCBL {}\ \BBA {} A\BPBI C.~Petersen\
-  (\BEDS), \APACrefbtitle {Transitions Through Adolescence: Interpersonal
-  Domains and Context} {Transitions through adolescence: Interpersonal domains
+  (\BEDS), \APACrefbtitle {Transitions through adolescence: Interpersonal
+  domains and context} {Transitions through adolescence: Interpersonal domains
   and context}\ (\BPGS\ 85--110).
 \newblock
 \APACaddressPublisher{Mahwah, New Jersey}{}.
@@ -1835,7 +1889,7 @@ Rodgers, J\BPBI L.%
   admixture hypothesis, revived.}} {{What causes birth order-intelligence
   patterns? The admixture hypothesis, revived.}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{The American psychologist}{56}{6-7}{505--510}.
+\APACjournalVolNumPages{American Psychologist}{56}{6-7}{505--510}.
 \newblock
 \begin{APACrefDOI} \doi{10.1037/0003-066X.56.6-7.505} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -1845,7 +1899,7 @@ Rodgers%
 \ \protect \BOthers {.}}{%
 Rodgers%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2015}}%
+{\protect \APACyear {2016}}%
 }]{%
 nlsylinksbgpaper}
 \APACinsertmetastar {%
@@ -1861,12 +1915,14 @@ Rodgers, J\BPBI L.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2015}{}{}.
+\APACrefYearMonthDay{2016}{}{}.
 \newblock
-\APACrefbtitle {{The NLSYKinship Links: Using the NLSY79 and NLSY-Children Data
-  to Conduct Genetically-Informed and Family-Oriented Research.}} {{The
-  NLSYKinship Links: Using the NLSY79 and NLSY-Children Data to Conduct
-  Genetically-Informed and Family-Oriented Research.}}
+{\BBOQ}\APACrefatitle {{The NLSYKinship Links: Using the NLSY79 and
+  NLSY-Children data to conduct genetically-informed and family-oriented
+  research}} {{The NLSYKinship Links: Using the NLSY79 and NLSY-Children data
+  to conduct genetically-informed and family-oriented research}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Behavior Genetics}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1924,11 +1980,11 @@ Rodgers, J\BPBI L.%
 \newblock
 \APACrefYearMonthDay{2008}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Education and Cognitive Ability as Direct, Mediating,
-  or Spurious Influences on Female Age at First Birth: Behavior Genetic Models
-  Fit to Danish Twin Data}} {{Education and Cognitive Ability as Direct,
-  Mediating, or Spurious Influences on Female Age at First Birth: Behavior
-  Genetic Models Fit to Danish Twin Data}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Education and cognitive ability as direct, mediating,
+  or spurious influences on female age at first birth: Behavior genetic models
+  fit to Danish twin data}} {{Education and cognitive ability as direct,
+  mediating, or spurious influences on female age at first birth: Behavior
+  genetic models fit to Danish twin data}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{American Journal of Sociology}{114}{S1}{S202--32}.
 \newblock
@@ -1958,8 +2014,8 @@ Rodgers, J\BPBI L.%
 \APACrefYearMonthDay{1999}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Nature, nurture and first sexual intercourse in the
-  USA: fitting behavioural genetic models to NLSY kinship data}} {{Nature,
-  nurture and first sexual intercourse in the USA: fitting behavioural genetic
+  USA: Fitting behavioural genetic models to NLSY kinship data}} {{Nature,
+  nurture and first sexual intercourse in the USA: Fitting behavioural genetic
   models to NLSY kinship data}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Biosocial Science}{31}{01}{29--41}.
@@ -1980,7 +2036,7 @@ rodgers1994df}%
 \begin{APACrefauthors}%
 Rodgers, J\BPBI L.%
 , Rowe, D\BPBI C.%
-\BCBL {}\ \BBA {} May, K.%
+\BCBL {}\ \BBA {} May, K\BPBI O.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -2013,9 +2069,9 @@ Rowe, D\BPBI C.%
 \newblock
 \APACrefYearMonthDay{1997}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Poverty and Behavior : Are Environmental Measures
-  Nature and Nurture?}} {{Poverty and Behavior : Are Environmental Measures
-  Nature and Nurture?}}{\BBCQ}
+{\BBOQ}\APACrefatitle {{Poverty and behavior : Are environmental measures
+  nature and nurture?}} {{Poverty and behavior : Are environmental measures
+  nature and nurture?}}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Developmental Review}{17}{3}{358--375}.
 \newblock
@@ -2039,9 +2095,9 @@ Rutter, M.%
 \newblock
 \APACrefYearMonthDay{2007}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Proceeding From Observed Correlation to Causal
-  Inference: The Use of Natural Experiments}} {{Proceeding From Observed
-  Correlation to Causal Inference: The Use of Natural Experiments}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Proceeding from observed correlation to causal
+  inference: The use of natural experiments}} {{Proceeding from observed
+  correlation to causal inference: The use of natural experiments}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Perspectives on Psychological Science}{2}{4}{377--395}.
 \newblock
@@ -2073,6 +2129,38 @@ Santelli, J\BPBI S.%
   behavior, fertility, and sexually transmitted diseases}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of School Health}{62}{7}{271--279}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Santelli%
+, Lindberg%
+, Abma%
+, McNeely%
+\BCBL {}\ \BBA {} Resnick%
+}{%
+Santelli%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2000}}%
+}]{%
+santelli2000adolescent}
+\APACinsertmetastar {%
+santelli2000adolescent}%
+\begin{APACrefauthors}%
+Santelli, J\BPBI S.%
+, Lindberg, L\BPBI D.%
+, Abma, J.%
+, McNeely, C\BPBI S.%
+\BCBL {}\ \BBA {} Resnick, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Adolescent sexual behavior: Estimates and trends from
+  four nationally representative surveys}} {{Adolescent sexual behavior:
+  Estimates and trends from four nationally representative surveys}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Family Planning Perspectives}{}{}{156--194}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2155,8 +2243,8 @@ Spriggs, A\BPBI L.%
   education by early adulthood.}} {{Timing of sexual debut and initiation of
   postsecondary education by early adulthood.}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Perspectives on sexual and reproductive
-  health}{40}{3}{152--161}.
+\APACjournalVolNumPages{Perspectives on Sexual and Reproductive
+  Health}{40}{3}{152--161}.
 \newblock
 \begin{APACrefDOI} \doi{10.1363/4015208} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -2224,8 +2312,8 @@ Udry, J\BPBI R.%
 \newblock
 \APACrefYearMonthDay{1995}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Sociology and biology: what biology do sociologists
-  need to know?}} {{Sociology and biology: what biology do sociologists need to
+{\BBOQ}\APACrefatitle {{Sociology and biology: What biology do sociologists
+  need to know?}} {{Sociology and biology: What biology do sociologists need to
   know?}}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Social Forces}{73}{4}{1267--1278}.
@@ -2248,9 +2336,9 @@ Wechsler, D.%
 \newblock
 \APACrefYear{1974}.
 \newblock
-\APACrefbtitle {{Manual for the Wechsler intelligence scale for children,
-  revised}} {{Manual for the Wechsler intelligence scale for children,
-  revised}}.
+\APACrefbtitle {{Manual for the Wechsler Intelligence Scale for Children,
+  Revised}} {{Manual for the Wechsler Intelligence Scale for Children,
+  Revised}}.
 \newblock
 \APACaddressPublisher{}{Psychological Corporation}.
 \PrintBackRefs{\CurrentBib}
@@ -2268,7 +2356,7 @@ Wellings2001}%
 \begin{APACrefauthors}%
 Wellings, K.%
 , Nanchahal, K.%
-, Macdowall, W.%
+, MacDowall, W.%
 , McManus, S.%
 , Erens, B.%
 , Mercer, C\BPBI H.%
@@ -2309,8 +2397,8 @@ Welsh, J\BPBI R.%
 \APACrefYearMonthDay{1990}{}{}.
 \newblock
 \APACrefbtitle {{Armed Services Vocational Aptitude Battery (ASVAB):
-  Integrative Review of Validity Studies}} {{Armed Services Vocational Aptitude
-  Battery (ASVAB): Integrative Review of Validity Studies}}\
+  Integrative review of validity studies}} {{Armed Services Vocational Aptitude
+  Battery (ASVAB): Integrative review of validity studies}}\
   \APACbVolEdTR{}{\BTR{}}.
 \newblock
 \APACaddressInstitution{Brooks Air Force Base, Texas}{Manpower and Personnel
@@ -2320,7 +2408,7 @@ Welsh, J\BPBI R.%
 \bibitem [\protect \citeauthoryear {%
 Wichman%
 , Rodgers%
-\BCBL {}\ \BBA {} Maccallum%
+\BCBL {}\ \BBA {} MacCallum%
 }{%
 Wichman%
 \ \protect \BOthers {.}}{%
@@ -2332,18 +2420,18 @@ Wichman2006}%
 \begin{APACrefauthors}%
 Wichman, A\BPBI L.%
 , Rodgers, J\BPBI L.%
-\BCBL {}\ \BBA {} Maccallum, R\BPBI C.%
+\BCBL {}\ \BBA {} MacCallum, R\BPBI C.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{2006}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{A Multilevel Approach to the Relationship Between Birth
-  Order and Intelligence}} {{A Multilevel Approach to the Relationship Between
-  Birth Order and Intelligence}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{A multilevel approach to the relationship between birth
+  order and intelligence}} {{A multilevel approach to the relationship between
+  birth order and intelligence}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Personality and social psychology
-  bulletin}{32}{1}{117--127}.
+\APACjournalVolNumPages{Personality and Social Psychology
+  Bulletin}{32}{1}{117--127}.
 \newblock
 \begin{APACrefDOI} \doi{10.1177/0146167205279581} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -2351,7 +2439,7 @@ Wichman, A\BPBI L.%
 \bibitem [\protect \citeauthoryear {%
 Wichman%
 , Rodgers%
-\BCBL {}\ \BBA {} Maccallum%
+\BCBL {}\ \BBA {} MacCallum%
 }{%
 Wichman%
 \ \protect \BOthers {.}}{%
@@ -2363,7 +2451,7 @@ Wichman2007}%
 \begin{APACrefauthors}%
 Wichman, A\BPBI L.%
 , Rodgers, J\BPBI L.%
-\BCBL {}\ \BBA {} Maccallum, R\BPBI C.%
+\BCBL {}\ \BBA {} MacCallum, R\BPBI C.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -2381,7 +2469,7 @@ Wichman, A\BPBI L.%
 
 \bibitem [\protect \citeauthoryear {%
 Wilbourn%
-, {Valentine, Jr.}%
+, Valentine%
 \BCBL {}\ \BBA {} Ree%
 }{%
 Wilbourn%
@@ -2393,7 +2481,7 @@ wilbourn1984}
 wilbourn1984}%
 \begin{APACrefauthors}%
 Wilbourn, J.%
-, {Valentine, Jr.}, L\BPBI D.%
+, Valentine, L\BPBI D.%
 \BCBL {}\ \BBA {} Ree, M\BPBI J.%
 \end{APACrefauthors}%
 \unskip\
@@ -2401,9 +2489,9 @@ Wilbourn, J.%
 \APACrefYearMonthDay{1984}{}{}.
 \newblock
 \APACrefbtitle {{Relationship of the Armed Services Vocational Aptitude Battery
-  (ASVAB) Forms 8, 9, and 10 to Air Force Technical School Final Grades}}
+  (ASVAB) Forms 8, 9, and 10 to Air Force technical school final grades}}
   {{Relationship of the Armed Services Vocational Aptitude Battery (ASVAB)
-  Forms 8, 9, and 10 to Air Force Technical School Final Grades}}\
+  Forms 8, 9, and 10 to Air Force technical school final grades}}\
   \APACbVolEdTR{}{\BTR{}}.
 \newblock
 \APACaddressInstitution{Brooks Air Force Base, Texas}{Manpower and Personnel
@@ -2431,10 +2519,10 @@ Woodward, L\BPBI J.%
 \newblock
 \APACrefYearMonthDay{2001}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Risk Factors and Life Processes Associated with Teenage
-  Pregnancy: Results of a Prospective Study From Birth to 20 Years}} {{Risk
-  Factors and Life Processes Associated with Teenage Pregnancy: Results of a
-  Prospective Study From Birth to 20 Years}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Risk factors and life processes associated with teenage
+  pregnancy: Results of a prospective study from birth to 20 years}} {{Risk
+  factors and life processes associated with teenage pregnancy: Results of a
+  prospective study from birth to 20 years}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Marriage and Family}{63}{4}{1170--1184}.
 \newblock

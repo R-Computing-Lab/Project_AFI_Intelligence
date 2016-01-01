@@ -1,7 +1,7 @@
 \subsubsection{Generation 1 AFI}NLSY-79 subjects indicated their AFI a maximum of three times, in response to questions in 1983, 1984, and 1985. The 1984 and 1985 questions were included to assess those with non-response in 1983, but in fact many female respondents were surveyed multiple times. Further, females were asked for additional related information (Year of First Intercourse, Month of First Intercourse) in 1984 and 1985. The average AFI for women was 18.52 (sd $=$ 2.12; n $=$ 5562); men was 17.16 (sd $=$ 2.36; n $=$ 5640).
 
 We used the repeated questions to estimate the test-retest reliability of self-reported AFI and AFI difference scores. In Table \ref{table_measurement_trt_g1afi}, the lower triangle reports the correlations of self-reported AFI across 1983-1985; the diagonal indicates the number of respondents reporting AFI for that year, and the upper triangle indicates the number of respondents that reported AFI for both respective years. The test-retest correlations are moderate to high (r $>$ .75) across all viable pairings, suggesting that our subjects are reliably reporting AFI.\medskip\\
-\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Correlation of Gen1 Self-Reported AFI Across 1983-1985}\label{table_measurement_trt_g1afi}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Gen1 Self-Reported AFI Correlations and Sample Sizes Across 1983-1985}\label{table_measurement_trt_g1afi}
 \partialinput{6}{12}{../Common/content/tables/table_ttafireliable_z.tex}
 \end{longtable}
 
@@ -13,9 +13,26 @@ For each survey, we transformed year of first intercourse into an age variable, 
 
 After transforming all AFI scores, we recoded impossible AFIs as missing. A score was impossible if the reported AFI exceeded participant's age at time of survey (new $\overline{\mathrm{AFI}} = 15.99$, sd $= 2.30$, n $= 6235$). Next, we excluded all AFIs below age 12 (new $\overline{\mathrm{AFI}} =16.14$, sd $= 2.10$, n $= 6087$). Finally we excluded subjects who reported AFI prior to menarche (new $\overline{\mathrm{AFI}} = 16.16$, sd $= 2.09$, n $= 6047$). We excluded those below age 12 because those responses likely are the result of misunderstanding, non-consensual sexual activity, or other forms of unreliability. We excluded those with pre-menarchal AFI because we were only interested in AFI that could potentially link to reproduction and fertility. AFI varied by gender and race. Most notably, women reported AFIs that were 6 months later than men, and black men reported the lowest AFI (15 yrs) of any race-gender categories. For a complete portrayal of summary statistics, see Table \ref{table_afi_race_gender} and Figure \ref{plot_afi_by_race_sex}.
 \noindent\begin{minipage}{\linewidth}
-\begin{longtable}{@{\extracolsep{5pt}}lllcc}
+\begin{longtable}{@{\extracolsep{5pt}}lcc}
 \caption{Gen2 Mean AFI by Gender, Race, and Gender by Race.}\label{table_afi_race_gender}
-\partialinput{2}{18}{../Common/content/tables/table_summary_stats_AFIRACEGENDER.tex}
+%\partialinput{2}{18}{../Common/content/tables/table_summary_stats_AFIRACEGENDER.tex}
+\hline
+& \multicolumn{2}{c}{AFI} \\ 
+& Mean & \multicolumn{1}{c}{Sd} \\ 
+\hline
+Overall & $16.16$ & $2.097$ \\[1.5ex]
+\nopagebreak Male  & $15.88$ & $2.152$ \\
+\nopagebreak Female  & $16.47$ & $1.991$ \\[1.5ex]
+\nopagebreak Hispanic  & $16.22$ & $2.140$ \\
+\nopagebreak Black  & $15.66$ & $2.012$ \\
+\nopagebreak Non-Black, Non-Hispanic  & $16.57$ & $2.054$ \\[1.5ex]
+\nopagebreak Hispanic Male & $15.92$ & $2.163$ \\
+\nopagebreak Black Male & $15.04$ & $1.958$ \\
+\nopagebreak Non-Black, Non-Hispanic Male & $16.54$ & $2.061$ \\[1.5ex]
+\nopagebreak Hispanic Female & $16.60$ & $2.050$ \\
+\nopagebreak Black Female & $16.26$ & $1.877$ \\
+\nopagebreak Non-Black, Non-Hispanic Female & $16.61$ & $2.048$ \\
+\hline 
 \end{longtable}
 \end{minipage}
 
