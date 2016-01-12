@@ -1,4 +1,4 @@
-\documentclass[a4paper,man,apacite,natbib,12pt,longtable]{apa6}\usepackage[]{graphicx}\usepackage[]{color}
+\documentclass[a4paper,man,apacite,natbib,12pt,longtable,mask]{apa6}\usepackage[]{graphicx}\usepackage[]{color}
 %% maxwidth is the original width if it is less than linewidth
 %% otherwise use linewidth (to make sure the graphics do not exceed the margin)
 \makeatletter
@@ -64,7 +64,7 @@
 \authornote{\input{../Common/content/title/authornote.tex}}
 %
 % Abstract
-\abstract{Last compiled \today\ at \currenttime\\
+\abstract{%Last compiled \today\ at \currenttime\\
 \input{../Common/content/title/abstract_empreport.txt}}
 %
 % Key Words
@@ -144,14 +144,37 @@ Our design assumes that the difference scores of our measures are reliable. We'v
 \subsection{Between-Family Analyses}
 \input{../Common/content/writing/results_between.tex}
 %
+\begin{landscape}\noindent\begin{minipage}{\linewidth}
+\captionof{figure}{Generation 2: Age at First Intercourse vs. Intelligence}
+\label{plot_gen2_afi}
+\begin{center}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=.8\paperwidth]{figure/plot_gen2_afi-1} 
+
+\end{knitrout}
+\end{center}
+\end{minipage}\end{landscape}
+%
 % Within-Family
 \subsection{Within-Family Analyses}
 \input{../Common/content/writing/results_within.tex}
 %
+\begin{landscape}
+\noindent\begin{minipage}{\linewidth}
+\captionof{figure}{Generation 1: Age at First Intercourse vs. Intelligence}
+\label{plot_gen1_afi}
+\begin{center}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=.8\paperwidth]{figure/plot_gen1_afi-1} 
+
+\end{knitrout}
+\end{center}\end{minipage}\end{landscape}
+
 %%%%%%%%%%%% Discussion %%%%%%%%%%%%
 \section{Discussion}
 \input{../Common/content/writing/discussion.tex}
-
 %%%%%%%%%%%% References %%%%%%%%%%%%
 \bibliography{Projects-AFI}
 %%%%%%%%%%%% Appendix %%%%%%%%%%%%
@@ -197,7 +220,7 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   \subsection{Within-Family Analyses}
   %%%
   %%% Mom -> Child
-  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
   \caption{Gen1 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_10}
   \\[-1.8ex]\hline 
   \hline \\[-1.8ex] 
@@ -292,28 +315,4 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   \partialinput{10}{26}{../Common/content/tables/table_Dif_Joint_Intelligence_Dif_Child_AFI_11.tex}
   \end{longtable}
   \end{landscape}
-  %
-\begin{landscape}
-\noindent\begin{minipage}{\linewidth}
-\captionof{figure}{Generation 1: Age at First Intercourse vs. Intelligence}
-\label{plot_gen1_afi}
-\begin{center}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=.8\paperwidth]{figure/plot_gen1_afi-1} 
-
-\end{knitrout}
-\end{center}
-\end{minipage}
-\noindent\begin{minipage}{\linewidth}
-\captionof{figure}{Generation 2: Age at First Intercourse vs. Intelligence}
-\label{plot_gen2_afi}
-\begin{center}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=.8\paperwidth]{figure/plot_gen2_afi-1} 
-
-\end{knitrout}
-\end{center}
-\end{minipage}\end{landscape}
 \end{document}

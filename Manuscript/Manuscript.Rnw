@@ -1,4 +1,4 @@
-\documentclass[a4paper,man,apacite,natbib,12pt,longtable]{apa6}
+\documentclass[a4paper,man,apacite,natbib,12pt,longtable,mask]{apa6}
 \usepackage{../Common/style/Mason}
 \usepackage{listings}
 \usepackage{inconsolata}
@@ -15,7 +15,7 @@
 \authornote{\input{../Common/content/title/authornote.tex}}
 %
 % Abstract
-\abstract{Last compiled \today\ at \currenttime\\
+\abstract{%Last compiled \today\ at \currenttime\\
 \input{../Common/content/title/abstract_empreport.txt}}
 %
 % Key Words
@@ -30,7 +30,6 @@
   options(width=60)
   options(scipen=999)
   options(digits=3)
-
 
   listing <- function(x, options){
     paste("\\begin{lstlisting}[style=Rsettings]\n",
@@ -137,7 +136,7 @@ Sd <- function(x,digit=3,na.rm = TRUE) {
 substrRight <- function(x, n, fromend=0, end=nchar(x)-fromend){
   substr(x, end-n+1,end)}
 @
-<<setup_Data_9,include=FALSE,cache=FALSE>>=
+<<setup_Data_9,include=FALSE,cache=TRUE>>=
 # Import Data for age 9
 ## First Born Child
 LinkedMDAN_discord_AFI_z_9 <- read.csv(paste0(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_910811.csv"))
@@ -184,7 +183,7 @@ model.diffkids.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = da
 model.diffmoms.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_9 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
 @
-<<setup_Data_10,include=FALSE,cache=FALSE>>=
+<<setup_Data_10,include=FALSE,cache=TRUE>>=
 # Import Data for age 10
 ## First Born Child
 LinkedMDAN_discord_AFI_z_10 <- read.csv(paste0(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_1011912.csv"))
@@ -231,7 +230,7 @@ model.diffkids.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = d
 model.diffmoms.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_10 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
 @
-<<setup_Data_11,include=FALSE,cache=FALSE>>=
+<<setup_Data_11,include=FALSE,cache=TRUE>>=
 # Import Data for age 10
 ## First Born Child
 LinkedMDAN_discord_AFI_z_11 <- read.csv(paste0(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/NLSYSAS/CTT/LinkedMDAN_discord_AFI_z_11121013.csv"))
@@ -278,7 +277,7 @@ model.diffkids.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean + Int_Mean + Intdiff, data = d
 model.diffmoms.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean + INTMOMmean + INTMOMdiff, data = data)
 model.diffmomskids.b_11 <- lm(AFIKIDdiff ~ AFIKIDmean +Int_Mean + Intdiff+ INTMOMmean + INTMOMdiff, data = data)
 @
-<<setup_summarystats,include=FALSE,cache=FALSE>>=
+<<setup_summarystats,include=FALSE,cache=TRUE>>=
 # Import Data
 ## Determine First Born
 birthweight <- read.table(paste(file_drive,"/Dropbox/Lab/zSoftware/SAS/MyFolders/79/SASGen1Kids/birthweight.dat",sep=""), quote="\"", stringsAsFactors=FALSE)
@@ -338,7 +337,7 @@ Gen2AFIConcor_3$Intel_G1_SE<-NULL
 Gen2AFIConcor_3$Intel_G2_SE<-NULL
 Gen2AFIConcor_3$ASEID<-NULL
 @
-<<setup_Reliability,include=FALSE,cache=FALSE>>=
+<<setup_Reliability,include=FALSE,cache=TRUE>>=
 # Reliability 
 ## AFI G1
 ###Import Data
@@ -547,7 +546,7 @@ capture.output(xtable(cor_1star(matrix_b,2,.01,include.n=TRUE)),file=paste0(dire
 capture.output(xtable(cor_1star(matrix_g,2,.01,include.n=TRUE)),file=paste0(directory,"/Common/content/tables/table_diffintreliable_g.tex"))
 capture.output(xtable(cor_1star(matrix_z,2,.01,include.n=TRUE)),file=paste0(directory,"/Common/content/tables/table_diffintreliable_z.tex"))
 @
-<<measurement,include=FALSE,cache=FALSE>>=
+<<measurement,include=FALSE,cache=TRUE>>=
 # G1
 ## mplus
 ### Run
@@ -588,7 +587,7 @@ capture.output(stargazer(g2loading_10,summary=FALSE,flip = FALSE, dep.var.labels
 capture.output(stargazer(ModelSummaries_Mplusg2_11,summary=FALSE,flip = TRUE, dep.var.labels.include = FALSE),file=paste0(directory,"/Common/content/tables/table_g2_11measurement.tex"))
 capture.output(stargazer(g2loading_11,summary=FALSE,flip = FALSE, dep.var.labels.include = FALSE),file=paste0(directory,"/Common/content/tables/table_g2loading_11.tex"))
 @
-<<results_regression,echo=FALSE, comment=NA, include=FALSE,cache=FALSE>>=
+<<results_regression,echo=FALSE, comment=NA, include=FALSE,cache=TRUE>>=
 # Stargazer Plot defaults
 font.size="small"
 no.space=TRUE
@@ -863,7 +862,7 @@ capture.output(latex(
   numeric.dollar=TRUE),
   file=paste0(directory,"/Common/content/tables/table_summary_stats_AFIRACEGENDER.tex"))
 @
-<<setup_tables,include=FALSE,cache=FALSE>>=
+<<setup_tables,include=FALSE,cache=TRUE>>=
 # Summary Stats G1
 ## Manage data
 ### Import
@@ -976,7 +975,7 @@ theme_min = function (size=10, font=NA, face='plain',
 \captionof{figure}{Smoothed Density Plots of AFI by Race and Sex}
 \label{plot_afi_by_race_sex}
 \begin{center}
-<<plot_afi_by_race_sex,fig=TRUE,echo=FALSE,cache=FALSE,echo=FALSE, fig.height=5*.8, fig.width=5,out.width=".65\\paperwidth",warning=FALSE>>=
+<<plot_afi_by_race_sex,fig=TRUE,echo=FALSE,cache=TRUE,echo=FALSE, fig.height=5*.8, fig.width=5,out.width=".65\\paperwidth",warning=FALSE>>=
 # Data Prep
 dataframe<-data.frame(Gen2AFIConcor_2,Gen2AFIConcor$Intel_G2)
 names(dataframe)<- c("CASEID","MCASEID","Race","SEX","AFI","Intel")
@@ -1032,7 +1031,7 @@ ggplot(dataframe, aes(x=AFI, colour=RacebySEX, group=RacebySEX, linetype = Raceb
 %
 % Difference Score Reliability
 \subsection{Reliability of Difference Scores}
-<<calculationalphadif,cache=FALSE,include=FALSE>>=
+<<calculationalphadif,cache=TRUE,include=FALSE>>=
 # Intelligence
 sigmax = sqrt(1.1881)
 sigmay = sigmax
@@ -1061,14 +1060,145 @@ Our design assumes that the difference scores of our measures are reliable. We'v
 \subsection{Between-Family Analyses}
 \input{../Common/content/writing/results_between.tex}
 %
+\begin{landscape}\noindent\begin{minipage}{\linewidth}
+\captionof{figure}{Generation 2: Age at First Intercourse vs. Intelligence}
+\label{plot_gen2_afi}
+\begin{center}
+<<plot_gen2_afi,fig=TRUE,echo=FALSE,cache=TRUE,echo=FALSE, fig.height=5*.8, fig.width=5,out.width=".8\\paperwidth",warning=FALSE>>=
+library(ggplot2)
+library(gtable)
+library(grid)
+library(gridExtra)
+library(NlsyLinks)
+# Gen 2 Plot
+shading<-c("firebrick4",#"firebrick3","firebrick2",
+           "firebrick1",#"mediumvioletred",
+             "dodgerblue1",#"dodgerblue2","dodgerblue3",
+           "dodgerblue4")
+dsLinking <- subset(Links79Pair, RelationshipPath=="Gen1Housemates")
+dsOutcomes <- Gen2AFIConcor_3
+
+dsOutcomes$SubjectTag <-dsOutcomes$MCASEID*100
+dsOutcomes<-dsOutcomes[!is.na(dsOutcomes$SubjectTag),]
+ds2D <-dsOutcomes#
+max_val <- max(abs(ds2D$Intel_G1),na.rm=TRUE)
+values <- seq(-max_val, max_val, length = length(shading))
+##############
+ggplot(ds2D, aes(y=AFI_G2, x=Intel_G2,colour=(Intel_G1))) + 
+  geom_point(size =1,alpha = 1,na.rm=TRUE,position = position_jitter(w = 0.01, h = 0.5)) +
+  scale_color_gradientn(values=values,rescaler = function(x, ...) x, oob = identity,name="Gen1 \nAFQT",colours=shading)+
+  theme_min(size=10) +
+     theme(plot.title=element_text(size=16,face="bold"))+ 
+  ylab("Gen2 Age at First Intercourse") +
+  xlab("Gen2 General Cognitive Ability") #+
+#ggtitle("Generation 1:\n Age at First Intercourse vs. Intelligence")
+@
+\end{center}
+\end{minipage}\end{landscape}
+%
 % Within-Family
 \subsection{Within-Family Analyses}
 \input{../Common/content/writing/results_within.tex}
 %
+\begin{landscape}
+\noindent\begin{minipage}{\linewidth}
+\captionof{figure}{Generation 1: Age at First Intercourse vs. Intelligence}
+\label{plot_gen1_afi}
+\begin{center}
+<<plot_gen1_afi,fig=TRUE,echo=FALSE,cache=TRUE,echo=FALSE, fig.height=5*.8, fig.width=5,out.width=".8\\paperwidth",warning=FALSE>>=
+library(ggplot2)
+library(gtable)
+library(grid)
+library(gridExtra)
+library(NlsyLinks)
+# Gen 1 Plot
+dsLinking <- subset(Links79Pair, RelationshipPath=="Gen1Housemates")
+dsOutcomes <- Gen1AFIConcor
+dsOutcomes$Sex<-testretest$SEX
+dsOutcomes$SubjectTag <-dsOutcomes$MCASEID*100
+dsD <- CreatePairLinksDoubleEntered(
+outcomeDataset = dsOutcomes,
+linksPairDataset = dsLinking,
+outcomeNames = c("Intel_G1","AFI_G1","Sex"))
+dsD$DIF_G<-#abs
+  (dsD$Intel_G1_S1-dsD$Intel_G1_S2)
+dsD$DIF_A<-#abs
+  (dsD$AFI_G1_S1-dsD$AFI_G1_S2)
+#m<-data.frame(Gen2AFIConcor$Intel_G2,Gen2AFIConcor$AFI_G2)
+
+#shading<-c("navy","dodgerblue4","dodgerblue3","dodgerblue2","lightsteelblue1","dodgerblue2","dodgerblue3","dodgerblue4","navy")
+shading<-c("firebrick4",#"firebrick3","firebrick2",
+           "firebrick1",#"mediumvioletred",
+             "dodgerblue1",#"dodgerblue2","dodgerblue3",
+           "dodgerblue4")
+max_val <- max(abs(dsD$DIF_G),na.rm=TRUE)
+values <- seq(-max_val, max_val, length = length(shading))
+
+dsD$density<-NA
+dsD$density[dsD$DIF_G < .33]<- 0
+dsD$density[dsD$DIF_G < -.33]<- -1
+dsD$density[dsD$DIF_G >= .33]<- 1
+dsD$density<-as.factor(dsD$density)
+
+
+### Marginal Density Plot y
+ydensity <- ggplot(dsD, aes(x=AFI_G1_S1, group=density, color=density)) + 
+  geom_density(fill=NA,adjust=2)+
+  scale_colour_manual(values= c("firebrick1", "#AD78B6", "dodgerblue1"))+
+  coord_cartesian(ylim=c(0,0.25), xlim=c(12,25))+
+  theme_min(size=8)+ 
+  theme(legend.position = "none",
+    axis.title.y = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_blank(),
+   plot.margin=unit(c(0,0,.35,-.5), "cm"))+
+  coord_flip()
+### Marginal Density Plot x
+
+xdensity <- ggplot(dsD, aes(x=Intel_G1_S1, group=density, color=density)) +
+  geom_density(fill=NA,adjust=2) +
+  scale_colour_manual(values= c("firebrick1", "#AD78B6", "dodgerblue1"))+ 
+  theme_min(size=8) +
+  theme(legend.position = "none",axis.title.y = element_blank(),
+                            axis.title.x = element_blank(),
+                            axis.text.x = element_blank(),
+   plot.margin=unit(c(0,0,-.5,2.8), "cm"))
+
+
+### Scatter plot
+main<- ggplot(dsD, aes(y=AFI_G1_S1, x=Intel_G1_S1,colour=(DIF_G))) + 
+  geom_point(size =1,alpha = 1,na.rm=TRUE,position = position_jitter(w = 0.1, h = 0.5)) +
+  scale_colour_gradientn(name="Gen1 \nSibling \nDifferences \nin AFQT",colours=shading,values=values,rescaler = function(x, ...) x, oob = identity)+
+  theme_min(size=10) +
+     theme(plot.title=element_text(size=12),
+   plot.margin=unit(c(0,0.01,0,-.5), "cm"),
+   legend.position="left",
+   legend.key.width=unit(.5,"cm"))+ 
+  ylab("Gen1 Age at First Intercourse") +
+  xlab("Gen1 AFQT (Z Score)") #+
+#ggtitle("Generation 1:\n Age at First Intercourse vs. Intelligence")
+ 
+blankPlot <- ggplot()+geom_blank(aes(1,1))+
+  theme(plot.background = element_blank(), 
+   panel.grid.major = element_blank(),
+   panel.grid.minor = element_blank(), 
+   panel.border = element_blank(),
+   panel.background = element_blank(),
+   axis.title.x = element_blank(),
+   axis.title.y = element_blank(),
+   axis.text.x = element_blank(), 
+   axis.text.y = element_blank(),
+   axis.ticks = element_blank(),
+   plot.margin=unit(c(0,0,0,0), "cm"))
+
+grid.arrange(xdensity, blankPlot,
+             main, ydensity, ncol=2, nrow=2,widths=c(4, 1), heights=c(1, 4))
+@
+\end{center}\end{minipage}\end{landscape}
+
 %%%%%%%%%%%% Discussion %%%%%%%%%%%%
 \section{Discussion}
 \input{../Common/content/writing/discussion.tex}
-
 %%%%%%%%%%%% References %%%%%%%%%%%%
 \bibliography{Projects-AFI}
 %%%%%%%%%%%% Appendix %%%%%%%%%%%%
@@ -1114,7 +1244,7 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   \subsection{Within-Family Analyses}
   %%%
   %%% Mom -> Child
-  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
   \caption{Gen1 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_10}
   \\[-1.8ex]\hline 
   \hline \\[-1.8ex] 
@@ -1209,79 +1339,4 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   \partialinput{10}{26}{../Common/content/tables/table_Dif_Joint_Intelligence_Dif_Child_AFI_11.tex}
   \end{longtable}
   \end{landscape}
-  %
-\begin{landscape}
-\noindent\begin{minipage}{\linewidth}
-\captionof{figure}{Generation 1: Age at First Intercourse vs. Intelligence}
-\label{plot_gen1_afi}
-\begin{center}
-<<plot_gen1_afi,fig=TRUE,echo=FALSE,cache=FALSE,echo=FALSE, fig.height=5*.8, fig.width=5,out.width=".8\\paperwidth",warning=FALSE>>=
-library(ggplot2)
-library(gtable)
-library(grid)
-library(gridExtra)
-library(NlsyLinks)
-# Gen 1 Plot
-dsLinking <- subset(Links79Pair, RelationshipPath=="Gen1Housemates")
-dsOutcomes <- Gen1AFIConcor
-dsOutcomes$Sex<-testretest$SEX
-dsOutcomes$SubjectTag <-dsOutcomes$MCASEID*100
-dsD <- CreatePairLinksDoubleEntered(
-outcomeDataset = dsOutcomes,
-linksPairDataset = dsLinking,
-outcomeNames = c("Intel_G1","AFI_G1","Sex"))
-dsD$DIF_G<-#abs
-  (dsD$Intel_G1_S1-dsD$Intel_G1_S2)
-dsD$DIF_A<-#abs
-  (dsD$AFI_G1_S1-dsD$AFI_G1_S2)
-#m<-data.frame(Gen2AFIConcor$Intel_G2,Gen2AFIConcor$AFI_G2)
-
-shading<-c("navy","dodgerblue4","dodgerblue3","dodgerblue2","lightsteelblue1","dodgerblue2","dodgerblue3","dodgerblue4","navy")
-shading<-c("firebrick4",#"firebrick3","firebrick2",
-           "firebrick1",#"mediumvioletred",
-             "dodgerblue1",#"dodgerblue2","dodgerblue3",
-           "dodgerblue4")
-max_val <- max(abs(dsD$DIF_G),na.rm=TRUE)
-values <- seq(-max_val, max_val, length = length(shading))
-##############
-ggplot(dsD, aes(y=AFI_G1_S1, x=Intel_G1_S1,colour=(DIF_G))) + 
-  geom_point(size =1,alpha = 1,na.rm=TRUE,position = position_jitter(w = 0.1, h = 0.5)) +
-  scale_colour_gradientn(name="Sibling \nDifferences \nin AFQT",colours=shading,values=values,rescaler = function(x, ...) x, oob = identity)+
-  theme_min(size=10) +
-     theme(plot.title=element_text(size=16,face="bold"))+ 
-  ylab("Age at First Intercourse") +
-  xlab("AFQT (Z Score)") #+
-#ggtitle("Generation 1:\n Age at First Intercourse vs. Intelligence")
-
-@
-\end{center}
-\end{minipage}
-\noindent\begin{minipage}{\linewidth}
-\captionof{figure}{Generation 2: Age at First Intercourse vs. Intelligence}
-\label{plot_gen2_afi}
-\begin{center}
-<<plot_gen2_afi,fig=TRUE,echo=FALSE,cache=FALSE,echo=FALSE, fig.height=5*.8, fig.width=5,out.width=".8\\paperwidth",warning=FALSE>>=
-
-# Gen 2 Plot
-dsLinking <- subset(Links79Pair, RelationshipPath=="Gen1Housemates")
-dsOutcomes <- Gen2AFIConcor_3
-
-dsOutcomes$SubjectTag <-dsOutcomes$MCASEID*100
-dsOutcomes<-dsOutcomes[!is.na(dsOutcomes$SubjectTag),]
-ds2D <-dsOutcomes#
-max_val <- max(abs(ds2D$Intel_G1),na.rm=TRUE)
-values <- seq(-max_val, max_val, length = length(shading))
-##############
-ggplot(ds2D, aes(y=AFI_G2, x=Intel_G2,colour=(Intel_G1))) + 
-  geom_point(size =1,alpha = 1,na.rm=TRUE,position = position_jitter(w = 0.01, h = 0.5)) +
-  scale_color_gradientn(values=values,rescaler = function(x, ...) x, oob = identity,name="Maternal\n AFQT",colours=shading)+
-  theme_min(size=10) +
-     theme(plot.title=element_text(size=16,face="bold"))+ 
-  ylab("Age at First Intercourse") +
-  xlab("General Cognitive Ability") #+
-#ggtitle("Generation 1:\n Age at First Intercourse vs. Intelligence")
-
-@
-\end{center}
-\end{minipage}\end{landscape}
 \end{document}
