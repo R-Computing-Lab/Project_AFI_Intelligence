@@ -360,37 +360,6 @@ Damian, R\BPBI I.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Der%
-, Batty%
-\BCBL {}\ \BBA {} Deary%
-}{%
-Der%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2009}}%
-}]{%
-Der2009}
-\APACinsertmetastar {%
-Der2009}%
-\begin{APACrefauthors}%
-Der, G.%
-, Batty, G\BPBI D.%
-\BCBL {}\ \BBA {} Deary, I\BPBI J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2009}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{The association between IQ in adolescence and a range
-  of health outcomes at 40 in the 1979 US National Longitudinal Study of
-  Youth}} {{The association between IQ in adolescence and a range of health
-  outcomes at 40 in the 1979 US National Longitudinal Study of Youth}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Intelligence}{37}{6}{573--580}.
-\newblock
-\begin{APACrefDOI} \doi{10.1016/j.intell.2008.12.002} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Devlin%
 , Daniels%
 \BCBL {}\ \BBA {} Roeder%
@@ -464,8 +433,8 @@ D'Onofrio, B\BPBI M.%
 \newblock
 \APACrefYearMonthDay{2010}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Biosocial Influences on the Family: A Decade Review.}}
-  {{Biosocial Influences on the Family: A Decade Review.}}{\BBCQ}
+{\BBOQ}\APACrefatitle {{Biosocial influences on the family: A decade review.}}
+  {{Biosocial influences on the family: A decade review.}}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Marriage and Family}{72}{3}{762--782}.
 \newblock
@@ -1922,39 +1891,7 @@ Rodgers, J\BPBI L.%
   research}} {{The NLSYKinship Links: Using the NLSY79 and NLSY-Children data
   to conduct genetically-informed and family-oriented research}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Behavior Genetics}{}{}{}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Rodgers%
-, Cleveland%
-, van~den Oord%
-\BCBL {}\ \BBA {} Rowe%
-}{%
-Rodgers%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2000}}%
-}]{%
-Rodgers2000}
-\APACinsertmetastar {%
-Rodgers2000}%
-\begin{APACrefauthors}%
-Rodgers, J\BPBI L.%
-, Cleveland, H\BPBI H.%
-, van~den Oord, E.%
-\BCBL {}\ \BBA {} Rowe, D\BPBI C.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2000}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Resolving the debate over birth order, family size, and
-  intelligence.}} {{Resolving the debate over birth order, family size, and
-  intelligence.}}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{American Psychologist}{55}{6}{599--612}.
-\newblock
-\begin{APACrefDOI} \doi{10.1037//0003-066X.55.6.599} \end{APACrefDOI}
+\APACjournalVolNumPages{Behavior Genetics, Accepted pending Revision}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2076,32 +2013,6 @@ Rowe, D\BPBI C.%
 \APACjournalVolNumPages{Developmental Review}{17}{3}{358--375}.
 \newblock
 \begin{APACrefDOI} \doi{10.1006/drev.1997.0434} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Rutter%
-}{%
-Rutter%
-}{%
-{\protect \APACyear {2007}}%
-}]{%
-Rutter2007}
-\APACinsertmetastar {%
-Rutter2007}%
-\begin{APACrefauthors}%
-Rutter, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2007}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Proceeding from observed correlation to causal
-  inference: The use of natural experiments}} {{Proceeding from observed
-  correlation to causal inference: The use of natural experiments}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Perspectives on Psychological Science}{2}{4}{377--395}.
-\newblock
-\begin{APACrefDOI} \doi{10.1111/j.1745-6916.2007.00050.x} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
