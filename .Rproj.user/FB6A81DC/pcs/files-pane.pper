@@ -1,13 +1,13 @@
 {
-    "path" : "E:/Dropbox/Work/Research/Projects/NLSY/Depression/R",
+    "path" : "E:/Dropbox/Lab/Research/Projects/Completed/NLSY AFI/Manuscript",
     "sortOrder" : [
-        {
-            "ascending" : false,
-            "columnIndex" : 4
-        },
         {
             "ascending" : true,
             "columnIndex" : 2
+        },
+        {
+            "ascending" : false,
+            "columnIndex" : 4
         }
     ]
 }

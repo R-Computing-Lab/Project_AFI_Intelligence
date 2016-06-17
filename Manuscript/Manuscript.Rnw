@@ -2,9 +2,13 @@
 \usepackage{../Common/style/Mason}
 \usepackage{listings}
 \usepackage{inconsolata}
-
+\usepackage[bottom]{footmisc} %fix footnotes
+\usepackage{lineno}
+\usepackage{adjustbox}
+%\linenumbers
+\interfootnotelinepenalty=10000
 %%%%%%%%%%%% Title %%%%%%%%%%%%
-\title{Is the Link Between Intelligence and Age at First Intercourse Causal or Correlational? \\ A Cross-Generational Sibling Comparison Design Using the NLSY}
+\title{Casting doubt on the causal link between intelligence and age at first intercourse:\\ A cross-generational sibling comparison design using the NLSY}
 \shorttitle{Intelligence and AFI}
 %
 % Authors and Affiliations
@@ -44,19 +48,22 @@ library(devtools)#;dev_mode(on=T)
 #install_github("harrelfe/Hmisc");dev_mode(on=F)
 ## Attach Remaining
 library(corrplot)
-library(ggplot2);library(ggExtra)
+library(ggplot2);library(ggExtra);library(gtable)
+library(grid);library(gridExtra)
 library(Hmisc)
 library(MplusAutomation)
 library(NlsyLinks)
 library(plyr);library(psych)
+library(QuantPsyc)
 #library(stargazer)
 library(tables)
 library(xtable)
+
 #
 # File Structure
 file_drive= "C:"
-##file_drive="E:"
-directory = paste0(file_drive,"/Dropbox/Lab/Research/Projects/Current/NLSY AFI")
+file_drive="E:"
+directory = paste0(file_drive,"/Dropbox/Lab/Research/Projects/Completed/NLSY AFI")
 #
 # Functions
 ## source("https://raw.githubusercontent.com/smasongarrison/Functions/master/Mason_Functions.R")
@@ -897,6 +904,12 @@ Gen2AFIConcor$SiblinginSample[Gen2AFIConcor$dup == 1 ]<- 0
 summarystats_g2 <- merge(categories_g2,Gen2AFIConcor,by="CASEID",all=T)
 summarystats_g2$zIntel_G2<-scale(summarystats_g2$Intel_G2)
 summarystats_g2 <- merge(summarystats_g2,birthweight_2,by="CASEID",all=T)
+summarystats_g2$YRB[summarystats_g2$YRB<0]<-NA
+library(plyr)
+x<-count(summarystats_g2$YRB)
+z<-sum(x$freq[x$x>1996],na.rm=TRUE)
+x<-NULL
+z<-NULL
 ##
 ## Capture output
 capture.output(latex(
@@ -956,7 +969,7 @@ theme_min = function (size=10, font=NA, face='plain',
 
 %%%%%%%%%%%% Method %%%%%%%%%%%%
 \section{Method}
-\subsection{Research Design}
+\subsection{Research Design and Analytic Approach}
 \input{../Common/content/writing/design.tex}
 %
 % Sample
@@ -972,7 +985,7 @@ theme_min = function (size=10, font=NA, face='plain',
 \subsection{Measures}
 \input{../Common/content/writing/AFI.tex}
 \noindent\begin{minipage}{\linewidth}
-\captionof{figure}{Smoothed Density Plots of AFI by Race and Sex}
+\captionof{figure}{Smoothed Density Plots of Gen1 AFI by Race and Sex}
 \label{plot_afi_by_race_sex}
 \begin{center}
 <<plot_afi_by_race_sex,fig=TRUE,echo=FALSE,cache=TRUE,echo=FALSE, fig.height=5*.8, fig.width=5,out.width=".65\\paperwidth",warning=FALSE>>=
@@ -1035,22 +1048,24 @@ ggplot(dataframe, aes(x=AFI, colour=RacebySEX, group=RacebySEX, linetype = Raceb
 # Intelligence
 sigmax = sqrt(1.1881)
 sigmay = sigmax
-rxx = .87
+rxx = .9#.87
 ryy = rxx
 rxy=.67
-r.diff.intelligence <- (sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) /(sigmax*sigmax + sigmay*sigmay -2*rxy*sigmax*sigmay)
+(r.diff.intelligence <- round((sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) /(sigmax*sigmax + sigmay*sigmay -2*rxy*sigmax*sigmay),digits = 2))
 #AFI
 sigmax = sqrt(4.41)
 sigmay = sigmax
 rxx = .76
 ryy = rxx
+rxx.afi=rxx
 rxy=.099
-r.diff.afi <- (sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) / (sigmax*sigmax + sigmay*sigmay -2*rxy*sigmax*sigmay)
-@
-Our design assumes that the difference scores of our measures are reliable. We've reported the test-retest reliability of Gen2 intelligence and Gen1 AFI in earlier sections. Here, we report the test-retest reliability of the pairwise differences of those measures. 
-\subsubsection{AFI} Comparing sibling differences in AFI as reported in 1983 and 1984 (n = 783 pairs) we found a moderate correlation (r = .76). The sample of sibling pairs with complete information in 1985 was too small (n = 12 pairs) to compare to the other two years. Regardless, sibling differences in self-reported AFI appear satisfactory for research purposes. We note that the common concern with unreliability of difference scores is at least partially mitigated when the separate scores defining the differences are reliable themselves. Because we could not estimate test-retest reliabilities for Generation 2, we calculated the reliability using Lord's equation (\citeyear{Lord1963}). Generation 2 Mean AFI difference scores were also moderately reliable (r = \Sexpr{r.diff.afi}) and comparable to Generation 1 sibling differences.
+(r.diff.afi <- round((sigmax*sigmax*rxx +sigmay*sigmay*ryy -2*rxy*sigmax*sigmay) / (sigmax*sigmax + sigmay*sigmay -2*rxy*sigmax*sigmay),digits = 2))
 
-\subsubsection{Intelligence} Cousin differences in intelligence as assessed at ages 9.5, 10.5, and 11.5 were correlated using three different linking methods (Mixed, Daughters, Sons). Reliabilities across linking methods was consistent and high (min r = .86; max r = .95). However, we could not estimate test-retest reliabilities for Generation 1; we calculated the reliability using Lord's equation (\citeyear{Lord1963}). The calculated reliability of Generation 1's differences in AFQT was .61, which was only minimally  acceptable, and obviously lower than the empirical correlation we derived for cousin differences.%\Sexpr{r.diff.intelligence}
+@
+Our design assumes that the difference scores of our measures are reliable. We have reported the test-retest reliability of Gen2 intelligence and Gen1 AFI in earlier sections. Here, we report the test-retest reliability of the pairwise differences of those measures. 
+\subsubsection{AFI} Comparing sibling differences in AFI as reported in 1983 and 1984 (n = 783 pairs) we found a moderate correlation (r = \Sexpr{rxx.afi}). The sample of sibling pairs with complete information in 1985 was too small (n = 12 pairs) to compare to the other two years. Regardless, sibling differences in self-reported AFI appear satisfactory for research purposes. We note that the common concern with unreliability of difference scores is at least partially mitigated when the separate scores defining the differences are reliable themselves. Because we could not estimate test-retest reliabilities for Generation 2, we calculated the reliability using Lord's (\citeyear{Lord1963}) equation. Generation 2 Mean AFI difference scores were also moderately reliable (r = \Sexpr{r.diff.afi}) and comparable to Generation 1 sibling differences.
+
+\subsubsection{Intelligence} Cousin differences in intelligence as assessed at ages 9.5, 10.5, and 11.5 were correlated using three different linking methods (Mixed, Daughters, Sons). Reliabilities across linking methods was consistent and high (min r = .86; max r = .95). However, we could not estimate test-retest reliabilities for Generation 1; we calculated the reliability using Lord's (\citeyear{Lord1963}) equation. The calculated reliability of Generation 1's differences in AFQT was \Sexpr{r.diff.intelligence}0, which was marginally acceptable, and obviously lower than the empirical correlation we derived for cousin differences.%\Sexpr{r.diff.intelligence}
 
 %%%%%%%%%%%% Results %%%%%%%%%%%%
 \section{Results}
@@ -1059,63 +1074,108 @@ Our design assumes that the difference scores of our measures are reliable. We'v
 % Between-Family
 \subsection{Between-Family Analyses}
 \input{../Common/content/writing/results_between.tex}
-%
-\begin{landscape}\noindent\begin{minipage}{\linewidth}
-\captionof{figure}{Generation 2: Age at First Intercourse vs. Intelligence}
+
+\noindent\begin{minipage}{\paperwidth}
+\captionof{figure}{Gen2 AFI vs. Gen1 \& Gen2 Intelligence}
 \label{plot_gen2_afi}
 \begin{center}
-<<plot_gen2_afi,fig=TRUE,echo=FALSE,cache=TRUE,echo=FALSE, fig.height=5*.8, fig.width=5,out.width=".8\\paperwidth",warning=FALSE>>=
-library(ggplot2)
-library(gtable)
-library(grid)
-library(gridExtra)
-library(NlsyLinks)
+<<plot_gen2_afi,fig=TRUE,echo=FALSE,cache=TRUE,echo=FALSE, fig.height=5*.6, fig.width=5,out.width="1\\paperwidth",warning=FALSE>>=
+
+substrRight <- function(x, n){
+  substr(x, nchar(x)-n+1, nchar(x))
+}
 # Gen 2 Plot
 shading<-c("firebrick4",#"firebrick3","firebrick2",
            "firebrick1",#"mediumvioletred",
              "dodgerblue1",#"dodgerblue2","dodgerblue3",
            "dodgerblue4")
-dsLinking <- subset(Links79Pair, RelationshipPath=="Gen1Housemates")
 dsOutcomes <- Gen2AFIConcor_3
 
-dsOutcomes$SubjectTag <-dsOutcomes$MCASEID*100
+## Sibling Difference Score
+dsLinking <- subset(Links79Pair, RelationshipPath=="Gen2Siblings")
+
+
+
+# Source https://amywhiteheadresearch.wordpress.com/2013/01/22/randomly-deleting-duplicate-rows-from-a-dataframe-2/
+duplicated.random = function(x, incomparables = FALSE, ...) 
+{ 
+     if ( is.vector(x) ) 
+     { 
+         permutation = sample(length(x)) 
+         x.perm      = x[permutation] 
+         result.perm = duplicated(x.perm, incomparables, ...) 
+         result      = result.perm[order(permutation)] 
+         return(result) 
+     } 
+     else if ( is.matrix(x) ) 
+     { 
+         permutation = sample(nrow(x)) 
+         x.perm      = x[permutation,] 
+         result.perm = duplicated(x.perm, incomparables, ...) 
+         result      = result.perm[order(permutation)] 
+         return(result) 
+     } 
+     else 
+     { 
+         stop(paste("duplicated.random() only supports vectors", 
+                "matrices for now.")) 
+     } 
+} 
+
+dsOutcomes$ASEID<-as.numeric(substrRight(as.character(dsOutcomes$CASEID),1))
+dsOutcomes$SubjectTag <-dsOutcomes$CASEID
 dsOutcomes<-dsOutcomes[!is.na(dsOutcomes$SubjectTag),]
 ds2D <-dsOutcomes#
-max_val <- max(abs(ds2D$Intel_G1),na.rm=TRUE)
+v<-dsOutcomes[dsOutcomes$ASEID<3,]
+
+ds22D <- CreatePairLinksDoubleEntered(
+outcomeDataset = dsOutcomes,
+linksPairDataset = dsLinking,
+outcomeNames = c("Intel_G2","AFI_G2"))
+ds22D$DIF_G<-#abs
+  (ds22D$Intel_G2_S1-ds22D$Intel_G2_S2)
+ds22D$DIF_A<-#abs
+  (ds22D$AFI_G2_S1-ds22D$AFI_G2_S2)
+x<-data.frame(ds22D[,c(1,10,11)])
+x<-x[!is.na(x$DIF_G | x$DIF_A),]
+x$duplicated <- duplicated.random(x$SubjectTag_S1)
+x<- x[x$duplicated==FALSE,]
+x$duplicated<-NULL
+ds2D <- merge(ds2D,x,by.x="SubjectTag",by.y="SubjectTag_S1",all = TRUE,sort=FALSE)
+x<-NULL
+v<-NULL
+ds22D<-NULL
+
+
+
+####
+coef<-coef(lm(AFI_G2 ~ Intel_G2, data = dsOutcomes))
+max_val <- max(abs(ds2D$DIF_G),na.rm=TRUE)
 values <- seq(-max_val, max_val, length = length(shading))
+ds2D<-ds2D[!is.na(ds2D$DIF_G),]
 ##############
-ggplot(ds2D, aes(y=AFI_G2, x=Intel_G2,colour=(Intel_G1))) + 
-  geom_point(size =1,alpha = 1,na.rm=TRUE,position = position_jitter(w = 0.01, h = 0.5)) +
-  scale_color_gradientn(values=values,rescaler = function(x, ...) x, oob = identity,name="Gen1 \nAFQT",colours=shading)+
-  theme_min(size=10) +
-     theme(plot.title=element_text(size=16,face="bold"))+ 
+g2<-ggplot(ds2D, aes(y=AFI_G2, x=Intel_G2,colour=(DIF_G))) + 
+  geom_point(size =.5,alpha = 1,na.rm=TRUE,position = position_jitter(w = 0.015, h = 1)) + geom_abline(intercept = coef[1], slope = coef[2])+
+  scale_color_gradientn(values=values,rescaler = function(x, ...) x, oob = identity,name="Sibling \nDifferences \nin Ability",colours=shading,na.value = "#AD78B6")+
+  theme_min(size=8) +
+     theme(plot.title=element_text(size=8),
+   plot.margin=unit(c(0,0,0,0.5), "cm"),
+   legend.position= "none"
+   #,legend.key.width=unit(.5,"cm")
+   )+ 
   ylab("Gen2 Age at First Intercourse") +
-  xlab("Gen2 General Cognitive Ability") #+
+  xlab("Gen2 General Ability (Age 9.5)")+coord_cartesian(ylim=c(12,30))+
+theme(text = element_text(size=8)) #+
 #ggtitle("Generation 1:\n Age at First Intercourse vs. Intelligence")
-@
-\end{center}
-\end{minipage}\end{landscape}
-%
-% Within-Family
-\subsection{Within-Family Analyses}
-\input{../Common/content/writing/results_within.tex}
-%
-\begin{landscape}
-\noindent\begin{minipage}{\linewidth}
-\captionof{figure}{Generation 1: Age at First Intercourse vs. Intelligence}
-\label{plot_gen1_afi}
-\begin{center}
-<<plot_gen1_afi,fig=TRUE,echo=FALSE,cache=TRUE,echo=FALSE, fig.height=5*.8, fig.width=5,out.width=".8\\paperwidth",warning=FALSE>>=
-library(ggplot2)
-library(gtable)
-library(grid)
-library(gridExtra)
-library(NlsyLinks)
-# Gen 1 Plot
+
+
+
+##### g1
 dsLinking <- subset(Links79Pair, RelationshipPath=="Gen1Housemates")
 dsOutcomes <- Gen1AFIConcor
 dsOutcomes$Sex<-testretest$SEX
 dsOutcomes$SubjectTag <-dsOutcomes$MCASEID*100
+
 dsD <- CreatePairLinksDoubleEntered(
 outcomeDataset = dsOutcomes,
 linksPairDataset = dsLinking,
@@ -1124,9 +1184,92 @@ dsD$DIF_G<-#abs
   (dsD$Intel_G1_S1-dsD$Intel_G1_S2)
 dsD$DIF_A<-#abs
   (dsD$AFI_G1_S1-dsD$AFI_G1_S2)
-#m<-data.frame(Gen2AFIConcor$Intel_G2,Gen2AFIConcor$AFI_G2)
+max_val <- max(abs(dsD$DIF_G),na.rm=TRUE)
+values <- seq(-max_val, max_val, length = length(shading))
+coef<-coef(lm(AFI_G1 ~ Intel_G1, data = dsOutcomes))
+max_val <- max(abs(dsD$DIF_G),na.rm=TRUE)
 
-#shading<-c("navy","dodgerblue4","dodgerblue3","dodgerblue2","lightsteelblue1","dodgerblue2","dodgerblue3","dodgerblue4","navy")
+values <- seq(-max_val, max_val, length = length(shading))
+g1<- ggplot(dsD, aes(y=AFI_G1_S1, x=Intel_G1_S1,colour=(DIF_G))) + 
+  geom_point(size =.5,alpha = 1,na.rm=TRUE,position = position_jitter(w = 0.015, h = .75)) + geom_abline(intercept = coef[1], slope = coef[2])+
+  scale_colour_gradientn(name="Sibling \nDifferences \nin Ability",colours=shading,values=values,rescaler = function(x, ...) x, oob = identity)+
+  theme_min(size=8) +
+     theme(plot.title=element_text(size=8),
+   plot.margin=unit(c(0,0.0,0,0), "cm"),
+   legend.position= "left",
+   legend.key.width=unit(.5,"cm"))+ 
+  ylab("Gen1 Age at First Intercourse") +
+  xlab("Gen1 AFQT (Age 14-21)") + coord_cartesian(ylim=c(12,30))+
+theme(text = element_text(size=8))#+
+#ggtitle("Generation 1:\n Age at First Intercourse vs. Intelligence")
+
+##### g12
+dsLinking <- subset(Links79Pair, RelationshipPath=="Gen2Siblings")
+dsOutcomes <- Gen2AFIConcor_3
+
+dsOutcomes$SubjectTag <-dsOutcomes$CASEID
+dsOutcomes<-dsOutcomes[!is.na(dsOutcomes$SubjectTag),]
+dsD <- CreatePairLinksDoubleEntered(
+outcomeDataset = dsOutcomes,
+linksPairDataset = dsLinking,
+outcomeNames = c("Intel_G1","Intel_G2","AFI_G2"))
+dsD$DIF_G<-#abs
+  (dsD$Intel_G2_S1-dsD$Intel_G2_S2)
+max_val <- max(abs(dsD$DIF_G),na.rm=TRUE)
+values <- seq(-max_val, max_val, length = length(shading))
+coef<-coef(lm(AFI_G2 ~ Intel_G1, data = dsOutcomes))
+dsD<-dsD[!is.na(dsD$DIF_G),]
+g12<- ggplot(dsD, aes(y=AFI_G2_S1, x=Intel_G1_S1,colour=(
+  DIF_G
+  #AFI_G2_S1
+  ))) + 
+  geom_point(size =.5,alpha = 1,na.rm=TRUE,position = position_jitter(w = 0.025, h = 1)) + geom_abline(intercept = coef[1], slope = coef[2])+
+  scale_colour_gradientn(name="Kin \nDifferences \nin Ability",colours=shading,values=values,rescaler = function(x, ...) x, oob = identity)+
+  theme_min(size=8) +
+     theme(plot.title=element_text(size=8),
+   plot.margin=unit(c(0,0.0,0,0), "cm"),
+   legend.position= "left",
+   legend.key.width=unit(.5,"cm"))+ 
+  ylab("Gen2 Age at First Intercourse") +
+  xlab("Gen1 AFQT (Age 14-21)") + coord_cartesian(ylim=c(12,30))+
+theme(text = element_text(size=8))#+
+#ggtitle("Generation 1:\n Age at First Intercourse vs. Intelligence")
+
+grid.arrange(g12,
+             g2, ncol=2, nrow=1,widths=c(1.5,1.1), heights=c(4))
+@
+\end{center}
+\end{minipage}
+\end{landscape}
+
+%
+% Within-Family
+\subsection{Combination Between- and Within-Family Analyses}
+\input{../Common/content/writing/results_within.tex}
+%
+\begin{landscape}
+\noindent\begin{minipage}{\linewidth}
+\captionof{figure}{Gen1 AFI vs. Gen1 Intelligence with Marginal Distributions by Sibling Difference in AFQT}
+\label{plot_gen1_afi}
+\begin{center}
+<<plot_gen1_afi,fig=TRUE,echo=FALSE,cache=TRUE,echo=FALSE, fig.height=5*.8, fig.width=5,out.width=".8\\paperwidth",warning=FALSE>>=
+
+# Gen 1 Plot
+dsLinking <- subset(Links79Pair, RelationshipPath=="Gen1Housemates")
+dsOutcomes <- Gen1AFIConcor
+dsOutcomes$Sex<-testretest$SEX
+dsOutcomes$SubjectTag <-dsOutcomes$MCASEID*100
+
+coef<-coef(lm(AFI_G1 ~ Intel_G1, data = dsOutcomes))
+dsD <- CreatePairLinksDoubleEntered(
+outcomeDataset = dsOutcomes,
+linksPairDataset = dsLinking,
+outcomeNames = c("Intel_G1","AFI_G1","Sex"))
+dsD$DIF_G<-#abs
+  (dsD$Intel_G1_S1-dsD$Intel_G1_S2)
+dsD$DIF_A<-#abs
+  (dsD$AFI_G1_S1-dsD$AFI_G1_S2)
+
 shading<-c("firebrick4",#"firebrick3","firebrick2",
            "firebrick1",#"mediumvioletred",
              "dodgerblue1",#"dodgerblue2","dodgerblue3",
@@ -1139,43 +1282,46 @@ dsD$density[dsD$DIF_G < .33]<- 0
 dsD$density[dsD$DIF_G < -.33]<- -1
 dsD$density[dsD$DIF_G >= .33]<- 1
 dsD$density<-as.factor(dsD$density)
-
-
+library(plyr)
+dsD$density<-revalue(dsD$density, c("0"="Equally Smart","-1"="Less Smart","1"="More Smart"))
 ### Marginal Density Plot y
 ydensity <- ggplot(dsD, aes(x=AFI_G1_S1, group=density, color=density)) + 
   geom_density(fill=NA,adjust=2)+
   scale_colour_manual(values= c("firebrick1", "#AD78B6", "dodgerblue1"))+
-  coord_cartesian(ylim=c(0,0.25), xlim=c(12,25))+
-  theme_min(size=8)+ 
+  coord_cartesian(ylim=c(0,0.25), xlim=c(12,25))+ annotate("text", x = 27.5, y = .125, label = "(Y) Marginal \nDistribution \nof AFI",size=2)+
+  theme_min(size=4)+ 
   theme(legend.position = "none",
     axis.title.y = element_blank(),
     axis.title.x = element_blank(),
     axis.text.y = element_blank(),
-   plot.margin=unit(c(0,0,.35,-.5), "cm"))+
-  coord_flip()
+   plot.margin=unit(c(0,0,.35,-.05), "cm"))+
+  coord_flip()+
+theme(text = element_text(size=4))
 ### Marginal Density Plot x
 
 xdensity <- ggplot(dsD, aes(x=Intel_G1_S1, group=density, color=density)) +
   geom_density(fill=NA,adjust=2) +
-  scale_colour_manual(values= c("firebrick1", "#AD78B6", "dodgerblue1"))+ 
-  theme_min(size=8) +
-  theme(legend.position = "none",axis.title.y = element_blank(),
+  scale_colour_manual(name="Marginal \nDistributions \nby Sibling \nDifference \nin AFQT",values= c("firebrick1", "#AD78B6", "dodgerblue1"))+ 
+  theme_min(size=4) +
+  theme(legend.position = "left",axis.title.y = element_blank(),
                             axis.title.x = element_blank(),
-                            axis.text.x = element_blank(),
-   plot.margin=unit(c(0,0,-.5,2.8), "cm"))
+                            axis.text.x = element_blank(),legend.key.width=unit(.5,"cm"),#legend.margin=unit(0, "lines"),
+   plot.margin=unit(c(0,0.0,0,-.20), "cm"))+coord_cartesian(xlim=c(-2.25,3.25))+
+theme(text = element_text(size=4)) + annotate("text", x = 3, y = .4, label = "(X) Marginal \nDistribution \nof AFQT",size=2)
 
 
 ### Scatter plot
 main<- ggplot(dsD, aes(y=AFI_G1_S1, x=Intel_G1_S1,colour=(DIF_G))) + 
-  geom_point(size =1,alpha = 1,na.rm=TRUE,position = position_jitter(w = 0.1, h = 0.5)) +
-  scale_colour_gradientn(name="Gen1 \nSibling \nDifferences \nin AFQT",colours=shading,values=values,rescaler = function(x, ...) x, oob = identity)+
-  theme_min(size=10) +
-     theme(plot.title=element_text(size=12),
-   plot.margin=unit(c(0,0.01,0,-.5), "cm"),
+  geom_point(size =.5,alpha = 1,na.rm=TRUE,position = position_jitter(w = 0.1, h = 1)) +geom_abline(intercept = coef[1], slope = coef[2])+
+  scale_colour_gradientn(name="Gen1 \nSibling \nDifferences \nin AFQT",colours=shading,na.value = "#AD78B6",values=values,rescaler = function(x, ...) x, oob = identity)+
+  theme_min(size=6) +
+     theme(plot.title=element_text(size=6),
+   plot.margin=unit(c(0,0.01,0,-.25), "cm"),
    legend.position="left",
    legend.key.width=unit(.5,"cm"))+ 
   ylab("Gen1 Age at First Intercourse") +
-  xlab("Gen1 AFQT (Z Score)") #+
+  xlab("Gen1 AFQT (Age 14-21)") +
+theme(text = element_text(size=6))#+
 #ggtitle("Generation 1:\n Age at First Intercourse vs. Intelligence")
  
 blankPlot <- ggplot()+geom_blank(aes(1,1))+
@@ -1192,7 +1338,7 @@ blankPlot <- ggplot()+geom_blank(aes(1,1))+
    plot.margin=unit(c(0,0,0,0), "cm"))
 
 grid.arrange(xdensity, blankPlot,
-             main, ydensity, ncol=2, nrow=2,widths=c(4, 1), heights=c(1, 4))
+             main, ydensity, ncol=2, nrow=2,widths=c(4, 1), heights=c(1.5, 4))
 @
 \end{center}\end{minipage}\end{landscape}
 
@@ -1212,9 +1358,9 @@ grid.arrange(xdensity, blankPlot,
   %%%
   %%% Mom -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_10}
+  \caption{Between-Family: Gen1 Intelligence Predicts Gen2 AFI} \label{table_Mean_Mom_Intelligence_Mean_Child_AFI_10}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
+  \hline \\[-3.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{22}{../Common/content/tables/table_Mean_Mom_Intelligence_Mean_Child_AFI_10.tex}
@@ -1222,9 +1368,9 @@ grid.arrange(xdensity, blankPlot,
   %%%
   %%% Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen2 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_10}
+  \caption{Between-Family: Gen2 Intelligence Predicts Gen2 AFI} \label{table_Mean_Child_Intelligence_Mean_Child_AFI_10}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
+  \hline \\[-3.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{22}{../Common/content/tables/table_Mean_Child_Intelligence_Mean_Child_AFI_10.tex}
@@ -1232,9 +1378,9 @@ grid.arrange(xdensity, blankPlot,
   %%%
   %%% Mom Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Joint Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_10}
+  \caption{Between-Family: Gen1 \& Gen2 Intelligence Predict Gen2 AFI} \label{table_Mean_Joint_Intelligence_Mean_Child_AFI_10}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
+  \hline \\[-3.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{23}{../Common/content/tables/table_Mean_Joint_Intelligence_Mean_Child_AFI_10.tex}
@@ -1245,30 +1391,30 @@ grid.arrange(xdensity, blankPlot,
   %%%
   %%% Mom -> Child
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen1 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_10}
+  \caption{Within-Family: Gen1 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Mom_Intelligence_Dif_Child_AFI_10}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
-  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{24}{../Common/content/tables/table_Dif_Mom_Intelligence_Dif_Child_AFI_10.tex}
   \end{longtable}\pagebreak
   %%%
   %%% Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen2 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_10}
+  \caption{Within-Family: Gen2 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Child_Intelligence_Dif_Child_AFI_10}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
-  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{24}{../Common/content/tables/table_Dif_Child_Intelligence_Dif_Child_AFI_10.tex}
   \end{longtable}\pagebreak
   %%%
   %%% Mom Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Joint Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_10}
+  \caption{Within-Family: Gen1 \& Gen2 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Joint_Intelligence_Dif_Child_AFI_10}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
-  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{26}{../Common/content/tables/table_Dif_Joint_Intelligence_Dif_Child_AFI_10.tex}
   \end{longtable}
@@ -1278,9 +1424,9 @@ grid.arrange(xdensity, blankPlot,
   \subsection{Between-Family Analyses}
   %%% Mom -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_11}
+  \caption{Between-Family: Gen1 Intelligence Predicts Gen2 AFI} \label{table_Mean_Mom_Intelligence_Mean_Child_AFI_11}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
+  \hline \\[-3.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{22}{../Common/content/tables/table_Mean_Mom_Intelligence_Mean_Child_AFI_11.tex}
@@ -1288,9 +1434,9 @@ grid.arrange(xdensity, blankPlot,
   %%%
   %%% Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen2 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_11}
+  \caption{Between-Family: Gen2 Intelligence Predicts Gen2 AFI} \label{table_Mean_Child_Intelligence_Mean_Child_AFI_11}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
+  \hline \\[-3.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{22}{../Common/content/tables/table_Mean_Child_Intelligence_Mean_Child_AFI_11.tex}
@@ -1298,9 +1444,9 @@ grid.arrange(xdensity, blankPlot,
   %%%
   %%% Mom Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Joint Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_11}
+  \caption{Between-Family: Gen1 \& Gen2 Intelligence Predict Gen2 AFI} \label{table_Mean_Joint_Intelligence_Mean_Child_AFI_11}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
+  \hline \\[-3.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{23}{../Common/content/tables/table_Mean_Joint_Intelligence_Mean_Child_AFI_11.tex}
@@ -1309,32 +1455,32 @@ grid.arrange(xdensity, blankPlot,
     %% Within-Family
   \subsection{Within-Family Analyses}
   %%%
-  %%% Child -> Child
+  %%% Mom -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen1 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_11}
+  \caption{Within-Family: Gen1 Differences in Intelligence Predict Gen2 Differences in AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_11}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
-  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{24}{../Common/content/tables/table_Dif_Mom_Intelligence_Dif_Child_AFI_11.tex}
   \end{longtable}\pagebreak
   %%%
   %%% Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen2 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_11}
+  \caption{Within-Family: Gen2 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Child_Intelligence_Dif_Child_AFI_11}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
-  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{24}{../Common/content/tables/table_Dif_Child_Intelligence_Dif_Child_AFI_11.tex}
   \end{longtable}\pagebreak
   %%%
   %%% Mom Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Joint Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_11}
+  \caption{Within-Family: Gen1 \& Gen2 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Joint_Intelligence_Dif_Child_AFI_11}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
-  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{26}{../Common/content/tables/table_Dif_Joint_Intelligence_Dif_Child_AFI_11.tex}
   \end{longtable}

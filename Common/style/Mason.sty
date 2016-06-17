@@ -49,6 +49,7 @@
 \definecolor{keywordcolor}{rgb}{0,0.6,0.6}
 \definecolor{delimcolor}{rgb}{0.461,0.039,0.102}
 \definecolor{Rcommentcolor}{rgb}{0.101,0.043,0.432}
+\definecolor{messagecolor}{rgb}{0.101,0.043,0.432}
 %-----------------
 % Set up your listings. You can type `texdoc listings` in your terminal
 
@@ -73,16 +74,27 @@
 % 		Commands 
 %----------------------------------------------------------------------------------------
 %% Short Hand
+\makeatletter
+\DeclareRobustCommand\onedot{\futurelet\@let@token\@onedot}
+\def\@onedot{\ifx\@let@token.\else.\null\fi\xspace}
+
 \newcommand{\R}{\textup{\textrm{R}}\xspace}
-\newcommand{\meb}{{\bf Garrison, S. M.}\xspace}
-\newcommand{\et}{\textit{et al.}\xspace}
+\newcommand{\meb}{{\bf Garrison, S. M}\onedot}
+\newcommand{\et}{\textit{et al}\onedot}
 \newcommand{\etal}{\et}
-\newcommand{\eg}{\textit{e.g.}\xspace}
-\newcommand{\ie}{\textit{i.e.}\xspace}
-\newcommand{\etc}{\textit{etc}\xspace}
+\newcommand{\etc}{\textit{etc}\onedot}
+\def\ie{{\textit{i.e}}\onedot} \def\Ie{{\textit{I.e}}\onedot}
+\def\cf{{\textit{c.f}}\onedot} \def\Cf{{\textit{C.f}}\onedot}
+\def\dof{d.o.f\onedot}
+\def\eg{{\textit{e.g}}\onedot} \def\Eg{{\textit{E.g}}\onedot}
+\def\vs{{vs}\onedot}
+\def\wrt{w.r.t\onedot}
+\makeatother
 %% In line Comments
+%%Comments
 \usepackage[colorinlistoftodos]{todonotes}
 \newcommand{\cil}[1]{\todo[inline, color=green!40]{#1}}
+\newcommand{\cm}[1]{\todo[color=green!40]{#1}}
 
 %%% Remove DOI %UNCOMMENT ALL to toggle between DOI and URL
 \usepackage{environ}
@@ -196,3 +208,7 @@
 {
   \refstepcounter{myhypothesis}\label{hyp_#1}%
 }
+%%% Slanty fractions
+\newcommand{\slantfrac}[2]{\,^#1\!/_#2}
+
+

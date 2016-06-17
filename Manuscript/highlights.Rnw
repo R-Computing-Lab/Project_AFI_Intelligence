@@ -3,9 +3,17 @@
 \begin{document}
 \shorttitle{Intelligence and AFI}
 \begin{itemize}
-\item The causal relationship between intelligence and age at first intercourse is tested, using inter-generational sibling comparisons.
-\item When we evaluated the relationship between maternal/child intelligence and AFI, using a between-family design, we found a positive relationship between intelligence and AFI.
-\item When we use a within-family design and compare offspring of sisters, and then compare the offspring themselves, the relationship between maternal/child intelligence and AFI virtually disappears.
-\item These results suggest that the cause of the intelligence-AFI link is not intelligence per se, but rather differences between families (parental education, SES, \textit{etc.}) that correlate with family-level (but not individual-level) intelligence.
+\item We tested the causal link between AFI and intelligence using inter-generational data, and explicitly parsed between- and within-family variance.
+
+\item When we evaluated the relationship using a between-family design, we found a positive relationship between intelligence and AFI for both maternal intelligence and child intelligence.
+
+\item When we use a within-family design, the relationship between intelligence and AFI vanishes for both maternal intelligence and child intelligence.
+
+\item We find no evidence for intelligence being a direct causal influence on AFI. 
+
+\item These results suggest that the cause of the intelligence-AFI link is not intelligence \textit{per se}, but rather differences between families (parental education, SES, \textit{etc.}) that correlate with family-level (but not individual-level) intelligence.
+
+\item Although ``Smart Teens Don't Have Sex (or Kiss Much Either)'' (Halpern \textit{et al}, 2000) at a descriptive level, the specific and proximal causal factors do not appear to be much related to smartness.
+
 \end{itemize}
 \end{document}

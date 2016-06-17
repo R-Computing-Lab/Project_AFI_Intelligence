@@ -1,8 +1,14 @@
 \begin{table*}[hbt]
 \ifnextchar[{\eatarg}{}
 {@{\extracolsep{5pt}}lccc}
-\caption{Dif Joint Intelligence $\rightarrow$ Dif Gen2 AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_9}
-\partialinput{5}{26}{../Common/content/tables/table_Dif_Joint_Intelligence_Dif_Child_AFI_9.tex}
-\end{table*}
-\efloatseparator
- 
+\caption{Within-Family: Gen1 \& Gen2 Differences in Intelligence Predict Gen2 Differences in AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_9}
+\\[-1.8ex]\hline
+\hline \\[-3.8ex]
+& \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 AFI} \\
+\cline{2-4}
+\partialinput{10}{25}{../Common/content/tables/table_Dif_Joint_Intelligence_Dif_Child_AFI_9.tex}\\[-8ex]
+\textit{Notes:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\[2ex]
+& \multicolumn{3}{r}{\parbox{.6\linewidth}{Gen1-sister differences in standardized AFQT scores and Gen2-cousin differences in standardized intelligence scores predict Gen2 differences in gender-standardized AFI.}} \\
+\end{longtable}
+%\end{adjustbox}
+\end{landscape}

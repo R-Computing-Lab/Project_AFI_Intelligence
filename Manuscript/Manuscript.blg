@@ -1,13 +1,8 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Manuscript.aux
 The style file: apacite.bst
 Database file #1: Projects-AFI.bib
-Warning--I didn't find a database entry for "Rodgers2000"
-Warning--I didn't find a database entry for "Rutter2007"
-Warning--I didn't find a database entry for "rodgers2014birth"
-Warning--I didn't find a database entry for "Der2009"
+Warning--entry type for "mplus" isn't style-file defined
+--line 852 of file Projects-AFI.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No address in kass1982
-Warning--No journal in kinsey1948sexual
-Warning--No address in mayberry1992computing
-Warning--No address in mcgrevy1974relationships
-(There were 8 warnings)
+(There were 2 warnings)

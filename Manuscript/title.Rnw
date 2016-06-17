@@ -4,7 +4,7 @@
 \usepackage{inconsolata}
 
 %%%%%%%%%%%% Title %%%%%%%%%%%%
-\title{Is the Link Between Intelligence and Age at First Intercourse Causal or Correlational? \\ A Cross-Generational Sibling Comparison Design Using the NLSY}
+\title{Casting doubt on the causal link between intelligence and age at first intercourse:\\ A cross-generational sibling comparison design using the NLSY}
 \shorttitle{Intelligence and AFI}
 %
 % Authors and Affiliations

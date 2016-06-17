@@ -99,10 +99,10 @@ Belmont, L.%
 \newblock
 \APACrefYearMonthDay{1973}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Birth Order, Family Size, and Intelligence A study of a
-  total population of 19-year-old men born in the Netherlands is presented}}
-  {{Birth Order, Family Size, and Intelligence A study of a total population of
-  19-year-old men born in the Netherlands is presented}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Birth order, family size, and intelligence: A study of
+  a total population of 19-year-old men born in the Netherlands is presented}}
+  {{Birth order, family size, and intelligence: A study of a total population
+  of 19-year-old men born in the Netherlands is presented}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Science}{182}{4117}{1096--1101}.
 \PrintBackRefs{\CurrentBib}
@@ -266,9 +266,10 @@ Bozon, M.%
 \newblock
 \APACrefYearMonthDay{2003}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{At what age do women and men have their first sexual
-  intercourse? World comparisons and recent trends}} {{At what age do women and
-  men have their first sexual intercourse? World comparisons and recent
+{\BBOQ}\APACrefatitle {{Comparing male and female experiences At what age do
+  women and men have their first sexual intercourse? World comparisons and
+  recent trends}} {{Comparing male and female experiences At what age do women
+  and men have their first sexual intercourse? World comparisons and recent
   trends}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Population and Societies}{}{391}{1--4}.
@@ -357,6 +358,37 @@ Damian, R\BPBI I.%
   representative sample of US high school students}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Research in Personality}{58}{}{96--105}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Der%
+, Batty%
+\BCBL {}\ \BBA {} Deary%
+}{%
+Der%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+Der2009}
+\APACinsertmetastar {%
+Der2009}%
+\begin{APACrefauthors}%
+Der, G.%
+, Batty, G\BPBI D.%
+\BCBL {}\ \BBA {} Deary, I\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The association between IQ in adolescence and a range
+  of health outcomes at 40 in the 1979 US National Longitudinal Study of
+  Youth.}} {{The association between IQ in adolescence and a range of health
+  outcomes at 40 in the 1979 US National Longitudinal Study of Youth.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Intelligence}{37}{6}{573--580}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.intell.2008.12.002} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -462,7 +494,7 @@ D'Onofrio, B\BPBI M.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2013}{oct}{}.
+\APACrefYearMonthDay{2013}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Critical need for family-based, quasi-experimental
   designs in integrating genetic and social science research.}} {{Critical need
@@ -528,6 +560,60 @@ Dunn, L\BPBI M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+East%
+}{%
+East%
+}{%
+{\protect \APACyear {1996}}%
+}]{%
+east1996younger}
+\APACinsertmetastar {%
+east1996younger}%
+\begin{APACrefauthors}%
+East, P\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The younger sisters of childbearing adolescents: Their
+  attitudes, expectations, and behaviors}} {{The younger sisters of
+  childbearing adolescents: Their attitudes, expectations, and
+  behaviors}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Child Development}{67}{2}{267--282}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+East%
+, Felice%
+\BCBL {}\ \BBA {} Morgan%
+}{%
+East%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1993}}%
+}]{%
+east1993sisters}
+\APACinsertmetastar {%
+east1993sisters}%
+\begin{APACrefauthors}%
+East, P\BPBI L.%
+, Felice, M\BPBI E.%
+\BCBL {}\ \BBA {} Morgan, M\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1993}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Sisters' and girlfriends' sexual and childbearing
+  behavior: Effects on early adolescent girls' sexual outcomes}} {{Sisters' and
+  girlfriends' sexual and childbearing behavior: Effects on early adolescent
+  girls' sexual outcomes}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Marriage and Family}{55}{4}{953}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Engel%
 }{%
 Engel%
@@ -544,8 +630,8 @@ Engel, G\BPBI L.%
 \newblock
 \APACrefYearMonthDay{1977}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{The need for a new medical model: a challenge for
-  biomedicine}} {{The need for a new medical model: a challenge for
+{\BBOQ}\APACrefatitle {{The need for a new medical model: A challenge for
+  biomedicine}} {{The need for a new medical model: A challenge for
   biomedicine}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Science}{196}{4286}{129--136}.
@@ -601,6 +687,33 @@ Galbraith, R\BPBI C.%
 \APACjournalVolNumPages{Developmental Psychology}{18}{2}{151--173}.
 \newblock
 \begin{APACrefDOI} \doi{10.1037//0012-1649.18.2.151} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Geronimus%
+\ \BBA {} Korenman%
+}{%
+Geronimus%
+\ \BBA {} Korenman%
+}{%
+{\protect \APACyear {1992}}%
+}]{%
+geronimus1992socioeconomic}
+\APACinsertmetastar {%
+geronimus1992socioeconomic}%
+\begin{APACrefauthors}%
+Geronimus, A\BPBI T.%
+\BCBT {}\ \BBA {} Korenman, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1992}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The socioeconomic consequences of teen childbearing
+  reconsidered}} {{The socioeconomic consequences of teen childbearing
+  reconsidered}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Quarterly Journal of Economics}{107}{4}{1187--1214}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -766,8 +879,8 @@ Herrnstein, R\BPBI J.%
 \newblock
 \APACrefYear{1994}.
 \newblock
-\APACrefbtitle {{Bell Curve: Intelligence and class structure in American
-  life.}} {{Bell Curve: Intelligence and class structure in American life.}}
+\APACrefbtitle {{Bell curve: Intelligence and class structure in American
+  life.}} {{Bell curve: Intelligence and class structure in American life.}}
 \newblock
 \APACaddressPublisher{New York, NY}{Free Press}.
 \PrintBackRefs{\CurrentBib}
@@ -791,7 +904,7 @@ Hirschi, T.%
 \newblock
 \APACrefbtitle {{Causes of delinquency}} {{Causes of delinquency}}.
 \newblock
-\APACaddressPublisher{}{Transaction publishers}.
+\APACaddressPublisher{Piscataway, NJ}{Transaction publishers}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1021,12 +1134,12 @@ Kinsey, A\BPBI C.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{1948}{}{}.
+\APACrefYear{1948}.
 \newblock
-{\BBOQ}\APACrefatitle {{Sexual behavior in the human male}} {{Sexual behavior
-  in the human male}}.{\BBCQ}
+\APACrefbtitle {{Sexual behavior in the human male}} {{Sexual behavior in the
+  human male}}.
 \newblock
-
+\APACaddressPublisher{Philadelphia}{W. B. Saunders Company}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1329,7 +1442,7 @@ Mayberry, P\BPBI W.%
 \APACrefbtitle {{Computing AFQT scores from historical data}} {{Computing AFQT
   scores from historical data}}\ \APACbVolEdTR{}{\BTR{}}.
 \newblock
-\APACaddressInstitution{}{DTIC Document}.
+\APACaddressInstitution{Alexandria, VA}{Center for Naval Analyses}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1354,11 +1467,39 @@ McGrevy, D\BPBI F.%
 \APACrefYearMonthDay{1974}{}{}.
 \newblock
 \APACrefbtitle {{Relationships among an individual intelligence test and two
-  air force screening and selection tests}} {{Relationships among an individual
-  intelligence test and two air force screening and selection tests}}\
+  Air Force screening and selection tests}} {{Relationships among an individual
+  intelligence test and two Air Force screening and selection tests}}\
   \APACbVolEdTR{}{\BTR{}}.
 \newblock
-\APACaddressInstitution{}{DTIC Document}.
+\APACaddressInstitution{Brooks Air Force Base, Tx}{Air Force Human Resources
+  Lab}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mercy%
+\ \BBA {} Steelman%
+}{%
+Mercy%
+\ \BBA {} Steelman%
+}{%
+{\protect \APACyear {1982}}%
+}]{%
+mercy1982familial}
+\APACinsertmetastar {%
+mercy1982familial}%
+\begin{APACrefauthors}%
+Mercy, J\BPBI A.%
+\BCBT {}\ \BBA {} Steelman, L\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1982}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Familial influence on the intellectual attainment of
+  children}} {{Familial influence on the intellectual attainment of
+  children}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Sociological Review}{}{}{532--542}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1494,14 +1635,12 @@ Mott, F\BPBI L.%
 \APACrefYearMonthDay{1983}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Early fertility behavior among American youth: Evidence
-  from the 1982 national longitudinal surveys of labor force behavior of
-  youth}} {{Early fertility behavior among American youth: Evidence from the
-  1982 national longitudinal surveys of labor force behavior of youth}}.{\BBCQ}
+  from the 1982 National Longitudinal Surveys of Labor Force Behavior of
+  Youth}} {{Early fertility behavior among American youth: Evidence from the
+  1982 National Longitudinal Surveys of Labor Force Behavior of Youth}}.{\BBCQ}
 \newblock
-\BIn{} \APACrefbtitle {America Public Health Association Meetings.} {America
-  public health association meetings.}
-\newblock
-\APACaddressPublisher{Dallas, TX}{}.
+\APACjournalVolNumPages{\textnormal{Paper presented at the}America Public
+  Health Association Meeting}{}{}{Dallas, TX}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1529,6 +1668,28 @@ Mott, F\BPBI L.%
 \newblock
 \APACaddressPublisher{}{Center for Human Resource Research, Ohio State
   University}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Murray%
+}{%
+Murray%
+}{%
+{\protect \APACyear {1998}}%
+}]{%
+murray1998income}
+\APACinsertmetastar {%
+murray1998income}%
+\begin{APACrefauthors}%
+Murray, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1998}.
+\newblock
+\APACrefbtitle {{Income inequality and IQ.}} {{Income inequality and IQ.}}
+\newblock
+\APACaddressPublisher{}{American Enterprise Inst. for Public Policy Research}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1585,6 +1746,37 @@ Nedelec, J\BPBI L.%
   Results from a longitudinal sample of monozygotic twins}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Temas em Psicologia}{20}{1}{31--43}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Neisser%
+\ \protect \BOthers {.}}{%
+Neisser%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1996}}%
+}]{%
+Neisser1996}
+\APACinsertmetastar {%
+Neisser1996}%
+\begin{APACrefauthors}%
+Neisser, U.%
+, Boodoo, G.%
+, {Bouchard, Jr.}, T\BPBI J.%
+, Boykin, A\BPBI W.%
+, Brody, N.%
+, Ceci, S\BPBI J.%
+\BDBL {}Urbina, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Intelligence: Knowns and unknowns.}} {{Intelligence:
+  Knowns and unknowns.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Psychologist}{51}{2}{77--101}.
+\newblock
+\begin{APACrefDOI} \doi{10.1037/0003-066X.51.2.77} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1701,8 +1893,12 @@ Petersen, A\BPBI C.%
   sample case of early adolescence.}} {{The nature of biological-psychosocial
   interactions: The sample case of early adolescence.}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Biological-Psychosocial interactions in early
-  adolescence. Child psychology.}{}{}{35--61}.
+\BIn{} R\BPBI M.~Lerner\ \BBA {} T\BPBI T.~Foch\ (\BEDS), \APACrefbtitle
+  {Biological-Psychosocial interactions in early adolescence: Child
+  psychology.} {Biological-psychosocial interactions in early adolescence:
+  Child psychology.}\ (\BPGS\ 35--61).
+\newblock
+\APACaddressPublisher{Hillsdale, NJ}{Lawrence Erlbaum Associates, Inc}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1803,8 +1999,8 @@ Rodgers, J\BPBI L.%
 \newblock
 \APACrefYearMonthDay{1984}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Confluence effects: Not here, not now.}} {{Confluence
-  effects: Not here, not now.}}{\BBCQ}
+{\BBOQ}\APACrefatitle {{Confluence effects: Not here, not now!}} {{Confluence
+  effects: Not here, not now!}}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Developmental Psychology}{20}{2}{321}.
 \PrintBackRefs{\CurrentBib}
@@ -1865,6 +2061,31 @@ Rodgers, J\BPBI L.%
 
 \bibitem [\protect \citeauthoryear {%
 Rodgers%
+}{%
+Rodgers%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+rodgers2014birth}
+\APACinsertmetastar {%
+rodgers2014birth}%
+\begin{APACrefauthors}%
+Rodgers, J\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Are birth order effects on intelligence really Flynn
+  Effects? Reinterpreting Belmont and Marolla 40 years later}} {{Are birth
+  order effects on intelligence really Flynn Effects? Reinterpreting Belmont
+  and Marolla 40 years later}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Intelligence}{42}{}{128--133}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodgers%
 \ \protect \BOthers {.}}{%
 Rodgers%
 \ \protect \BOthers {.}}{%
@@ -1891,7 +2112,39 @@ Rodgers, J\BPBI L.%
   research}} {{The NLSYKinship Links: Using the NLSY79 and NLSY-Children data
   to conduct genetically-informed and family-oriented research}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Behavior Genetics, Accepted pending Revision}{}{}{}.
+\APACjournalVolNumPages{Behavior Genetics}{46}{4}{538--551}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s10519-016-9785-3} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodgers%
+, Cleveland%
+, van~den Oord%
+\BCBL {}\ \BBA {} Rowe%
+}{%
+Rodgers%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2000}}%
+}]{%
+Rodgers2000}
+\APACinsertmetastar {%
+Rodgers2000}%
+\begin{APACrefauthors}%
+Rodgers, J\BPBI L.%
+, Cleveland, H\BPBI H.%
+, van~den Oord, E.%
+\BCBL {}\ \BBA {} Rowe, D\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Resolving the debate over birth order, family size, and
+  intelligence.}} {{Resolving the debate over birth order, family size, and
+  intelligence.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Psychologist}{55}{6}{599}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1931,6 +2184,33 @@ Rodgers, J\BPBI L.%
 
 \bibitem [\protect \citeauthoryear {%
 Rodgers%
+\ \BBA {} Rowe%
+}{%
+Rodgers%
+\ \BBA {} Rowe%
+}{%
+{\protect \APACyear {1990}}%
+}]{%
+rodgers1990adolescent}
+\APACinsertmetastar {%
+rodgers1990adolescent}%
+\begin{APACrefauthors}%
+Rodgers, J\BPBI L.%
+\BCBT {}\ \BBA {} Rowe, D\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1990}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Adolescent sexual activity and mildly deviant behavior:
+  Sibling and friendship effects}} {{Adolescent sexual activity and mildly
+  deviant behavior: Sibling and friendship effects}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Family Issues}{11}{3}{274--293}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodgers%
 , Rowe%
 \BCBL {}\ \BBA {} Buster%
 }{%
@@ -1956,6 +2236,35 @@ Rodgers, J\BPBI L.%
   models to NLSY kinship data}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Biosocial Science}{31}{01}{29--41}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodgers%
+, Rowe%
+\BCBL {}\ \BBA {} Harris%
+}{%
+Rodgers%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1992}}%
+}]{%
+rodgers1992sibling}
+\APACinsertmetastar {%
+rodgers1992sibling}%
+\begin{APACrefauthors}%
+Rodgers, J\BPBI L.%
+, Rowe, D\BPBI C.%
+\BCBL {}\ \BBA {} Harris, D\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1992}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Sibling differences in adolescent sexual behavior:
+  Inferring process models from family composition patterns}} {{Sibling
+  differences in adolescent sexual behavior: Inferring process models from
+  family composition patterns}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Marriage and Family}{}{}{142--152}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2006,13 +2315,37 @@ Rowe, D\BPBI C.%
 \newblock
 \APACrefYearMonthDay{1997}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Poverty and behavior : Are environmental measures
-  nature and nurture?}} {{Poverty and behavior : Are environmental measures
-  nature and nurture?}}{\BBCQ}
+{\BBOQ}\APACrefatitle {{Poverty and behavior: Are environmental measures nature
+  and nurture?}} {{Poverty and behavior: Are environmental measures nature and
+  nurture?}}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Developmental Review}{17}{3}{358--375}.
 \newblock
 \begin{APACrefDOI} \doi{10.1006/drev.1997.0434} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rutter%
+}{%
+Rutter%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+Rutter2007}
+\APACinsertmetastar {%
+Rutter2007}%
+\begin{APACrefauthors}%
+Rutter, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Proceeding from observed correlation to causal
+  inference: The use of natural experiments}} {{Proceeding from observed
+  correlation to causal inference: The use of natural experiments}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Perspectives on Psychological Science}{2}{4}{377--395}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2158,6 +2491,32 @@ Spriggs, A\BPBI L.%
   Health}{40}{3}{152--161}.
 \newblock
 \begin{APACrefDOI} \doi{10.1363/4015208} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Strenze%
+}{%
+Strenze%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+Strenze2007}
+\APACinsertmetastar {%
+Strenze2007}%
+\begin{APACrefauthors}%
+Strenze, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Intelligence and socioeconomic success: A meta-analytic
+  review of longitudinal research}} {{Intelligence and socioeconomic success: A
+  meta-analytic review of longitudinal research}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Intelligence}{35}{5}{401--426}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.intell.2006.09.004} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2463,7 +2822,7 @@ Zajonc, R\BPBI B.%
   aptitude scores parallel trends in family size and the spacing of
   children.}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Science}{}{}{}.
+\APACjournalVolNumPages{Science}{192}{}{227--236}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

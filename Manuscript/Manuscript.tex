@@ -51,9 +51,13 @@
 \usepackage{../Common/style/Mason}
 \usepackage{listings}
 \usepackage{inconsolata}
-
+\usepackage[bottom]{footmisc} %fix footnotes
+\usepackage{lineno}
+\usepackage{adjustbox}
+%\linenumbers
+\interfootnotelinepenalty=10000
 %%%%%%%%%%%% Title %%%%%%%%%%%%
-\title{Is the Link Between Intelligence and Age at First Intercourse Causal or Correlational? \\ A Cross-Generational Sibling Comparison Design Using the NLSY}
+\title{Casting doubt on the causal link between intelligence and age at first intercourse:\\ A cross-generational sibling comparison design using the NLSY}
 \shorttitle{Intelligence and AFI}
 %
 % Authors and Affiliations
@@ -98,7 +102,7 @@
 
 %%%%%%%%%%%% Method %%%%%%%%%%%%
 \section{Method}
-\subsection{Research Design}
+\subsection{Research Design and Analytic Approach}
 \input{../Common/content/writing/design.tex}
 %
 % Sample
@@ -114,7 +118,7 @@
 \subsection{Measures}
 \input{../Common/content/writing/AFI.tex}
 \noindent\begin{minipage}{\linewidth}
-\captionof{figure}{Smoothed Density Plots of AFI by Race and Sex}
+\captionof{figure}{Smoothed Density Plots of Gen1 AFI by Race and Sex}
 \label{plot_afi_by_race_sex}
 \begin{center}
 \begin{knitrout}
@@ -131,10 +135,10 @@
 % Difference Score Reliability
 \subsection{Reliability of Difference Scores}
 
-Our design assumes that the difference scores of our measures are reliable. We've reported the test-retest reliability of Gen2 intelligence and Gen1 AFI in earlier sections. Here, we report the test-retest reliability of the pairwise differences of those measures. 
-\subsubsection{AFI} Comparing sibling differences in AFI as reported in 1983 and 1984 (n = 783 pairs) we found a moderate correlation (r = .76). The sample of sibling pairs with complete information in 1985 was too small (n = 12 pairs) to compare to the other two years. Regardless, sibling differences in self-reported AFI appear satisfactory for research purposes. We note that the common concern with unreliability of difference scores is at least partially mitigated when the separate scores defining the differences are reliable themselves. Because we could not estimate test-retest reliabilities for Generation 2, we calculated the reliability using Lord's equation (\citeyear{Lord1963}). Generation 2 Mean AFI difference scores were also moderately reliable (r = 0.734) and comparable to Generation 1 sibling differences.
+Our design assumes that the difference scores of our measures are reliable. We have reported the test-retest reliability of Gen2 intelligence and Gen1 AFI in earlier sections. Here, we report the test-retest reliability of the pairwise differences of those measures. 
+\subsubsection{AFI} Comparing sibling differences in AFI as reported in 1983 and 1984 (n = 783 pairs) we found a moderate correlation (r = 0.76). The sample of sibling pairs with complete information in 1985 was too small (n = 12 pairs) to compare to the other two years. Regardless, sibling differences in self-reported AFI appear satisfactory for research purposes. We note that the common concern with unreliability of difference scores is at least partially mitigated when the separate scores defining the differences are reliable themselves. Because we could not estimate test-retest reliabilities for Generation 2, we calculated the reliability using Lord's (\citeyear{Lord1963}) equation. Generation 2 Mean AFI difference scores were also moderately reliable (r = 0.73) and comparable to Generation 1 sibling differences.
 
-\subsubsection{Intelligence} Cousin differences in intelligence as assessed at ages 9.5, 10.5, and 11.5 were correlated using three different linking methods (Mixed, Daughters, Sons). Reliabilities across linking methods was consistent and high (min r = .86; max r = .95). However, we could not estimate test-retest reliabilities for Generation 1; we calculated the reliability using Lord's equation (\citeyear{Lord1963}). The calculated reliability of Generation 1's differences in AFQT was .61, which was only minimally  acceptable, and obviously lower than the empirical correlation we derived for cousin differences.%0.606
+\subsubsection{Intelligence} Cousin differences in intelligence as assessed at ages 9.5, 10.5, and 11.5 were correlated using three different linking methods (Mixed, Daughters, Sons). Reliabilities across linking methods was consistent and high (min r = .86; max r = .95). However, we could not estimate test-retest reliabilities for Generation 1; we calculated the reliability using Lord's (\citeyear{Lord1963}) equation. The calculated reliability of Generation 1's differences in AFQT was 0.70, which was marginally acceptable, and obviously lower than the empirical correlation we derived for cousin differences.%0.7
 
 %%%%%%%%%%%% Results %%%%%%%%%%%%
 \section{Results}
@@ -143,26 +147,28 @@ Our design assumes that the difference scores of our measures are reliable. We'v
 % Between-Family
 \subsection{Between-Family Analyses}
 \input{../Common/content/writing/results_between.tex}
-%
-\begin{landscape}\noindent\begin{minipage}{\linewidth}
-\captionof{figure}{Generation 2: Age at First Intercourse vs. Intelligence}
+
+\noindent\begin{minipage}{\paperwidth}
+\captionof{figure}{Gen2 AFI vs. Gen1 \& Gen2 Intelligence}
 \label{plot_gen2_afi}
 \begin{center}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=.8\paperwidth]{figure/plot_gen2_afi-1} 
+\includegraphics[width=1\paperwidth]{figure/plot_gen2_afi-1} 
 
 \end{knitrout}
 \end{center}
-\end{minipage}\end{landscape}
+\end{minipage}
+\end{landscape}
+
 %
 % Within-Family
-\subsection{Within-Family Analyses}
+\subsection{Combination Between- and Within-Family Analyses}
 \input{../Common/content/writing/results_within.tex}
 %
 \begin{landscape}
 \noindent\begin{minipage}{\linewidth}
-\captionof{figure}{Generation 1: Age at First Intercourse vs. Intelligence}
+\captionof{figure}{Gen1 AFI vs. Gen1 Intelligence with Marginal Distributions by Sibling Difference in AFQT}
 \label{plot_gen1_afi}
 \begin{center}
 \begin{knitrout}
@@ -188,9 +194,9 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %%%
   %%% Mom -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_10}
+  \caption{Between-Family: Gen1 Intelligence Predicts Gen2 AFI} \label{table_Mean_Mom_Intelligence_Mean_Child_AFI_10}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
+  \hline \\[-3.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{22}{../Common/content/tables/table_Mean_Mom_Intelligence_Mean_Child_AFI_10.tex}
@@ -198,9 +204,9 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %%%
   %%% Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen2 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_10}
+  \caption{Between-Family: Gen2 Intelligence Predicts Gen2 AFI} \label{table_Mean_Child_Intelligence_Mean_Child_AFI_10}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
+  \hline \\[-3.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{22}{../Common/content/tables/table_Mean_Child_Intelligence_Mean_Child_AFI_10.tex}
@@ -208,9 +214,9 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %%%
   %%% Mom Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Joint Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_10}
+  \caption{Between-Family: Gen1 \& Gen2 Intelligence Predict Gen2 AFI} \label{table_Mean_Joint_Intelligence_Mean_Child_AFI_10}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
+  \hline \\[-3.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{23}{../Common/content/tables/table_Mean_Joint_Intelligence_Mean_Child_AFI_10.tex}
@@ -221,30 +227,30 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %%%
   %%% Mom -> Child
 \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen1 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_10}
+  \caption{Within-Family: Gen1 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Mom_Intelligence_Dif_Child_AFI_10}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
-  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{24}{../Common/content/tables/table_Dif_Mom_Intelligence_Dif_Child_AFI_10.tex}
   \end{longtable}\pagebreak
   %%%
   %%% Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen2 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_10}
+  \caption{Within-Family: Gen2 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Child_Intelligence_Dif_Child_AFI_10}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
-  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{24}{../Common/content/tables/table_Dif_Child_Intelligence_Dif_Child_AFI_10.tex}
   \end{longtable}\pagebreak
   %%%
   %%% Mom Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Joint Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_10}
+  \caption{Within-Family: Gen1 \& Gen2 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Joint_Intelligence_Dif_Child_AFI_10}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
-  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 Mean AFI} \\ 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{26}{../Common/content/tables/table_Dif_Joint_Intelligence_Dif_Child_AFI_10.tex}
   \end{longtable}
@@ -254,9 +260,9 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   \subsection{Between-Family Analyses}
   %%% Mom -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_11}
+  \caption{Between-Family: Gen1 Intelligence Predicts Gen2 AFI} \label{table_Mean_Mom_Intelligence_Mean_Child_AFI_11}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
+  \hline \\[-3.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{22}{../Common/content/tables/table_Mean_Mom_Intelligence_Mean_Child_AFI_11.tex}
@@ -264,9 +270,9 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %%%
   %%% Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen2 Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_11}
+  \caption{Between-Family: Gen2 Intelligence Predicts Gen2 AFI} \label{table_Mean_Child_Intelligence_Mean_Child_AFI_11}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
+  \hline \\[-3.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{22}{../Common/content/tables/table_Mean_Child_Intelligence_Mean_Child_AFI_11.tex}
@@ -274,9 +280,9 @@ Our design assumes that the difference scores of our measures are reliable. We'v
   %%%
   %%% Mom Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Joint Mean Intelligence $\rightarrow$ Gen2 Mean AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_11}
+  \caption{Between-Family: Gen1 \& Gen2 Intelligence Predict Gen2 AFI} \label{table_Mean_Joint_Intelligence_Mean_Child_AFI_11}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
+  \hline \\[-3.8ex] 
   & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{23}{../Common/content/tables/table_Mean_Joint_Intelligence_Mean_Child_AFI_11.tex}
@@ -285,32 +291,32 @@ Our design assumes that the difference scores of our measures are reliable. We'v
     %% Within-Family
   \subsection{Within-Family Analyses}
   %%%
-  %%% Child -> Child
+  %%% Mom -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen1 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_11}
+  \caption{Within-Family: Gen1 Differences in Intelligence Predict Gen2 Differences in AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_11}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
-  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{24}{../Common/content/tables/table_Dif_Mom_Intelligence_Dif_Child_AFI_11.tex}
   \end{longtable}\pagebreak
   %%%
   %%% Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Gen2 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_11}
+  \caption{Within-Family: Gen2 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Child_Intelligence_Dif_Child_AFI_11}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
-  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{24}{../Common/content/tables/table_Dif_Child_Intelligence_Dif_Child_AFI_11.tex}
   \end{longtable}\pagebreak
   %%%
   %%% Mom Child -> Child
   \begin{longtable}{@{\extracolsep{5pt}}lccc} 
-  \caption{Joint Intelligence Differences $\rightarrow$ Gen2 AFI Differences}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_11}
+  \caption{Within-Family: Gen1 \& Gen2 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Joint_Intelligence_Dif_Child_AFI_11}
   \\[-1.8ex]\hline 
-  \hline \\[-1.8ex] 
-  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 Mean AFI} \\ 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 AFI} \\ 
   \cline{2-4}
   \partialinput{10}{26}{../Common/content/tables/table_Dif_Joint_Intelligence_Dif_Child_AFI_11.tex}
   \end{longtable}

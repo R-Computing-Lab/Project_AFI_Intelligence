@@ -17,3 +17,6 @@ tables
 xtable
 gtable
 gridExtra
+boot
+MASS
+QuantPsyc
