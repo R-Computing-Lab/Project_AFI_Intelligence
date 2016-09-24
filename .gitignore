@@ -45,6 +45,7 @@ Temporary Items
 *.Rhistory
 *.pper
 .Rproj.user/*
+Manuscript/cache/*
 test*
 figure/setup-1.pdf
 hidden/*
