@@ -53,20 +53,12 @@ my.tex
 my.aux
 Common/content/scrap.txt
 Manuscript/reviewer*
-Submission/reviews/*
+Submission/*
 
 *.log
-Manuscript/Backup of reviewer_response.wbk
 *.wbk
 *.RData
-Submission/v2/reviewer_response_v1.pdf
-Submission/v2/reviewer_response_v2.pdf
-Submission/v1/CoverLetter_smg.pdf
 *.docx
-Manuscript/Manuscript.tex.bak
-Manuscript/latebloomer.pdf
-Manuscript/latebloomer.tex
-Manuscript/latebloomer.Rnw
-Manuscript/latebloomer-concordance.tex
-Manuscript/latebloomer.synctex.gz
 *.bak
+Manuscript/latebloomer*
+
