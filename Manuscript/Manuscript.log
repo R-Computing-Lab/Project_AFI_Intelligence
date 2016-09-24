@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.15)  12 JUN 2016 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.15)  7 JUL 2016 15:46
 entering extended mode
 **./Manuscript.tex
 (Manuscript.tex
@@ -1473,27 +1473,27 @@ tim
 (Manuscript.aux)
 \openout1 = `Manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 79.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 78.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 79.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1552,7 +1552,7 @@ Package caption Info: End \AtBeginDocument code.
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 \AtBeginShipoutBox=\box71
-Package hyperref Info: Link coloring OFF on input line 78.
+Package hyperref Info: Link coloring OFF on input line 79.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1563,15 +1563,15 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 \c@section@level=\count384
 LaTeX Info: Redefining \Ref on input line 513.
 )
-LaTeX Info: Redefining \ref on input line 78.
-LaTeX Info: Redefining \pageref on input line 78.
-LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
 
 (Manuscript.out) (Manuscript.out)
 \@outlinefile=\write6
 \openout6 = `Manuscript.out'.
 
-LaTeX Info: Redefining \Ref on input line 78.
+LaTeX Info: Redefining \Ref on input line 79.
 \c@lstlisting=\count385
  ABD: EveryShipout initializing macros
 [1{C:/Users/Owner/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
@@ -1623,56 +1623,56 @@ or \DeclareInputMath before using this key.
 ) [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 80.
+(hyperref)                removing `\\' on input line 81.
 
 (../Common/content/writing/introduction.tex [3] [4] [5]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 20.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 19.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 20.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 19.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 20.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 19.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 20.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 19.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 20.
+(Font)              <12> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 20.
+(Font)              <8> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 20.
-LaTeX Font Info:    Try loading font information for U+msa on input line 20.
+(Font)              <6> on input line 19.
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 20.
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 20.
+(Font)              <10> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 20.
+(Font)              <7> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 20.
+(Font)              <5> on input line 19.
  [6] [7]) [8]
-(../Common/content/writing/current_study.tex [9])
-(../Common/content/writing/design.tex [10]) [11]
+(../Common/content/writing/current_study.tex [9]) [10]
+(../Common/content/writing/design.tex) [11]
 (../Common/content/writing/subjects.tex
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 1.
 
@@ -1689,7 +1689,7 @@ File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.5 ...n/content/tables/table_ttafireliable_z.tex}
+l.6 ...n/content/tables/table_ttafireliable_z.tex}
                                                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1697,7 +1697,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.5 ...n/content/tables/table_ttafireliable_z.tex}
+l.6 ...n/content/tables/table_ttafireliable_z.tex}
                                                   
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1705,17 +1705,17 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.5 ...n/content/tables/table_ttafireliable_z.tex}
+l.6 ...n/content/tables/table_ttafireliable_z.tex}
                                                   
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
-[14]
+[14] [15]
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.19 \hline
+l.22 \hline
            
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1723,7 +1723,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.20 &
+l.23 &
        \multicolumn{2}{c}{AFI} \\
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1731,31 +1731,31 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra alignment tab has been changed to \cr.
 <template> \endtemplate 
                         
-l.20 &
+l.23 &
        \multicolumn{2}{c}{AFI} \\
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
-[15]) [16]
+)
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 121.
+(caption)                particular \caption on input line 122.
 See the caption package documentation for explanation.
 
 
-Package xcolor Warning: Incompatible color definition on input line 125.
+Package xcolor Warning: Incompatible color definition on input line 126.
 
-<figure/plot_afi_by_race_sex-1.pdf, id=653, 361.35pt x 289.08pt>
+<figure/plot_afi_by_race_sex-1.pdf, id=646, 361.35pt x 289.08pt>
 File: figure/plot_afi_by_race_sex-1.pdf Graphic file (type pdf)
 
 <use figure/plot_afi_by_race_sex-1.pdf>
 Package pdftex.def Info: figure/plot_afi_by_race_sex-1.pdf used on input line 1
-26.
+27.
 (pdftex.def)             Requested size: 388.37646pt x 310.702pt.
 
-(../Common/content/writing/intelligence.tex [17] [18 <./figure/plot_afi_by_race
-_sex-1.pdf>] [19]
+(../Common/content/writing/intelligence.tex [16] [17] [18 <./figure/plot_afi_by
+_race_sex-1.pdf>] [19]
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
@@ -1785,152 +1785,225 @@ So I'll assume that you meant to type \cr instead.
 (../Common/content/writing/results_between.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 7.
+(hyperref)                removing `math shift' on input line 8.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 7.
+(hyperref)                removing `\rightarrow' on input line 8.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 7.
+(hyperref)                removing `math shift' on input line 8.
 
 [22]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 9.
+(hyperref)                removing `math shift' on input line 10.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 9.
+(hyperref)                removing `\rightarrow' on input line 10.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 9.
+(hyperref)                removing `math shift' on input line 10.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 11.
+(hyperref)                removing `math shift' on input line 12.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 11.
+(hyperref)                removing `\rightarrow' on input line 12.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 11.
+(hyperref)                removing `math shift' on input line 12.
 
-[23] [24
+[23] [24] [25
 
-] [25]) [26]
+] [26])
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 152.
+(caption)                particular \caption on input line 156.
 See the caption package documentation for explanation.
 
 
-Package xcolor Warning: Incompatible color definition on input line 156.
+Package xcolor Warning: Incompatible color definition on input line 160.
 
-<figure/plot_gen2_afi-1.pdf, id=771, 361.35pt x 216.81pt>
+<figure/plot_gen2_afi-1.pdf, id=777, 361.35pt x 216.81pt>
 File: figure/plot_gen2_afi-1.pdf Graphic file (type pdf)
 
 <use figure/plot_gen2_afi-1.pdf>
-Package pdftex.def Info: figure/plot_gen2_afi-1.pdf used on input line 157.
+Package pdftex.def Info: figure/plot_gen2_afi-1.pdf used on input line 161.
 (pdftex.def)             Requested size: 597.50787pt x 358.5382pt.
- [27 <./figure/plot_gen2_afi-1.pdf>]
+ [27] [28 <./figure/plot_gen2_afi-1.pdf>]
 (../Common/content/writing/results_within.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 4.
+(hyperref)                removing `math shift' on input line 5.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 4.
+(hyperref)                removing `\rightarrow' on input line 5.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 4.
+(hyperref)                removing `math shift' on input line 5.
 
-[28
+[29
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 11.
+(hyperref)                removing `math shift' on input line 12.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 11.
+(hyperref)                removing `\rightarrow' on input line 12.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 11.
+(hyperref)                removing `math shift' on input line 12.
 
-[29] [30]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 20.
-
+[30] [31]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 20.
+(hyperref)                removing `math shift' on input line 21.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 20.
+(hyperref)                removing `\rightarrow' on input line 21.
 
-[31] [32
 
-] [33] [34
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 21.
+
+[32] [33
+
+] [34] [35
 
 
 ])
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 171.
+(caption)                particular \caption on input line 175.
 See the caption package documentation for explanation.
 
 
-Package xcolor Warning: Incompatible color definition on input line 175.
+Package xcolor Warning: Incompatible color definition on input line 179.
 
-<figure/plot_gen1_afi-1.pdf, id=827, 361.35pt x 289.08pt>
+<figure/plot_gen1_afi-1.pdf, id=841, 361.35pt x 289.08pt>
 File: figure/plot_gen1_afi-1.pdf Graphic file (type pdf)
 
 <use figure/plot_gen1_afi-1.pdf>
-Package pdftex.def Info: figure/plot_gen1_afi-1.pdf used on input line 176.
+Package pdftex.def Info: figure/plot_gen1_afi-1.pdf used on input line 180.
 (pdftex.def)             Requested size: 478.00812pt x 382.41162pt.
- [35
+ [36
 
 
  <./figure/plot_gen1_afi-1.pdf>]
-(../Common/content/writing/discussion.tex [36
+(../Common/content/writing/discussion.tex [37
 
-] [37] [38]) (Manuscript.bbl
-[39] [40
+] [38] [39]) (Manuscript.bbl
+[40] [41
 
-] [41] [42] [43] [44] [45] [46] [47] [48] [49]) [50] [51
+] [42] [43] [44] [45] [46] [47] [48] [49] [50]) [51] [52
 
 
-] [52] [53]
-[54] [55] [56] [57
+] [53] [54]
+[55] [56] [57] [58
 
-] [58] [59] [60] [61]
-Package atenddvi Info: Last page = 62.
- [62]
+] [59] [60] [61] [62] [63]
+
+Package caption Warning: \captionsetup{type*=...} or \captionof
+(caption)                outside box or environment on input line 330.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 330.
+See the caption package documentation for explanation.
+
+
+Package xcolor Warning: Incompatible color definition on input line 333.
+
+<figure/reviewer2_cor-1.pdf, id=1010, 722.7pt x 722.7pt>
+File: figure/reviewer2_cor-1.pdf Graphic file (type pdf)
+
+<use figure/reviewer2_cor-1.pdf>
+Package pdftex.def Info: figure/reviewer2_cor-1.pdf used on input line 334.
+(pdftex.def)             Requested size: 452.9679pt x 452.96558pt.
+ [64
+
+
+ <./figure/reviewer2_cor-1.pdf>]
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
+l.342 \hline
+            
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.343 &
+          \multicolumn{3}{c}{Semi-Partial Correlation (p-value)}\\
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Extra alignment tab has been changed to \cr.
+<template> \endtemplate 
+                        
+l.343 &
+          \multicolumn{3}{c}{Semi-Partial Correlation (p-value)}\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
+l.356 \hline
+            
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.357 &
+          \multicolumn{3}{c}{Semi-Partial Correlation (p-value)}\\
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Extra alignment tab has been changed to \cr.
+<template> \endtemplate 
+                        
+l.357 &
+          \multicolumn{3}{c}{Semi-Partial Correlation (p-value)}\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
 AED endfloat: Processing end Figures and Tables
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 324.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 324.
+Package atenddvi Info: Last page = 65.
+ [65]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 368.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 368.
  (Manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 324.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 324.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 368.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 368.
 Package rerunfilecheck Info: File `Manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: EA1E619525C8065AF39BACB637A3CEFD;2945.
  ) 
 Here is how much of TeX's memory you used:
- 34681 strings out of 493634
- 646875 string characters out of 3143744
- 723955 words of memory out of 3000000
- 37132 multiletter control sequences out of 15000+200000
+ 34703 strings out of 493634
+ 647235 string characters out of 3143744
+ 722443 words of memory out of 3000000
+ 37148 multiletter control sequences out of 15000+200000
  84995 words of font info for 77 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  69i,12n,58p,10396b,777s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1967,9 +2040,6 @@ pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{table.1} has been referenced but does not exist, re
-placed by a fixed one
-
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 , replaced by a fixed one
 
@@ -1991,9 +2061,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX
 lic/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Manuscript.pdf (62 pages, 1954547 bytes).
+Output written on Manuscript.pdf (65 pages, 1968709 bytes).
 PDF statistics:
- 1096 PDF objects out of 1200 (max. 8388607)
- 234 named destinations out of 1000 (max. 500000)
- 348 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1128 PDF objects out of 1200 (max. 8388607)
+ 239 named destinations out of 1000 (max. 500000)
+ 353 words of extra memory for PDF output out of 10000 (max. 10000000)
 

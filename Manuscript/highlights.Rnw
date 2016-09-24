@@ -13,7 +13,7 @@
 
 \item These results suggest that the cause of the intelligence-AFI link is not intelligence \textit{per se}, but rather differences between families (parental education, SES, \textit{etc.}) that correlate with family-level (but not individual-level) intelligence.
 
-\item Although ``Smart Teens Don't Have Sex (or Kiss Much Either)'' (Halpern \textit{et al}, 2000) at a descriptive level, the specific and proximal causal factors do not appear to be much related to smartness.
+\item Although ``smart teens don't have sex (or kiss much either)'' (Halpern \textit{et al}, 2000) at a descriptive level, their reasons for delaying these activities do not appear to be caused by their smartness.
 
 \end{itemize}
 \end{document}

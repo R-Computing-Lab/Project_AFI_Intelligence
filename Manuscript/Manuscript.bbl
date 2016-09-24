@@ -502,7 +502,7 @@ D'Onofrio, B\BPBI M.%
   social science research.}}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{American Journal of Public Health}{103
-  Suppl}{}{S46--55}.
+  Suppl}{SUPPL.1}{S46--55}.
 \newblock
 \begin{APACrefDOI} \doi{10.2105/AJPH.2013.301252} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -872,7 +872,7 @@ herrnstein1994bell}
 \APACinsertmetastar {%
 herrnstein1994bell}%
 \begin{APACrefauthors}%
-Herrnstein, R\BPBI J.%
+Herrnstein, R\BPBI J\BPBI R.%
 \BCBT {}\ \BBA {} Murray, C.%
 \end{APACrefauthors}%
 \unskip\
@@ -1116,13 +1116,39 @@ Kenny, D\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Kim%
+}{%
+Kim%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+kim2015ppcor}
+\APACinsertmetastar {%
+kim2015ppcor}%
+\begin{APACrefauthors}%
+Kim, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{ppcor: An R package for a fast calculation to
+  semi-partial correlation coefficients}} {{ppcor: An R package for a fast
+  calculation to semi-partial correlation coefficients}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Communications for statistical applications and
+  methods}{22}{6}{665}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Kinsey%
 , Pomeroy%
-\BCBL {}\ \BBA {} Martin%
+, Martin%
+\BCBL {}\ \BBA {} Gebhard%
 }{%
 Kinsey%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {1948}}%
+{\protect \APACyear {1953}}%
 }]{%
 kinsey1948sexual}
 \APACinsertmetastar {%
@@ -1130,11 +1156,12 @@ kinsey1948sexual}%
 \begin{APACrefauthors}%
 Kinsey, A\BPBI C.%
 , Pomeroy, W\BPBI B.%
-\BCBL {}\ \BBA {} Martin, C\BPBI E.%
+, Martin, C\BPBI E.%
+\BCBL {}\ \BBA {} Gebhard, P\BPBI H.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{1948}.
+\APACrefYear{1953}.
 \newblock
 \APACrefbtitle {{Sexual behavior in the human male}} {{Sexual behavior in the
   human male}}.
@@ -1805,15 +1832,13 @@ Page, E\BPBI B.%
 \newblock
 \APACjournalVolNumPages{American Educational Research
   Journal}{16}{3}{257--272}.
+\newblock
+\begin{APACrefDOI} \doi{10.3102/00028312016003257} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
 Palmer%
-, Hartke%
-, Ree%
-, Welsh%
-\BCBL {}\ \BBA {} Valentine%
-}{%
+\ \protect \BOthers {.}}{%
 Palmer%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {1988}}%
@@ -1826,19 +1851,19 @@ Palmer, P.%
 , Hartke, D\BPBI D.%
 , Ree, M\BPBI J.%
 , Welsh, J\BPBI R.%
-\BCBL {}\ \BBA {} Valentine, L\BPBI D.%
+, Valentine, L\BPBI D.%
+\BCBL {}\ \BBA {} {Valentine Jr}, L\BPBI D.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{1988}{}{}.
 \newblock
 \APACrefbtitle {{Armed Services Vocational Aptitude Battery (ASVAB): Alternate
-  forms reliability (Forms 8, 9, 10, and 11)}} {{Armed Services Vocational
-  Aptitude Battery (ASVAB): Alternate forms reliability (Forms 8, 9, 10, and
-  11)}}\ \APACbVolEdTR{}{\BTR{}}.
+  Forms Reliability (Forms 8, 9, 10, and 11).}} {{Armed Services Vocational
+  Aptitude Battery (ASVAB): Alternate Forms Reliability (Forms 8, 9, 10, and
+  11).}}\ \APACbVolEdTR{}{\BTR{}}.
 \newblock
-\APACaddressInstitution{Brooks Air Force Base, Texas}{Air Force Human Resources
-  Laboratory}.
+\APACaddressInstitution{Brooks Air Force Base, Texas}{DTIC Document}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2081,7 +2106,9 @@ Rodgers, J\BPBI L.%
   order effects on intelligence really Flynn Effects? Reinterpreting Belmont
   and Marolla 40 years later}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Intelligence}{42}{}{128--133}.
+\APACjournalVolNumPages{Intelligence}{42}{1}{128--133}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.intell.2013.08.004} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2264,7 +2291,7 @@ Rodgers, J\BPBI L.%
   differences in adolescent sexual behavior: Inferring process models from
   family composition patterns}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of Marriage and Family}{}{}{142--152}.
+\APACjournalVolNumPages{Journal of Marriage and Family}{54}{1}{142--152}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2315,11 +2342,11 @@ Rowe, D\BPBI C.%
 \newblock
 \APACrefYearMonthDay{1997}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Poverty and behavior: Are environmental measures nature
-  and nurture?}} {{Poverty and behavior: Are environmental measures nature and
-  nurture?}}{\BBCQ}
+{\BBOQ}\APACrefatitle {{Poverty and Behavior : Are Environmental Measures
+  Nature and Nurture ?}} {{Poverty and Behavior : Are Environmental Measures
+  Nature and Nurture ?}}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Developmental Review}{17}{3}{358--375}.
+\APACjournalVolNumPages{Developmental Review}{375}{17}{358--375}.
 \newblock
 \begin{APACrefDOI} \doi{10.1006/drev.1997.0434} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -2678,7 +2705,7 @@ Welsh, J\BPBI R.%
 \bibitem [\protect \citeauthoryear {%
 Wichman%
 , Rodgers%
-\BCBL {}\ \BBA {} MacCallum%
+\BCBL {}\ \BBA {} Maccallum%
 }{%
 Wichman%
 \ \protect \BOthers {.}}{%
@@ -2690,7 +2717,7 @@ Wichman2006}%
 \begin{APACrefauthors}%
 Wichman, A\BPBI L.%
 , Rodgers, J\BPBI L.%
-\BCBL {}\ \BBA {} MacCallum, R\BPBI C.%
+\BCBL {}\ \BBA {} Maccallum, R\BPBI C.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
