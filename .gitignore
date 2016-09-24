@@ -63,3 +63,7 @@ Submission/*
 *.bak
 Manuscript/latebloomer*
 
+*.RData
+.Rhistory
+*.dropbox
+*.RData
