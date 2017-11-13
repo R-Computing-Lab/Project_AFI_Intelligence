@@ -1389,6 +1389,7 @@ grid.arrange(xdensity, blankPlot,
 \input{../Common/content/writing/discussion.tex}
 %%%%%%%%%%%% References %%%%%%%%%%%%
 \bibliography{Projects-AFI}
+
 %%%%%%%%%%%% Appendix %%%%%%%%%%%%
 \appendix\label{appen}
 \begin{landscape} 

@@ -1,0 +1,868 @@
+\documentclass[a4paper,man,apacite,natbib,12pt,longtable]{apa6}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\usepackage{../Common/style/Mason}
+\usepackage{listings}
+\usepackage{inconsolata}
+\usepackage[bottom]{footmisc} %fix footnotes
+\usepackage{lineno}
+\usepackage{adjustbox}
+\def\hyph{-\penalty0\hskip0pt\relax}  % trick hyphen
+%\linenumbers
+\interfootnotelinepenalty=10000
+%%%%%%%%%%%% Title %%%%%%%%%%%%
+\title{Casting doubt on the causal link between intelligence and age at first intercourse:\\ A cross-generational sibling comparison design using the NLSY}
+\shorttitle{Intelligence and AFI}
+%
+% Authors and Affiliations
+\author{S. Mason Garrison and Joseph Lee Rodgers}
+\affiliation{Vanderbilt University}
+%
+% Author Note
+\authornote{{\small S. Mason Garrison, Department of Psychology and Human Development, Vanderbilt University; Joseph Lee Rodgers, Department of Psychology and Human Development, Vanderbilt University.
+
+This manuscript is based on longitudinal data collected as part of the National Longitudinal Survey of Youth 1979, (NLSY79). These data are publicly available; a bibliography of articles using these surveys can be found at \url{https://nlsinfo.org/bibliography-start} This material is based upon work that has been supported by the National Institute of Health under Grant No. (R01-HD065865) and the National Science Foundation Graduate Research Fellowship Program under Grant No. (DGE-1445197), and various means of institutional support from the following universities: University of British Columbia, University of Oklahoma, and Vanderbilt University. The aforementioned funding sources did not have any input in the production of this article.
+
+Correspondence concerning this article should be addressed to S. Mason Garrison, Department of Psychology and Human Development, Vanderbilt University, Nashville, TN. Contact: s.mason.garrison@gmail.com}}
+%
+% Abstract
+\abstract{%Last compiled \today\ at \currenttime\\
+{\small Halpern \et (2000) published a study based on early Add Health data with the provocative title ``Smart Teens Don't Have Sex (or Kiss Much Either).'' Several following papers reported the same result, a positive correlation between the intelligence of adolescent girls and age at first intercourse (AFI). However, the causal mechanism has not been carefully investigated. Harden and Mendle (2011) used Add Health data within a biometrical design and found that the relationship between intelligence and AFI was fully accounted for by shared environmental differences, suggesting at least the location of the causal mechanism –- the part of the household environment shared by siblings that influences both child intelligence and AFI.
+
+In this study, we use an intergenerational sibling comparison design to investigate the causal link between intelligence and AFI, using the National Longitudinal Survey of Youth 1979 and the NLSY-Children/Young Adult data. We measured maternal IQ using the AFQT, child IQ using PPVT, PIAT, and Digit Span, and AFI, using respondent self-report. Our analytic method used Kenny's (2001) reciprocal standard dyad model. This model supported analyses treating the data as only between-family data (as in most past studies), and also allowed us to include both between- and within-family comparisons. These analyses included two forms, first a comparison of offspring of mothers in relation to maternal IQ, then a comparison of offspring themselves in relation to offspring IQ.
+
+When we evaluated the relationship between maternal/child intelligence and AFI, using a between-family design, we replicated earlier results; smart teens do appear to delay sex. In the within-family analyses, the relationship between intelligence and AFI vanishes for both maternal intelligence and child intelligence. The finding is robust across gender and age. These results suggest that the cause of the intelligence-AFI link is not intelligence \textit{per se}, but rather differences between families (parental education, SES, \etc) that correlate with family-level (but not individual-level) intelligence.}
+}
+%
+% Key Words
+\keywords{Age at first intercourse; Cross-sectional Data; Discordant Sibling Design; Intelligence; Quasi-Experimental; Siblings}
+%
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+\maketitle
+
+%
+%%%%%%%%%%%% R %%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%% Introduction %%%%%%%%%%%%
+%\section{Introduction}
+\section{ }\vspace{-.8cm}
+% Introduce the Major Problem
+Teenage sexual activity has interested academics in demography, public health, and psychology for many years \citep{Brooks-Gunn1989,kinsey1948sexual,santelli2000adolescent}. Anecdotal evidence from the popular media, (\eg, MTV's reality television franchise, \textit{16 and Pregnant}\nocite{mtv}), and academic research converge to document a relatively consistent secular decline in age at first intercourse  \citep[AFI; see][]{bozon2003,finer2007trends,Kann2014}. Early AFI is associated with downstream consequences, including lower educational attainment \citep{Harden2012,Spriggs2008,Wellings2001}, failure to meet education and career goals \citep{halpern2000smart}, increased risk of teenage pregnancy \citep{Leitenberg2000,Wellings2001}, and increased rates of sexually transmitted infections \citep[STIs;][]{kaestle2005young}. Moreover, beyond the obvious benefit of avoiding those negative outcomes, delaying AFI is associated with greater relationship satisfaction, perception of increased attractiveness, and higher household income \citep{Harden2012}. Because many of the negative consequences above are severe and long-reaching, it is important to identify the causal mechanisms associated with early AFI. One potential factor exerting causal influence on AFI is intelligence.
+
+Higher levels of intelligence are associated with delaying first intercourse \citep{halpern2000smart,mott1983early,Paul2000,Woodward2001}, and also with delay of less-intimate sexual involvement \citep{halpern2000smart}. Specifically, intelligent individuals may delay intercourse to ``safeguard'' their futures \citep{kirby2002effective, manlove1998influence, raffaelli2003sexual}. They perceive the risks associated with early intercourse, (\eg, pregnancy, STIs) to have life- and career-shattering outcomes \citep{halpern2000smart,harden2011don}. Although the link between intelligence and AFI has face validity, and has been confidently asserted (or often implied) as a causal link, a fundamental confound exists in most past research that limits our ability to infer causality.
+
+Virtually all of the AFI-intelligence literature has used between-family designs. In analysis of data from such designs, a number of genetic and environmental influences, such as education and maternal intelligence, are confounded \citep{DOnofrio2013,harden2014genetic,Lahey2010,Rodgers2000}. By ignoring such confounds, the source of variance is ambiguous, and researchers that attribute the source to specific between- or within-family sources risk misattributions of causality \citep{Rowe1997,Rutter2007}. There is the potential for this type of confound in virtually all past research on the link between intelligence and AFI \citep{harden2011don,harden2014genetic,plomin2004intelligence,rodgers1999nature,rodgers1994df}. Thus, we need to critically evaluate whether intelligence has a causal influence on AFI or is rather a theoretically attractive confound. Sibling models have been used in the past to at least partially control for confounds that create causal ambiguity \citep[\eg][]{east1996younger,east1993sisters,geronimus1992socioeconomic,rodgers1990adolescent,rodgers1992sibling};  several of these studies used the sibling structure in earlier versions of the NLSY.  As in those early studies, we resolve some of these methodological challenges by using design innovations that emerge from the excellent cross-generational and longitudinal structure of the National Longitudinal Survey of Youth (NLSY; we use both the original NLSY79 survey and the NLSY-Children survey, described later).
+%
+\section{Cause or Confound?}
+Numerous theories address the motivations for adolescents' initiation of first intercourse (see \citealp{Rodgers1996} or \citealp{Buhi2007} for reviews), and even more specific precursors to first intercourse \citep{Buhi2007,DOnofrio2010,kirby2002antecedents,miller1997timing,santelli1992risk}. Many of these theories emphasize biology/genetics, as adolescent pubertal development (and associated hormone changes) drives the onset of sexual behavior \citep{miller1999dopamine,udry1979age,udry1994nature}. Other theoretical frameworks use social/environmental processes to explain developing sexual involvement in adolescence, such as Social Learning \citep{diblasio1990adolescent,hogben1998using}, where social norms affect the likelihood of early sexual behavior; or Social Control theory \citep{hirschi2002causes}, where societal and cultural influences reduce the likelihood that individuals will act on their natural tendency toward sexual involvement. Under these environmental theories the underlying biology is typically ignored, whereas under many of the biological/genetic theories, the environmental components are often ignored.
+
+However, numerous articles have advocated integrative models \citep[See][]{harden2008rethinking,harden2014genetic,udry1995sociology}. The integrative Biopsychosocial Model acknowledges both genetic and environmental contributions to human behavior \citep{Engel1977,petersen1987nature,rodgers1999nature}. Indeed, biology, psychology, and society/culture jointly influence adolescents' decisions to engage in sexual intercourse \citep{Meschke2000,zimmer2008ten}.
+%
+\subsection{Intelligence as a Cause}
+The short-term risks of early AFI are primarily negative, whereas the rewards for delay are primarily positive. These consequences extend into adulthood -- early AFI has been related to adult delinquency \citep{harden2008rethinking}, anti-social behavior, and substance abuse \citep{boislard2011individual}, whereas those with delayed AFI have higher household incomes in adulthood \citep{Harden2012}. It is intuitively appealing to believe that intelligent individuals are more likely to observe this potential risk-reward tradeoff, and through volition, act upon such observations by delaying first intercourse. Accordingly, intelligent individuals perceive the consequences of early AFI to negatively influence their lives and careers \citep{halpern2000smart,harden2011don}.
+
+Indeed, most of the literature has contributed to the expectation that intelligence is causally connected to AFI. Those with higher educational goals delay their first intercourse \citep{boislard2011individual,schvaneveldt2001academic}, whereas those who engaged in early sexual intercourse reduced their educational goals compared to earlier higher goals \citep{schvaneveldt2001academic}. Beyond academic goals, those with a greater affinity for risk and those who perceive benefits from teen-pregnancy are more likely to engage in risky sexual activities \citep{raffaelli2003sexual}. A greater understanding of the risks associated with sexual intercourse, such as HIV transmission, is also associated with delayed AFI \citep{mathews2009predictors}.
+
+Smarter adolescents are more likely to report delayed intercourse \citep{halpern2000smart,mott1983early,Paul2000,Woodward2001}. Besides delaying first intercourse, smarter individuals appear to postpone all sexual/romantic activity \citep{halpern2000smart}. Such blanket delays may be a proactive attempt to avoid ``gateway'' activities that might lead to intercourse. Thus, many researchers have concluded that ``[h]igher intelligence operates as a protective factor against early sexual activity during adolescence, and lower intelligence, to a point, is a risk factor.'' \citep[][p. 213]{halpern2000smart}.
+
+However, \citet{halpern2000smart} and many of the other studies we have referenced \citep[e.g.,][]{mathews2009predictors,miller1997timing,Paul2000} used between-family -- typically cross-sectional -- designs.\footnote{\citet{halpern2000smart} used the first wave of Add Health for most of their AFI-intelligence analyses.} Such designs cannot logically distinguish between processes that act to create differences between families and processes that create differences among family members \citep{Lahey2010,Rodgers2000}. Thus the previous studies do not provide conclusive evidence that intelligence is the causal influence behind the AFI-intelligence relationship. Logically, other alternatives are that AFI has a causal link to intelligence (which is unlikely, for the obvious theoretical reasons, including that a child's intelligence precedes AFI in time) or that other confounds cause these two outcomes to correlate, but not causally. There are dozens, perhaps hundreds, of such confounds that can logically contend to explain the link between child intelligence and AFI; we review some of those confounds in the next section.
+%
+\subsection{Intelligence as a Confound}
+An equally valid set of explanations exist in which intelligence is not the causal factor behind the AFI-intelligence relationship, but rather one of dozens of correlated potentially explanatory processes. Instead, various confounds including family-level selection effects, or third variables at the individual or family level could be causing the relationship. Between-family influences such as SES and maternal intelligence could drive the relationship. Socioeconomic status is associated with the onset of first intercourse \citep{Lammers2000}, which potentially explains many of the negative consequences linked with teenage pregnancy \citep{geronimus1992socioeconomic}, and is correlated with intelligence \citep{murray1998income,Neisser1996,Strenze2007}. Parental intelligence and parental education are also linked with child intelligence \citep{Bouchard2004,devlin1997heritability,mercy1982familial}, and pose viable alternative explanations in which parents could be influencing, or even actively  dissuading, their children from engaging in early intercourse. For example, daughters whose mothers communicated frequently about the risk associated with sexual intercourse were less likely to have unprotected sex and engaged in sex less frequently \citep{hutchinson2003role}. Thus it could be that intelligent mothers, not intelligent children, are the ones recognizing the consequences of early intercourse and acting accordingly. In order to better understand the causal relation between intelligence and AFI, we need to be able to untangle between- and within-family processes, using both data and designs that have the ability to separate these sources of variance.
+
+Indeed, many such findings that link intelligence with various outcomes are quite possibly the result of misattributing between-family confounds to individual-level and within-family causes. The relationship between birth order and intelligence is a classic example of this misattribution \citep[See][]{damian2015associations,Rodgers2000,rodgers2014birth}. We briefly review that research arena here, because it illustrates the same challenge that occurs in studying the link between intelligence and AFI. 
+
+Between-family studies that rely on cross-sectional data have consistently found that first born children have higher IQs than later born children \citep{belmont1973birth,zajonc1976family}. Yet within-family studies have typically found a non-significant relationship (\citealp{berbaum1980intellectual,galbraith1982sibling,retherford1991birth,rodgers1984confluence,Rodgers2000}; also see \citealp{barclay2015within} and \citealp{bjerkedal2007intelligence} for recent exceptions that have found small, but significant within-family effects in large national studies). Moreover, when designs that can distinguish within- and between-family variance have been conducted, the methodological source of the IQ-birth order effects have emerged from the between-family variance \citep{black2011older,rodgers1984confluence,Rodgers2000,Wichman2006,Wichman2007}. Potential causes of this confound include maternal age at first birth, parental IQ, parental education, and SES \citep[][also see \citet{Anastasi1956} for an insightful overview, written prior to the IQ-birth order debate]{page1979family,Rodgers2001admixture,Rodgers2008AJS}.
+
+In summary, if there is a valid within-family link between intelligence and birth order (which is, definitionally, a within-family variable), it is at one extreme of small magnitude and only detectable in large national datasets, and at the other extreme non-existent (even in large U.S. datasets). Similarly, the link between intelligence and AFI may be mostly or completely spurious. For example, socioeconomic status is associated with the onset of first intercourse \citep{Lammers2000}, which implicates a between-family process as explanatory of early AFI and teenage pregnancy association with negative consequences.
+
+\subsection{Prior Within-Family Analyses} Two past studies have explicitly separated between- and within-family influences on the AFI-intelligence relationship \citep{harden2011don,nedelec2012exploring}. Harden and Mendle used 536 same-sex identical and fraternal twin pairs from the National Longitudinal Study of Adolescent to Adult Health Study (Add Health) to ``test[ ] whether relations between intelligence, academic achievement and age at first sex were due to unmeasured genetic and environmental differences between families.'' Twins who differed in their intelligence or their academic achievement did not differ in their age at first intercourse. They concluded that ''the association between intelligence and age at first sex could be attributed entirely to \textit{unmeasured environmental differences between families}''(italics added, our own emphasis). Nedelec, Schwartz, Connolly, and Beaver (\citeyear{nedelec2012exploring}) conducted an exploratory analysis of MZ twin pairs from the same sample employed by Harden and Mendle, and \citet{halpern2000smart}, using intelligence difference scores to predict various social outcomes. They found consistent null results, though their samples were small and their statistical analyses were substantially underpowered.
+
+% Current Study
+\subsection{Current Study, Summary}
+To summarize, the current study examines the relationship between intelligence and age at first intercourse, using maternal siblings and their children from a multi-generational nationally representative sample, the NLSY. This examination extends the intelligence literature in several key ways. First, we test whether the relationship between intelligence and AFI existed in either or both between- and within-family analyses, using data in which we can explicitly separate those sources of variance. Second, we evaluated the alternative explanation that maternal intelligence influences child AFI, using the cross-generational structure of the NLSY. Third, we replicated our findings using two different age periods. Fourth, we address overlapping questions to those studied in Halpern \et (\citeyear{halpern2000smart}, Harden and Mendle (\citeyear{harden2011don}), and Nedelec \et (\citeyear{nedelec2012exploring}), using a different data source.\footnote{All of those previous studies used the Add Health dataset.}
+
+We made the following predictions, based primarily upon \citet{harden2011don}:\\ 
+Between Families,\\
+1.\hypothesis{btw_2_2} Does Generation 2 (\ie, children's) intelligence predict Generation 2 AFI?: We expect intelligence to be associated with age of first intercourse because there is a sizable body of literature reporting that result \citep{kirby2002effective, manlove1998influence, raffaelli2003sexual, rodgers1994df}.\\ 
+2.\hypothesis{btw_1_2} Does Generation 1 (\ie, mother's) intelligence predict Generation 2 AFI?: We also expect maternal intelligence to be associated with age of first intercourse because the heritability of intelligence is moderate-to-high \citep{Bouchard2004,devlin1997heritability}. If intelligence does causally influence AFI, we would expect that the cross-generational association between AFI and intelligence would be weaker, but existent. However, if the intelligence-AFI relationship is the product of between-family confounds, then we would expect that the cross-generational association between AFI and intelligence would be stronger than the within-generation association because maternal intelligence would be more closely linked with household SES and various parental causes. In other words, maternal intelligence can serve as a proxy for many of the between-family confounds that are of concern in the current study. Comparably sized effects would also be consistent with a between-family confound. Given that \citet{harden2011don} found no within-family effect for intelligence, we expect that maternal intelligence will have a comparable or larger effect on between-family AFI than child intelligence.\\
+Within Families,\\
+3.\hypothesis{wth_2_2} Does Generation 2 intelligence predict Generation 2 AFI?: We do not expect to find within-family differences in intelligence correlating with AFI, given that \citet{harden2011don} did not report an effect.\\
+4.\hypothesis{wth_1_2} Does Generation 1 intelligence predict Generation 2 AFI?: Unknown -- it is possible that maternal intelligence will have an effect, as such a link would explain the between-family effects as well as many of the alternative household-level influences.\\
+5.\hypothesis{btw_v_wth} Is the relationship consistent across cross-sectional and within-family designs?: Doubtful, we do not expect the results to be consistent across methods because both \citet{harden2011don} and \citet{Meredith2013} found no within-family effect, whereas the traditional findings from between-family studies find an effect \citep{kirby2002effective, manlove1998influence, raffaelli2003sexual}. The birth order literature is one example in which apparent causal links mitigate or disappear when variance is properly attributed to within- versus between-family sources.
+
+%%%%%%%%%%%% Method %%%%%%%%%%%%
+\section{Method}
+\subsection{Research Design and Analytic Approach}
+We adapted Kenny and colleagues \citeyearpar{kenny2001social,kenny2006dyadic} reciprocal standard dyad model to facilitate sibling comparisons. Sibling-based quasi-experimental models are particularly effective for incorporating genetic and environmental design elements \citep{Lahey2010,Rutter2007}. Our model uses differences between both pairs of mothers and pairs of adolescents, which provide the measures that explicitly account for within-family variance. Further, within-family differences create a powerful control for virtually all background heterogeneity (variance) associated with both genetic and environmental differences (\citeauthor{Lahey2010}). We compare individuals from within the family in the context of the following models. First, we predict the difference in AFI, $Y_{i\Delta}$, for a given pair of NLSY-Children, indexed as i, in the following model:
+\begin{equation}\label{equation_discord_main}
+\mathrm{Y_{i\Delta}} = \beta_0 + \beta_1\mathrm{\bar{Y_{i}}} + \beta_2\mathrm{\bar{X_{i}}} + \beta_3\mathrm{X_{i\Delta}}
+\end{equation}\vspace{-10pt}
+where,
+\begin{equation}\label{equation_discord_defs_delta}
+\mathrm{Y_{i\Delta}} = \mathrm{Y_{i1}} - \mathrm{Y_{i2}};\, \mathrm{X_{i\Delta}} = \mathrm{X_{i1}} - \mathrm{X_{i2}},\, \mathrm{and}
+\end{equation}
+\begin{equation}\label{equation_discord_defs_min}
+\mathrm{Y_{i1}} = \mathrm{max}(\mathrm{Y_{ij}});\, \mathrm{Y_{i2}} = \mathrm{min}(\mathrm{Y_{ij}})
+\end{equation}\\
+
+In this model, the relative difference in kin outcomes ($\mathrm{Y_{\Delta}}$; \eg, AFI) is predicted from the mean level of Y ($\mathrm{\bar{Y}}$; \eg mean AFI), the mean level of X ($\mathrm{\bar{X}}$; \eg, intelligence), and the between-kin intelligence difference ($\mathrm{X_{i\Delta}}$). The mean levels, reflecting between-family variance, support causal inference through at least partial control for genes and shared environment in previous generations. Within this model, there is explicit separation of within-family variance (with $\mathrm{Y_{\Delta}}$ and $\mathrm{X_{\Delta}}$), and between-family variance (with $\mathrm{\bar{Y}}$ and $\mathrm{\bar{X}}$).
+
+For our analytic models, we use either the complete version or subsets of this overall analytic model to achieve different goals (elaborated below).  We can use only the between-family independent variables, only the within-family independent variable, or both (the first and the third models achieve the goals of the current study).
+
+Thus, this model explicitly untangles between- and within-family influences. If there is a true causal link between intelligence and AFI, then we expect kin differences in intelligence to be significantly associated with kin differences in AFI. If the effect is spurious -- only a function of between-family confounds -- then we would expect to find no significant relationship between the differences in the outcome with the differences in the predictor.
+%
+% Sample
+\subsection{Sample}
+The National Longitudinal Survey of Youth 1979 dataset(NLSY79) is based on a nationally representative household probability sample, jointly sponsored by the U.S. Bureau of Labor Statistics and the U.S. Department of Defense. On December 31, 1978, 12,686 adolescents were sampled within a household probability sample from 8,770 households. The initial sample consisted of three subsamples: \begin{itemize}\item a cross--sectional household probability sample of 6,111 non-institutionalized adolescents residing in the United States on December $31^{st}$ of 1978; \item a separate over-sampled civilian subsample of 5,295 racial minorities and disadvantaged whites; \item a representative sample of 1,280 youth serving in the U.S. Military on September $30^{th}$, 1978.\end{itemize} In the two civilian samples, subjects had birthdates that ranged from January 1, 1957 to December 31, 1964, and were between the ages of 14 and 21 on December 31, 1978; military subject's birthdates ranged from January 1, 1957 to December 31, 1961, and were between 17 and 21 years old. Participants were surveyed annually until 1994, and then surveyed biennially to the present. Two waves of planned attrition occurred. After the 1984 interview, all but 201 randomly selected members of the military sample were dropped. After the 1990 interview, all 1,643 disadvantaged whites from the oversample were dropped. Note that because there are no siblings within the military sample, it is irrelevant for the current research, as all military respondents are screened out by the requirement of having siblings within the sample. More information about the sampling process and the data can be found on the Bureau of Labor Statistics (BLS) website: \url{http://www.bls.gov/nls/nlsy79.htm}
+
+In 1986, all biological children of the female NLSY79 participants were surveyed for the first round of the NLSY79 Children and Young Adults (NLSY-Children) survey. Now that childbearing is complete among the NLSY79 females (who were 49 to 57 in the 2014 survey), a total of 11,512 respondents are in the NLSY-Children surveys, which is continuing on a biennial basis. Participants in the NLSY79 will typically be referred to as the Generation 1 (Gen1) sample, whereas the NLSY-Children will be referred to as the Generation 2 (Gen2) sample.
+%
+% Tetrads
+\subsection{Tetrads}
+To conduct our study using the requisite within-family information, we require sister pairs in Generation 1 who both had children. The children of these sisters are cousin pairs. In the original NLSY79 and NLSY-Children surveys, identification of level of sibling relatedness in the NLSY was primarily inferential. NLSY79 twins, full siblings, half siblings, and adoptive siblings were distinguishable indirectly from respondent and maternal information about birthdates and the biological father(s). NLSY-Children respondents within a given family were all full- or half-siblings, because they were (by design) the biological children of the NLSY79 females. In 2006, both NLSY surveys included explicit indicators of the level of sibling relatedness. Our research team has recently completed a multi-year project to reliably and validly identify the kinship pairs within these two datasets \citep{nlsylinksbgpaper}. Sibling and cousin pairs from these kinship links are used in the current study.
+
+Specifically, Mother-Child-Aunt-Nibling (MCAN) tetrads were created using the NLSY Kinship Links \citep{nlsylinksbgpaper} and supporting \R package \citep{nlsylinksr}. The oldest two female kin (Mother, Aunt) were selected from each NLSY79 household (note that additional female Generation 1 sister pairs from families with three or more sisters -- a relatively small number -- were excluded). Three tetrad designs were employed, in which the genders of Generation 2 were the defining feature: 
+\begin{itemize}\item Mother-Daughter-Aunt-Niece (MDAN) tetrads included the oldest Generation 2 female child from each of the two Generation 1 sisters, 
+\item Mother-Son-Aunt-Nephew (MSAN) tetrads included the oldest Generation 2 male child from each of the Generation 1 sisters, and 
+\item The first two types of tetrads were combined together into Mother-Child-Aunt-Nibling (MCAN) included the firstborn child from each of the Generation 1 sisters. (Note: ``Nibling'' refers to a niece or nephew with unspecified gender; compare to ``Sibling.'')\end{itemize} 
+
+%
+%%%%%%%%%%%% Measurement %%%%%%%%%%%%
+% Age at First Intercourse
+\subsection{Measures}
+\subsubsection{Generation 1 AFI}NLSY-79 subjects indicated their AFI a maximum of three times, in response to questions in 1983, 1984, and 1985. The 1984 and 1985 questions were included to assess those with non-response in 1983, but in fact many female respondents were surveyed multiple times. Further, females were asked for additional related information (Year of First Intercourse, Month of First Intercourse) in 1984 and 1985. The average AFI for women was 18.52 (sd $=$ 2.12; n $=$ 5562); men was 17.16 (sd $=$ 2.36; n $=$ 5640). Subjects with missing AFI data were excluded from analyses.
+
+We used the repeated questions to estimate the test-retest reliability of self-reported AFI and AFI difference scores. In Table \ref{table_measurement_trt_g1afi}, the lower triangle reports the correlations of self-reported AFI across 1983-1985; the diagonal indicates the number of respondents reporting AFI for that year, and the upper triangle indicates the number of respondents that reported AFI for both respective years. The test-retest correlations are moderate to high (r $>$ .75) across all viable pairings, suggesting that our subjects are reliably reporting AFI.\medskip\\
+\noindent\begin{minipage}{\linewidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{Gen1 Self-Reported AFI Correlations and Sample Sizes (1983-1985)}\label{table_measurement_trt_g1afi}
+  \hline
+ & 1983 & 1984 & 1985 \\ 
+  \hline
+1983 & 8432 & 3765 & 88 \\ 
+  1984 &  0.86 & 4516 & 0 \\ 
+  1985 &  0.76 &    NA & 424 \\ 
+   \hline
+\end{longtable}
+\end{minipage}
+\vspace*{.05cm}
+
+\subsubsection{Generation 2 AFI}Over the lifetime of the NLSY-Children survey, participants were asked approximately the same questions to assess AFI that their mothers were asked. However, Generation 2 respondents were only asked for AFI information once they had reached age 15 or later. 7.1\% (812) of the sample had not reached age 15. The exact nature of the question varied slightly by administration. Between 1988 and 2000, subjects were asked for age, year, and month of first intercourse. After 2000, subjects were only asked their age.
+
+We calculated NLSY-Children AFI, using a multi-step process for three reasons: (1) to account for the diversity of AFI questions across survey administrations, (2) to incorporate multiple reports by the same participant, which occasionally differed, and (3) to account for the imprecision of AFI reporting (\eg, a subject who reports AFI at 16 could be any age between 16 years and 0 days old through 16 years and 364 days old).
+
+For each survey, we transformed year of first intercourse into an age variable, AFI. If subjects reported both age and year within the same survey and ages were different, we averaged the AFI scores. Across surveys, we identified the earliest possible AFI and the latest possible AFI for each subject. We designated these two AFIs as the Minimum AFI and the Maximum AFI respectively, thus identifying the full range of possible AFIs for each participant.\footnote{We added 1 year to the Maximum AFI to address the imprecision of self-reported age. The expected value of AFI of any subject does not equal the reported AFI. For example, a subject who reports AFI at 16 could be anywhere from 16 years and 0 days old to 16 years and 364 days old.} We used this AFI range to calculate the expected value of AFI by averaging the Maximum and Minimum AFI. Using this method, the average Generation 2 AFI was 16.01 (sd $= 2.30$; n $= 6288$).\footnote{Taking the average of all AFIs (without addressing expected value), results in 15.49 (sd = 2.30; n = 6288). Adding in expected value of .5 changes this value to 15.99, approximately our computed age.}
+
+After transforming all AFI scores, we recoded impossible AFIs as missing. A score was defined as impossible if the reported AFI exceeded participant's age at time of survey (new $\overline{\mathrm{AFI}} = 15.99$, sd $= 2.30$, n $= 6235$). Next, we excluded all AFIs below age 12 (new $\overline{\mathrm{AFI}} =16.14$, sd $= 2.10$, n $= 6087$). Finally we excluded subjects who reported AFI prior to their self-reported menarche (new $\overline{\mathrm{AFI}} = 16.16$, sd $= 2.09$, n $= 6047$). We excluded those below age 12 because those responses likely are the result of misunderstanding, non-consensual sexual activity, or other forms of unreliability. We excluded those with pre-menarchal AFI because we focus on AFI that could potentially link to reproduction and fertility. Subjects with missing data were excluded from analyses. AFI varied by gender and race. Most notably, women reported AFIs that were 6 months later than men, and black men reported the lowest AFI (15 yrs) of any race-gender categories. For a complete portrayal of summary statistics, see Table \ref{table_afi_race_gender} and Figure \ref{plot_afi_by_race_sex}.
+\noindent\begin{minipage}{\linewidth}
+\begin{longtable}{@{\extracolsep{5pt}}lcc}
+\caption{Gen2 Mean AFI by Gender, Race, and Gender by Race}\label{table_afi_race_gender}
+%\partialinput{2}{18}{../Common/content/tables/table_summary_stats_AFIRACEGENDER.tex}
+\hline
+& \multicolumn{2}{c}{AFI} \\ 
+& Mean & \multicolumn{1}{c}{Sd} \\ 
+\hline
+Overall & $16.16$ & $2.097$ \\[1.5ex]
+\nopagebreak Male  & $15.88$ & $2.152$ \\
+\nopagebreak Female  & $16.47$ & $1.991$ \\[1.5ex]
+\nopagebreak Hispanic  & $16.22$ & $2.140$ \\
+\nopagebreak Black  & $15.66$ & $2.012$ \\
+\nopagebreak Non-Black, Non-Hispanic  & $16.57$ & $2.054$ \\[1.5ex]
+\nopagebreak Hispanic Male & $15.92$ & $2.163$ \\
+\nopagebreak Black Male & $15.04$ & $1.958$ \\
+\nopagebreak Non-Black, Non-Hispanic Male & $16.54$ & $2.061$ \\[1.5ex]
+\nopagebreak Hispanic Female & $16.60$ & $2.050$ \\
+\nopagebreak Black Female & $16.26$ & $1.877$ \\
+\nopagebreak Non-Black, Non-Hispanic Female & $16.61$ & $2.048$ \\
+\hline 
+\end{longtable}
+\end{minipage}
+\noindent\begin{minipage}{\linewidth}
+\captionof{figure}{Smoothed Density Plots of Gen1 AFI by Race and Sex}
+\label{plot_afi_by_race_sex}
+\begin{center}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=.65\paperwidth]{figure/plot_afi_by_race_sex-1} 
+
+\end{knitrout}
+\end{center}
+\end{minipage}
+%
+% Intelligence
+\subsubsection{Generation 1 Intelligence}
+The Armed Services Vocational Aptitude Battery (ASVAB; Form 8A; \citealp{Palmer1988}) was administered to Gen1 participants in 1980. The Armed Forces Qualification Test (AFQT) is contained within the ASVAB, and has been used in the US military as a measure of general trainability \citep{maier1986asvab}. It is a composite of four subscales: Arithmetic Reasoning (AR; 30 items), Math Knowledge (MK; 25 items), Paragraph Comprehension (PC; 15 items), and Word Knowledge (WK; 35 items). Other administrations of the pencil and paper ASVAB reveal that all the AFQT subscales have high coefficient $\alpha$ internal consistency ( $\alpha_{AR} = .91$; $\alpha_{WK} = .92$; $\alpha_{PC} = .81$; $\alpha_{MK} = .87$; \citealp{kass1982}). Reported reliability of the overall AFQT (version 8A) ranges from .87 to .93 \citep{Palmer1988}.
+
+Methods of calculating the AFQT have varied throughout the ASVAB's administrative lifetime \citep{mayberry1992computing}. For pencil and paper administrations, standard scores were created for each of the subscale scores ($\bar{x}=50$, sd = 10), and then combined into a standard score. Then, the AFQT standard score is derived from the following formula:\begin{align}\text{AFQT} = \text{AR} + \text{MK} + 2\text{VE}, \\\text{where, VE} = \text{PC} + \text{WK.}\end{align}
+
+Many researchers have used the AFQT standard score as a proxy for general intelligence (\textit{g}) \citep{herrnstein1994bell,Der2009}. Indeed, the U.S. military has found that the AFQT correlated 0.8 with the Wechsler Adult Intelligence Scale (WAIS; \citealp{mcgrevy1974relationships}). Moreover, the AFQT consistently predicts outcomes traditionally associated with intelligence\citep{Welsh1990}, including grades \citep{wilbourn1984,mathews1977analysis}.
+
+\subsubsection{Generation 2 Intelligence}
+NLSY-Children respondents, beginning at age five and as a consistent part of the survey, complete the following test batteries: \begin{itemize}
+\item Peabody Individual Achievement Test (PIAT; \citealp{dunn1970peabody}):\begin{itemize}\item Math Subtest (84 items),
+\item Reading Recognition Subtest (84 items),
+\item Reading Comprehension Subtest (84 items),\end{itemize}
+\item The Peabody Picture Vocabulary Test-Revised (PPVT-R; Form L; \citealp{dunn1981peabody}; 175 items), and
+\item Digit Span Subscale of the Wechsler Intelligence Scales for Children--Revised (Digit Span; \citealp{wechsler1974manual}; 28 items).\end{itemize}
+The standard scores of the PPVT-R, PIATs, and Digit Span are considered valid and reliable assessments of cognitive ability \citep{mott1995nlsy}. However, subjects were surveyed on a biennial basis. Thus we could not use cognitive tests at a fixed age. Instead, we aggregated scores across a 4 year window, and targeted the midpoint between ages 9 and 10. We targeted 9.5 because all cognitive tests were administered within the 8--11 age window, we wanted to maximize the number of subjects with viable ability scores, and we wanted to ensure temporal precedence by measuring intelligence prior to the occurrence of AFI. In the case of missing subtests, we allowed age 11 standard scores to replace age 9 standard scores, and age 8 standard scores to replace age 10 standard scores. Our replacement strategy ensured that the average age of testing matched the average of our targeted ages. To obtain intellectual ability measures for each NLSY-children respondent, we fit a confirmatory factor analysis model \citep[using Mplus;][]{mplus} and their robust maximum likelihood estimator option. A single-factor model fit moderately well (RMSEA = .101; CFI = .973; TLI = .946), and we used this model to construct a unidimensional scale score for each respondent. We used factor scores obtained from this model as our measure of NLSY-Children intelligence.
+
+\subsubsection{Replicability and Reliability} We repeated our aggregates of Gen2 intelligence, centered at ages 10.5 and 11.5, and replicated all of our analyses. These replications can be found in the Appendices \ref{appen10} and \ref{appen11}, respectively. The test-retest reliabilities of Gen2 intelligence across our three aggregations is reported in the lower triangle of Table \ref{table_measurement_trt_g2int}. The diagonal indicates the number of respondents with intelligence aggregations for that year, and upper triangle reveal the number of respondents with viable scores for both respective ages. The test-retest correlations are very high (r > .90) across all pairings, suggesting that our method captures consistent measures of intelligence across ages.\medskip\\
+\noindent\begin{minipage}{\linewidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{\small Gen2 Aggregated Intelligence Correlations and Sample Sizes (Ages 9.5, 10.5, 11.5)}\label{table_measurement_trt_g2int}
+  \hline
+ & Age 9.5 & Age 10.5 & Age 11.5 \\ 
+  \hline
+Age 9.5 & 8254 & 7974 & 7669 \\ 
+  Age 10.5 &  0.95 & 8143 & 7838 \\ 
+  Age 11.5 &  0.90 &  0.96 & 7970 \\ 
+   \hline
+\end{longtable}
+\end{minipage}
+
+%
+% Difference Score Reliability
+\subsection{Reliability of Difference Scores}
+
+Our design assumes that the difference scores of our measures are reliable. We have reported the test-retest reliability of Gen2 intelligence and Gen1 AFI in earlier sections. Here, we report the test-retest reliability of the pairwise differences of those measures. 
+\subsubsection{AFI} Comparing sibling differences in AFI as reported in 1983 and 1984 (n = 783 pairs) we found a moderate correlation (r = 0.76). The sample of sibling pairs with complete information in 1985 was too small (n = 12 pairs) to compare to the other two years. Regardless, sibling differences in self-reported AFI appear satisfactory for research purposes. We note that the common concern with unreliability of difference scores is at least partially mitigated when the separate scores defining the differences are reliable themselves. Because we could not estimate test-retest reliabilities for Generation 2, we calculated the reliability using Lord's (\citeyear{Lord1963}) equation. Generation 2 Mean AFI difference scores were also moderately reliable (r = 0.73) and comparable to Generation 1 sibling differences.
+
+\subsubsection{Intelligence} Cousin differences in intelligence as assessed at ages 9.5, 10.5, and 11.5 were correlated using three different linking methods (Mixed, Daughters, Sons). Reliabilities across linking methods was consistent and high (min r = .86; max r = .95). However, we could not estimate test-retest reliabilities for Generation 1; we calculated the reliability using Lord's (\citeyear{Lord1963}) equation. The calculated reliability of Generation 1's differences in AFQT was 0.70, which was marginally acceptable, and obviously lower than the empirical correlation we derived for cousin differences.%0.7
+%\vspace{-.2cm}
+%%%%%%%%%%%% Results %%%%%%%%%%%%
+\section{Results}
+%\vspace{-.2cm}
+We examined the relationship between AFI and intelligence using two designs: a between-family design, and a combination between- and within-family design (which includes between-family variance in the differences between the family means, and within-family variance in the sibling/cousin differences). The results are organized by those two designs. The between-family analyses report the relationships between the within-family average AFI and various measures of ability. The combination between-family/within-family analyses add to the between-family analyses the difference scores, testing whether differences in AFI can be explained by differences in various measures of ability, controlling for the between-family variance.
+%
+% Between-Family
+%\vspace{-.2cm}
+\subsection{Between-Family Analyses}
+%\vspace{-.2cm}
+First, we examined the between-family results. We tested whether the family average of Gen2 AFI could be predicted by the family averages of Gen1 intelligence and of Gen2 intelligence. We evaluated the influences both independently and simultaneously. All intelligence scores have been standardized by generation ($\overline{g} = 0$, sd $= 1$), prior to averaging by household. AFI scores have been standardized by gender ($\overline{\mathrm{AFI}} = 0$, sd $= 1$), prior to averaging by household. In Tables \ref{table_Mean_Mom_Intelligence_Mean_Child_AFI_9} - \ref{table_Mean_Joint_Intelligence_Mean_Child_AFI_9}, we have reported results for three different linking methods:
+\begin{itemize} 
+\item The mixed model, which contains the firstborn child of each sister;
+\item The daughters model, which contains the firstborn daughters; and 
+\item The sons model, which contains the firstborn sons).\end{itemize}
+In the spirit of transparency, we have reported all three methods. However, because all three linking methods reported similar findings, we will focus the results section on the mixed model and only discuss the other two methods when they deviate. We have also provided zero-order and pairwise semi-partial correlations for all between-family variables (Tables \ref{table_cor} and \ref{table_spcor_btw}), using the mixed-model data and the ppcor \R library \citep{kim2015ppcor}.
+
+\subsubsection{Gen1 Mean Intelligence $\rightarrow$ Gen2 Mean AFI} Gen1 sister averages (NLSY79 mothers) of standardized AFQT scores were used to predict Gen2 averages of gender-standardized AFI. Table \ref{table_Mean_Mom_Intelligence_Mean_Child_AFI_9} displays the results by Gen2 category. The mixed model reports the averages of the firstborn child (both males and females) of each maternal sister (n $= 342$). A one-unit increase in the average standardized intelligence of the children's mothers predicted a statistically significant increase of $.013$ standard deviations in average Gen2 AFI. When we transform the coefficient into a standardized beta weight ($\beta_{Gen1 Intell} = .299$), a standard-deviation increase in the averaged mother's intelligence predicts a .299 standard-deviation increase in the average of the cousins' AFI. The adjusted R$^{2}$ was .087.
+
+\subsubsection{Gen2 Mean Intelligence $\rightarrow$ Gen2 Mean AFI} Gen2 averages of standardized intelligence scores were used to predict Gen2 averages of gender\hyph standardized AFI. Table \ref{table_Mean_Child_Intelligence_Mean_Child_AFI_9} displays the results by Gen2 category. The mixed model reports the averages of the firstborns of each of the NLSY79 mothers (sisters) (n $= 344$). A one-unit increase in the average standardized intelligence of the children predicted a statistically significant $\approx .075$ standard-deviation increase in average Gen2 cousins' AFI. When we transform the coefficient into a standardized beta weight ($\beta_{Gen2 Intell} = .128$), a standard-deviation increase in the averaged cousins' intelligence predicts a .128 standard-deviation increase in the average of the cousins' AFI. The adjusted R$^{2}$ was $.014$.
+
+\subsubsection{Joint Mean Intelligence $\rightarrow$ Gen2 Mean AFI} Results from the Gen1 maternal sister averages of standardized AFQT scores and Gen2 averages of standardized intelligence scores predicting Gen2 averages of gender\hyph standardized AFI are displayed in Table \ref{table_Mean_Joint_Intelligence_Mean_Child_AFI_9}. In the mixed model, Gen1 (maternal) intelligence was significantly associated with Gen2 AFI (p $< .01$), while Gen2 (child) intelligence was not significantly associated with Gen2 AFI. A one-unit increase in the average standardized intelligence of the children's mothers predicted $.013$ standard-deviation increase in average Gen2 AFI, after controlling for Gen2 cousin averages of standardized intelligence scores. When we transform the coefficients into standardized beta weights ($\beta_{Gen1 Intell} = .303$; $\beta_{Gen2 Intell} = -.003$), a standard-deviation increase in the averaged mother's intelligence predicts a .303 standard-deviation increase in the average of the cousins' AFI. The adjusted R$^{2}$ was $.086$. The total variance explained by the Joint model ($R^{2}$ = 9.1$\%$) is nearly identical to the Gen1 model($R^{2}$=9$\%$). Gen2 intelligence explains an additional .1\% of the variance.
+
+When we broaden our sample to all Mother-Child pairs, we see that the relationship between Gen 2 intelligence and Gen2 AFI is small $(r =.139)$, and smaller than the relationship between Gen1 intelligence and Gen2 AFI $(r=.215$; see Figure \ref{plot_gen2_afi}).
+
+\begin{landscape}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Between-Family: Gen1 Intelligence Predicts Gen2 AFI}\label{table_Mean_Mom_Intelligence_Mean_Child_AFI_9}
+\\[-1.8ex]\hline 
+\hline \\[-3.8ex] 
+& \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+\cline{2-4}
+ & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen1 Mean Intel & 0.01$^{***}$ (0.01, 0.02) & 0.01$^{***}$ (0.01, 0.02) & 0.01$^{***}$ (0.01, 0.02) \\ 
+  Constant & $-$0.75$^{***}$ ($-$1.01, $-$0.50) & $-$0.80$^{***}$ ($-$1.09, $-$0.51) & $-$0.86$^{***}$ ($-$1.14, $-$0.57) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 342 & 264 & 282 \\ 
+R$^{2}$ & 0.09 & 0.10 & 0.11 \\ 
+Adjusted R$^{2}$ & 0.09 & 0.10 & 0.10 \\ 
+Residual Std. Error & 0.70 (df = 340) & 0.70 (df = 262) & 0.69 (df = 280) \\ 
+F Statistic & 33.50$^{***}$ (df = 1; 340) & 29.40$^{***}$ (df = 1; 262) & 33.20$^{***}$ (df = 1; 280) \\ 
+\hline 
+\hline \\[-1.8ex] \\[-7ex]
+\textit{Notes:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\[2ex]
+& \multicolumn{3}{r}{\parbox{.6\linewidth}{\footnotesize Gen1-sister averages (NLSY79 mothers) of standardized AFQT scores predict Gen2 averages of gender-standardized AFI.}} \\ 
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Between-Family: Gen2 Intelligence Predicts Gen2 AFI}\label{table_Mean_Child_Intelligence_Mean_Child_AFI_9}
+\\[-1.8ex]\hline 
+\hline \\[-3.8ex] 
+& \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+\cline{2-4}
+ & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen2 Mean Intel & 0.08$^{**}$ (0.01, 0.14) & 0.09$^{**}$ (0.01, 0.16) & 0.07$^{*}$ ($-$0.004, 0.14) \\ 
+  Constant & $-$0.02 ($-$0.10, 0.06) & $-$0.02 ($-$0.11, 0.07) & $-$0.04 ($-$0.12, 0.05) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 344 & 267 & 283 \\ 
+R$^{2}$ & 0.02 & 0.02 & 0.01 \\ 
+Adjusted R$^{2}$ & 0.01 & 0.02 & 0.01 \\ 
+Residual Std. Error & 0.74 (df = 342) & 0.74 (df = 265) & 0.73 (df = 281) \\ 
+F Statistic & 5.70$^{**}$ (df = 1; 342) & 5.32$^{**}$ (df = 1; 265) & 3.43$^{*}$ (df = 1; 281) \\ 
+\hline 
+\hline \\[-1.8ex] \\[-7ex]
+\textit{Notes:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\[2ex]
+& \multicolumn{3}{r}{\parbox{.6\linewidth}{\footnotesize Gen2-cousin averages of standardized intelligence scores predict Gen2 averages of gender-standardized AFI.}} \\ 
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Between-Family: Gen1 \& Gen2 Intelligence Predict Gen2 AFI}\label{table_Mean_Joint_Intelligence_Mean_Child_AFI_9}
+\\[-1.8ex]\hline 
+\hline \\[-3.8ex] 
+& \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+\cline{2-4}
+ & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen1 Mean Intel & 0.01$^{***}$ (0.01, 0.02) & 0.01$^{***}$ (0.01, 0.02) & 0.01$^{***}$ (0.01, 0.02) \\ 
+  Gen2 Mean Intel & $-$0.002 ($-$0.07, 0.07) & $-$0.000 ($-$0.08, 0.08) & $-$0.01 ($-$0.09, 0.06) \\ 
+  Constant & $-$0.77$^{***}$ ($-$1.05, $-$0.48) & $-$0.81$^{***}$ ($-$1.13, $-$0.50) & $-$0.89$^{***}$ ($-$1.22, $-$0.57) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 337 & 260 & 278 \\ 
+R$^{2}$ & 0.09 & 0.10 & 0.11 \\ 
+Adjusted R$^{2}$ & 0.09 & 0.10 & 0.10 \\ 
+Residual Std. Error & 0.70 (df = 334) & 0.71 (df = 257) & 0.69 (df = 275) \\ 
+F Statistic & 16.70$^{***}$ (df = 2; 334) & 14.90$^{***}$ (df = 2; 257) & 16.50$^{***}$ (df = 2; 275) \\ 
+\hline 
+\hline \\[-1.8ex] \\[-7ex]
+\textit{Notes:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\[2ex]
+& \multicolumn{3}{r}{\parbox{.6\linewidth}{\footnotesize Gen1-sister averages (NLSY79 mothers) of standardized AFQT scores and Gen2-cousin averages of standardized intelligence scores predict Gen2 averages of gender-standardized AFI.}} \\ 
+\end{longtable}
+
+
+\noindent\begin{minipage}{\paperwidth}
+\captionof{figure}{Gen2 AFI vs. Gen1 \& Gen2 Intelligence}
+\label{plot_gen2_afi}
+\begin{center}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=1\paperwidth]{figure/plot_gen2_afi-1} 
+
+\end{knitrout}
+\end{center}
+\end{minipage}
+\end{landscape}
+
+%
+% Within-Family
+\subsection{Combination Between- and Within-Family Analyses}
+We replicated the between-family analyses reported in the previous subsection, adding within-family difference scores as independent variables to the between-family means. Using the discordant sibling model, we predicted the differences in Generation 2 AFI as a function of differences in intelligence, controlling for means of the outcomes and predictors. We ran three series of models, where we examined the individual and then joint influence of Gen1 intelligence and Gen2 intelligence. Moreover, within each series we included three Generation 2 linking method variants, just as we did in the between family analyses: the mixed model reports the differences of the firstborns of each sister, the daughters model reports the differences of the firstborn girls, and the sons model reports the differences of the firstborn sons. In the spirit of transparency, we have reported all three methods. However, because all three linking methods resulted in similar findings, we will focus the results section on the mixed model and only discuss the other two methods when they deviate. We have also provided zero-order and pairwise semi-partial correlations for all between-family variables (Tables \ref{table_cor} and \ref{table_spcor_wtn}), using the mixed-model data and the ppcor \R library \citep{kim2015ppcor}.
+
+
+\subsubsection{Gen1 Intelligence Differences $\rightarrow$ Gen2 AFI Differences} 
+Generation 1 maternal sister differences in standardized AFQT scores were used to predict Generation 2 (cousin) differences of gender-standardized AFI, controlling for Generation 1 sister averages of standardized AFQT scores and Generation 2 averages of gender-standardized AFI. Table \ref{table_Dif_Mom_Intelligence_Dif_Child_AFI_9} displays the results by Generation 2 linking method. The mixed model reports the averages and differences of the firstborns of each sister (n $= 336$). Generation 2 averages of gender-standardized AFI (between-family measures) were significant predictors of Generation 2 differences in gender-standardized AFI (p $< .01$). A one-unit increase in the average gender-standardized AFI predicted $0.303$ standard-deviation increase in average Gen2 AFI difference, controlling for all other variables in the model. When we transform the coefficients into standardized beta weights ($\beta_{Gen2 Mean AFI} = .283$; $\beta_{Gen1 Mean Intell} = -.057$; $\beta_{Gen1 Diff Intell} = .03$), a standard-deviation increase in the averaged cousin's AFI predicts a .283 standard-deviation increase in the difference between the cousins' AFI. The adjusted R$^{2}$ was .066. The Gen1 intelligence difference variable was not statistically significant.
+
+In the sons model, the Generation 1 maternal sister average of standardized AFQT scores was a significant predictor of differences in Gen2 AFI (p $< .01$). A one-unit increase in the average standardized intelligence of the children's mothers predicted $.0083$ decrease in the AFI difference between cousins. When we transform the coefficients into standardized beta weights ($\beta_{Gen2 Mean AFI} = .353$; $\beta_{Gen1 Mean Intell} = -.174$; $\beta_{Gen1 Diff Intell} = .006$), a standard-deviation increase in the averaged cousin's AFI predicts a .353 standard-deviation increase in the difference between the cousins' AFI, while a standard-deviation increase in the averaged mother's AFQT predicts a .174 standard-deviation decrease in the difference between the cousins' AFI. All other variables were not significant, including all kin-difference variables (the within-family measures). Note that this between-family result is somewhat anomalous, because it is in the opposite direction to the other results. The adjusted R$^{2}$ was $= .106$.
+
+In the sons model for the age 10.5 and 11.5 replications (see Appendices \ref{appen10} and \ref{appen11}), the Generation 1 cousin average of standardized intelligence scores was a significant predictor of differences in Generation 2 AFI (p $< .05$; see Tables \ref{table_Dif_Mom_Intelligence_Dif_Child_AFI_10} \& \ref{table_Dif_Mom_Intelligence_Dif_Child_AFI_11}). The adjusted R$^{2}$s were similar. 
+
+\subsubsection{Gen2 Intelligence Differences $\rightarrow$ Gen2 AFI Differences}
+Gen2 cousin differences in standardized intelligence scores were used to predict Gen2 differences of gender-standardized AFI, controlling for Gen2 cousin averages of standardized intelligence scores and gender-standardized AFI (to account for between-family variance). Table \ref{table_Dif_Child_Intelligence_Dif_Child_AFI_9} displays the results by Generation 2 categories. The mixed model reports the averages and differences of the firstborns of each sister (n $= 291$). Generation 2 averages of gender-standardized AFI were significant predictors of Generation 2 differences in gender-standardized AFI (p $< .01$). A one-unit increase in the average gender-standardized AFI predicted $0.357$ standard-deviation increase in average Gen2 AFI difference, controlling for all other variables in the model. The adjusted R$^{2}$ was $= .103$. When we transform the coefficients into standardized beta weights ($\beta_{Gen2 Mean AFI} = .337$; $\beta_{Gen2 Mean Intell} = -.091$; $\beta_{Gen2 Diff Intell} = .068$), a standard-deviation increase in the averaged cousin's AFI predicts a .337 standard-deviation increase in the difference between the cousins' AFI. The Gen2 intelligence difference variable was not statistically significant.
+
+In the sons model, the Generation 2 cousin average of standardized intelligence scores was a significant predictor of differences in Generation 2 AFI (p $< .05$). A one-unit increase in the average standardized intelligence of the children predicted a $.107$ decrease in the AFI difference between cousins(again, the sons model result is in the opposite direction to other results). When we transform the coefficients into standardized beta weights ($\beta_{Gen2 Mean AFI} = .372$; $\beta_{Gen2 Mean Intell} = -.15$; $\beta_{Gen2 Diff Intell} = .021$), a standard-deviation increase in the averaged cousin's AFI predicts a .372 standard-deviation increase in the difference between the cousins' AFI, whereas a standard-deviation increase in the averaged cousin's intelligence predicts a .15 standard-deviation decrease in the difference between the cousins' AFI. All other variables were not significant, including all kin-difference variables. The adjusted R$^{2}$ was $.132$). 
+
+In the mixed, daughters, and sons models for the age 10.5 and 11.5 replications (see Appendices \ref{appen10} and \ref{appen11}), the Generation 2 cousin average of standardized intelligence scores were significant predictors of differences in Generation 2 AFI (p $< .05$; see Tables \ref{table_Dif_Child_Intelligence_Dif_Child_AFI_10} \& \ref{table_Dif_Child_Intelligence_Dif_Child_AFI_11}). Regardless, all kin-difference variables were not significant. The adjusted R$^{2}$s were similar. 
+
+Moreover, when we replicate this analysis using the larger Gen1 sample of siblings, we find that the between-family relationship of Gen1 AFI and Gen1 intelligence is moderate $(r =.291)$, but within the family, the AFI of the smarter sibling was no later than the less smart sibling's. In Figure \ref{plot_gen1_afi}, we have illustrated this finding using a scatter plot for the individual subjects, and two marginal distributions to show the mean levels of AFQT and AFI, grouped by sibling classification. The distribution above the x-axis shows the distributions of AFQT based on sibling classification. The blue distribution shows the standardized AFQT score for the siblings who were .33 standard-deviations smarter than their sibling, the red distribution shows the standardized AFQT score of siblings who were at least .33 standard deviations less smart than their sibling, and the purple distribution shows those siblings who were within at least .33 standard deviations of one another. As expected, the blue distribution of smarter siblings had a higher mean than the other groups. The distribution across from the y-axis shows the distribution of AFI based on those same sibling classifications. All three of these distributions are indistinguishable, which suggests that siblings do not differ in their AFI across these intelligence categories. This plot illustrate that there is no within-family effect for intelligence on AFI. Had there been a within-family effect of intelligence on AFI, the marginal distributions of AFI would be visually separable, and would follow the pattern for the separate distributions of AFQT.%\pagebreak
+
+\subsubsection{Joint Intelligence Differences $\rightarrow$ Gen2 AFI Differences}
+Gen1 maternal sister differences in standardized AFQT scores and Gen2 cousin differences in standardized intelligence scores were used simultaneously to predict Gen2 differences of gender-standardized AFI, controlling for Gen1-sister averages of standardized AFQT scores, Gen2-cousin averages of standardized intelligence scores, and Gen2-cousin averages of gender-standardized AFI. Table \ref{table_Dif_Joint_Intelligence_Dif_Child_AFI_9} displays the results by Generation 2 categories. The mixed model reports the averages and differences of the firstborns of each sister (n $= 285$). Gen2 averages of gender-standardized AFI were significant predictors of Generation 2 differences in gender-standardized AFI (p $< .01$), across all three linking methods. A one-unit increase in the average gender-standardized AFI predicted $\approx 0.38$ standard-deviation increase in Generation 2 AFI difference, controlling for all other variables in the model. All other variables were not significant, including all kin difference variables. When we transform the coefficients into standardized beta weights ($\beta_{Gen2 Mean AFI} = .324$; $\beta_{Gen2 Mean Intell} = -.091$; $\beta_{Gen1 Mean Intell} = .017$; $\beta_{Gen2 Diff Intell} = .059$; $\beta_{Gen1 Diff Intell} = .02$), a standard-deviation increase in the averaged cousin's AFI predicts a .345 standard-deviation increase in the difference between the cousins' AFI. The adjusted R$^{2}$ was $.090$.\\
+\begin{landscape}
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Within-Family: Gen1 Differences in Intelligence Predict Gen2 Differences in AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_9}
+\\[-1.8ex]\hline 
+\hline \\[-3.8ex] 
+& \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 AFI} \\ 
+\cline{2-4}
+ & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen2 Mean AFI & 0.30$^{***}$ (0.19, 0.42) & 0.33$^{***}$ (0.19, 0.46) & 0.38$^{***}$ (0.25, 0.50) \\ 
+  Gen1 Mean Intel & $-$0.003 ($-$0.01, 0.002) & $-$0.002 ($-$0.01, 0.004) & $-$0.01$^{***}$ ($-$0.01, $-$0.003) \\ 
+  Gen1 Dif Intel & 0.001 ($-$0.003, 0.01) & 0.001 ($-$0.01, 0.01) & 0.000 ($-$0.005, 0.01) \\ 
+  Constant & 1.18$^{***}$ (0.89, 1.47) & 1.18$^{***}$ (0.84, 1.52) & 1.50$^{***}$ (1.18, 1.83) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 336 & 258 & 278 \\ 
+R$^{2}$ & 0.07 & 0.08 & 0.12 \\ 
+Adjusted R$^{2}$ & 0.07 & 0.07 & 0.11 \\ 
+Residual Std. Error & 0.76 (df = 332) & 0.78 (df = 254) & 0.73 (df = 274) \\ 
+F Statistic & 8.83$^{***}$ (df = 3; 332) & 7.64$^{***}$ (df = 3; 254) & 12.00$^{***}$ (df = 3; 274) \\ 
+\hline \\[-5ex]
+\textit{Notes:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\[2ex]
+& \multicolumn{3}{r}{\parbox{.6\linewidth}{\footnotesize Gen1-sister differences in standardized AFQT scores predict Gen2 differences in gender-standardized AFI.}} \\ 
+\end{longtable}\pagebreak
+
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+\caption{Within-Family: Gen2 Differences in Intelligence Predict Gen2 Differences in AFI}\label{table_Dif_Child_Intelligence_Dif_Child_AFI_9}
+\\[-1.8ex]\hline 
+\hline \\[-3.8ex] 
+& \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 AFI} \\ 
+\cline{2-4}
+ & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen2 Mean AFI & 0.36$^{***}$ (0.24, 0.47) & 0.40$^{***}$ (0.26, 0.53) & 0.40$^{***}$ (0.27, 0.53) \\ 
+  Gen2 Mean Intel & $-$0.06 ($-$0.14, 0.01) & $-$0.07 ($-$0.16, 0.02) & $-$0.11$^{**}$ ($-$0.19, $-$0.02) \\ 
+  Gen2 Dif Intel & 0.03 ($-$0.02, 0.08) & 0.04 ($-$0.02, 0.09) & 0.01 ($-$0.04, 0.06) \\ 
+  Constant & 1.05$^{***}$ (0.96, 1.14) & 1.07$^{***}$ (0.97, 1.18) & 1.07$^{***}$ (0.97, 1.16) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 291 & 223 & 238 \\ 
+R$^{2}$ & 0.11 & 0.13 & 0.14 \\ 
+Adjusted R$^{2}$ & 0.10 & 0.12 & 0.13 \\ 
+Residual Std. Error & 0.77 (df = 287) & 0.79 (df = 219) & 0.75 (df = 234) \\ 
+F Statistic & 12.10$^{***}$ (df = 3; 287) & 11.20$^{***}$ (df = 3; 219) & 13.00$^{***}$ (df = 3; 234) \\ 
+\hline 
+\hline \\[-1.8ex] \\[-6ex]
+\textit{Notes:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\[2ex]
+& \multicolumn{3}{r}{\parbox{.6\linewidth}{\footnotesize Gen2-cousin differences in standardized intelligence scores predict Gen2 differences in gender-standardized AFI.}} \\ 
+\end{longtable}\end{landscape}
+\pagebreak
+\begin{landscape}
+\begin{longtable}{@{\extracolsep{5pt}}lccc}
+\caption{Within-Family: Gen1 \& Gen2 Differences in Intelligence Predict Gen2 Differences in AFI}\label{table_Dif_Joint_Intelligence_Dif_Child_AFI_9}
+\\[-1.8ex]\hline 
+\hline \\[-3.8ex] 
+& \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 AFI} \\ 
+\cline{2-4}
+ & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen2 Mean AFI & 0.34$^{***}$ (0.22, 0.47) & 0.38$^{***}$ (0.23, 0.52) & 0.43$^{***}$ (0.29, 0.56) \\ 
+  Gen2 Mean Intel & $-$0.06 ($-$0.15, 0.02) & $-$0.07 ($-$0.17, 0.03) & $-$0.07 ($-$0.16, 0.03) \\ 
+  Gen1 Mean Intel & 0.001 ($-$0.01, 0.01) & 0.001 ($-$0.01, 0.01) & $-$0.01 ($-$0.01, 0.001) \\ 
+  Gen2 Dif Intel & 0.03 ($-$0.02, 0.07) & 0.03 ($-$0.02, 0.09) & 0.01 ($-$0.04, 0.06) \\ 
+  Gen1 Dif Intel & 0.001 ($-$0.004, 0.01) & $-$0.001 ($-$0.01, 0.01) & 0.001 ($-$0.005, 0.01) \\ 
+  Constant & 1.00$^{***}$ (0.64, 1.36) & 1.01$^{***}$ (0.59, 1.43) & 1.37$^{***}$ (0.97, 1.77) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 285 & 217 & 235 \\ 
+R$^{2}$ & 0.11 & 0.13 & 0.15 \\ 
+Adjusted R$^{2}$ & 0.09 & 0.10 & 0.13 \\ 
+Residual Std. Error & 0.77 (df = 279) & 0.79 (df = 211) & 0.75 (df = 229) \\ 
+F Statistic & 6.61$^{***}$ (df = 5; 279) & 6.04$^{***}$ (df = 5; 211) & 8.08$^{***}$ (df = 5; 229) \\ 
+\hline 
+\hline \\[-1.8ex] \\[-8ex]
+\textit{Notes:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\[2ex]
+& \multicolumn{3}{r}{\parbox{.6\linewidth}{\footnotesize Gen1-sister differences in standardized AFQT scores and Gen2-cousin differences in standardized intelligence scores predict Gen2 differences in gender-standardized AFI.}} \\ 
+\end{longtable}
+\end{landscape}
+%
+\begin{landscape}
+\noindent\begin{minipage}{\linewidth}
+\captionof{figure}{Gen1 AFI vs. Gen1 Intelligence with Marginal Distributions by Sibling Difference in AFQT}
+\label{plot_gen1_afi}
+\begin{center}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=.8\paperwidth]{figure/plot_gen1_afi-1} 
+
+\end{knitrout}
+\end{center}\end{minipage}\end{landscape}
+
+%%%%%%%%%%%% Discussion %%%%%%%%%%%%
+\section{Discussion}
+This article presents analysis of the relationship between AFI and intelligence using two different designs: a between-family design, and a combination between- and within-family design (\ie, a within-family design includes between-family variance within it). The between-family design allowed us to replicate results obtained by previous researchers who used cross-sectional samples. The combination between- and within-family design allowed us to separately account for within- and between-family variance, to determine the source of the explanatory processes.  The logic of this separation allows us to get much closer to evaluating intelligence differences within the family to address issues of causality. The results revealed a stark contrast between the two methods, and cast doubt on the validity of past causal assertions.
+\subsection{Between- vs. Within-Family Variance}
+\subsubsection{Between-Family Results} Notably, the between-family analyses showed a relationship between intelligence and AFI. Thus, we were able to replicate the findings of various researchers \citep{halpern2000smart,mott1983early,Paul2000,Woodward2001}, and confirm hypotheses \ref{hyp_btw_2_2} and \ref{hyp_btw_1_2}. Our within-generation findings\footnote{We report within-generation between-family effects for intelligence correlated with AFI (\eg Gen1 intelligence correlated with Gen1 AFI)} were comparable in effect size ($d_{Gen1} =.554$; $d_{Gen2} = .281$) to Halpern \et's \citeyear{halpern2000smart} finding ($d_{Halpern} = .542$). The effects were small to medium in size. The effect for Gen1 was more similar to \citet{halpern2000smart}'s finding, likely because both findings used intelligence assessed at a later age ($\approx 16$ years), compared to the Gen2 assessment at age 9.5.
+
+The relationship between AFI and intelligence was substantially stronger between maternal intelligence and child AFI than between the child's own intelligence and child AFI, suggesting that family-level variables rather than individual-level intelligence is the likely source of the relationship. If the child's own intelligence had been the primary causal influence on AFI we would have expected a considerably weaker cross-generational association between AFI and intelligence. Instead we find that the within-generation association is the weaker effect, suggesting that the child's own AFI is likely derivative of the child's mother's intelligence (or other between-family correlates), which are the more likely causal influence. Thus, the ``new'' and alternative interpretation of this finding would be that maternal intelligence or correlates are driving the effect, and that past between-family analyses finding a link between child's intelligence and AFI are likely because child's intelligence is indirectly measuring maternal intelligence and other between-family correlates. 
+
+There are interpretations that would support the plausibility of this result, including maternal intelligence as a direct causal influence on their children's AFI. Smarter mothers might be more effective at encouraging their children to delay intercourse -- perhaps by effectively conveying the riskiness of sexual intercourse \citep{hutchinson2003role,mathews2009predictors}. Considering that intelligence is moderately-to-highly heritable \citep{Bouchard2004} and thus highly correlated across generations, this alternative explanation would still be consistent with the traditional between family findings, which typically do not control for maternal intelligence \citep{halpern2000smart,mott1983early,Paul2000,Woodward2001}. We note that the \citet{harden2011don} findings, using biometrically-informed data, implicated the shared environment -- a between-family source of variance -- in this causal process. Our results are entirely consistent with theirs, using a different dataset and a different methodological approach to identify important sources of variance.
+ 
+\subsubsection{Within-Family Results} In the within-family analyses, the relationship between intelligence and AFI vanishes for both maternal intelligence and child intelligence. The child of the smarter Generation 1 mother was not more likely to delay intercourse compared to the child of the less-smart Generation 1 mother. In spite of our finding that Generation 1 intelligence was a relatively stronger predictor of Generation 2 AFI than Generation 2 intelligence, we did not find that within family differences in Generation 1 intelligence were associated with differences in Generation 2 AFI.
+
+These results cast doubt on the alternative explanation for the between-family results we posed in the previous section. If Gen1-maternal intelligence was driving the effect as a proximal cause, we would have expected to find a significant within-family link from maternal intelligence to child AFI, which we did not. Thus, within our sample, it appears that intelligence is not the proximal cause of delayed AFI. Rather, maternal and child intelligence appear to be are indirect measures of many other between-family household features, any one of which may be more proximal as the causal explanation -- income, parental education, family interaction, \etc. Or, the whole package of these features may stand in for a general environmental factor, a ``little e,'' which indexes the quality of the home environment, which could be measured as a composite of parental income, intelligence, education, family interaction, \etc.
+%
+\subsection{Concluding Remarks} We interpret these results in relation to two previous findings. First, \citet{Rodgers2008AJS} used Danish twin data, and found that the link from education/cognitive ability to maternal age at first birth (AFB) was entirely accounted for by between-family variance: ``variance in AFB emerges from [IQ and education] differences between families, not differences between sisters within the same family'' \citep[][p. 202]{Rodgers2008AJS}. We have exactly the same type of result in the current study. Second, Harden and Mendle's (\citeyear{harden2011don}) results, obtained from the Add Health data, use intelligence as a predictor and AFI as an outcome, just as we did with the NLSY. Their biometrical finding of meaningful shared environmental variance is consistent with our finding of only between-family variance. Their design identifies that the source of the covariation between AFI and intelligence is in the shared environment.
+
+Our findings cast further doubt on the direct and causal influence of intelligence. By explicitly parsing between- and within-family variance, we tested the causal link between AFI and intelligence. We employed numerous replications. We varied when we measured intelligence (Age 9.5, 10.5, 11.5; Age 16); how we measured intelligence (composite of five measures; AFQT from the ASVAB); which cohort we used (NLSYC; NLSY79); how we created kinship pairs (firstborn, first female, first male); and how related our kin-pairs were (cousins; siblings). We examined and eliminated both maternal intelligence and child intelligence as having any within-family causal etiology.
+
+Given our findings and those of \citet{harden2011don}, we find no evidence for intelligence being a direct causal influence on AFI. Instead, we direct future researchers to look at the general family environment,``little e,'' and other between-family factors correlated with maternal intelligence as likely causes of AFI.  Although ``smart teens don't have sex (or kiss much either)'' \citep{halpern2000smart} at a descriptive level, their reasons for delaying these activities do not appear to be caused by their smartness.
+%%%%%%%%%%%% References %%%%%%%%%%%%
+\bibliography{Projects-AFI}
+%%%%%%%%%%%% Appendix %%%%%%%%%%%%
+\appendix\label{appen}
+\begin{landscape} 
+  % Age 10.5 Replication
+  \section{Age 10.5 Replication}\label{appen10}
+  %% Between-Family
+  
+  \subsection{Between-Family Analyses}
+  %%%
+  %%% Mom -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Between-Family: Gen1 Intelligence Predicts Gen2 AFI} \label{table_Mean_Mom_Intelligence_Mean_Child_AFI_10}
+  \\[-1.8ex]\hline 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+  \cline{2-4}
+ & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen1 Mean Intel & 0.01$^{***}$ (0.01, 0.02) & 0.01$^{***}$ (0.01, 0.02) & 0.01$^{***}$ (0.01, 0.02) \\ 
+  Constant & $-$0.75$^{***}$ ($-$1.01, $-$0.50) & $-$0.80$^{***}$ ($-$1.09, $-$0.51) & $-$0.86$^{***}$ ($-$1.14, $-$0.57) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 342 & 264 & 282 \\ 
+R$^{2}$ & 0.09 & 0.10 & 0.11 \\ 
+Adjusted R$^{2}$ & 0.09 & 0.10 & 0.10 \\ 
+Residual Std. Error & 0.70 (df = 340) & 0.70 (df = 262) & 0.69 (df = 280) \\ 
+F Statistic & 33.50$^{***}$ (df = 1; 340) & 29.40$^{***}$ (df = 1; 262) & 33.20$^{***}$ (df = 1; 280) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+  \end{longtable}\pagebreak
+  %%%
+  %%% Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Between-Family: Gen2 Intelligence Predicts Gen2 AFI} \label{table_Mean_Child_Intelligence_Mean_Child_AFI_10}
+  \\[-1.8ex]\hline 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+  \cline{2-4}
+ & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen2 Mean Intel & 0.10$^{***}$ (0.04, 0.16) & 0.10$^{***}$ (0.04, 0.17) & 0.09$^{***}$ (0.02, 0.15) \\ 
+  Constant & $-$0.02 ($-$0.09, 0.06) & $-$0.01 ($-$0.10, 0.07) & $-$0.03 ($-$0.12, 0.05) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 345 & 267 & 283 \\ 
+R$^{2}$ & 0.03 & 0.03 & 0.02 \\ 
+Adjusted R$^{2}$ & 0.03 & 0.03 & 0.02 \\ 
+Residual Std. Error & 0.73 (df = 343) & 0.74 (df = 265) & 0.73 (df = 281) \\ 
+F Statistic & 10.50$^{***}$ (df = 1; 343) & 8.99$^{***}$ (df = 1; 265) & 6.91$^{***}$ (df = 1; 281) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+  \end{longtable}\pagebreak
+  %%%
+  %%% Mom Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Between-Family: Gen1 \& Gen2 Intelligence Predict Gen2 AFI} \label{table_Mean_Joint_Intelligence_Mean_Child_AFI_10}
+  \\[-1.8ex]\hline 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+  \cline{2-4}
+ & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen1 Mean Intel & 0.01$^{***}$ (0.01, 0.02) & 0.01$^{***}$ (0.01, 0.02) & 0.01$^{***}$ (0.01, 0.02) \\ 
+  Gen2 Mean Intel & 0.02 ($-$0.05, 0.09) & 0.02 ($-$0.06, 0.09) & 0.01 ($-$0.07, 0.08) \\ 
+  Constant & $-$0.71$^{***}$ ($-$1.01, $-$0.42) & $-$0.77$^{***}$ ($-$1.10, $-$0.44) & $-$0.84$^{***}$ ($-$1.18, $-$0.51) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 338 & 260 & 278 \\ 
+R$^{2}$ & 0.09 & 0.10 & 0.11 \\ 
+Adjusted R$^{2}$ & 0.09 & 0.10 & 0.10 \\ 
+Residual Std. Error & 0.70 (df = 335) & 0.71 (df = 257) & 0.70 (df = 275) \\ 
+F Statistic & 16.90$^{***}$ (df = 2; 335) & 14.70$^{***}$ (df = 2; 257) & 16.50$^{***}$ (df = 2; 275) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+  \end{longtable}\pagebreak
+  %%
+    %% Within-Family
+  \subsection{Within-Family Analyses}
+  %%%
+  %%% Mom -> Child
+\begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Within-Family: Gen1 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Mom_Intelligence_Dif_Child_AFI_10}
+  \\[-1.8ex]\hline 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 AFI} \\ 
+  \cline{2-4}
+ & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen2 Mean AFI & 0.30$^{***}$ (0.19, 0.42) & 0.33$^{***}$ (0.19, 0.46) & 0.38$^{***}$ (0.25, 0.50) \\ 
+  Gen1 Mean Intel & $-$0.003 ($-$0.01, 0.002) & $-$0.002 ($-$0.01, 0.004) & $-$0.01$^{***}$ ($-$0.01, $-$0.003) \\ 
+  Gen1 Dif Intel & 0.001 ($-$0.003, 0.01) & 0.001 ($-$0.01, 0.01) & 0.000 ($-$0.005, 0.01) \\ 
+  Constant & 1.18$^{***}$ (0.89, 1.47) & 1.18$^{***}$ (0.84, 1.52) & 1.50$^{***}$ (1.18, 1.83) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 336 & 258 & 278 \\ 
+R$^{2}$ & 0.07 & 0.08 & 0.12 \\ 
+Adjusted R$^{2}$ & 0.07 & 0.07 & 0.11 \\ 
+Residual Std. Error & 0.76 (df = 332) & 0.78 (df = 254) & 0.73 (df = 274) \\ 
+F Statistic & 8.83$^{***}$ (df = 3; 332) & 7.64$^{***}$ (df = 3; 254) & 12.00$^{***}$ (df = 3; 274) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+  \end{longtable}\pagebreak
+  %%%
+  %%% Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Within-Family: Gen2 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Child_Intelligence_Dif_Child_AFI_10}
+  \\[-1.8ex]\hline 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 AFI} \\ 
+  \cline{2-4}
+ & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen2 Mean AFI & 0.33$^{***}$ (0.21, 0.44) & 0.37$^{***}$ (0.23, 0.50) & 0.36$^{***}$ (0.23, 0.49) \\ 
+  Gen2 Mean Intel & $-$0.08$^{**}$ ($-$0.15, $-$0.01) & $-$0.09$^{**}$ ($-$0.17, $-$0.003) & $-$0.11$^{***}$ ($-$0.19, $-$0.03) \\ 
+  Gen2 Dif Intel & 0.02 ($-$0.02, 0.07) & 0.02 ($-$0.03, 0.07) & 0.002 ($-$0.04, 0.05) \\ 
+  Constant & 1.04$^{***}$ (0.95, 1.13) & 1.06$^{***}$ (0.96, 1.17) & 1.05$^{***}$ (0.96, 1.15) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 287 & 219 & 234 \\ 
+R$^{2}$ & 0.10 & 0.12 & 0.13 \\ 
+Adjusted R$^{2}$ & 0.09 & 0.11 & 0.11 \\ 
+Residual Std. Error & 0.76 (df = 283) & 0.78 (df = 215) & 0.74 (df = 230) \\ 
+F Statistic & 10.50$^{***}$ (df = 3; 283) & 9.57$^{***}$ (df = 3; 215) & 11.00$^{***}$ (df = 3; 230) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+  \end{longtable}\pagebreak
+  %%%
+  %%% Mom Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Within-Family: Gen1 \& Gen2 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Joint_Intelligence_Dif_Child_AFI_10}
+  \\[-1.8ex]\hline 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Difference in Gen2 AFI} \\ 
+  \cline{2-4}
+ & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen2 Mean AFI & 0.31$^{***}$ (0.19, 0.44) & 0.35$^{***}$ (0.20, 0.49) & 0.39$^{***}$ (0.25, 0.52) \\ 
+  Gen2 Mean Intel & $-$0.08$^{*}$ ($-$0.16, 0.01) & $-$0.09$^{*}$ ($-$0.19, 0.01) & $-$0.06 ($-$0.15, 0.03) \\ 
+  Gen1 Mean Intel & 0.000 ($-$0.01, 0.01) & 0.001 ($-$0.01, 0.01) & $-$0.01$^{**}$ ($-$0.01, $-$0.000) \\ 
+  Gen2 Dif Intel & 0.02 ($-$0.03, 0.06) & 0.02 ($-$0.03, 0.07) & 0.000 ($-$0.05, 0.05) \\ 
+  Gen1 Dif Intel & 0.002 ($-$0.004, 0.01) & $-$0.001 ($-$0.01, 0.01) & 0.002 ($-$0.004, 0.01) \\ 
+  Constant & 1.02$^{***}$ (0.66, 1.38) & 1.02$^{***}$ (0.60, 1.44) & 1.44$^{***}$ (1.04, 1.84) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 282 & 214 & 232 \\ 
+R$^{2}$ & 0.09 & 0.11 & 0.14 \\ 
+Adjusted R$^{2}$ & 0.08 & 0.09 & 0.12 \\ 
+Residual Std. Error & 0.76 (df = 276) & 0.78 (df = 208) & 0.73 (df = 226) \\ 
+F Statistic & 5.71$^{***}$ (df = 5; 276) & 5.08$^{***}$ (df = 5; 208) & 7.26$^{***}$ (df = 5; 226) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+  \end{longtable}
+  % Age 11.5 Replication
+  \section{Age 11.5 Replication}\label{appen11}
+  %% Between-Family
+  \subsection{Between-Family Analyses}
+  %%% Mom -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Between-Family: Gen1 Intelligence Predicts Gen2 AFI} \label{table_Mean_Mom_Intelligence_Mean_Child_AFI_11}
+  \\[-1.8ex]\hline 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+  \cline{2-4}
+ & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen1 Mean Intel & 0.01$^{***}$ (0.01, 0.02) & 0.01$^{***}$ (0.01, 0.02) & 0.01$^{***}$ (0.01, 0.02) \\ 
+  Constant & $-$0.75$^{***}$ ($-$1.01, $-$0.50) & $-$0.80$^{***}$ ($-$1.09, $-$0.51) & $-$0.86$^{***}$ ($-$1.14, $-$0.57) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 342 & 264 & 282 \\ 
+R$^{2}$ & 0.09 & 0.10 & 0.11 \\ 
+Adjusted R$^{2}$ & 0.09 & 0.10 & 0.10 \\ 
+Residual Std. Error & 0.70 (df = 340) & 0.70 (df = 262) & 0.69 (df = 280) \\ 
+F Statistic & 33.50$^{***}$ (df = 1; 340) & 29.40$^{***}$ (df = 1; 262) & 33.20$^{***}$ (df = 1; 280) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+  \end{longtable}\pagebreak
+  %%%
+  %%% Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Between-Family: Gen2 Intelligence Predicts Gen2 AFI} \label{table_Mean_Child_Intelligence_Mean_Child_AFI_11}
+  \\[-1.8ex]\hline 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+  \cline{2-4}
+   & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen2 Mean Intel & 0.10$^{***}$ (0.04, 0.16) & 0.12$^{***}$ (0.05, 0.19) & 0.09$^{***}$ (0.03, 0.16) \\ 
+  Constant & $-$0.02 ($-$0.09, 0.06) & $-$0.01 ($-$0.10, 0.08) & $-$0.04 ($-$0.12, 0.05) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 339 & 262 & 278 \\ 
+R$^{2}$ & 0.03 & 0.04 & 0.03 \\ 
+Adjusted R$^{2}$ & 0.03 & 0.04 & 0.02 \\ 
+Residual Std. Error & 0.73 (df = 337) & 0.74 (df = 260) & 0.72 (df = 276) \\ 
+F Statistic & 11.70$^{***}$ (df = 1; 337) & 10.80$^{***}$ (df = 1; 260) & 7.65$^{***}$ (df = 1; 276) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+  \end{longtable}\pagebreak
+  %%%
+  %%% Mom Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Between-Family: Gen1 \& Gen2 Intelligence Predict Gen2 AFI} \label{table_Mean_Joint_Intelligence_Mean_Child_AFI_11}
+  \\[-1.8ex]\hline 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Average of Gen2 AFI} \\ 
+  \cline{2-4}
+   & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen1 Mean Intel & 0.01$^{***}$ (0.01, 0.02) & 0.01$^{***}$ (0.01, 0.02) & 0.01$^{***}$ (0.01, 0.02) \\ 
+  Gen2 Mean Intel & 0.01 ($-$0.06, 0.08) & 0.02 ($-$0.06, 0.10) & $-$0.01 ($-$0.08, 0.07) \\ 
+  Constant & $-$0.72$^{***}$ ($-$1.03, $-$0.42) & $-$0.75$^{***}$ ($-$1.10, $-$0.40) & $-$0.86$^{***}$ ($-$1.21, $-$0.51) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 333 & 255 & 274 \\ 
+R$^{2}$ & 0.09 & 0.10 & 0.10 \\ 
+Adjusted R$^{2}$ & 0.08 & 0.09 & 0.10 \\ 
+Residual Std. Error & 0.71 (df = 330) & 0.71 (df = 252) & 0.70 (df = 271) \\ 
+F Statistic & 15.80$^{***}$ (df = 2; 330) & 13.80$^{***}$ (df = 2; 252) & 15.60$^{***}$ (df = 2; 271) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+  \end{longtable}\pagebreak
+  %%
+    %% Within-Family
+  \subsection{Within-Family Analyses}
+  %%%
+  %%% Mom -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Within-Family: Gen1 Differences in Intelligence Predict Gen2 Differences in AFI}\label{table_Dif_Mom_Intelligence_Dif_Child_AFI_11}
+  \\[-1.8ex]\hline 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 AFI} \\ 
+  \cline{2-4}
+   & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen2 Mean AFI & 0.30$^{***}$ (0.19, 0.42) & 0.33$^{***}$ (0.19, 0.46) & 0.38$^{***}$ (0.25, 0.50) \\ 
+  Gen1 Mean Intel & $-$0.003 ($-$0.01, 0.002) & $-$0.002 ($-$0.01, 0.004) & $-$0.01$^{***}$ ($-$0.01, $-$0.003) \\ 
+  Gen1 Dif Intel & 0.001 ($-$0.003, 0.01) & 0.001 ($-$0.01, 0.01) & 0.000 ($-$0.005, 0.01) \\ 
+  Constant & 1.18$^{***}$ (0.89, 1.47) & 1.18$^{***}$ (0.84, 1.52) & 1.50$^{***}$ (1.18, 1.83) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 336 & 258 & 278 \\ 
+R$^{2}$ & 0.07 & 0.08 & 0.12 \\ 
+Adjusted R$^{2}$ & 0.07 & 0.07 & 0.11 \\ 
+Residual Std. Error & 0.76 (df = 332) & 0.78 (df = 254) & 0.73 (df = 274) \\ 
+F Statistic & 8.83$^{***}$ (df = 3; 332) & 7.64$^{***}$ (df = 3; 254) & 12.00$^{***}$ (df = 3; 274) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+  \end{longtable}\pagebreak
+  %%%
+  %%% Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Within-Family: Gen2 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Child_Intelligence_Dif_Child_AFI_11}
+  \\[-1.8ex]\hline 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 AFI} \\ 
+  \cline{2-4}
+   & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen2 Mean AFI & 0.34$^{***}$ (0.22, 0.46) & 0.37$^{***}$ (0.23, 0.51) & 0.38$^{***}$ (0.25, 0.51) \\ 
+  Gen2 Mean Intel & $-$0.10$^{***}$ ($-$0.17, $-$0.03) & $-$0.12$^{***}$ ($-$0.21, $-$0.03) & $-$0.13$^{***}$ ($-$0.21, $-$0.05) \\ 
+  Gen2 Dif Intel & 0.04 ($-$0.01, 0.08) & 0.03 ($-$0.02, 0.08) & 0.01 ($-$0.03, 0.06) \\ 
+  Constant & 1.05$^{***}$ (0.96, 1.14) & 1.07$^{***}$ (0.96, 1.17) & 1.08$^{***}$ (0.98, 1.17) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 286 & 223 & 230 \\ 
+R$^{2}$ & 0.12 & 0.13 & 0.15 \\ 
+Adjusted R$^{2}$ & 0.11 & 0.12 & 0.14 \\ 
+Residual Std. Error & 0.75 (df = 282) & 0.77 (df = 219) & 0.73 (df = 226) \\ 
+F Statistic & 12.50$^{***}$ (df = 3; 282) & 11.00$^{***}$ (df = 3; 219) & 13.20$^{***}$ (df = 3; 226) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+  \end{longtable}\pagebreak
+  %%%
+  %%% Mom Child -> Child
+  \begin{longtable}{@{\extracolsep{5pt}}lccc} 
+  \caption{Within-Family: Gen1 \& Gen2 Differences in Intelligence Predict Gen2 Differences in AFI} \label{table_Dif_Joint_Intelligence_Dif_Child_AFI_11}
+  \\[-1.8ex]\hline 
+  \hline \\[-3.8ex] 
+  & \multicolumn{3}{c}{\textit{Dependent variable:} Differences in Gen2 AFI} \\ 
+  \cline{2-4}
+   & Mixed & Daughters & Sons \\ 
+\hline \\[-1.8ex] 
+ Gen2 Mean AFI & 0.33$^{***}$ (0.20, 0.45) & 0.34$^{***}$ (0.19, 0.48) & 0.42$^{***}$ (0.28, 0.55) \\ 
+  Gen2 Mean Intel & $-$0.10$^{**}$ ($-$0.18, $-$0.01) & $-$0.13$^{**}$ ($-$0.23, $-$0.03) & $-$0.07 ($-$0.16, 0.02) \\ 
+  Gen1 Mean Intel & 0.001 ($-$0.01, 0.01) & 0.002 ($-$0.01, 0.01) & $-$0.01$^{**}$ ($-$0.01, $-$0.000) \\ 
+  Gen2 Dif Intel & 0.03 ($-$0.01, 0.08) & 0.04 ($-$0.02, 0.09) & 0.01 ($-$0.04, 0.06) \\ 
+  Gen1 Dif Intel & 0.002 ($-$0.004, 0.01) & $-$0.002 ($-$0.01, 0.005) & 0.001 ($-$0.004, 0.01) \\ 
+  Constant & 0.98$^{***}$ (0.61, 1.35) & 0.92$^{***}$ (0.49, 1.36) & 1.47$^{***}$ (1.06, 1.89) \\ 
+ \hline \\[-1.8ex] 
+Sample Size & 278 & 215 & 226 \\ 
+R$^{2}$ & 0.11 & 0.12 & 0.16 \\ 
+Adjusted R$^{2}$ & 0.10 & 0.10 & 0.14 \\ 
+Residual Std. Error & 0.75 (df = 272) & 0.78 (df = 209) & 0.73 (df = 220) \\ 
+F Statistic & 6.86$^{***}$ (df = 5; 272) & 5.97$^{***}$ (df = 5; 209) & 8.50$^{***}$ (df = 5; 220) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+  \end{longtable}
+  \end{landscape}
+  \section{Correlations}\label{appencor}  
+\noindent
+\captionof{table}{Zero-Order Correlations}\label{table_cor}
+\begin{center}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=1\textwidth]{figure/reviewer2_cor-1} 
+
+\end{knitrout}
+\end{center}\pagebreak
+
+\noindent\begin{minipage}{\textwidth}
+
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{\small Semi-Partial Correlations for Between-Family Joint Model, Predicting Gen2 Averages of AFI}\label{table_spcor_btw}
+\hline
+&   \multicolumn{3}{c}{Semi-Partial Correlation (p-value)}\\
+Predictor &  \multicolumn{1}{c}{Mixed} & \multicolumn{1}{c}{Daughters} & \multicolumn{1}{c}{Sons}\\	
+\hline 
+Gen1 Mean Intel & 0.25 (<.0001)& 0.27 (<.0001)& 0.272 (<.0001)\\ 
+Gen2 Mean Intel & \ensuremath{-0.003} (0.96) & 0 (0.997)& \ensuremath{-0.02} (0.73)\\ 
+\hline\\
+\textit{Notes:}  & \multicolumn{3}{r}{\parbox{.6\linewidth}{\footnotesize Joint Model is in Table \ref{table_Mean_Joint_Intelligence_Mean_Child_AFI_9}. The semi-partial correlation of Gen2 Mean AFI with each variable controls for all other variables in the table.}} \\ 
+\end{longtable}
+\end{minipage}
+\vspace*{2cm}
+
+\noindent\begin{minipage}{\textwidth}
+\begin{longtable}{@{\extracolsep{5pt}}rlll} \caption{\small Pairwise Semi-Partial Correlations for Within-Family Joint Model, Predicting Gen2 Differences in AFI}\label{table_spcor_wtn}
+\hline
+&   \multicolumn{3}{c}{Semi-Partial Correlation (p-value)}\\
+Predictor &  \multicolumn{1}{c}{Mixed} & \multicolumn{1}{c}{Daughters} & \multicolumn{1}{c}{Sons}\\	
+\hline 
+Gen2 Mean AFI & 0.29 (<.0001) & 0.29 (<.0001)& 0.36 (<.0001)\\ 
+Gen2 Mean Intel & -0.075 (0.21) & -0.075 (0.21)& -0.081 (0.22)\\
+Gen1 Mean Intel & 0.013 (0.83) & 0.013 (0.83)& -0.089 (0.18)\\ 
+Gen2 Dif Intel & 0.06 (0.31) & 0.06 (0.31)& 0.018 (0.79)\\ 
+Gen1 Dif Intel & 0.021 (0.73) & 0.021 (0.73)& 0.016 (0.81)\\ 
+\hline\\
+\textit{Notes:}  & \multicolumn{3}{r}{\parbox{.6\linewidth}{\footnotesize Joint Model is in Table \ref{table_Dif_Joint_Intelligence_Dif_Child_AFI_9}. The semi-partial correlation of Gen2 differences in AFI with each variable controls for all other variables in the table.}} \\ 
+\end{longtable}\end{minipage}\\
+\end{document}
